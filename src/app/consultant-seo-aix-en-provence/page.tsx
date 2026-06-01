@@ -597,7 +597,7 @@ export default function ConsultantSEOAixPage() {
                   </p>
                   <ul className="space-y-5">
                     {[
-                      { t: 'Votre vitrine n°1', d: 'Photos, description, services, zone d\'intervention : tout est visible en quelques secondes.' },
+                      { t: 'Votre vitrine n°1', d: 'Photos, description, services, zone d\'intervention, tout est visible en quelques secondes.' },
                       { t: 'Vos avis Google', d: 'La preuve sociale qui convainc avant même un premier échange.' },
                       { t: 'Un flux de contacts régulier', d: 'Appels, demandes d\'itinéraire, clics vers votre site, directement depuis la recherche.' },
                     ].map((item, i) => (
@@ -606,7 +606,7 @@ export default function ConsultantSEOAixPage() {
                           <Check size={11} weight="bold" color="#fceb30" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: '24px' }}>
-                          <strong className="text-white/90">{item.t}</strong> — {item.d}
+                          <strong className="text-white/90">{item.t}</strong> : {item.d}
                         </span>
                       </li>
                     ))}
@@ -1221,7 +1221,7 @@ export default function ConsultantSEOAixPage() {
                     <p>
                       Spécialisée dans les métiers de la décoration d&apos;intérieur, de l&apos;architecture
                       et de l&apos;habitat, j&apos;aide les professionnels du Pays d&apos;Aix à gagner en
-                      visibilité sur Google — sans jargon, sans engagement long terme inutile, avec
+                      visibilité sur Google, sans jargon, sans engagement long terme inutile, avec
                       des résultats mesurables.
                     </p>
                     <p>
