@@ -1,0 +1,95 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #3262ab;
+  --color-brand-dark: #264d8c;
+  --color-brand-yellow: #fceb30;
+  --font-sans: var(--font-outfit);
+  --font-satoshi: 'Satoshi', sans-serif;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #fceb30;
+  color: #3262ab;
+}
+
+/* ── Typographie article de blog ── */
+.article-body p {
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 1.4rem;
+}
+
+.article-body h2 {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: clamp(22px, 3vw, 28px);
+  line-height: 1.25;
+  color: #ffffff;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.article-body h3 {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.92);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.article-body ul li {
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.70);
+  margin-bottom: 0.4rem;
+  list-style-type: disc;
+}
+
+.article-body ol li {
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.70);
+  margin-bottom: 0.4rem;
+  list-style-type: decimal;
+}
+
+.article-body strong {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+}
+
+.article-body a {
+  color: #fceb30;
+  text-decoration: underline;
+  text-decoration-color: rgba(252, 235, 48, 0.4);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+
+.article-body a:hover {
+  text-decoration-color: #fceb30;
+}
