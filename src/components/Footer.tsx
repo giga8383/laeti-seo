@@ -153,7 +153,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-[1.8fr_1fr_1.4fr_1fr]  lg:gap-16">
 
-          {/* Col 1 — Marque */}
+          {/* Col 1 - Marque */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-6">
 
             {/* Logo */}
@@ -240,7 +240,7 @@ export default function Footer() {
 
           </div>
 
-          {/* Col 2 — Navigation */}
+          {/* Col 2 - Navigation */}
           <div className="flex flex-col gap-4">
             <ColTitle>Navigation</ColTitle>
             <ul className="flex flex-col gap-2">
@@ -248,7 +248,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — SEO Local */}
+          {/* Col 3 - SEO Local */}
           <div className="flex flex-col gap-4">
             <ColTitle>SEO Local</ColTitle>
             <ul className="flex flex-col gap-2">
@@ -256,7 +256,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4 — Ressources */}
+          {/* Col 4 - Ressources */}
           <div className="flex flex-col gap-4">
             <ColTitle>Ressources</ColTitle>
             <ul className="flex flex-col gap-2">
