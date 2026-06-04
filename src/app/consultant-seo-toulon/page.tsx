@@ -690,27 +690,31 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal delay={0.1}>
               <div className="flex flex-wrap gap-3">
                 {zones.map((zone, i) => {
-                  const Tag = zone.href ? Link : 'span';
-                  return (
-                    <Tag
-                      key={i}
-                      {...(zone.href ? { href: zone.href } : {})}
-                      className="flex items-center gap-2 rounded-full px-4 py-2"
-                      style={{
-                        background: i === 0 ? 'rgba(252,235,48,0.12)' : zone.href ? 'rgba(252,235,48,0.07)' : 'rgba(255,255,255,0.05)',
-                        border: i === 0 ? '1px solid rgba(252,235,48,0.30)' : zone.href ? '1px solid rgba(252,235,48,0.25)' : '1px solid rgba(255,255,255,0.09)',
-                        fontFamily: inter.style.fontFamily,
-                        fontSize: '13px',
-                        fontWeight: i === 0 || zone.href ? 600 : 400,
-                        color: i === 0 ? '#fceb30' : zone.href ? 'rgba(252,235,48,0.75)' : 'rgba(255,255,255,0.55)',
-                        textDecoration: 'none',
-                        transition: zone.href ? 'background 0.2s, color 0.2s' : undefined,
-                      }}
-                    >
+                  const sharedStyle: React.CSSProperties = {
+                    background: i === 0 ? 'rgba(252,235,48,0.12)' : zone.href ? 'rgba(252,235,48,0.07)' : 'rgba(255,255,255,0.05)',
+                    border: i === 0 ? '1px solid rgba(252,235,48,0.30)' : zone.href ? '1px solid rgba(252,235,48,0.25)' : '1px solid rgba(255,255,255,0.09)',
+                    fontFamily: inter.style.fontFamily,
+                    fontSize: '13px',
+                    fontWeight: i === 0 || zone.href ? 600 : 400,
+                    color: i === 0 ? '#fceb30' : zone.href ? 'rgba(252,235,48,0.75)' : 'rgba(255,255,255,0.55)',
+                    textDecoration: 'none',
+                    transition: zone.href ? 'background 0.2s, color 0.2s' : undefined,
+                  };
+                  const inner = (
+                    <>
                       <MapPin size={11} weight="bold" />
                       {zone.label}
                       {zone.href && <span style={{ fontSize: '10px', opacity: 0.7 }}>→</span>}
-                    </Tag>
+                    </>
+                  );
+                  return zone.href ? (
+                    <Link key={i} href={zone.href} className="flex items-center gap-2 rounded-full px-4 py-2" style={sharedStyle}>
+                      {inner}
+                    </Link>
+                  ) : (
+                    <span key={i} className="flex items-center gap-2 rounded-full px-4 py-2" style={sharedStyle}>
+                      {inner}
+                    </span>
                   );
                 })}
               </div>
