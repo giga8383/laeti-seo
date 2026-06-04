@@ -73,7 +73,7 @@ export default function Navbar() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}>
 
           {/* Logo */}
-          <div style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, fontSize: '16px', lineHeight: '1', display: 'flex', flexDirection: 'column', gap: '0px' }}>
+          <a href="/" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, fontSize: '16px', lineHeight: '1', display: 'flex', flexDirection: 'column', gap: '0px', textDecoration: 'none' }}>
             <span style={{ color: logoTop, textTransform: 'uppercase', letterSpacing: '0.02em', transition: 'color 0.35s' }}>
               Laet<span style={{ position: 'relative', display: 'inline-block' }}>
                 i
@@ -92,7 +92,7 @@ export default function Navbar() {
               </span>
             </span>
             <span style={{ color: logoBot, textTransform: 'uppercase', letterSpacing: '0.02em', transition: 'color 0.35s' }}>SEO</span>
-          </div>
+          </a>
 
           {/* Liens desktop */}
           <div className="hidden items-center gap-7 lg:flex">
