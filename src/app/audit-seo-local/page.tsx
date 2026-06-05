@@ -133,7 +133,7 @@ const analyses = [
   {
     num: '03',
     title: 'Vos citations locales et cohérence NAP',
-    intro: 'Les citations locales, c\'est chaque mention de votre entreprise sur un annuaire externe. Le NAP — Nom, Adresse, Téléphone — doit être identique partout, à la virgule près.',
+    intro: 'Les citations locales, c\'est chaque mention de votre entreprise sur un annuaire externe. Le NAP (Nom, Adresse, Téléphone) doit être identique partout, à la virgule près.',
     items: [
       'Inventaire des citations existantes',
       'Détection des incohérences NAP (ancienne adresse, numéro obsolète, variantes du nom)',
@@ -144,7 +144,7 @@ const analyses = [
   {
     num: '04',
     title: 'Vos concurrents locaux',
-    intro: 'Pourquoi sont-ils devant vous ? Ce n\'est pas une question rhétorique — c\'est une analyse concrète.',
+    intro: 'Pourquoi sont-ils devant vous ? Ce n\'est pas une question rhétorique :c\'est une analyse concrète.',
     items: [
       'Positionnement des 3 à 5 concurrents directs dans votre zone',
       'Comparaison de leur fiche, de leurs avis et de leurs citations',
@@ -197,7 +197,7 @@ const notForYou = [
 const sources = [
   {
     title: 'Conseils officiels Google pour améliorer votre classement local',
-    desc: 'Google Business Profile Help — la documentation de référence.',
+    desc: 'Google Business Profile Help :la documentation de référence.',
     href: 'https://support.google.com/business/answer/7091?hl=fr',
   },
   {
@@ -206,7 +206,7 @@ const sources = [
     href: 'https://business.google.com/fr/business-profile/',
   },
   {
-    title: 'France Num — Google Business Profile',
+    title: 'France Num :Google Business Profile',
     desc: 'Le guide pratique du service public pour les TPE et artisans.',
     href: 'https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/google-business-profile-le-service-de',
   },
@@ -374,8 +374,8 @@ export default function AuditSEOLocalPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}
               >
                 Beaucoup de professionnels pensent que &quot;être sur Google&quot; suffit. Apparaître
-                dans le Local Pack — les 3 résultats cartographiques qui captent l&apos;essentiel des
-                clics — exige une cohérence précise sur plusieurs points.
+                dans le Local Pack (les 3 résultats cartographiques qui captent l&apos;essentiel des
+                clics) exige une cohérence précise sur plusieurs points.
               </p>
             </ScrollReveal>
 
@@ -649,7 +649,7 @@ export default function AuditSEOLocalPage() {
                 Ils en parlent
               </p>
             </ScrollReveal>
-            {/* ⚠️ TÉMOIGNAGE POLE ASSAINISSEMENT — à remplacer par l'avis Google exact */}
+            {/* ⚠️ TÉMOIGNAGE POLE ASSAINISSEMENT :à remplacer par l'avis Google exact */}
             <ScrollReveal delay={0.1}>
               <figure
                 className="rounded-[2rem] p-10"
@@ -721,7 +721,7 @@ export default function AuditSEOLocalPage() {
                 },
                 {
                   q: "Quelle est la différence entre un audit et une optimisation ?",
-                  a: "L'audit est un diagnostic : il identifie ce qui bloque votre visibilité locale et définit les priorités. L'optimisation, c'est l'étape suivante — la mise en œuvre des corrections. Les deux sont distincts. L'audit vous donne une feuille de route claire, que vous pouvez ensuite appliquer seul ou faire appliquer.",
+                  a: "L'audit est un diagnostic : il identifie ce qui bloque votre visibilité locale et définit les priorités. L'optimisation, c'est l'étape suivante :la mise en œuvre des corrections. Les deux sont distincts. L'audit vous donne une feuille de route claire, que vous pouvez ensuite appliquer seul ou faire appliquer.",
                 },
                 {
                   q: "Mon entreprise est déjà visible sur Google, est-ce utile ?",
