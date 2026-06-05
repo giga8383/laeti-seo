@@ -114,6 +114,22 @@ export default function Navbar() {
           {/* Liens desktop */}
           <div className="hidden items-center gap-7 lg:flex">
 
+            {/* Consultante SEO freelance en premier */}
+            <a
+              href="/"
+              className="whitespace-nowrap hover:opacity-100"
+              style={{
+                fontFamily: 'Inter, "Inter Fallback"',
+                fontWeight: 500,
+                fontSize: '14px',
+                lineHeight: '21px',
+                color: linkColor,
+                transition: 'color 0.35s',
+              }}
+            >
+              Consultante SEO freelance
+            </a>
+
             {/* Dropdown Offre */}
             <div ref={offreRef} style={{ position: 'relative' }}>
               <button
@@ -189,7 +205,7 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            {navLinks.map(({ label, href }) => (
+            {navLinks.slice(1).map(({ label, href }) => (
               <a
                 key={href}
                 href={href}
