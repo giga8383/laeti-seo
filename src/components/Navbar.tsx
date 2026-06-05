@@ -194,7 +194,7 @@ export default function Navbar() {
                           <p style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 700, fontSize: '14px', lineHeight: '20px', color: '#3262AB', textTransform: 'uppercase' }}>
                             {label}
                           </p>
-                          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(38,77,140,0.55)', marginTop: '2px' }}>
+                          <p style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '12px', lineHeight: '16px', color: 'lab(19.1245 51.5264 -84.3836 / 0.5)', marginTop: '2px' }}>
                             {sub}
                           </p>
                         </div>
