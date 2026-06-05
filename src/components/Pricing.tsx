@@ -203,7 +203,7 @@ export default function Pricing() {
               <div className="mt-auto">
                 <div className="mb-6 flex items-end gap-1">
                   <span className="text-5xl font-bold tracking-tighter text-white">
-                    690
+                    790
                   </span>
                   <span className="mb-1.5 text-2xl font-bold text-[#fceb30]">€</span>
                   <span

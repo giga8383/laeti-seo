@@ -547,7 +547,7 @@ export default function Offer() {
                   className="mt-1 text-sm"
                   style={{ fontFamily: inter.style.fontFamily, color: '#92400e', opacity: 0.65 }}
                 >
-                  690 € · diagnostic inclus
+                  790 € · diagnostic inclus
                 </p>
                 <p
                   className="mt-4"

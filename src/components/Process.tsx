@@ -357,7 +357,7 @@ export default function Process() {
             className="mb-14 text-sm text-white/35"
             style={{ fontFamily: inter.style.fontFamily }}
           >
-            690 € · diagnostic inclus
+            790 € · diagnostic inclus
           </p>
         </ScrollReveal>
 

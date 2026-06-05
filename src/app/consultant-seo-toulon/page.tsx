@@ -134,7 +134,7 @@ const jsonLd = {
           name: 'Quelle différence entre un diagnostic SEO et un accompagnement long terme à Toulon ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le diagnostic est un état des lieux complet de votre visibilité locale à Toulon, livré en une fois sous 5 jours pour 190 €. Il vous donne toutes les clés pour comprendre votre situation et agir vous-même, ou faire agir quelqu'un. Le Sprint local (690 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations : fiche Google, site, contenu local, stratégie d'avis. C'est la suite logique du diagnostic pour ceux qui veulent déléguer la mise en œuvre.",
+            text: "Le diagnostic est un état des lieux complet de votre visibilité locale à Toulon, livré en une fois sous 5 jours pour 190 €. Il vous donne toutes les clés pour comprendre votre situation et agir vous-même, ou faire agir quelqu'un. Le Sprint local (790 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations : fiche Google, site, contenu local, stratégie d'avis. C'est la suite logique du diagnostic pour ceux qui veulent déléguer la mise en œuvre.",
           },
         },
       ],
@@ -779,7 +779,7 @@ export default function ConsultantSEOToulonPage() {
                 },
                 {
                   q: 'Quelle différence entre le diagnostic et le Sprint local ?',
-                  a: "Le diagnostic (190 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (690 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls.",
+                  a: "Le diagnostic (190 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (790 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls.",
                 },
               ].map((faq, i) => (
                 <ScrollReveal key={i} delay={i * 0.05}>

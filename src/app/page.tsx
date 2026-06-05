@@ -92,7 +92,7 @@ const jsonLd = {
           name: 'Sprint local 3 mois',
           description:
             "Diagnostic inclus + optimisation complète de la fiche Google Business Profile, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi.",
-          price: '690',
+          price: '790',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
         },

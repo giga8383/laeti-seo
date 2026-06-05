@@ -94,7 +94,7 @@ const jsonLd = {
           name: 'Combien coûte un consultant SEO à Marseille ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le marché du SEO à Marseille est très hétérogène : des agences qui facturent 1 500 € à 3 000 €/mois sur 12 mois d'engagement, des freelances généralistes à des tarifs variables, et peu de spécialistes du SEO local. Mon positionnement est différent : je propose un diagnostic de visibilité locale à 190 €, livré en 5 jours, sans abonnement. Si vous souhaitez aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 690 €. Pas de contrat long, pas de promesses vagues : des livrables précis et des actions concrètes.",
+            text: "Le marché du SEO à Marseille est très hétérogène : des agences qui facturent 1 500 € à 3 000 €/mois sur 12 mois d'engagement, des freelances généralistes à des tarifs variables, et peu de spécialistes du SEO local. Mon positionnement est différent : je propose un diagnostic de visibilité locale à 190 €, livré en 5 jours, sans abonnement. Si vous souhaitez aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 790 €. Pas de contrat long, pas de promesses vagues : des livrables précis et des actions concrètes.",
           },
         },
         {
@@ -757,7 +757,7 @@ export default function ConsultantSEOMarseilePage() {
                 },
                 {
                   q: 'Combien coûte un consultant SEO à Marseille ?',
-                  a: "Le marché du SEO à Marseille est hétérogène : des agences à 1 500-3 000 €/mois sur engagement, des freelances généralistes à tarifs variables. Mon positionnement est différent : diagnostic de visibilité locale à 190 €, livré en 5 jours, sans abonnement. Pour aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 690 €. Des livrables précis, des actions concrètes, pas de contrat long.",
+                  a: "Le marché du SEO à Marseille est hétérogène : des agences à 1 500-3 000 €/mois sur engagement, des freelances généralistes à tarifs variables. Mon positionnement est différent : diagnostic de visibilité locale à 190 €, livré en 5 jours, sans abonnement. Pour aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 790 €. Des livrables précis, des actions concrètes, pas de contrat long.",
                 },
                 {
                   q: 'Quels arrondissements de Marseille sont les plus compétitifs en SEO ?',

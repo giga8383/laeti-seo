@@ -34,7 +34,7 @@ const sprint = {
   badge: 'Tarif de lancement',
   badgeStyle: 'yellow' as const,
   name: 'Sprint local 3 mois',
-  price: '690',
+  price: '790',
   unit: 'paiement en 2 fois possible',
   delay: 'Démarrage sous 48 h',
   pitch: (
@@ -54,7 +54,7 @@ const sprint = {
     "Rapport mensuel d'avancement clair et lisible",
     'Appel de suivi mensuel (30 min) pour ajuster le cap',
   ],
-  cta: 'Réserver le sprint · 690 €',
+  cta: 'Réserver le sprint · 790 €',
 };
 
 function PricingCard({
