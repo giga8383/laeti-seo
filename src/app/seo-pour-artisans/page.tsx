@@ -115,7 +115,7 @@ const jsonLd = {
           name: 'Quelle est la différence entre SEO local et Google Ads ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le SEO local génère du trafic organique et gratuit sur le long terme, mais demande du temps. Google Ads génère des résultats immédiats mais payants — dès que vous arrêtez de payer, vous disparaissez. Les deux sont complémentaires.",
+            text: "Le SEO local génère du trafic organique et gratuit sur le long terme, mais demande du temps. Google Ads génère des résultats immédiats mais payants,dès que vous arrêtez de payer, vous disparaissez. Les deux sont complémentaires.",
           },
         },
         {
@@ -152,7 +152,7 @@ const gbpChecklist = [
   { title: 'Nom de l\'établissement', desc: 'Utilisez uniquement le nom réel de votre entreprise. N\'ajoutez pas de mots-clés ou de ville dans le nom : Google peut suspendre votre fiche.' },
   { title: 'Catégorie principale', desc: 'C\'est le signal le plus fort pour le Local Pack. Choisissez la catégorie la plus précise possible. Ajoutez des catégories secondaires uniquement si elles correspondent vraiment à vos services.' },
   { title: 'Zone de service', desc: 'Si vous vous déplacez chez vos clients, renseignez une zone de service plutôt qu\'une adresse publique. Google autorise jusqu\'à 20 zones de desserte.' },
-  { title: 'Coordonnées et horaires', desc: 'Téléphone, site web, horaires — tout doit être exact, cohérent et à jour, y compris les jours fériés et les horaires exceptionnels.' },
+  { title: 'Coordonnées et horaires', desc: 'Téléphone, site web, horaires,tout doit être exact, cohérent et à jour, y compris les jours fériés et les horaires exceptionnels.' },
   { title: 'Services détaillés', desc: 'Listez chaque prestation avec une description courte. Cela aide Google à vous afficher sur des requêtes longue traîne (ex. : « installation chaudière à condensation »).' },
   { title: 'Photos régulières', desc: 'Ajoutez un logo, une photo de couverture professionnelle, et des photos de vos réalisations. Les fiches avec photos reçoivent significativement plus de clics.' },
   { title: 'Posts Google', desc: 'Publiez au moins un post par mois : offre spéciale, conseil pratique, réalisation récente. Cela signale à Google que votre fiche est active.' },
@@ -172,15 +172,15 @@ const citations = [
 const expertQA = [
   {
     q: 'Quel est le blocage NAP le plus fréquent que tu rencontres chez les artisans bâtiment ?',
-    a: "Le cas le plus courant, c'est le numéro de téléphone qui change sans que personne ne pense à mettre à jour les annuaires. Un artisan prend un nouveau forfait, récupère un nouveau numéro, le met sur son site — mais PagesJaunes, Yelp et Houzz affichent toujours l'ancien. Aux yeux de Google, ce sont deux entreprises différentes. J'ai vu des fiches perdre 30 % de visibilité locale uniquement à cause d'une incohérence de ce type.",
+    a: "Le cas le plus courant, c'est le numéro de téléphone qui change sans que personne ne pense à mettre à jour les annuaires. Un artisan prend un nouveau forfait, récupère un nouveau numéro, le met sur son site,mais PagesJaunes, Yelp et Houzz affichent toujours l'ancien. Aux yeux de Google, ce sont deux entreprises différentes. J'ai vu des fiches perdre 30 % de visibilité locale uniquement à cause d'une incohérence de ce type.",
   },
   {
     q: "En 12 ans, quel résultat Local Pack t'a le plus surpris, et en combien de temps ?",
-    a: "Un cuisiniste à Aix-en-Provence, invisible sur sa requête principale depuis deux ans. Après une optimisation complète de la fiche et une correction des citations NAP, il est passé en position 2 du Local Pack en 6 semaines — sans aucune modification du site. Ce qui m'a surprise, c'est la rapidité. Parfois les signaux sont si clairement bloqués que lever un seul frein suffit à déclencher un bond significatif.",
+    a: "Un cuisiniste à Aix-en-Provence, invisible sur sa requête principale depuis deux ans. Après une optimisation complète de la fiche et une correction des citations NAP, il est passé en position 2 du Local Pack en 6 semaines,sans aucune modification du site. Ce qui m'a surprise, c'est la rapidité. Parfois les signaux sont si clairement bloqués que lever un seul frein suffit à déclencher un bond significatif.",
   },
   {
     q: "Pourquoi un cuisiniste ou un décorateur sous-estime-t-il systématiquement ses avis clients ?",
-    a: "Parce qu'ils pensent que leurs clients ne laissent pas d'avis spontanément. Et ils ont partiellement raison — mais c'est précisément ça le problème. Dans l'habitat, la relation client est longue, personnelle. Quand vous demandez un avis à la fin d'un chantier, en face à face ou par SMS avec un lien direct, 70 % des clients satisfaits le font. Ceux qui ne le font jamais, c'est souvent ceux qui n'ont jamais osé demander.",
+    a: "Parce qu'ils pensent que leurs clients ne laissent pas d'avis spontanément. Et ils ont partiellement raison,mais c'est précisément ça le problème. Dans l'habitat, la relation client est longue, personnelle. Quand vous demandez un avis à la fin d'un chantier, en face à face ou par SMS avec un lien direct, 70 % des clients satisfaits le font. Ceux qui ne le font jamais, c'est souvent ceux qui n'ont jamais osé demander.",
   },
 ];
 
@@ -203,7 +203,7 @@ const faq = [
   },
   {
     q: 'Quelle est la différence entre SEO local et Google Ads ?',
-    a: "Le SEO local génère du trafic organique et gratuit sur le long terme, mais demande du temps. Google Ads génère des résultats immédiats mais payants — dès que vous arrêtez de payer, vous disparaissez. Les deux sont complémentaires.",
+    a: "Le SEO local génère du trafic organique et gratuit sur le long terme, mais demande du temps. Google Ads génère des résultats immédiats mais payants,dès que vous arrêtez de payer, vous disparaissez. Les deux sont complémentaires.",
   },
   {
     q: 'Puis-je gérer mon SEO local moi-même ?',
@@ -218,17 +218,17 @@ const faq = [
 const sources = [
   {
     title: 'Google Business Profile : le service de référencement indispensable',
-    desc: 'France Num — guide pratique officiel pour les TPE et artisans. Mis à jour mars 2026.',
+    desc: 'France Num,guide pratique officiel pour les TPE et artisans. Mis à jour mars 2026.',
     href: 'https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/google-business-profile-le-service-de',
   },
   {
     title: 'Local Consumer Review Survey 2024',
-    desc: 'BrightLocal — étude annuelle de référence sur les comportements des consommateurs locaux.',
+    desc: 'BrightLocal,étude annuelle de référence sur les comportements des consommateurs locaux.',
     href: 'https://www.brightlocal.com/research/local-consumer-review-survey-2024/',
   },
   {
     title: 'Local SEO Statistics',
-    desc: 'BrightLocal — données clés sur l\'efficacité du référencement local.',
+    desc: 'BrightLocal,données clés sur l\'efficacité du référencement local.',
     href: 'https://www.brightlocal.com/resources/local-seo-statistics/',
   },
 ];
@@ -369,7 +369,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            01 — POURQUOI LE SEO LOCAL EST VITAL
+            01,POURQUOI LE SEO LOCAL EST VITAL
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -426,7 +426,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            02 — COMMENT FONCTIONNE LE LOCAL PACK
+            02,COMMENT FONCTIONNE LE LOCAL PACK
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -489,7 +489,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            03 — GOOGLE BUSINESS PROFILE
+            03,GOOGLE BUSINESS PROFILE
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -546,7 +546,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            04 — COHÉRENCE NAP
+            04,COHÉRENCE NAP
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -562,7 +562,7 @@ export default function SeoArtisansPage() {
                   <strong className="text-white/90">NAP = Nom, Adresse, Téléphone.</strong> Google compare
                   les informations de votre fiche GBP avec toutes les mentions de votre entreprise sur le web.
                   Si votre numéro est différent sur PagesJaunes et sur votre site, Google perd confiance
-                  dans vos données — et vous perdez des positions.
+                  dans vos données,et vous perdez des positions.
                 </p>
                 <div className="space-y-3 mb-8">
                   {[
@@ -614,7 +614,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            05 — AVIS CLIENTS
+            05,AVIS CLIENTS
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -681,7 +681,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            06 — SITE WEB
+            06,SITE WEB
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -741,7 +741,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            07 — CITATIONS LOCALES
+            07,CITATIONS LOCALES
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -795,7 +795,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            08 — POUR QUI / MON AVIS
+            08,POUR QUI / MON AVIS
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -877,10 +877,10 @@ export default function SeoArtisansPage() {
                 </div>
                 <Quotes size={28} weight="fill" color="rgba(252,235,48,0.4)" className="mb-5" />
                 <blockquote className="text-white/80" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '1.6' }}>
-                  Je refuse régulièrement des clients — et c&apos;est l&apos;une des meilleures décisions que j&apos;aie prises.
+                  Je refuse régulièrement des clients,et c&apos;est l&apos;une des meilleures décisions que j&apos;aie prises.
                   Quand quelqu&apos;un me contacte en espérant dépasser ses concurrents en 15 jours ou remonter en 1re position
                   d&apos;ici la semaine prochaine, je décline. Non par manque d&apos;envie, mais parce que le SEO local ne fonctionne
-                  pas comme ça — et promettre l&apos;inverse serait vous mentir. Ce que j&apos;ai appris au fil des années :
+                  pas comme ça,et promettre l&apos;inverse serait vous mentir. Ce que j&apos;ai appris au fil des années :
                   les professionnels qui obtiennent les meilleurs résultats sont ceux qui comprennent que la visibilité
                   locale se <em>construit</em>, pas s&apos;achète. Ils répondent à leurs avis, mettent à jour leur fiche,
                   jouent le jeu sur la durée. Ces clients-là, je les garde longtemps.
@@ -893,7 +893,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            09 — CE QUE JE FAIS / EXPERT Q&A
+            09,CE QUE JE FAIS / EXPERT Q&A
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
@@ -977,7 +977,7 @@ export default function SeoArtisansPage() {
         <Sep />
 
         {/* ════════════════════════════════════════
-            10 — FAQ
+            10,FAQ
         ════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-4xl px-6 py-20 md:py-28">
