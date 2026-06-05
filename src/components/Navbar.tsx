@@ -9,7 +9,7 @@ import { inter } from '@/lib/fonts';
 const navLinks = [
   { label: 'Consultante SEO freelance', href: '/'            },
   { label: 'Blog',                      href: '/blog'        },
-  { label: 'À propos',                  href: '#qui-suis-je' },
+  { label: 'À propos',                  href: '/#qui-suis-je' },
 ];
 
 const offreItems = [
