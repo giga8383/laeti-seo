@@ -1,22 +1,28 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { List, X } from '@phosphor-icons/react';
+import { List, X, CaretDown } from '@phosphor-icons/react';
 import MagneticButton from './MagneticButton';
 import { inter } from '@/lib/fonts';
 
 const navLinks = [
   { label: 'Consultante SEO freelance', href: '/'            },
-  { label: 'Offre',                     href: '/offre'       },
   { label: 'Blog',                      href: '/blog'        },
   { label: 'À propos',                  href: '#qui-suis-je' },
+];
+
+const offreItems = [
+  { label: 'Audit SEO local', sub: 'Diagnostic Visibilité', href: '/audit-seo-local' },
+  { label: 'Sprint local 3 mois', sub: 'Accompagnement complet', href: '/offre' },
 ];
 
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0);
   const [isOverLight, setIsOverLight] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [offreOpen, setOffreOpen] = useState(false);
+  const offreRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const check = () => {
@@ -43,6 +49,17 @@ export default function Navbar() {
     window.addEventListener('scroll', check, { passive: true });
     check();
     return () => window.removeEventListener('scroll', check);
+  }, []);
+
+  // Ferme le dropdown Offre si clic en dehors
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (offreRef.current && !offreRef.current.contains(e.target as Node)) {
+        setOffreOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
   }, []);
 
   const p = Math.min(scrollY / 80, 1);
@@ -96,6 +113,82 @@ export default function Navbar() {
 
           {/* Liens desktop */}
           <div className="hidden items-center gap-7 lg:flex">
+
+            {/* Dropdown Offre */}
+            <div ref={offreRef} style={{ position: 'relative' }}>
+              <button
+                onClick={() => setOffreOpen((v) => !v)}
+                className="flex items-center gap-1 whitespace-nowrap"
+                style={{
+                  fontFamily: 'Inter, "Inter Fallback"',
+                  fontWeight: 500,
+                  fontSize: '14px',
+                  lineHeight: '21px',
+                  color: linkColor,
+                  transition: 'color 0.35s',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: 0,
+                }}
+              >
+                Offre
+                <CaretDown
+                  size={12}
+                  weight="bold"
+                  style={{
+                    transition: 'transform 0.2s',
+                    transform: offreOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                    color: linkColor,
+                  }}
+                />
+              </button>
+
+              <AnimatePresence>
+                {offreOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -6, scale: 0.97 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -6, scale: 0.97 }}
+                    transition={{ duration: 0.18, ease: [0.16, 1, 0.3, 1] }}
+                    style={{
+                      position: 'absolute',
+                      top: 'calc(100% + 12px)',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      minWidth: '220px',
+                      background: 'rgba(255,255,255,0.98)',
+                      borderRadius: '16px',
+                      boxShadow: '0 8px 32px -4px rgba(38,77,140,0.18), 0 2px 8px rgba(0,0,0,0.08)',
+                      border: '1px solid rgba(38,77,140,0.10)',
+                      padding: '8px',
+                      zIndex: 100,
+                    }}
+                  >
+                    {offreItems.map(({ label, sub, href }) => (
+                      <a
+                        key={href}
+                        href={href}
+                        onClick={() => setOffreOpen(false)}
+                        style={{ textDecoration: 'none', display: 'block' }}
+                      >
+                        <div
+                          className="rounded-xl px-4 py-3 transition-colors hover:bg-[rgba(38,77,140,0.06)]"
+                        >
+                          <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#1a3a72', lineHeight: '1.2' }}>
+                            {label}
+                          </p>
+                          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(38,77,140,0.55)', marginTop: '2px' }}>
+                            {sub}
+                          </p>
+                        </div>
+                      </a>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             {navLinks.map(({ label, href }) => (
               <a
                 key={href}
@@ -168,6 +261,24 @@ export default function Navbar() {
             }}
           >
             <div className="flex flex-col gap-1">
+              {/* Offre mobile */}
+              <div className="px-1 py-1">
+                <p style={{ fontFamily: inter.style.fontFamily, fontSize: '11px', fontWeight: 600, color: 'rgba(252,235,48,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '4px 12px 2px' }}>
+                  Offre
+                </p>
+                {offreItems.map(({ label, sub, href }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    onClick={() => setMenuOpen(false)}
+                    className="flex flex-col rounded-xl px-4 py-3 transition-colors hover:bg-white/10"
+                  >
+                    <span style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff' }}>{label}</span>
+                    <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)', marginTop: '1px' }}>{sub}</span>
+                  </a>
+                ))}
+              </div>
+              <div className="h-px mx-3" style={{ background: 'rgba(255,255,255,0.10)' }} />
               {navLinks.map(({ label, href }) => (
                 <a
                   key={href}
