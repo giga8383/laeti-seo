@@ -191,7 +191,7 @@ export default function Navbar() {
                         <div
                           className="rounded-xl px-4 py-3 transition-colors hover:bg-[rgba(38,77,140,0.06)]"
                         >
-                          <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#1a3a72', lineHeight: '1.2' }}>
+                          <p style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 700, fontSize: '14px', lineHeight: '20px', color: '#3262AB', textTransform: 'uppercase' }}>
                             {label}
                           </p>
                           <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(38,77,140,0.55)', marginTop: '2px' }}>
