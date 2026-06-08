@@ -53,15 +53,20 @@ const jsonLd = {
     },
     {
       '@type': 'Service',
-      name: 'Audit SEO local',
+      '@id': 'https://laeti-seo.fr/audit-seo-local#service',
+      name: 'Audit SEO local pour artisans',
+      serviceType: 'Audit SEO local',
+      description: "Diagnostic complet de visibilité locale pour artisans et professionnels de l'habitat : Google Business Profile, citations NAP, site web, concurrents locaux. Livraison en 5 jours ouvrés.",
+      url: 'https://laeti-seo.fr/audit-seo-local',
       provider: {
-        '@type': 'Person',
-        name: 'Laetitia Laghezza',
-        jobTitle: 'Consultante SEO local',
+        '@type': 'Organization',
+        name: 'Laeti SEO',
         url: 'https://laeti-seo.fr',
-        sameAs: 'https://www.linkedin.com/in/laetitia-laghezza/',
       },
-      description: "Audit SEO local complet : fiche Google Business Profile, site web, citations NAP, analyse concurrentielle et positionnement Local Pack. Rapport priorisé livré en 5 jours ouvrés.",
+      areaServed: {
+        '@type': 'Country',
+        name: 'France',
+      },
       offers: {
         '@type': 'Offer',
         name: 'Audit SEO local',
@@ -72,13 +77,14 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
+      '@id': 'https://laeti-seo.fr/audit-seo-local#faq',
       mainEntity: [
         {
           '@type': 'Question',
-          name: "Combien de temps dure l'audit SEO local ?",
+          name: "Combien de temps dure l'audit ?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Je livre le rapport complet en 5 jours ouvrés après réception de vos accès (Google Business Profile, Google Search Console si disponible). L'appel de restitution est planifié dans la foulée, selon vos disponibilités.",
+            text: "L'audit est réalisé en 5 jours ouvrés à partir de la réception de vos accès (Google Business Profile, Google Search Console si disponible). L'appel de restitution dure 45 minutes. Vous n'avez rien à préparer, je vous guide.",
           },
         },
         {
@@ -86,7 +92,7 @@ const jsonLd = {
           name: "Quelle est la différence entre un audit et une optimisation ?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "L'audit est un diagnostic : il identifie ce qui bloque votre visibilité locale et définit les priorités. L'optimisation, c'est l'étape suivante, la mise en œuvre des corrections. Les deux sont distincts. L'audit vous donne une feuille de route claire, que vous pouvez ensuite appliquer seul ou faire appliquer.",
+            text: "L'audit diagnostique : il identifie ce qui bloque votre visibilité locale et vous dit quoi faire, dans quel ordre. L'optimisation agit : elle met en œuvre les recommandations de l'audit. Les deux sont complémentaires. Certains clients appliquent eux-mêmes les recommandations. D'autres confient la mise en œuvre à la consultante.",
           },
         },
         {
@@ -94,7 +100,7 @@ const jsonLd = {
           name: "Mon entreprise est déjà visible sur Google, est-ce utile ?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Oui. Visible ne veut pas dire bien positionné. Si vous n'apparaissez pas dans le Local Pack sur vos requêtes principales, ou si vous êtes visible seulement dans un rayon de 500 mètres autour de votre adresse, vous perdez des clients chaque jour. L'audit mesure votre visibilité réelle, pas celle que vous voyez depuis votre propre ordinateur (qui est biaisée par votre historique de navigation).",
+            text: "Oui, et souvent encore plus. Être visible ne signifie pas être bien positionné. Un artisan peut apparaître en position 8 du Local Pack alors qu'il pourrait être en position 1 avec quelques corrections ciblées. L'audit identifie les gains rapides que vous laissez sur la table, même quand vous pensez que ça tourne.",
           },
         },
       ],
@@ -716,16 +722,16 @@ export default function AuditSEOLocalPage() {
             <div className="space-y-0 divide-y" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
               {[
                 {
-                  q: "Combien de temps dure l'audit SEO local ?",
-                  a: "Je livre le rapport complet en 5 jours ouvrés après réception de vos accès (Google Business Profile, Google Search Console si disponible). L'appel de restitution est planifié dans la foulée, selon vos disponibilités.",
+                  q: "Combien de temps dure l'audit ?",
+                  a: "L'audit est réalisé en 5 jours ouvrés à partir de la réception de vos accès (Google Business Profile, Google Search Console si disponible). L'appel de restitution dure 45 minutes. Vous n'avez rien à préparer, je vous guide.",
                 },
                 {
                   q: "Quelle est la différence entre un audit et une optimisation ?",
-                  a: "L'audit est un diagnostic : il identifie ce qui bloque votre visibilité locale et définit les priorités. L'optimisation, c'est l'étape suivante :la mise en œuvre des corrections. Les deux sont distincts. L'audit vous donne une feuille de route claire, que vous pouvez ensuite appliquer seul ou faire appliquer.",
+                  a: "L'audit diagnostique : il identifie ce qui bloque votre visibilité locale et vous dit quoi faire, dans quel ordre. L'optimisation agit : elle met en œuvre les recommandations de l'audit. Les deux sont complémentaires. Certains clients appliquent eux-mêmes les recommandations. D'autres confient la mise en œuvre à la consultante.",
                 },
                 {
                   q: "Mon entreprise est déjà visible sur Google, est-ce utile ?",
-                  a: "Oui. Visible ne veut pas dire bien positionné. Si vous n'apparaissez pas dans le Local Pack sur vos requêtes principales, ou si vous êtes visible seulement dans un rayon de 500 mètres autour de votre adresse, vous perdez des clients chaque jour. L'audit mesure votre visibilité réelle, pas celle que vous voyez depuis votre propre ordinateur (qui est biaisée par votre historique de navigation).",
+                  a: "Oui, et souvent encore plus. Être visible ne signifie pas être bien positionné. Un artisan peut apparaître en position 8 du Local Pack alors qu'il pourrait être en position 1 avec quelques corrections ciblées. L'audit identifie les gains rapides que vous laissez sur la table, même quand vous pensez que ça tourne.",
                 },
               ].map((faq, i) => (
                 <ScrollReveal key={i} delay={i * 0.06}>
