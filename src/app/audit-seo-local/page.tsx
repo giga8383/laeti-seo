@@ -705,9 +705,8 @@ export default function AuditSEOLocalPage() {
                       Professionnel de l&apos;assainissement · Visité en juin 2025
                     </p>
                   </figcaption>
-                  {/* TODO: remplacer href par l'URL exacte de ta fiche Google Business */}
                   <a
-                    href="https://g.page/r/YOUR_GOOGLE_BUSINESS_PROFILE_ID/review"
+                    href="https://share.google/8p7kzzPxMvjpsUmLL"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
