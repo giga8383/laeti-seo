@@ -572,15 +572,15 @@ export default function AuditSEOLocalPage() {
         {/* ══════════════════════════════════════════
             POUR QUI / PAS POUR QUI
         ══════════════════════════════════════════ */}
-        <section className="relative bg-transparent">
+        <section className="relative" style={{ background: '#ffffff' }}>
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
               <h2
-                className="mb-12 text-white"
-                style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}
+                className="mb-12"
+                style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15', color: '#0f1e48' }}
               >
                 Cet audit est fait pour vous{' '}
-                <span style={{ color: 'rgba(255,255,255,0.35)' }}>si vous êtes professionnel de l&apos;habitat avec une zone locale</span>
+                <span style={{ color: 'rgba(15,30,72,0.40)' }}>si vous êtes professionnel de l&apos;habitat avec une zone locale</span>
               </h2>
             </ScrollReveal>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -589,7 +589,7 @@ export default function AuditSEOLocalPage() {
                   className="h-full rounded-[2rem] p-10"
                   style={{
                     background: 'linear-gradient(145deg, #2a57b8 0%, #3262ab 55%, #1d3f8f 100%)',
-                    boxShadow: '0 30px 60px -15px rgba(50,98,171,0.45)',
+                    boxShadow: '0 30px 60px -15px rgba(50,98,171,0.30)',
                   }}
                 >
                   <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#fceb30' }} />
@@ -613,19 +613,19 @@ export default function AuditSEOLocalPage() {
               <ScrollReveal delay={0.2}>
                 <div
                   className="h-full rounded-[2rem] p-10"
-                  style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.10)' }}
+                  style={{ background: '#f4f6fb', border: '1px solid rgba(15,30,72,0.10)' }}
                 >
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: 'rgba(255,255,255,0.25)' }} />
-                  <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'rgba(255,255,255,0.50)' }}>
-                    N&apos;est <span style={{ color: 'rgba(255,255,255,0.85)' }}>pas adapté</span>
+                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: 'rgba(15,30,72,0.20)' }} />
+                  <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'rgba(15,30,72,0.40)' }}>
+                    N&apos;est <span style={{ color: '#0f1e48' }}>pas adapté</span>
                   </h3>
                   <ul className="space-y-5">
                     {notForYou.map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,255,255,0.08)' }}>
-                          <X size={11} weight="bold" color="rgba(255,255,255,0.5)" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(15,30,72,0.08)' }}>
+                          <X size={11} weight="bold" color="rgba(15,30,72,0.40)" />
                         </span>
-                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(255,255,255,0.55)' }}>
+                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(15,30,72,0.65)' }}>
                           {item}
                         </span>
                       </li>
