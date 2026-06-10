@@ -612,20 +612,27 @@ export default function AuditSEOLocalPage() {
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <div
-                  className="h-full rounded-[2rem] p-10"
-                  style={{ background: '#f4f6fb', border: '1px solid rgba(15,30,72,0.10)' }}
+                  className="relative h-full overflow-hidden rounded-[2rem] p-10"
+                  style={{
+                    background: 'linear-gradient(145deg, #7dd3fc 0%, #bae6fd 55%, #e0f2fe 100%)',
+                    border: '1px solid rgba(125,211,252,0.6)',
+                    boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(125,211,252,0.45), 0 0 80px -8px rgba(56,189,248,0.25), 0 24px 60px -16px rgba(125,211,252,0.30)',
+                  }}
                 >
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: 'rgba(15,30,72,0.20)' }} />
-                  <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'rgba(15,30,72,0.40)' }}>
-                    N&apos;est <span style={{ color: '#0f1e48' }}>pas adapté</span>
+                  <div className="pointer-events-none absolute -right-6 -top-6 opacity-[0.25]">
+                    <X size={180} weight="bold" color="#ffffff" />
+                  </div>
+                  <div className="mb-6 h-[3px] w-10 rounded-full bg-white" />
+                  <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#264d8c' }}>
+                    N&apos;est <span style={{ color: '#ffffff' }}>pas adapté</span>
                   </h3>
                   <ul className="space-y-5">
                     {notForYou.map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(15,30,72,0.08)' }}>
-                          <X size={11} weight="bold" color="rgba(15,30,72,0.40)" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#1e40af]/50">
+                          <X size={11} weight="bold" color="#ffffff" />
                         </span>
-                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(15,30,72,0.65)' }}>
+                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(38,77,140,0.80)' }}>
                           {item}
                         </span>
                       </li>
