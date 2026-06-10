@@ -580,7 +580,7 @@ export default function AuditSEOLocalPage() {
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15', color: '#0f1e48' }}
               >
                 Cet audit est fait pour vous{' '}
-                <span style={{ color: 'rgba(15,30,72,0.40)' }}>si vous êtes professionnel de l&apos;habitat avec une zone locale</span>
+                <span style={{ color: '#3262ab' }}>si vous êtes professionnel de l&apos;habitat avec une zone locale</span>
               </h2>
             </ScrollReveal>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
