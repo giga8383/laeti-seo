@@ -5,6 +5,7 @@ import CookieConsent from "@/components/CookieConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Footer from "@/components/Footer";
 import PreFooter from "@/components/PreFooter";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { outfit, inter } from "@/lib/fonts";
 import "./globals.css";
 
@@ -75,6 +76,7 @@ export default function RootLayout({
         <div className="relative z-0">{children}</div>
         <PreFooter />
         <Footer />
+        <WhatsAppButton />
         <CookieConsent />
         <GoogleAnalytics />
       </body>
