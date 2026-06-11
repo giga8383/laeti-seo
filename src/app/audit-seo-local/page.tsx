@@ -233,122 +233,351 @@ export default function AuditSEOLocalPage() {
         ══════════════════════════════════════════ */}
         <section className="relative bg-transparent" style={{ paddingTop: '120px' }}>
           <div className="mx-auto max-w-7xl px-6 pb-0 pt-12 md:pt-20">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_360px] lg:items-start">
 
-            {/* Breadcrumb */}
-            <ScrollReveal>
-              <p
-                className="mb-6 flex items-center gap-2 text-white/40"
-                style={{ fontFamily: inter.style.fontFamily, fontSize: '13px' }}
-              >
-                <Link href="/" className="hover:text-white/70 transition-colors">Accueil</Link>
-                <span>/</span>
-                <Link href="/offre" className="hover:text-white/70 transition-colors">Offre</Link>
-                <span>/</span>
-                <span className="text-white/65">Audit SEO local</span>
-              </p>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.05}>
-              <p
-                className="mb-4 uppercase tracking-widest"
-                style={{
-                  fontFamily: inter.style.fontFamily,
-                  fontWeight: 600,
-                  fontSize: '13px',
-                  color: '#fceb30',
-                  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)',
-                }}
-              >
-                Diagnostic visibilité
-              </p>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.09}>
-              <h1
-                className="mb-6 text-white"
-                style={{
-                  fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, sans-serif',
-                  fontWeight: 700,
-                  fontSize: 'clamp(36px, 5.5vw, 64px)',
-                  lineHeight: '1.08',
-                }}
-              >
-                Audit SEO local :{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
-                  identifiez pourquoi vos clients ne vous trouvent pas
-                </span>
-              </h1>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.14}>
-              <p
-                className="mb-8 max-w-[62ch] text-white/60"
-                style={{ fontFamily: inter.style.fontFamily, fontSize: '17px', lineHeight: '28px' }}
-              >
-                Vous êtes présent sur Google, mais vos concurrents apparaissent avant vous.
-                Un audit SEO local identifie précisément les blocages qui vous coûtent des clients :
-                fiche Google Business Profile incomplète, signaux de confiance manquants, citations
-                locales incohérentes. Je mène le diagnostic personnellement, vous recevez le rapport
-                en 5 jours avec un plan d&apos;action priorisé, applicable immédiatement.
-              </p>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.18}>
-              <div className="flex flex-wrap items-center gap-4 mb-14">
-                <Link
-                  href="/offre"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
-                  style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
-                >
-                  Demander mon audit SEO local
-                  <ArrowRight size={15} weight="bold" />
-                </Link>
-              </div>
-            </ScrollReveal>
-
-            {/* Carte auteure E-E-A-T */}
-            <ScrollReveal delay={0.22}>
-              <div
-                className="inline-flex items-center gap-4 rounded-2xl px-5 py-4 mb-6"
-                style={{
-                  background: 'rgba(255,255,255,0.05)',
-                  border: '1px solid rgba(255,255,255,0.12)',
-                }}
-              >
-                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full"
-                  style={{ border: '2px solid rgba(252,235,48,0.5)' }}>
-                  <Image
-                    src="/laeti-1.jpg"
-                    alt="Laetitia Laghezza, consultante SEO local"
-                    fill
-                    className="object-cover object-center"
-                    sizes="48px"
-                  />
-                </div>
-                <div>
-                  <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff' }}>
-                    Laetitia Laghezza
+              {/* ── Colonne gauche : texte ── */}
+              <div>
+                {/* Breadcrumb */}
+                <ScrollReveal>
+                  <p
+                    className="mb-6 flex items-center gap-2 text-white/40"
+                    style={{ fontFamily: inter.style.fontFamily, fontSize: '13px' }}
+                  >
+                    <Link href="/" className="hover:text-white/70 transition-colors">Accueil</Link>
+                    <span>/</span>
+                    <Link href="/offre" className="hover:text-white/70 transition-colors">Offre</Link>
+                    <span>/</span>
+                    <span className="text-white/65">Audit SEO local</span>
                   </p>
-                  <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.50)', marginTop: '1px' }}>
-                    Consultante SEO local · 12+ ans d&apos;expérience
-                  </p>
-                </div>
-                <a
-                  href="https://www.linkedin.com/in/laetitia-laghezza/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-2 flex items-center gap-1 transition-opacity hover:opacity-80"
-                  style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(252,235,48,0.75)' }}
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                  LinkedIn
-                  <ArrowSquareOut size={11} weight="bold" />
-                </a>
-              </div>
-            </ScrollReveal>
+                </ScrollReveal>
 
+                <ScrollReveal delay={0.05}>
+                  <p
+                    className="mb-4 uppercase tracking-widest"
+                    style={{
+                      fontFamily: inter.style.fontFamily,
+                      fontWeight: 600,
+                      fontSize: '13px',
+                      color: '#fceb30',
+                      textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)',
+                    }}
+                  >
+                    Diagnostic visibilité
+                  </p>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.09}>
+                  <h1
+                    className="mb-6 text-white"
+                    style={{
+                      fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, sans-serif',
+                      fontWeight: 700,
+                      fontSize: 'clamp(36px, 5.5vw, 64px)',
+                      lineHeight: '1.08',
+                    }}
+                  >
+                    Audit SEO local :{' '}
+                    <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                      identifiez pourquoi vos clients ne vous trouvent pas
+                    </span>
+                  </h1>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.14}>
+                  <p
+                    className="mb-8 max-w-[62ch] text-white/60"
+                    style={{ fontFamily: inter.style.fontFamily, fontSize: '17px', lineHeight: '28px' }}
+                  >
+                    Vous êtes présent sur Google, mais vos concurrents apparaissent avant vous.
+                    Un audit SEO local identifie précisément les blocages qui vous coûtent des clients :
+                    fiche Google Business Profile incomplète, signaux de confiance manquants, citations
+                    locales incohérentes. Je mène le diagnostic personnellement, vous recevez le rapport
+                    en 5 jours avec un plan d&apos;action priorisé, applicable immédiatement.
+                  </p>
+                </ScrollReveal>
+
+                <ScrollReveal delay={0.18}>
+                  <div className="flex flex-wrap items-center gap-4 mb-14">
+                    <Link
+                      href="/offre"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                      style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
+                    >
+                      Demander mon audit SEO local
+                      <ArrowRight size={15} weight="bold" />
+                    </Link>
+                  </div>
+                </ScrollReveal>
+
+                {/* Carte auteure E-E-A-T */}
+                <ScrollReveal delay={0.22}>
+                  <div
+                    className="inline-flex items-center gap-4 rounded-2xl px-5 py-4 mb-6"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '1px solid rgba(255,255,255,0.12)',
+                    }}
+                  >
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full"
+                      style={{ border: '2px solid rgba(252,235,48,0.5)' }}>
+                      <Image
+                        src="/laeti-1.jpg"
+                        alt="Laetitia Laghezza, consultante SEO local"
+                        fill
+                        className="object-cover object-center"
+                        sizes="48px"
+                      />
+                    </div>
+                    <div>
+                      <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff' }}>
+                        Laetitia Laghezza
+                      </p>
+                      <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.50)', marginTop: '1px' }}>
+                        Consultante SEO local · 12+ ans d&apos;expérience
+                      </p>
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/laetitia-laghezza/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2 flex items-center gap-1 transition-opacity hover:opacity-80"
+                      style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(252,235,48,0.75)' }}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                      LinkedIn
+                      <ArrowSquareOut size={11} weight="bold" />
+                    </a>
+                  </div>
+                </ScrollReveal>
+              </div>
+
+              {/* ── Colonne droite : mock fiche Google anonymisée ── */}
+              <ScrollReveal delay={0.28}>
+                <div className="hidden lg:block sticky top-28">
+
+                  {/* Label flottant */}
+                  <div className="mb-3 flex items-center justify-end gap-2">
+                    <span style={{
+                      fontFamily: inter.style.fontFamily,
+                      fontSize: '11px',
+                      fontWeight: 600,
+                      color: 'rgba(255,255,255,0.35)',
+                      letterSpacing: '0.06em',
+                      textTransform: 'uppercase',
+                    }}>
+                      Exemple de fiche · données anonymisées
+                    </span>
+                  </div>
+
+                  {/* Carte GBP */}
+                  <a
+                    href="https://maps.app.goo.gl/RJ82UwdqE6LWWZxr6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none', display: 'block' }}
+                  >
+                    <div
+                      className="overflow-hidden rounded-[20px]"
+                      style={{
+                        background: '#ffffff',
+                        boxShadow: '0 24px 60px -12px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.08)',
+                      }}
+                    >
+                      {/* Mini-carte simulée */}
+                      <div
+                        className="relative h-36 w-full overflow-hidden"
+                        style={{
+                          background: 'linear-gradient(160deg, #e8f0d8 0%, #d4e6c3 30%, #c8ddb5 60%, #b8cf9e 100%)',
+                        }}
+                      >
+                        {/* Grille de rue stylisée */}
+                        <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.35 }}>
+                          <line x1="0" y1="60" x2="100%" y2="60" stroke="#8fae6a" strokeWidth="8"/>
+                          <line x1="0" y1="110" x2="100%" y2="110" stroke="#8fae6a" strokeWidth="4"/>
+                          <line x1="80" y1="0" x2="80" y2="100%" stroke="#8fae6a" strokeWidth="6"/>
+                          <line x1="220" y1="0" x2="220" y2="100%" stroke="#8fae6a" strokeWidth="4"/>
+                          <rect x="90" y="20" width="50" height="30" rx="3" fill="#c5d8a0" stroke="#8fae6a" strokeWidth="1"/>
+                          <rect x="150" y="25" width="60" height="25" rx="3" fill="#c5d8a0" stroke="#8fae6a" strokeWidth="1"/>
+                          <rect x="90" y="70" width="40" height="30" rx="3" fill="#c5d8a0" stroke="#8fae6a" strokeWidth="1"/>
+                        </svg>
+                        {/* Pin rouge */}
+                        <div style={{
+                          position: 'absolute',
+                          left: '50%',
+                          top: '40%',
+                          transform: 'translate(-50%, -50%)',
+                          zIndex: 2,
+                        }}>
+                          <div style={{
+                            width: '28px',
+                            height: '28px',
+                            background: '#EA4335',
+                            borderRadius: '50% 50% 50% 0',
+                            transform: 'rotate(-45deg)',
+                            boxShadow: '0 2px 8px rgba(234,67,53,0.5)',
+                          }} />
+                          <div style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -65%) rotate(45deg)',
+                            width: '10px',
+                            height: '10px',
+                            background: '#ffffff',
+                            borderRadius: '50%',
+                          }} />
+                        </div>
+                        {/* Logo Google Maps */}
+                        <div style={{
+                          position: 'absolute',
+                          bottom: '8px',
+                          right: '10px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          background: 'rgba(255,255,255,0.85)',
+                          borderRadius: '4px',
+                          padding: '2px 6px',
+                        }}>
+                          <svg width="12" height="12" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#EA4335"/>
+                          </svg>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '9px', fontWeight: 700, color: '#555', letterSpacing: '0.02em' }}>Google Maps</span>
+                        </div>
+                      </div>
+
+                      {/* Corps de la fiche */}
+                      <div style={{ padding: '16px 16px 12px' }}>
+
+                        {/* Nom anonymisé */}
+                        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '4px' }}>
+                          <div>
+                            <div style={{
+                              width: '160px',
+                              height: '20px',
+                              background: '#e0e0e0',
+                              borderRadius: '4px',
+                              filter: 'blur(4px)',
+                              marginBottom: '6px',
+                            }} />
+                            {/* Catégorie */}
+                            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#70757a', margin: 0 }}>
+                              Professionnel de l&apos;habitat
+                            </p>
+                          </div>
+                          {/* Logo Google */}
+                          <svg width="18" height="18" viewBox="0 0 24 24" style={{ flexShrink: 0, marginTop: '2px' }}>
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                          </svg>
+                        </div>
+
+                        {/* Étoiles */}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '12px' }}>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontWeight: 700, fontSize: '14px', color: '#202124' }}>5,0</span>
+                          <div style={{ display: 'flex', gap: '1px' }}>
+                            {Array.from({ length: 5 }).map((_, i) => (
+                              <svg key={i} width="13" height="13" viewBox="0 0 24 24" fill="#FBBC04">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                              </svg>
+                            ))}
+                          </div>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '13px', color: '#70757a' }}>· 12 avis</span>
+                        </div>
+
+                        {/* Boutons d'action */}
+                        <div style={{ display: 'flex', gap: '6px', marginBottom: '14px' }}>
+                          {[
+                            { icon: '🌐', label: 'Site web' },
+                            { icon: '🗺️', label: 'Itinéraire' },
+                            { icon: '📞', label: 'Appeler' },
+                          ].map(({ icon, label }) => (
+                            <div
+                              key={label}
+                              style={{
+                                flex: 1,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                gap: '3px',
+                                background: '#f1f3f4',
+                                borderRadius: '8px',
+                                padding: '7px 4px',
+                                cursor: 'default',
+                              }}
+                            >
+                              <span style={{ fontSize: '14px' }}>{icon}</span>
+                              <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10px', color: '#1a73e8', fontWeight: 500 }}>{label}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Séparateur */}
+                        <div style={{ height: '1px', background: '#e0e0e0', margin: '0 -16px 10px' }} />
+
+                        {/* Infos anonymisées */}
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '9px' }}>
+                          {/* Adresse */}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#70757a" style={{ flexShrink: 0 }}>
+                              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <div style={{ width: '140px', height: '12px', background: '#e0e0e0', borderRadius: '3px', filter: 'blur(4px)' }} />
+                          </div>
+                          {/* Horaires */}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#70757a" style={{ flexShrink: 0 }}>
+                              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+                            </svg>
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#188038', fontWeight: 600 }}>
+                              Ouvert
+                            </span>
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#70757a' }}>
+                              · Ferme à 18:00
+                            </span>
+                          </div>
+                          {/* Téléphone */}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#70757a" style={{ flexShrink: 0 }}>
+                              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <div style={{ width: '100px', height: '12px', background: '#e0e0e0', borderRadius: '3px', filter: 'blur(4px)' }} />
+                          </div>
+                        </div>
+
+                        {/* Lien "Voir sur Google Maps" */}
+                        <div style={{ marginTop: '14px', paddingTop: '10px', borderTop: '1px solid #e0e0e0', textAlign: 'center' }}>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#1a73e8', fontWeight: 500 }}>
+                            Voir sur Google Maps ↗
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </a>
+
+                  {/* Badge "ce qu'on analyse" */}
+                  <div
+                    className="mt-3 flex items-center gap-2 rounded-xl px-4 py-3"
+                    style={{
+                      background: 'rgba(252,235,48,0.08)',
+                      border: '1px solid rgba(252,235,48,0.18)',
+                    }}
+                  >
+                    <Check size={14} weight="bold" color="#fceb30" style={{ flexShrink: 0 }} />
+                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.65)', lineHeight: '18px' }}>
+                      C&apos;est exactement ce type de fiche que j&apos;analyse dans votre audit.
+                    </p>
+                  </div>
+
+                </div>
+              </ScrollReveal>
+
+            </div>
           </div>
         </section>
 
