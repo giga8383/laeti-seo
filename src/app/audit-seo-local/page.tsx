@@ -731,34 +731,95 @@ export default function AuditSEOLocalPage() {
               {/* Placeholder visuels */}
               <ScrollReveal delay={0.15}>
                 <div className="space-y-4">
-                  {/* Capture GBP auditée */}
-                  <div
-                    className="overflow-hidden rounded-2xl"
-                    style={{ border: '1px solid rgba(255,255,255,0.12)' }}
+                  {/* Fiche GBP anonymisée */}
+                  <a
+                    href="https://maps.app.goo.gl/RJ82UwdqE6LWWZxr6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none', display: 'block' }}
                   >
                     <div
-                      className="flex items-center justify-center"
+                      className="overflow-hidden rounded-2xl"
                       style={{
-                        height: '200px',
-                        background: 'linear-gradient(135deg, rgba(38,77,140,0.6) 0%, rgba(15,30,72,0.9) 100%)',
+                        background: '#ffffff',
+                        boxShadow: '0 8px 32px -8px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06)',
                       }}
                     >
-                      {/* ⚠️ À REMPLACER par une capture d'écran anonymisée d'une vraie fiche GBP auditée */}
-                      <div className="text-center px-6">
-                        <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: 'rgba(252,235,48,0.8)' }}>
-                          Exemple de fiche GBP auditée
-                        </p>
-                        <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.40)', marginTop: '6px' }}>
-                          Capture d&apos;écran anonymisée à intégrer
-                        </p>
+                      {/* Mini-carte */}
+                      <div className="relative h-28 w-full overflow-hidden" style={{ background: 'linear-gradient(160deg, #e8f0d8 0%, #d4e6c3 30%, #c8ddb5 60%, #b8cf9e 100%)' }}>
+                        <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.35 }}>
+                          <line x1="0" y1="50" x2="100%" y2="50" stroke="#8fae6a" strokeWidth="8"/>
+                          <line x1="0" y1="90" x2="100%" y2="90" stroke="#8fae6a" strokeWidth="4"/>
+                          <line x1="100" y1="0" x2="100" y2="100%" stroke="#8fae6a" strokeWidth="6"/>
+                          <line x1="280" y1="0" x2="280" y2="100%" stroke="#8fae6a" strokeWidth="4"/>
+                          <rect x="110" y="10" width="50" height="28" rx="3" fill="#c5d8a0" stroke="#8fae6a" strokeWidth="1"/>
+                          <rect x="175" y="15" width="70" height="24" rx="3" fill="#c5d8a0" stroke="#8fae6a" strokeWidth="1"/>
+                        </svg>
+                        <div style={{ position: 'absolute', left: '50%', top: '42%', transform: 'translate(-50%,-50%)', zIndex: 2 }}>
+                          <div style={{ width: '22px', height: '22px', background: '#EA4335', borderRadius: '50% 50% 50% 0', transform: 'rotate(-45deg)', boxShadow: '0 2px 6px rgba(234,67,53,0.5)' }} />
+                          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-65%) rotate(45deg)', width: '8px', height: '8px', background: '#ffffff', borderRadius: '50%' }} />
+                        </div>
+                        <div style={{ position: 'absolute', bottom: '6px', right: '8px', display: 'flex', alignItems: 'center', gap: '3px', background: 'rgba(255,255,255,0.88)', borderRadius: '3px', padding: '2px 5px' }}>
+                          <svg width="10" height="10" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#EA4335"/></svg>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '8px', fontWeight: 700, color: '#555' }}>Google Maps</span>
+                        </div>
+                      </div>
+
+                      {/* Corps */}
+                      <div style={{ padding: '14px 14px 10px' }}>
+                        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '4px' }}>
+                          <div>
+                            <div style={{ width: '130px', height: '16px', background: '#e0e0e0', borderRadius: '3px', filter: 'blur(4px)', marginBottom: '5px' }} />
+                            <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#70757a', margin: 0 }}>Professionnel de l&apos;habitat</p>
+                          </div>
+                          <svg width="16" height="16" viewBox="0 0 24 24" style={{ flexShrink: 0 }}>
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                          </svg>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '10px' }}>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontWeight: 700, fontSize: '13px', color: '#202124' }}>5,0</span>
+                          <div style={{ display: 'flex', gap: '1px' }}>
+                            {Array.from({ length: 5 }).map((_, i) => (
+                              <svg key={i} width="11" height="11" viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            ))}
+                          </div>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#70757a' }}>· 12 avis</span>
+                        </div>
+                        <div style={{ display: 'flex', gap: '5px', marginBottom: '12px' }}>
+                          {['🌐 Site web', '🗺️ Itinéraire', '📞 Appeler'].map((btn) => (
+                            <div key={btn} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px', background: '#f1f3f4', borderRadius: '6px', padding: '5px 3px', cursor: 'default' }}>
+                              <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '9px', color: '#1a73e8', fontWeight: 500, textAlign: 'center' }}>{btn}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <div style={{ height: '1px', background: '#e0e0e0', margin: '0 -14px 10px' }} />
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="#70757a" style={{ flexShrink: 0 }}><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            <div style={{ width: '120px', height: '10px', background: '#e0e0e0', borderRadius: '3px', filter: 'blur(4px)' }} />
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="#70757a" style={{ flexShrink: 0 }}><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#188038', fontWeight: 600 }}>Ouvert</span>
+                            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#70757a' }}>· Ferme à 18:00</span>
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="#70757a" style={{ flexShrink: 0 }}><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <div style={{ width: '90px', height: '10px', background: '#e0e0e0', borderRadius: '3px', filter: 'blur(4px)' }} />
+                          </div>
+                        </div>
+                        <div style={{ marginTop: '12px', paddingTop: '8px', borderTop: '1px solid #e0e0e0', textAlign: 'center' }}>
+                          <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '11px', color: '#1a73e8', fontWeight: 500 }}>Voir sur Google Maps ↗</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="px-4 py-3" style={{ background: 'rgba(255,255,255,0.03)' }}>
-                      <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>
-                        Exemple de fiche Google Business Profile avant/après audit
-                      </p>
-                    </div>
-                  </div>
+                  </a>
+                  <p style={{ fontFamily: inter.style.fontFamily, fontSize: '11px', color: 'rgba(255,255,255,0.30)', marginTop: '8px', textAlign: 'center', letterSpacing: '0.04em' }}>
+                    Données anonymisées · exemple de fiche analysée
+                  </p>
                   {/* Rapport PDF */}
                   <div
                     className="overflow-hidden rounded-2xl"
