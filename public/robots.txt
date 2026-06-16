@@ -39,4 +39,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://laetiseo.fr/sitemap.xml
+Sitemap: https://laeti-seo.fr/sitemap.xml
