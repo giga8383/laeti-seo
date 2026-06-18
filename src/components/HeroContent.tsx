@@ -105,7 +105,9 @@ export default function HeroContent() {
       <div className="flex flex-wrap items-center gap-4">
         <MagneticButton
           as="a"
-          href="/offre"
+          href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group flex items-center gap-2.5 rounded-full bg-[#fceb30] px-7 py-3.5 text-[#3262ab] active:scale-[0.98]"
           style={{
             fontFamily: 'Inter, "Inter Fallback"',

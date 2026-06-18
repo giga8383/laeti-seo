@@ -11,6 +11,8 @@ interface MagneticButtonProps {
   strength?: number;
   as?: 'button' | 'a';
   href?: string;
+  target?: string;
+  rel?: string;
 }
 
 export default function MagneticButton({
@@ -21,6 +23,8 @@ export default function MagneticButton({
   strength = 0.3,
   as = 'button',
   href,
+  target,
+  rel,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLButtonElement & HTMLAnchorElement>(null);
 
@@ -47,6 +51,8 @@ export default function MagneticButton({
     <Tag
       ref={ref}
       href={as === 'a' ? href : undefined}
+      target={as === 'a' ? target : undefined}
+      rel={as === 'a' ? rel : undefined}
       style={{ x: springX, y: springY, ...style }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

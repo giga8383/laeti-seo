@@ -298,14 +298,16 @@ export default function AuditSEOLocalPage() {
 
                 <ScrollReveal delay={0.18}>
                   <div className="flex flex-wrap items-center gap-4 mb-14">
-                    <Link
-                      href="/offre"
+                    <a
+                      href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                       style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                     >
                       Demander mon audit SEO local
                       <ArrowRight size={15} weight="bold" />
-                    </Link>
+                    </a>
                   </div>
                 </ScrollReveal>
 
@@ -1156,14 +1158,16 @@ export default function AuditSEOLocalPage() {
                 Audit SEO local complet. Rapport structuré livré en 5 jours ouvrés.
                 Appel de restitution de 45 min inclus. 190 €. Sans engagement.
               </p>
-              <Link
-                href="/offre"
+              <a
+                href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
               >
                 Demander mon audit SEO local
                 <ArrowRight size={15} weight="bold" />
-              </Link>
+              </a>
             </ScrollReveal>
           </div>
         </section>

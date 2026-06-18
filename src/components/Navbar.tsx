@@ -229,7 +229,9 @@ export default function Navbar() {
           <div className="flex items-center justify-end gap-3">
             <MagneticButton
               as="a"
-              href="/offre"
+              href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group hidden lg:flex items-center gap-2 rounded-full bg-[#fceb30] px-4 py-2 text-[#264d8c] active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '12px', lineHeight: '17px', whiteSpace: 'nowrap' }}
               strength={0.25}
@@ -308,7 +310,9 @@ export default function Navbar() {
               ))}
               <div className="mt-2 border-t border-white/10 pt-3">
                 <a
-                  href="#offre"
+                  href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMenuOpen(false)}
                   className="flex w-full items-center justify-center gap-2 rounded-full bg-[#fceb30] py-3 text-sm font-bold text-[#264d8c]"
                   style={{ fontFamily: inter.style.fontFamily }}

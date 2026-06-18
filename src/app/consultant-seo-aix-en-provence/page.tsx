@@ -1344,14 +1344,16 @@ export default function ConsultantSEOAixPage() {
                 Livré sous 5 jours. 190 €. Sans engagement.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                <Link
-                  href="/offre"
+                <a
+                  href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Réserver mon diagnostic · 190 €
                   <ArrowRight size={15} weight="bold" />
-                </Link>
+                </a>
                 <Link
                   href="/offre"
                   className="inline-flex items-center gap-2 text-white/50 transition-colors hover:text-white/80"
