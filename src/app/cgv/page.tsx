@@ -4,26 +4,26 @@ import { inter } from '@/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'Conditions Générales de Vente | Laeti SEO',
-  description: 'CGV de Laeti SEO — conditions de vente des prestations de consulting SEO local.',
+  description: 'CGV de Laeti SEO, conditions de vente des prestations de consulting SEO local.',
   alternates: { canonical: 'https://laeti-seo.fr/cgv' },
   robots: { index: false, follow: false },
 };
 
 const articles = [
-  { id: 'art1',  label: 'Article 1 — Objet' },
-  { id: 'art2',  label: 'Article 2 — Champ d\'application' },
-  { id: 'art3',  label: 'Article 3 — Types de prestations' },
-  { id: 'art4',  label: 'Article 4 — Durée' },
-  { id: 'art5',  label: 'Article 5 — Commande et acceptation' },
-  { id: 'art6',  label: 'Article 6 — Obligation de moyens' },
-  { id: 'art7',  label: 'Article 7 — Tarifs et paiement' },
-  { id: 'art8',  label: 'Article 8 — Livrables et délais' },
-  { id: 'art9',  label: 'Article 9 — Propriété intellectuelle' },
-  { id: 'art10', label: 'Article 10 — Confidentialité' },
-  { id: 'art11', label: 'Article 11 — Non-dénigrement' },
-  { id: 'art12', label: 'Article 12 — Responsabilité' },
-  { id: 'art13', label: 'Article 13 — Droit de rétractation' },
-  { id: 'art14', label: 'Article 14 — Loi applicable et litiges' },
+  { id: 'art1',  label: 'Article 1 :Objet' },
+  { id: 'art2',  label: 'Article 2 :Champ d\'application' },
+  { id: 'art3',  label: 'Article 3 :Types de prestations' },
+  { id: 'art4',  label: 'Article 4 :Durée' },
+  { id: 'art5',  label: 'Article 5 :Commande et acceptation' },
+  { id: 'art6',  label: 'Article 6 :Obligation de moyens' },
+  { id: 'art7',  label: 'Article 7 :Tarifs et paiement' },
+  { id: 'art8',  label: 'Article 8 :Livrables et délais' },
+  { id: 'art9',  label: 'Article 9 :Propriété intellectuelle' },
+  { id: 'art10', label: 'Article 10 :Confidentialité' },
+  { id: 'art11', label: 'Article 11 :Non-dénigrement' },
+  { id: 'art12', label: 'Article 12 :Responsabilité' },
+  { id: 'art13', label: 'Article 13 :Droit de rétractation' },
+  { id: 'art14', label: 'Article 14 :Loi applicable et litiges' },
 ];
 
 const h2Style = {
@@ -66,8 +66,8 @@ export default function CGV() {
             Dernière mise à jour : juin 2026
           </p>
           <p className="mb-10" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.55)' }}>
-            Prestataire : <strong style={{ color: 'rgba(255,255,255,0.85)' }}>Laetitia Laghezza</strong> — Auto-entrepreneur — SIRET 52276783900023 —
-            15 Rue du Commerce, 83910 Pourrières —{' '}
+            Prestataire : <strong style={{ color: 'rgba(255,255,255,0.85)' }}>Laetitia Laghezza</strong>, Auto-entrepreneur, SIRET 52276783900023,
+            15 Rue du Commerce, 83910 Pourrières.{' '}
             <a href="mailto:contact@laeti-seo.fr" style={{ color: '#fceb30' }}>contact@laeti-seo.fr</a>
           </p>
 
@@ -110,7 +110,7 @@ export default function CGV() {
           >
 
             <section id="art1">
-              <h2 style={h2Style}>Article 1 — Objet</h2>
+              <h2 style={h2Style}>Article 1 :Objet</h2>
               <div style={bodyStyle}>
                 <p>
                   Les présentes Conditions Générales de Vente régissent les relations contractuelles entre
@@ -123,7 +123,7 @@ export default function CGV() {
             </section>
 
             <section id="art2">
-              <h2 style={h2Style}>Article 2 — Champ d&apos;application</h2>
+              <h2 style={h2Style}>Article 2 :Champ d&apos;application</h2>
               <div style={bodyStyle}>
                 <p>
                   Les présentes CGV s&apos;appliquent à l&apos;ensemble des services fournis par le Prestataire,
@@ -134,12 +134,12 @@ export default function CGV() {
             </section>
 
             <section id="art3">
-              <h2 style={h2Style}>Article 3 — Types de prestations</h2>
+              <h2 style={h2Style}>Article 3 :Types de prestations</h2>
               <div style={bodyStyle}>
                 <p className="mb-4">Le Prestataire propose deux types de prestations :</p>
                 <div className="space-y-3">
                   <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(50,98,171,0.12)' }}>
-                    <strong style={{ color: '#0f1e48' }}>Diagnostic visibilité locale — 190 €</strong>
+                    <strong style={{ color: '#0f1e48' }}>Diagnostic visibilité locale · 190 €</strong>
                     <p className="mt-1" style={{ fontSize: '14px' }}>
                       Prestation ponctuelle. Analyse complète de la présence Google locale (fiche Google Business
                       Profile, avis clients, site web, positionnement face aux concurrents locaux). Livraison
@@ -148,7 +148,7 @@ export default function CGV() {
                     </p>
                   </div>
                   <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(50,98,171,0.12)' }}>
-                    <strong style={{ color: '#0f1e48' }}>Sprint local 3 mois — 790 €</strong>
+                    <strong style={{ color: '#0f1e48' }}>Sprint local 3 mois · 790 €</strong>
                     <p className="mt-1" style={{ fontSize: '14px' }}>
                       Prestation d&apos;accompagnement sur une durée déterminée de trois (3) mois. Inclut le
                       diagnostic visibilité, l&apos;optimisation de la fiche Google Business Profile, une stratégie
@@ -164,7 +164,7 @@ export default function CGV() {
             </section>
 
             <section id="art4">
-              <h2 style={h2Style}>Article 4 — Durée</h2>
+              <h2 style={h2Style}>Article 4 :Durée</h2>
               <div style={bodyStyle}>
                 <p>
                   Le <strong>Diagnostic visibilité locale</strong> est une prestation ponctuelle sans engagement
@@ -181,7 +181,7 @@ export default function CGV() {
             </section>
 
             <section id="art5">
-              <h2 style={h2Style}>Article 5 — Commande et acceptation</h2>
+              <h2 style={h2Style}>Article 5 :Commande et acceptation</h2>
               <div style={bodyStyle}>
                 <p>
                   La commande est définitive dès réception du paiement (ou du premier versement pour le Sprint
@@ -197,7 +197,7 @@ export default function CGV() {
             </section>
 
             <section id="art6">
-              <h2 style={h2Style}>Article 6 — Obligation de moyens</h2>
+              <h2 style={h2Style}>Article 6 :Obligation de moyens</h2>
               <div style={bodyStyle}>
                 <p>
                   Le Prestataire s&apos;engage à réaliser les prestations avec diligence, rigueur et
@@ -214,7 +214,7 @@ export default function CGV() {
             </section>
 
             <section id="art7">
-              <h2 style={h2Style}>Article 7 — Tarifs et paiement</h2>
+              <h2 style={h2Style}>Article 7 :Tarifs et paiement</h2>
               <div style={bodyStyle}>
                 <p><strong>Moyen de paiement :</strong> virement bancaire uniquement. Les coordonnées bancaires sont communiquées lors de la confirmation de commande.</p>
                 <div className="mt-4 space-y-3">
@@ -238,7 +238,7 @@ export default function CGV() {
             </section>
 
             <section id="art8">
-              <h2 style={h2Style}>Article 8 — Livrables et délais</h2>
+              <h2 style={h2Style}>Article 8 :Livrables et délais</h2>
               <div style={bodyStyle}>
                 <p>
                   Le rapport du <strong>Diagnostic visibilité locale</strong> est livré sous <strong>5 jours
@@ -255,7 +255,7 @@ export default function CGV() {
             </section>
 
             <section id="art9">
-              <h2 style={h2Style}>Article 9 — Propriété intellectuelle</h2>
+              <h2 style={h2Style}>Article 9 :Propriété intellectuelle</h2>
               <div style={bodyStyle}>
                 <p>
                   Les rapports, recommandations et documents produits dans le cadre des prestations sont transmis
@@ -272,7 +272,7 @@ export default function CGV() {
             </section>
 
             <section id="art10">
-              <h2 style={h2Style}>Article 10 — Confidentialité</h2>
+              <h2 style={h2Style}>Article 10 :Confidentialité</h2>
               <div style={bodyStyle}>
                 <p>
                   Le Prestataire s&apos;engage à conserver confidentielles toutes les informations, documents,
@@ -284,7 +284,7 @@ export default function CGV() {
             </section>
 
             <section id="art11">
-              <h2 style={h2Style}>Article 11 — Non-dénigrement</h2>
+              <h2 style={h2Style}>Article 11 :Non-dénigrement</h2>
               <div style={bodyStyle}>
                 <p>
                   Les deux parties s&apos;engagent mutuellement à ne pas porter atteinte à l&apos;image, la
@@ -296,7 +296,7 @@ export default function CGV() {
             </section>
 
             <section id="art12">
-              <h2 style={h2Style}>Article 12 — Responsabilité</h2>
+              <h2 style={h2Style}>Article 12 :Responsabilité</h2>
               <div style={bodyStyle}>
                 <p>
                   La responsabilité du Prestataire est strictement limitée au montant des sommes effectivement
@@ -308,7 +308,7 @@ export default function CGV() {
             </section>
 
             <section id="art13">
-              <h2 style={h2Style}>Article 13 — Droit de rétractation</h2>
+              <h2 style={h2Style}>Article 13 :Droit de rétractation</h2>
               <div style={bodyStyle}>
                 <p>
                   Les Clients de Laeti SEO sont des professionnels agissant dans le cadre de leur activité
@@ -325,7 +325,7 @@ export default function CGV() {
             </section>
 
             <section id="art14">
-              <h2 style={h2Style}>Article 14 — Loi applicable et litiges</h2>
+              <h2 style={h2Style}>Article 14 :Loi applicable et litiges</h2>
               <div style={bodyStyle}>
                 <p>
                   Les présentes CGV sont soumises au droit français. En cas de litige, les parties s&apos;engagent
