@@ -59,14 +59,13 @@ export default function MentionsLegales() {
           >
 
             <Section title="1. Éditeur du site">
-              <p><strong>Raison sociale :</strong> Laetitia Laghezza</p>
-              <p><strong>Forme juridique :</strong> Auto-entrepreneur</p>
-              <p><strong>SIRET :</strong> 52276783900023</p>
-              <p><strong>Adresse :</strong> 15 Rue du Commerce, 83910 Pourrières, France</p>
-              <p><strong>Email :</strong>{' '}
-                <a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a>
-              </p>
-              <p><strong>Directrice de publication :</strong> Laetitia Laghezza</p>
+              <div style={{ lineHeight: '1.9' }}>
+                <p><strong>Laetitia Laghezza</strong></p>
+                <p>Auto-entrepreneur, SIRET 52276783900023</p>
+                <p>15 Rue du Commerce, 83910 Pourrières, France</p>
+                <p><a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a></p>
+                <p style={{ marginTop: '8px' }}><strong>Directrice de publication :</strong> Laetitia Laghezza</p>
+              </div>
             </Section>
 
             <Section title="2. Hébergement">

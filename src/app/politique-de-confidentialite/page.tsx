@@ -226,10 +226,12 @@ export default function PolitiqueConfidentialite() {
                   volontairement (email via un lien de contact) est utilisée uniquement pour répondre à votre
                   demande et n&apos;est jamais cédée à des tiers.
                 </p>
-                <p className="mt-3">
-                  Le responsable du traitement est <strong>Laetitia Laghezza</strong>, auto-entrepreneur,
-                  SIRET 52276783900023, 15 Rue du Commerce, 83910 Pourrières.
-                </p>
+                <div className="mt-3" style={{ lineHeight: '1.9' }}>
+                  <p><strong>Laetitia Laghezza</strong></p>
+                  <p>Auto-entrepreneur, SIRET 52276783900023</p>
+                  <p>15 Rue du Commerce, 83910 Pourrières</p>
+                  <p><a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a></p>
+                </div>
               </div>
             </section>
 
