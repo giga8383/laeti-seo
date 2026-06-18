@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { inter } from '@/lib/fonts';
 
 const trust = [
@@ -35,7 +36,11 @@ const trust = [
   },
 ];
 
+const HIDDEN_ON = ['/mentions-legales', '/cgv', '/politique-de-confidentialite'];
+
 export default function PreFooter() {
+  const pathname = usePathname();
+  if (HIDDEN_ON.includes(pathname)) return null;
   return (
     <>
       {/* ── Section 1 : 3 arguments de confiance ── */}
