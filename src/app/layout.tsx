@@ -31,6 +31,19 @@ export const metadata: Metadata = {
     "diagnostic SEO local",
     "demandes de devis Google",
   ],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-48.png', sizes: '48x48', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+    other: [
+      { rel: 'icon', url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'icon', url: '/favicon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
   authors: [{ name: "Laeti SEO" }],
   creator: "Laeti SEO",
   robots: {
