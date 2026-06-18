@@ -74,9 +74,6 @@ export default function MentionsLegales() {
               <p><strong>Email :</strong>{' '}
                 <a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a>
               </p>
-              <p><strong>Téléphone :</strong>{' '}
-                <a href="tel:+33626950750" style={{ color: '#3262ab' }}>06 26 95 07 50</a>
-              </p>
               <p><strong>Directrice de publication :</strong> Laetitia Laghezza</p>
             </Section>
 
