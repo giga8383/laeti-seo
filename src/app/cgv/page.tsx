@@ -46,7 +46,7 @@ export default function CGV() {
   return (
     <>
       <Navbar />
-      <main style={{ background: 'linear-gradient(165deg, #0c1a40 0%, #112258 55%, #0f1e48 100%)', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px' }}>
+      <main style={{ background: 'transparent', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px' }}>
         <div className="mx-auto max-w-3xl px-6">
 
           {/* En-tête */}
