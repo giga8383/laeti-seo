@@ -39,7 +39,7 @@ export default function MentionsLegales() {
   return (
     <>
       <Navbar />
-      <main style={{ background: '#f8f9fc', minHeight: '100vh', paddingTop: '100px', paddingBottom: '80px' }}>
+      <main style={{ background: 'linear-gradient(165deg, #0c1a40 0%, #112258 55%, #0f1e48 100%)', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px' }}>
         <div className="mx-auto max-w-3xl px-6">
 
           <h1
@@ -48,7 +48,7 @@ export default function MentionsLegales() {
               fontFamily: 'Satoshi, sans-serif',
               fontWeight: 700,
               fontSize: 'clamp(28px, 4vw, 42px)',
-              color: '#0f1e48',
+              color: '#ffffff',
               lineHeight: '1.15',
             }}
           >
@@ -56,7 +56,7 @@ export default function MentionsLegales() {
           </h1>
           <p
             className="mb-12"
-            style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: '#8a96b0' }}
+            style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.40)' }}
           >
             Dernière mise à jour : juin 2026
           </p>
