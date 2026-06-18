@@ -95,44 +95,6 @@ export default function GuideTrouvable() {
           </div>
         </section>
 
-        {/* Séparateur */}
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="h-px w-full" style={{ background: 'rgba(255,255,255,0.08)' }} />
-        </div>
-
-        {/* Visionneuse PDF */}
-        <section>
-          <div className="mx-auto max-w-4xl px-6 py-10">
-            <div
-              className="overflow-hidden rounded-2xl"
-              style={{ border: '1px solid rgba(255,255,255,0.10)', boxShadow: '0 24px 60px -12px rgba(0,0,0,0.4)' }}
-            >
-              <iframe
-                src={PDF_PATH}
-                title="TROUVABLE · Le guide SEO local · Laeti SEO"
-                width="100%"
-                style={{ height: '85vh', minHeight: '600px', border: 'none', display: 'block' }}
-              />
-            </div>
-
-            {/* Lien de secours */}
-            <p
-              className="mt-4 text-center"
-              style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.35)' }}
-            >
-              Le PDF ne s&apos;affiche pas ?{' '}
-              <a
-                href={PDF_PATH}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'rgba(252,235,48,0.65)', textDecoration: 'underline' }}
-              >
-                Ouvrir dans un nouvel onglet
-              </a>
-            </p>
-          </div>
-        </section>
-
         {/* CTA bas */}
         <section>
           <div className="mx-auto max-w-4xl px-6 py-16 text-center">
