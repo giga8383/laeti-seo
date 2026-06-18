@@ -213,7 +213,7 @@ export default function PreFooter() {
 
             {/* Bouton */}
             <a
-              href="/#guide"
+              href="/Guide-Trouvable"
               style={{
                 position: 'relative',
                 fontFamily: inter.style.fontFamily,

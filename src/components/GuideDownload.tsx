@@ -60,6 +60,8 @@ export default function GuideDownload() {
             {/* CTA */}
             <div className="mt-10 flex justify-center">
               <MagneticButton
+                as="a"
+                href="/Guide-Trouvable"
                 className="flex items-center gap-2.5 rounded-full bg-[#264d8c] px-8 py-4 text-sm font-semibold text-white transition-[filter] duration-300 hover:brightness-110 active:scale-[0.98]"
                 strength={0.3}
               >
