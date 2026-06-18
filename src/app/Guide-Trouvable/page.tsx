@@ -4,8 +4,8 @@ import { inter } from '@/lib/fonts';
 import { ArrowDown, ArrowLeft } from '@phosphor-icons/react/dist/ssr';
 import Link from 'next/link';
 
-const PDF_PATH = '/TROUVABLE%20%C2%B7%20Le%20guide%20SEO%20local%20%C2%B7%20Laeti%20SEO.pdf';
-const PDF_LABEL = 'TROUVABLE · Le guide SEO local · Laeti SEO.pdf';
+const PDF_PATH = '/guide-trouvable-seo-local.pdf';
+const PDF_LABEL = 'guide-trouvable-seo-local.pdf';
 
 export const metadata: Metadata = {
   title: 'TROUVABLE · Le guide SEO local gratuit | Laeti SEO',
