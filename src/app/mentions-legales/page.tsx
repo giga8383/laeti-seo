@@ -42,17 +42,9 @@ export default function MentionsLegales() {
       <main style={{ background: 'transparent', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px' }}>
         <div className="mx-auto max-w-3xl px-6">
 
-          <h1
-            className="mb-2"
-            style={{
-              fontFamily: 'Satoshi, sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(28px, 4vw, 42px)',
-              color: '#ffffff',
-              lineHeight: '1.15',
-            }}
-          >
-            Mentions légales
+          <h1 className="mb-3" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, lineHeight: '1.0', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
+            <span style={{ display: 'block', fontSize: 'clamp(42px, 8vw, 80px)', color: '#ffffff' }}>Mentions</span>
+            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#fceb30', textShadow: '0 0 40px rgba(252,235,48,0.35)' }}>Légales</span>
           </h1>
           <p
             className="mb-12"

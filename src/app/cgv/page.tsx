@@ -50,17 +50,9 @@ export default function CGV() {
         <div className="mx-auto max-w-3xl px-6">
 
           {/* En-tête */}
-          <h1
-            className="mb-2"
-            style={{
-              fontFamily: 'Satoshi, sans-serif',
-              fontWeight: 700,
-              fontSize: 'clamp(28px, 4vw, 42px)',
-              color: '#ffffff',
-              lineHeight: '1.15',
-            }}
-          >
-            Conditions Générales de Vente
+          <h1 className="mb-3" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, lineHeight: '1.0', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
+            <span style={{ display: 'block', fontSize: 'clamp(42px, 8vw, 80px)', color: '#ffffff' }}>Conditions</span>
+            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#fceb30', textShadow: '0 0 40px rgba(252,235,48,0.35)' }}>Générales de Vente</span>
           </h1>
           <p className="mb-3" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.40)' }}>
             Dernière mise à jour : juin 2026
