@@ -508,27 +508,25 @@ export default function SeoArtisansPage() {
               </p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_360px]">
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {gbpChecklist.map((item, i) => (
-                  <ScrollReveal key={i} delay={i * 0.06}>
-                    <div className="flex h-full items-start gap-4 rounded-2xl p-5" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)' }}>
-                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                        <Check size={10} weight="bold" color="#fceb30" />
-                      </span>
-                      <div>
-                        <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff', marginBottom: '4px' }}>{item.title}</p>
-                        <p style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.55)', lineHeight: '21px' }}>{item.desc}</p>
-                      </div>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 mb-10">
+              {gbpChecklist.map((item, i) => (
+                <ScrollReveal key={i} delay={i * 0.06}>
+                  <div className="flex h-full items-start gap-4 rounded-2xl p-5" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)' }}>
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
+                      <Check size={10} weight="bold" color="#fceb30" />
+                    </span>
+                    <div>
+                      <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff', marginBottom: '4px' }}>{item.title}</p>
+                      <p style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.55)', lineHeight: '21px' }}>{item.desc}</p>
                     </div>
-                  </ScrollReveal>
-                ))}
-              </div>
-
-              <ScrollReveal delay={0.25}>
-                <GBPComparison />
-              </ScrollReveal>
+                  </div>
+                </ScrollReveal>
+              ))}
             </div>
+
+            <ScrollReveal delay={0.25}>
+              <GBPComparison />
+            </ScrollReveal>
           </div>
         </section>
 

@@ -1,136 +1,168 @@
 import { inter } from '@/lib/fonts';
 
-function BlurBar({ width, height = 13 }: { width: number; height?: number }) {
+function DarkBar({ width, height = 13 }: { width: number; height?: number }) {
   return (
-    <span style={{
-      display: 'inline-block',
-      width: `${width}px`,
-      height: `${height}px`,
-      background: '#dddcdc',
-      borderRadius: '3px',
-      verticalAlign: 'middle',
-    }} />
+    <span style={{ display: 'inline-block', width, height, background: 'rgba(255,255,255,0.16)', borderRadius: 3, verticalAlign: 'middle' }} />
   );
 }
 
-export default function GBPComparison() {
+function LightBar({ width, height = 13 }: { width: number; height?: number }) {
   return (
-    <div className="overflow-hidden rounded-2xl h-full" style={{ border: '1px solid rgba(255,255,255,0.13)' }}>
+    <span style={{ display: 'inline-block', width, height, background: '#e0dede', borderRadius: 3, verticalAlign: 'middle' }} />
+  );
+}
 
-      {/* Scores AVANT / APRÈS */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-        <div style={{ padding: '12px 16px', textAlign: 'center', background: 'rgba(220,38,38,0.07)', borderRight: '1px solid rgba(255,255,255,0.08)' }}>
-          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '9px', color: 'rgba(220,38,38,0.85)', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '3px' }}>AVANT</p>
-          <p style={{ fontFamily: 'Satoshi, sans-serif', fontSize: '26px', fontWeight: 700, color: '#dc2626', lineHeight: 1 }}>
-            2<span style={{ fontSize: '13px', color: 'rgba(220,38,38,0.45)', fontWeight: 400 }}>/10</span>
+function Row({ children }: { children: React.ReactNode }) {
+  return <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0' }}>{children}</div>;
+}
+
+function Score({ value, label, color, bg, border }: { value: string; label: string; color: string; bg: string; border: string }) {
+  return (
+    <div style={{ position: 'absolute', top: 12, right: 14, background: bg, border: `1px solid ${border}`, borderRadius: 20, padding: '4px 12px', display: 'flex', alignItems: 'center', gap: 6 }}>
+      <span style={{ fontFamily: 'Satoshi, sans-serif', fontSize: 15, fontWeight: 700, color, lineHeight: 1 }}>{value}</span>
+      <span style={{ fontFamily: inter.style.fontFamily, fontSize: 9, fontWeight: 700, color, opacity: 0.7, letterSpacing: '1.2px', textTransform: 'uppercase' }}>{label}</span>
+    </div>
+  );
+}
+
+/* ── Icônes ── */
+const PinIcon = ({ color = '#9aa0a6' }) => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="none" stroke={color} strokeWidth="1.6"/>
+    <circle cx="12" cy="9" r="3" fill="none" stroke={color} strokeWidth="1.6"/>
+  </svg>
+);
+const ClockIcon = ({ color = '#9aa0a6' }) => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
+    <circle cx="12" cy="12" r="9" stroke={color} strokeWidth="1.6"/>
+    <path d="M12 7v5l3 3" stroke={color} strokeWidth="1.6" strokeLinecap="round"/>
+  </svg>
+);
+const PhoneIcon = ({ color = '#9aa0a6' }) => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill={color} style={{ flexShrink: 0 }}>
+    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+  </svg>
+);
+const GlobeIcon = ({ color = '#9aa0a6' }) => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
+    <circle cx="12" cy="12" r="9" stroke={color} strokeWidth="1.6"/>
+    <line x1="12" y1="3" x2="12" y2="21" stroke={color} strokeWidth="1"/>
+    <line x1="3.5" y1="9" x2="20.5" y2="9" stroke={color} strokeWidth="1"/>
+    <line x1="3.5" y1="15" x2="20.5" y2="15" stroke={color} strokeWidth="1"/>
+    <path d="M12 3 C8.5 8 8.5 16 12 21" stroke={color} strokeWidth="1" fill="none"/>
+    <path d="M12 3 C15.5 8 15.5 16 12 21" stroke={color} strokeWidth="1" fill="none"/>
+  </svg>
+);
+
+export default function GBPComparison() {
+  const sep = <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', margin: '10px 0' }} />;
+  const sepLight = <div style={{ height: 1, background: '#e8eaed', margin: '10px 0' }} />;
+
+  return (
+    <div className="overflow-hidden rounded-2xl" style={{ border: '1px solid rgba(255,255,255,0.13)' }}>
+
+      {/* ════ AVANT ════ */}
+      <div style={{ display: 'flex', background: 'linear-gradient(135deg, #162248 0%, #1e3470 100%)' }}>
+
+        {/* Placeholder photo */}
+        <div style={{
+          width: '36%', minHeight: 185, flexShrink: 0,
+          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8,
+          background: 'rgba(0,0,0,0.18)', borderRight: '1px solid rgba(255,255,255,0.06)',
+        }}>
+          <svg width="38" height="32" viewBox="0 0 48 40" fill="none" opacity={0.35}>
+            <rect x="2" y="8" width="44" height="30" rx="4" stroke="white" strokeWidth="2.5"/>
+            <circle cx="24" cy="23" r="9" stroke="white" strokeWidth="2.5"/>
+            <circle cx="24" cy="23" r="4" fill="white"/>
+            <path d="M16 8 L16 3 Q16 1 18 1 L30 1 Q32 1 32 3 L32 8" stroke="white" strokeWidth="2" fill="none"/>
+          </svg>
+          <p style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: 'rgba(255,255,255,0.28)', textAlign: 'center', lineHeight: 1.5 }}>
+            Aucune photo<br/>0 / 10
           </p>
-          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '10px', color: 'rgba(255,255,255,0.28)', marginTop: '3px' }}>6 points bloquants</p>
         </div>
-        <div style={{ padding: '12px 16px', textAlign: 'center', background: 'rgba(22,163,74,0.07)' }}>
-          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '9px', color: 'rgba(22,163,74,0.90)', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '3px' }}>APRÈS</p>
-          <p style={{ fontFamily: 'Satoshi, sans-serif', fontSize: '26px', fontWeight: 700, color: '#16a34a', lineHeight: 1 }}>
-            9<span style={{ fontSize: '13px', color: 'rgba(22,163,74,0.45)', fontWeight: 400 }}>/10</span>
-          </p>
-          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '10px', color: 'rgba(255,255,255,0.28)', marginTop: '3px' }}>Fiche optimisée</p>
+
+        {/* Infos AVANT */}
+        <div style={{ flex: 1, padding: '16px 18px 16px 20px', position: 'relative' }}>
+          <Score value="2/10" label="avant" color="#ef4444" bg="rgba(220,38,38,0.15)" border="rgba(220,38,38,0.35)"/>
+
+          <div style={{ marginBottom: 5 }}><DarkBar width={190} height={17}/></div>
+
+          <span style={{ fontFamily: inter.style.fontFamily, fontSize: 10.5, color: '#f87171', background: 'rgba(220,38,38,0.15)', border: '1px solid rgba(220,38,38,0.25)', borderRadius: 12, padding: '2px 8px', display: 'inline-block', marginBottom: 9 }}>
+            Catégorie non renseignée
+          </span>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginBottom: 10 }}>
+            <span style={{ color: '#fbbc04', fontSize: 13, letterSpacing: -1 }}>★★★</span>
+            <span style={{ color: 'rgba(255,255,255,0.20)', fontSize: 13, letterSpacing: -1 }}>★★</span>
+            <span style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: 'rgba(255,255,255,0.45)', marginLeft: 3 }}>3,2 · 8 avis</span>
+          </div>
+
+          {sep}
+
+          <Row><PinIcon color="rgba(255,255,255,0.30)"/><DarkBar width={150}/></Row>
+          <Row><ClockIcon color="#f87171"/><span style={{ fontFamily: inter.style.fontFamily, fontSize: 11.5, color: '#f87171' }}>Horaires non renseignés</span></Row>
+          <Row><PhoneIcon color="rgba(255,255,255,0.20)"/><span style={{ fontFamily: inter.style.fontFamily, fontSize: 11.5, color: 'rgba(255,255,255,0.28)' }}>Non renseigné</span></Row>
+          <Row><GlobeIcon color="rgba(255,255,255,0.20)"/><span style={{ fontFamily: inter.style.fontFamily, fontSize: 11.5, color: 'rgba(255,255,255,0.28)' }}>Aucun site web</span></Row>
         </div>
       </div>
 
-      {/* Fiche GBP (état APRÈS) */}
-      <div style={{ background: '#ffffff' }}>
+      {/* ── Séparateur ── */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '0 20px', background: '#f1f3f4' }}>
+        <div style={{ flex: 1, height: 1, background: '#d0d4dc' }}/>
+        <span style={{ fontFamily: inter.style.fontFamily, fontSize: 9, fontWeight: 700, color: '#16a34a', letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 0', whiteSpace: 'nowrap' }}>
+          APRÈS OPTIMISATION ↓
+        </span>
+        <div style={{ flex: 1, height: 1, background: '#d0d4dc' }}/>
+      </div>
 
-        {/* Grille photos */}
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '2px', height: '148px' }}>
+      {/* ════ APRÈS ════ */}
+      <div style={{ display: 'flex', background: '#ffffff' }}>
+
+        {/* Grille 3 photos */}
+        <div style={{ width: '36%', flexShrink: 0, display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 2, minHeight: 200 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/deco-salon.jpg"
-            alt="Salon après aménagement intérieur"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-          />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+          <img src="/deco-salon.jpg" alt="Salon décoré" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}/>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/deco-cuisine.jpg"
-              alt="Cuisine rénovée"
-              style={{ width: '100%', flex: 1, objectFit: 'cover', display: 'block', minHeight: 0 }}
-            />
+            <img src="/deco-cuisine.jpg" alt="Cuisine" style={{ width: '100%', flex: 1, objectFit: 'cover', display: 'block', minHeight: 0 }}/>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/deco-chambre.jpg"
-              alt="Chambre décorée"
-              style={{ width: '100%', flex: 1, objectFit: 'cover', display: 'block', minHeight: 0 }}
-            />
+            <img src="/deco-chambre.jpg" alt="Chambre" style={{ width: '100%', flex: 1, objectFit: 'cover', display: 'block', minHeight: 0 }}/>
           </div>
         </div>
 
-        {/* Infos fiche */}
-        <div style={{ padding: '14px 16px' }}>
+        {/* Infos APRÈS */}
+        <div style={{ flex: 1, padding: '16px 18px 16px 20px', borderLeft: '1px solid #e8eaed', position: 'relative' }}>
+          <Score value="9/10" label="après" color="#16a34a" bg="rgba(22,163,74,0.08)" border="rgba(22,163,74,0.30)"/>
 
-          {/* Nom — flouté */}
-          <div style={{ marginBottom: '5px' }}>
-            <BlurBar width={190} height={17} />
-          </div>
+          <div style={{ marginBottom: 5 }}><LightBar width={190} height={17}/></div>
 
-          {/* Catégorie */}
-          <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: '#70757a', marginBottom: '8px' }}>
+          <p style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: '#70757a', marginBottom: 8 }}>
             Architecte d&apos;intérieur
           </p>
 
-          {/* Étoiles */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '10px' }}>
-            <span style={{ color: '#fbbc04', fontSize: '14px', letterSpacing: '-1px' }}>★★★★★</span>
-            <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: '#202124', fontWeight: 600 }}>4,9</span>
-            <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: '#70757a' }}>· 47 avis · Google</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginBottom: 10 }}>
+            <span style={{ color: '#fbbc04', fontSize: 13, letterSpacing: -1 }}>★★★★★</span>
+            <span style={{ fontFamily: inter.style.fontFamily, fontSize: 11.5, color: '#202124', fontWeight: 600, marginLeft: 3 }}>4,9</span>
+            <span style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: '#70757a' }}>· 47 avis · Google</span>
           </div>
 
-          <div style={{ height: '1px', background: '#e8eaed', margin: '10px 0' }} />
+          {sepLight}
 
-          {/* Adresse — floutée */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '4px 0' }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="none" stroke="#5f6368" strokeWidth="1.5"/>
-              <circle cx="12" cy="9" r="3" fill="none" stroke="#5f6368" strokeWidth="1.5"/>
-            </svg>
-            <BlurBar width={155} />
-          </div>
-
-          {/* Horaires — visible */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '4px 0' }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
-              <circle cx="12" cy="12" r="9" stroke="#5f6368" strokeWidth="1.5"/>
-              <path d="M12 7v5l3 3" stroke="#5f6368" strokeWidth="1.5" strokeLinecap="round"/>
-            </svg>
-            <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: '#1a7340', fontWeight: 600 }}>Ouvert</span>
-            <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: '#70757a' }}>· Ferme à 18h00</span>
-          </div>
-
-          {/* Téléphone — flouté */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '4px 0' }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#5f6368" style={{ flexShrink: 0 }}>
-              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-            </svg>
-            <BlurBar width={118} />
-          </div>
-
-          {/* Site web — flouté */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '4px 0' }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
-              <circle cx="12" cy="12" r="9" stroke="#5f6368" strokeWidth="1.5"/>
-              <line x1="12" y1="3" x2="12" y2="21" stroke="#5f6368" strokeWidth="1"/>
-              <line x1="3.5" y1="9" x2="20.5" y2="9" stroke="#5f6368" strokeWidth="1"/>
-              <line x1="3.5" y1="15" x2="20.5" y2="15" stroke="#5f6368" strokeWidth="1"/>
-              <path d="M12 3 C8.5 8 8.5 16 12 21" stroke="#5f6368" strokeWidth="1" fill="none"/>
-              <path d="M12 3 C15.5 8 15.5 16 12 21" stroke="#5f6368" strokeWidth="1" fill="none"/>
-            </svg>
-            <BlurBar width={98} />
-          </div>
-
+          <Row><PinIcon color="#5f6368"/><LightBar width={155}/></Row>
+          <Row>
+            <ClockIcon color="#1a7340"/>
+            <span style={{ fontFamily: inter.style.fontFamily, fontSize: 11.5, color: '#1a7340', fontWeight: 600 }}>Ouvert</span>
+            <span style={{ fontFamily: inter.style.fontFamily, fontSize: 11.5, color: '#70757a' }}>· Ferme à 18h00</span>
+          </Row>
+          <Row><PhoneIcon color="#5f6368"/><LightBar width={118}/></Row>
+          <Row><GlobeIcon color="#1558d6"/><LightBar width={95}/></Row>
         </div>
       </div>
 
       {/* Légende */}
-      <div style={{ padding: '10px 16px', background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-        <p style={{ fontFamily: inter.style.fontFamily, fontSize: '11px', color: 'rgba(255,255,255,0.38)' }}>
-          Exemple anonymisé · Fiche architecte d&apos;intérieur après optimisation
+      <div style={{ padding: '9px 18px', background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+        <p style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: 'rgba(255,255,255,0.35)' }}>
+          Exemple anonymisé · Fiche Google Business Profile architecte d&apos;intérieur — avant et après optimisation
         </p>
       </div>
 
