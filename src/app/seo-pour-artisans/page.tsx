@@ -222,8 +222,8 @@ const sources = [
     href: 'https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/google-business-profile-le-service-de',
   },
   {
-    title: 'Étude annuelle sur les consommateurs locaux 2024',
-    desc: 'BrightLocal, étude annuelle de référence sur les comportements des consommateurs locaux.',
+    title: 'Les facteurs de classement SEO local',
+    desc: 'Cuik.io, guide complet sur les facteurs qui influencent le classement dans le Local Pack de Google.',
     href: 'https://cuik.io/guides/facteurs-classement-seo-local/',
   },
   {
