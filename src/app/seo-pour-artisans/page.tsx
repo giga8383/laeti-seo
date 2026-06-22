@@ -222,7 +222,7 @@ const sources = [
     href: 'https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/google-business-profile-le-service-de',
   },
   {
-    title: 'Les facteurs de classement SEO local',
+    title: 'Facteurs de Classement SEO Local & GMB 2026',
     desc: 'Cuik.io, guide complet sur les facteurs qui influencent le classement dans le Local Pack de Google.',
     href: 'https://cuik.io/guides/facteurs-classement-seo-local/',
   },
