@@ -930,18 +930,18 @@ export default function SeoArtisansPage() {
               ))}
             </div>
 
-            {/* Placeholder rapport PDF */}
+            {/* Aperçu rapport PDF */}
             <ScrollReveal delay={0.1}>
               <div className="overflow-hidden rounded-2xl mb-16" style={{ border: '1px solid rgba(255,255,255,0.12)' }}>
-                <div className="flex items-center justify-center" style={{ height: '180px', background: 'linear-gradient(135deg, rgba(15,30,72,0.9) 0%, rgba(38,77,140,0.6) 100%)' }}>
-                  {/* ⚠️ À REMPLACER par une capture anonymisée d'un vrai rapport de diagnostic livré */}
-                  <div className="text-center px-6">
-                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: 'rgba(252,235,48,0.8)' }}>Aperçu du rapport livré</p>
-                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.40)', marginTop: '6px' }}>Capture anonymisée d&apos;un vrai diagnostic à intégrer</p>
-                  </div>
-                </div>
+                <img
+                  src="/rapport-preview.svg"
+                  alt="Aperçu du rapport Diagnostic Visibilité Locale"
+                  width={800}
+                  height={440}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                />
                 <div className="px-4 py-3" style={{ background: 'rgba(255,255,255,0.03)' }}>
-                  <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>Rapport structuré avec plan d&apos;action priorisé, livré en PDF dans les 5 jours ouvrés</p>
+                  <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>Extrait · Rapport structuré avec plan d&apos;action priorisé, livré en PDF dans les 5 jours ouvrés</p>
                 </div>
               </div>
             </ScrollReveal>
