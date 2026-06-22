@@ -224,7 +224,7 @@ const sources = [
   {
     title: 'Étude annuelle sur les consommateurs locaux 2024',
     desc: 'BrightLocal, étude annuelle de référence sur les comportements des consommateurs locaux.',
-    href: 'https://www.brightlocal.com/research/local-consumer-review-survey-2024/',
+    href: 'https://cuik.io/guides/facteurs-classement-seo-local/',
   },
   {
     title: 'Chiffres clés du SEO local',
