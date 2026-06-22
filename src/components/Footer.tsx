@@ -18,6 +18,7 @@ const seoLocal = [
   { label: 'Consultante SEO Marseille',        href: '/consultant-seo-marseille' },
   { label: 'Consultante SEO Toulon',           href: '/consultant-seo-toulon' },
   { label: 'SEO pour artisans',                href: '/seo-pour-artisans' },
+  { label: 'Audit SEO local',                  href: '/audit-seo-local' },
   { label: 'Consultante SEO Avignon',          href: '#', soon: true },
   { label: 'Consultante SEO Nice',             href: '#', soon: true },
 ];
@@ -26,7 +27,6 @@ const ressources = [
   { label: 'Guide offert : 7 points visibilité locale', href: '/Guide-Trouvable' },
   { label: 'Blog SEO local',                 href: '/blog' },
   { label: 'FAQ',                            href: '/#faq' },
-  { label: 'Audit SEO local',                href: '/audit-seo-local' },
   { label: 'Réserver un appel découverte',   href: '/offre' },
 ];
 
