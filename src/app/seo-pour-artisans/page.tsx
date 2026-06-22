@@ -14,6 +14,7 @@ import {
   Warning,
 } from '@phosphor-icons/react/dist/ssr';
 import Link from 'next/link';
+import GBPComparison from '@/components/GBPComparison';
 
 /* ── Métadonnées SEO ── */
 export const metadata: Metadata = {
@@ -525,18 +526,7 @@ export default function SeoArtisansPage() {
               </div>
 
               <ScrollReveal delay={0.25}>
-                <div className="overflow-hidden rounded-2xl h-full" style={{ border: '1px solid rgba(255,255,255,0.12)' }}>
-                  <img
-                    src="/gbp-avant-apres.svg"
-                    alt="Exemple de fiche Google Business Profile avant et après optimisation — architecte d'intérieur"
-                    width={800}
-                    height={490}
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
-                  />
-                  <div className="px-4 py-3" style={{ background: 'rgba(255,255,255,0.03)' }}>
-                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>Exemple anonymisé · Fiche Google Business Profile avant et après optimisation</p>
-                  </div>
-                </div>
+                <GBPComparison />
               </ScrollReveal>
             </div>
           </div>
