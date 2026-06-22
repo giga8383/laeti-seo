@@ -524,18 +524,17 @@ export default function SeoArtisansPage() {
                 ))}
               </div>
 
-              {/* Placeholder capture GBP */}
               <ScrollReveal delay={0.25}>
-                <div className="overflow-hidden rounded-2xl h-full" style={{ border: '1px solid rgba(255,255,255,0.12)', minHeight: '300px' }}>
-                  <div className="flex h-full min-h-[260px] items-center justify-center" style={{ background: 'linear-gradient(135deg, rgba(38,77,140,0.6) 0%, rgba(15,30,72,0.9) 100%)' }}>
-                    {/* ⚠️ À REMPLACER par une capture d'écran réelle d'une fiche GBP avant/après optimisation */}
-                    <div className="text-center px-6">
-                      <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: 'rgba(252,235,48,0.8)' }}>Exemple de fiche GBP auditée</p>
-                      <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.40)', marginTop: '6px' }}>Capture avant/après optimisation à intégrer</p>
-                    </div>
-                  </div>
+                <div className="overflow-hidden rounded-2xl h-full" style={{ border: '1px solid rgba(255,255,255,0.12)' }}>
+                  <img
+                    src="/gbp-avant-apres.svg"
+                    alt="Exemple de fiche Google Business Profile avant et après optimisation — architecte d'intérieur"
+                    width={800}
+                    height={490}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                  />
                   <div className="px-4 py-3" style={{ background: 'rgba(255,255,255,0.03)' }}>
-                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>Fiche Google Business Profile avant et après optimisation</p>
+                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>Exemple anonymisé · Fiche Google Business Profile avant et après optimisation</p>
                   </div>
                 </div>
               </ScrollReveal>

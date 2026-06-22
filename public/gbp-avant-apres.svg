@@ -1,0 +1,262 @@
+<svg viewBox="0 0 800 490" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="rgba(0,0,0,0.10)"/></filter>
+    <clipPath id="ca"><rect x="10" y="42" width="382" height="442" rx="10"/></clipPath>
+    <clipPath id="cb"><rect x="408" y="42" width="382" height="442" rx="10"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="490" fill="#f1f3f4"/>
+
+  <!-- Header -->
+  <rect width="800" height="36" fill="#0f1e48"/>
+  <text x="16" y="24" font-family="Arial,sans-serif" font-size="11" fill="#fceb30" font-weight="bold" letter-spacing="1.5">LAETI SEO</text>
+  <text x="400" y="24" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.55)" text-anchor="middle" letter-spacing="1">DIAGNOSTIC GOOGLE BUSINESS PROFILE · AVANT / APRÈS OPTIMISATION</text>
+  <text x="784" y="24" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.28)" text-anchor="end">Fiche anonymisée</text>
+
+  <!-- ═══ AVANT PANEL ═══ -->
+  <rect x="10" y="42" width="382" height="442" rx="10" fill="white" filter="url(#sh)"/>
+  <g clip-path="url(#ca)">
+    <!-- Label -->
+    <rect x="10" y="42" width="382" height="26" fill="#fef2f2"/>
+    <rect x="158" y="49" width="82" height="13" rx="6.5" fill="#fee2e2"/>
+    <text x="199" y="60" font-family="Arial,sans-serif" font-size="9" fill="#dc2626" font-weight="bold" text-anchor="middle" letter-spacing="2">AVANT</text>
+
+    <!-- Photo placeholder -->
+    <rect x="10" y="68" width="382" height="112" fill="#e8eaed"/>
+    <rect x="176" y="97" width="48" height="36" rx="5" fill="none" stroke="#bdc1c6" stroke-width="2.5"/>
+    <circle cx="200" cy="115" r="11" fill="none" stroke="#bdc1c6" stroke-width="2.5"/>
+    <circle cx="200" cy="115" r="5" fill="#bdc1c6"/>
+    <path d="M188 97 L188 92 Q188 89 191 89 L209 89 Q212 89 212 92 L212 97" fill="none" stroke="#bdc1c6" stroke-width="2"/>
+    <rect x="216" y="101" width="5" height="4" rx="1" fill="#bdc1c6"/>
+    <text x="200" y="152" font-family="Arial,sans-serif" font-size="11" fill="#9aa0a6" text-anchor="middle">Aucune photo ajoutée</text>
+    <text x="200" y="168" font-family="Arial,sans-serif" font-size="9.5" fill="#bdc1c6" text-anchor="middle">0 / 10 photos recommandées</text>
+
+    <!-- Business name -->
+    <text x="26" y="204" font-family="Arial,sans-serif" font-size="14" fill="#202124" font-weight="bold">Architecte d'intérieur Marseille</text>
+    <rect x="26" y="210" width="162" height="17" rx="8.5" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <text x="107" y="223" font-family="Arial,sans-serif" font-size="9.5" fill="#dc2626" font-weight="600" text-anchor="middle">Catégorie non renseignée</text>
+
+    <!-- Stars 3.2 -->
+    <text x="26" y="250" font-family="Arial,sans-serif" font-size="16" fill="#fbbc04">★★★</text>
+    <text x="74" y="250" font-family="Arial,sans-serif" font-size="16" fill="#dadce0">★★</text>
+    <text x="120" y="248" font-family="Arial,sans-serif" font-size="11" fill="#70757a">3,2 · 8 avis · Google</text>
+    <line x1="26" y1="260" x2="376" y2="260" stroke="#e8eaed" stroke-width="1"/>
+
+    <!-- Info rows -->
+    <circle cx="33" cy="276" r="5" fill="none" stroke="#9aa0a6" stroke-width="1.5"/>
+    <circle cx="33" cy="276" r="2" fill="#9aa0a6"/>
+    <line x1="33" y1="281" x2="33" y2="287" stroke="#9aa0a6" stroke-width="1.5"/>
+    <text x="47" y="280" font-family="Arial,sans-serif" font-size="11.5" fill="#3c4043">12 rue des Lilas, 13001 Marseille</text>
+
+    <circle cx="33" cy="300" r="6" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+    <line x1="33" y1="295" x2="33" y2="300" stroke="#dc2626" stroke-width="1.5"/>
+    <line x1="33" y1="300" x2="37" y2="303" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="47" y="304" font-family="Arial,sans-serif" font-size="11.5" fill="#dc2626">Horaires non renseignés</text>
+
+    <circle cx="33" cy="322" r="5" fill="#dc2626" opacity="0.2"/>
+    <text x="30" y="326" font-family="Arial,sans-serif" font-size="11" fill="#dc2626">✕</text>
+    <text x="47" y="326" font-family="Arial,sans-serif" font-size="11.5" fill="#dc2626">Téléphone non renseigné</text>
+
+    <circle cx="33" cy="346" r="6.5" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+    <line x1="33" y1="339" x2="33" y2="353" stroke="#dc2626" stroke-width="0.8"/>
+    <line x1="26.5" y1="346" x2="39.5" y2="346" stroke="#dc2626" stroke-width="0.8"/>
+    <text x="47" y="350" font-family="Arial,sans-serif" font-size="11.5" fill="#dc2626">Aucun site web renseigné</text>
+    <line x1="26" y1="360" x2="376" y2="360" stroke="#e8eaed" stroke-width="1"/>
+
+    <text x="40" y="376" font-family="Arial,sans-serif" font-size="10.5" fill="#9aa0a6">Services : non renseignés</text>
+    <rect x="26" y="368" width="7" height="7" rx="1" fill="#e8eaed"/>
+    <text x="40" y="393" font-family="Arial,sans-serif" font-size="10.5" fill="#9aa0a6">Description : absente</text>
+    <rect x="26" y="385" width="7" height="7" rx="1" fill="#e8eaed"/>
+    <text x="40" y="410" font-family="Arial,sans-serif" font-size="10.5" fill="#9aa0a6">Publications Google : aucune</text>
+    <rect x="26" y="402" width="7" height="7" rx="1" fill="#e8eaed"/>
+    <line x1="26" y1="420" x2="376" y2="420" stroke="#e8eaed" stroke-width="1"/>
+
+    <!-- Score box -->
+    <rect x="18" y="428" width="366" height="48" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <text x="28" y="446" font-family="Arial,sans-serif" font-size="11" fill="#dc2626" font-weight="bold">6 points bloquants détectés</text>
+    <text x="28" y="461" font-family="Arial,sans-serif" font-size="9" fill="#ef4444">Photos · Catégorie · Horaires · Téléphone · Site web · Description</text>
+    <text x="372" y="446" font-family="Arial,sans-serif" font-size="14" fill="#dc2626" font-weight="bold" text-anchor="end">2/10</text>
+    <text x="372" y="461" font-family="Arial,sans-serif" font-size="8.5" fill="#dc2626" text-anchor="end">Score GBP</text>
+  </g>
+
+  <!-- ═══ APRÈS PANEL ═══ -->
+  <rect x="408" y="42" width="382" height="442" rx="10" fill="white" filter="url(#sh)"/>
+  <g clip-path="url(#cb)">
+    <!-- Label -->
+    <rect x="408" y="42" width="382" height="26" fill="#f0fdf4"/>
+    <rect x="551" y="49" width="98" height="13" rx="6.5" fill="#dcfce7"/>
+    <text x="600" y="60" font-family="Arial,sans-serif" font-size="9" fill="#16a34a" font-weight="bold" text-anchor="middle" letter-spacing="2">APRÈS</text>
+
+    <!-- ═ PHOTO 1 : SALON (x=408, y=68, 126×112) ═ -->
+    <rect x="408" y="68" width="126" height="112" fill="#ede3d6"/>
+    <rect x="408" y="68" width="126" height="88" fill="#f0e8de"/>
+    <rect x="408" y="150" width="126" height="30" fill="#cfc2b2"/>
+    <line x1="408" y1="154" x2="534" y2="154" stroke="#c0b3a4" stroke-width="0.5"/>
+    <line x1="408" y1="158" x2="534" y2="158" stroke="#c0b3a4" stroke-width="0.5"/>
+    <line x1="408" y1="163" x2="534" y2="163" stroke="#c0b3a4" stroke-width="0.5"/>
+    <!-- Sofa -->
+    <rect x="418" y="122" width="100" height="14" rx="3" fill="#8a7868"/>
+    <rect x="414" y="134" width="108" height="24" rx="4" fill="#9b8a78"/>
+    <rect x="421" y="122" width="28" height="22" rx="3" fill="#c4b09a"/>
+    <rect x="453" y="122" width="28" height="22" rx="3" fill="#b8a890"/>
+    <rect x="485" y="122" width="28" height="22" rx="3" fill="#c4b09a"/>
+    <rect x="419" y="156" width="5" height="7" fill="#7a6c5c"/>
+    <rect x="509" y="156" width="5" height="7" fill="#7a6c5c"/>
+    <!-- Floor lamp -->
+    <rect x="419" y="88" width="2" height="36" fill="#8a7055"/>
+    <ellipse cx="420" cy="88" rx="12" ry="6" fill="#d4a855" opacity="0.75"/>
+    <ellipse cx="420" cy="94" rx="8" ry="3" fill="#c09040" opacity="0.4"/>
+    <!-- Window -->
+    <rect x="506" y="74" width="28" height="52" rx="2" fill="#ddeef8" stroke="#b8cdd8" stroke-width="1"/>
+    <line x1="520" y1="74" x2="520" y2="126" stroke="#b8cdd8" stroke-width="0.8"/>
+    <line x1="506" y1="98" x2="534" y2="98" stroke="#b8cdd8" stroke-width="0.8"/>
+    <path d="M506 74 Q502 92 505 126" fill="#d4c8b8" stroke="#c4b8a8" stroke-width="0.5"/>
+    <path d="M534 74 Q538 92 535 126" fill="#d4c8b8" stroke="#c4b8a8" stroke-width="0.5"/>
+    <!-- Plant -->
+    <rect x="408" y="150" width="10" height="10" rx="2" fill="#a07055"/>
+    <ellipse cx="413" cy="138" rx="10" ry="13" fill="#6b8c5a" opacity="0.9"/>
+    <ellipse cx="408" cy="143" rx="7" ry="9" fill="#7a9e68" opacity="0.8"/>
+    <ellipse cx="419" cy="141" rx="7" ry="9" fill="#7a9e68" opacity="0.7"/>
+
+    <!-- Gap 1 -->
+    <rect x="534" y="68" width="2" height="112" fill="#f1f3f4"/>
+
+    <!-- ═ PHOTO 2 : CUISINE (x=536, y=68, 126×112) ═ -->
+    <rect x="536" y="68" width="126" height="112" fill="#f4f0eb"/>
+    <rect x="536" y="68" width="126" height="38" fill="#d8ccba"/>
+    <line x1="562" y1="68" x2="562" y2="106" stroke="#c4b8a6" stroke-width="0.8"/>
+    <line x1="598" y1="68" x2="598" y2="106" stroke="#c4b8a6" stroke-width="0.8"/>
+    <line x1="636" y1="68" x2="636" y2="106" stroke="#c4b8a6" stroke-width="0.8"/>
+    <line x1="547" y1="88" x2="554" y2="88" stroke="#a09080" stroke-width="2" stroke-linecap="round"/>
+    <line x1="579" y1="88" x2="586" y2="88" stroke="#a09080" stroke-width="2" stroke-linecap="round"/>
+    <line x1="617" y1="88" x2="624" y2="88" stroke="#a09080" stroke-width="2" stroke-linecap="round"/>
+    <!-- Backsplash tiles -->
+    <rect x="536" y="106" width="126" height="34" fill="#f8f6f3"/>
+    <line x1="536" y1="116" x2="662" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="536" y1="126" x2="662" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="536" y1="136" x2="662" y2="136" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="549" y1="106" x2="549" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="568" y1="106" x2="568" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="587" y1="106" x2="587" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="606" y1="106" x2="606" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="625" y1="106" x2="625" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="644" y1="106" x2="644" y2="116" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="540" y1="116" x2="540" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="559" y1="116" x2="559" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="578" y1="116" x2="578" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="597" y1="116" x2="597" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="616" y1="116" x2="616" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <line x1="635" y1="116" x2="635" y2="126" stroke="#ede9e4" stroke-width="0.8"/>
+    <!-- Counter -->
+    <rect x="536" y="140" width="126" height="7" rx="1" fill="#d8d0c8"/>
+    <rect x="536" y="147" width="126" height="33" fill="#cec6be"/>
+    <line x1="566" y1="147" x2="566" y2="180" stroke="#bbb3ab" stroke-width="0.8"/>
+    <line x1="608" y1="147" x2="608" y2="180" stroke="#bbb3ab" stroke-width="0.8"/>
+    <line x1="644" y1="147" x2="644" y2="180" stroke="#bbb3ab" stroke-width="0.8"/>
+    <line x1="549" y1="162" x2="556" y2="162" stroke="#a09080" stroke-width="2" stroke-linecap="round"/>
+    <line x1="585" y1="162" x2="592" y2="162" stroke="#a09080" stroke-width="2" stroke-linecap="round"/>
+    <!-- Sink -->
+    <rect x="556" y="141" width="46" height="22" rx="2" fill="#e4e4e4" stroke="#c8c8c8" stroke-width="1"/>
+    <ellipse cx="578" cy="140" rx="4" ry="3" fill="#b0a898"/>
+    <line x1="578" y1="132" x2="578" y2="140" stroke="#b0a898" stroke-width="3" stroke-linecap="round"/>
+    <path d="M575 132 Q578 128 581 132" fill="none" stroke="#b0a898" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Pendant light -->
+    <line x1="620" y1="68" x2="620" y2="100" stroke="#888" stroke-width="1"/>
+    <rect x="611" y="100" width="18" height="9" rx="3" fill="#c8a855" opacity="0.85"/>
+
+    <!-- Gap 2 -->
+    <rect x="662" y="68" width="2" height="112" fill="#f1f3f4"/>
+
+    <!-- ═ PHOTO 3 : CHAMBRE (x=664, y=68, 126×112) ═ -->
+    <rect x="664" y="68" width="126" height="112" fill="#eef2ee"/>
+    <rect x="664" y="68" width="126" height="84" fill="#f2f5f2"/>
+    <rect x="664" y="152" width="126" height="28" fill="#d4c8b8"/>
+    <line x1="664" y1="156" x2="790" y2="156" stroke="#c4b8a8" stroke-width="0.5"/>
+    <line x1="664" y1="160" x2="790" y2="160" stroke="#c4b8a8" stroke-width="0.5"/>
+    <rect x="664" y="149" width="126" height="4" fill="#ddd2c4"/>
+    <!-- Headboard -->
+    <rect x="678" y="104" width="98" height="22" rx="6" fill="#8a7a6a"/>
+    <rect x="683" y="107" width="88" height="14" rx="3" fill="#7a6a5a"/>
+    <!-- Bed -->
+    <rect x="672" y="124" width="110" height="6" rx="2" fill="#9a8a7a"/>
+    <rect x="672" y="128" width="110" height="26" rx="2" fill="#ebe6e0"/>
+    <rect x="672" y="128" width="110" height="18" rx="2" fill="#d8d2ca"/>
+    <line x1="672" y1="136" x2="782" y2="136" stroke="#ccc6be" stroke-width="0.5"/>
+    <!-- Pillows -->
+    <rect x="676" y="128" width="38" height="18" rx="3" fill="#fffaf5" stroke="#ece6e0" stroke-width="0.5"/>
+    <rect x="718" y="128" width="38" height="18" rx="3" fill="#fffaf5" stroke="#ece6e0" stroke-width="0.5"/>
+    <!-- Nightstands -->
+    <rect x="664" y="130" width="10" height="20" rx="1" fill="#b5a898"/>
+    <rect x="663" y="128" width="12" height="3" rx="1" fill="#c0b3a6"/>
+    <line x1="669" y1="112" x2="669" y2="130" stroke="#8a7868" stroke-width="1.5"/>
+    <ellipse cx="669" cy="110" rx="9" ry="5" fill="#d4a855" opacity="0.75"/>
+    <rect x="780" y="130" width="10" height="20" rx="1" fill="#b5a898"/>
+    <rect x="779" y="128" width="12" height="3" rx="1" fill="#c0b3a6"/>
+    <!-- Mirror -->
+    <rect x="714" y="72" width="46" height="30" rx="4" fill="#e4eff5" stroke="#c0b8b0" stroke-width="1.5"/>
+    <rect x="718" y="76" width="38" height="22" rx="2" fill="#dce8f2" opacity="0.7"/>
+    <line x1="720" y1="78" x2="726" y2="84" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Artwork -->
+    <rect x="666" y="72" width="34" height="24" rx="2" fill="#e8e0d4" stroke="#c4b8a8" stroke-width="1"/>
+    <ellipse cx="683" cy="84" rx="10" ry="7" fill="#c4a880" opacity="0.6"/>
+    <ellipse cx="679" cy="81" rx="6" ry="4" fill="#8a9e78" opacity="0.5"/>
+
+    <!-- ═ Content below photos ═ -->
+    <!-- Business name -->
+    <text x="424" y="204" font-family="Arial,sans-serif" font-size="13.5" fill="#202124" font-weight="bold">Atelier Clair · Architecture d'intérieur</text>
+    <rect x="424" y="210" width="133" height="17" rx="8.5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="490" y="223" font-family="Arial,sans-serif" font-size="9.5" fill="#16a34a" font-weight="600" text-anchor="middle">✓  Architecte d'intérieur</text>
+
+    <!-- Stars 4.9 -->
+    <text x="424" y="250" font-family="Arial,sans-serif" font-size="16" fill="#fbbc04">★★★★★</text>
+    <text x="520" y="248" font-family="Arial,sans-serif" font-size="11" fill="#70757a">4,9 · 47 avis · Google</text>
+    <line x1="424" y1="260" x2="774" y2="260" stroke="#e8eaed" stroke-width="1"/>
+
+    <!-- Address -->
+    <circle cx="431" cy="276" r="5" fill="none" stroke="#5f6368" stroke-width="1.5"/>
+    <circle cx="431" cy="276" r="2" fill="#5f6368"/>
+    <line x1="431" y1="281" x2="431" y2="287" stroke="#5f6368" stroke-width="1.5"/>
+    <text x="447" y="280" font-family="Arial,sans-serif" font-size="11.5" fill="#3c4043">12 rue des Lilas, 13001 Marseille</text>
+
+    <!-- Hours green -->
+    <circle cx="431" cy="300" r="6" fill="none" stroke="#1a7340" stroke-width="1.5"/>
+    <line x1="431" y1="295" x2="431" y2="300" stroke="#1a7340" stroke-width="1.5"/>
+    <line x1="431" y1="300" x2="435" y2="303" stroke="#1a7340" stroke-width="1.5"/>
+    <text x="447" y="304" font-family="Arial,sans-serif" font-size="11.5" fill="#1a7340" font-weight="600">Ouvert</text>
+    <text x="490" y="304" font-family="Arial,sans-serif" font-size="11.5" fill="#70757a">· Ferme à 18h00</text>
+
+    <!-- Phone -->
+    <circle cx="431" cy="322" r="5" fill="#5f6368" opacity="0.3"/>
+    <text x="428" y="326" font-family="Arial,sans-serif" font-size="10" fill="#5f6368">✆</text>
+    <text x="447" y="326" font-family="Arial,sans-serif" font-size="11.5" fill="#3c4043">+33 6 XX XX XX XX</text>
+
+    <!-- Website -->
+    <circle cx="431" cy="346" r="6.5" fill="none" stroke="#1558d6" stroke-width="1.5"/>
+    <line x1="431" y1="339" x2="431" y2="353" stroke="#1558d6" stroke-width="0.8"/>
+    <line x1="424.5" y1="346" x2="437.5" y2="346" stroke="#1558d6" stroke-width="0.8"/>
+    <path d="M431 339.5 Q435 343 435 346 Q435 349 431 352.5" fill="none" stroke="#1558d6" stroke-width="0.8"/>
+    <path d="M431 339.5 Q427 343 427 346 Q427 349 431 352.5" fill="none" stroke="#1558d6" stroke-width="0.8"/>
+    <text x="447" y="350" font-family="Arial,sans-serif" font-size="11.5" fill="#1558d6">atelierclair.fr</text>
+    <line x1="424" y1="360" x2="774" y2="360" stroke="#e8eaed" stroke-width="1"/>
+
+    <!-- Present items -->
+    <rect x="424" y="368" width="7" height="7" rx="1" fill="#bbf7d0"/>
+    <text x="438" y="378" font-family="Arial,sans-serif" font-size="10.5" fill="#3c4043">Services : Conception d'espace · Rénovation · Home staging</text>
+    <rect x="424" y="386" width="7" height="7" rx="1" fill="#bbf7d0"/>
+    <text x="438" y="396" font-family="Arial,sans-serif" font-size="10.5" fill="#3c4043">Description : Cabinet spécialisé habitat &amp; design depuis 2016</text>
+    <rect x="424" y="404" width="7" height="7" rx="1" fill="#bbf7d0"/>
+    <text x="438" y="414" font-family="Arial,sans-serif" font-size="10.5" fill="#3c4043">Publications : 1 ce mois · 12 photos récentes ajoutées</text>
+    <line x1="424" y1="424" x2="774" y2="424" stroke="#e8eaed" stroke-width="1"/>
+
+    <!-- Score box -->
+    <rect x="416" y="432" width="366" height="44" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="426" y="450" font-family="Arial,sans-serif" font-size="11" fill="#16a34a" font-weight="bold">Fiche optimisée · 0 point bloquant</text>
+    <text x="426" y="464" font-family="Arial,sans-serif" font-size="9" fill="#16a34a">Photos · Catégorie · Horaires · Contact · Site web · Description · Publications</text>
+    <text x="774" y="450" font-family="Arial,sans-serif" font-size="14" fill="#16a34a" font-weight="bold" text-anchor="end">9/10</text>
+    <text x="774" y="464" font-family="Arial,sans-serif" font-size="8.5" fill="#16a34a" text-anchor="end">Score GBP</text>
+  </g>
+
+  <!-- Footer -->
+  <rect y="480" width="800" height="10" fill="#f1f3f4"/>
+</svg>
