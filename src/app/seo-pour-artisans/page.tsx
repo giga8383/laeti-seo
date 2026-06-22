@@ -222,13 +222,13 @@ const sources = [
     href: 'https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/google-business-profile-le-service-de',
   },
   {
-    title: 'Local Consumer Review Survey 2024',
-    desc: 'BrightLocal,étude annuelle de référence sur les comportements des consommateurs locaux.',
+    title: 'Étude annuelle sur les consommateurs locaux 2024',
+    desc: 'BrightLocal, étude annuelle de référence sur les comportements des consommateurs locaux.',
     href: 'https://www.brightlocal.com/research/local-consumer-review-survey-2024/',
   },
   {
-    title: 'Local SEO Statistics',
-    desc: 'BrightLocal,données clés sur l\'efficacité du référencement local.',
+    title: 'Chiffres clés du SEO local',
+    desc: 'BrightLocal, données clés sur l\'efficacité du référencement local.',
     href: 'https://www.brightlocal.com/resources/local-seo-statistics/',
   },
 ];
