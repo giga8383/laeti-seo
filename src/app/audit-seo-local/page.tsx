@@ -836,7 +836,7 @@ export default function AuditSEOLocalPage() {
                     />
                     <div className="px-4 py-3" style={{ background: 'rgba(255,255,255,0.03)' }}>
                       <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>
-                        Rapport structuré avec plan d&apos;action priorisé, livré en PDF
+                        Extrait · Rapport structuré avec plan d&apos;action priorisé, livré en PDF
                       </p>
                     </div>
                   </div>
