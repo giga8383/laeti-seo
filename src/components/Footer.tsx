@@ -15,9 +15,9 @@ const navLinks = [
 
 const seoLocal = [
   { label: 'Consultante SEO Aix-en-Provence', href: '/consultant-seo-aix-en-provence' },
-  // Prochaines pages :
   { label: 'Consultante SEO Marseille',        href: '/consultant-seo-marseille' },
   { label: 'Consultante SEO Toulon',           href: '/consultant-seo-toulon' },
+  { label: 'SEO pour artisans',                href: '/seo-pour-artisans' },
   { label: 'Consultante SEO Avignon',          href: '#', soon: true },
   { label: 'Consultante SEO Nice',             href: '#', soon: true },
 ];
