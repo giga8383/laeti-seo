@@ -208,7 +208,7 @@ function PricingCard({
 
 export default function OffrePricing() {
   return (
-    <section className="relative bg-transparent">
+    <section id="diagnostic" className="relative bg-transparent" style={{ scrollMarginTop: '80px' }}>
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
 
         {/* header */}
