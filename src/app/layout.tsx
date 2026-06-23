@@ -74,6 +74,9 @@ export const metadata: Metadata = {
     description:
       "Décorateur, cuisiniste, menuisier, artisan : comprenez pourquoi vous n'apparaissez pas assez sur Google. Diagnostic SEO local à 190 €.",
   },
+  verification: {
+    google: "DcYbOMnOtt1oMhlPULeAyJ3_Sf5joYz8nOuOoWgAON8",
+  },
 };
 
 export default function RootLayout({
