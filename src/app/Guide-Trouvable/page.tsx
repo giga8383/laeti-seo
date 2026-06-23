@@ -83,8 +83,9 @@ export default function GuideTrouvable() {
 
             {/* CTA téléchargement */}
             <a
-              href={PDF_PATH}
-              download={PDF_LABEL}
+              href="https://tally.so/r/rjq8K5"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all hover:brightness-105 active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', textDecoration: 'none' }}
             >

@@ -218,7 +218,9 @@ export default function PreFooter() {
 
             {/* Bouton */}
             <a
-              href="/Guide-Trouvable"
+              href="https://tally.so/r/rjq8K5"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 position: 'relative',
                 fontFamily: inter.style.fontFamily,
