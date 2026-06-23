@@ -257,9 +257,11 @@ export default function OffrePricing() {
           <ScrollReveal delay={0.16} className="h-full">
             <PricingCard offer={diagnostic} />
           </ScrollReveal>
-          <ScrollReveal delay={0.24} className="h-full">
-            <PricingCard offer={sprint} />
-          </ScrollReveal>
+          <div id="sprint" style={{ scrollMarginTop: '80px' }}>
+            <ScrollReveal delay={0.24} className="h-full">
+              <PricingCard offer={sprint} />
+            </ScrollReveal>
+          </div>
         </div>
 
         {/* reassurance note */}

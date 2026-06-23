@@ -216,7 +216,7 @@ export default function Pricing() {
 
                 <MagneticButton
                   as="a"
-                  href="/offre"
+                  href="/offre#sprint"
                   className="flex w-full items-center justify-center gap-2 rounded-full bg-[#fceb30] py-3.5 text-sm font-semibold text-[#264d8c] transition-[filter] duration-300 hover:brightness-105 active:scale-[0.98]"
                   strength={0.2}
                 >
