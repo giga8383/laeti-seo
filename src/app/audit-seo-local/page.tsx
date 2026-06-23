@@ -685,25 +685,31 @@ export default function AuditSEOLocalPage() {
         ══════════════════════════════════════════ */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-            <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:items-start">
+
+            {/* En-tête pleine largeur */}
+            <ScrollReveal>
+              <p
+                className="mb-4 uppercase tracking-widest"
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+              >
+                Votre livrable
+              </p>
+              <h2
+                className="mb-6 text-white"
+                style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}
+              >
+                Ce que vous recevez
+              </h2>
+              <p className="mb-10 text-white/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}>
+                Pas un tableau de bord illisible. Un livrable concret, pensé pour que vous puissiez agir.
+                Délai de livraison : <strong className="text-white/90">5 jours ouvrés</strong> après réception de vos accès.
+              </p>
+            </ScrollReveal>
+
+            {/* Grid liste + rapport */}
+            <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-start">
 
               <ScrollReveal>
-                <p
-                  className="mb-4 uppercase tracking-widest"
-                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
-                >
-                  Votre livrable
-                </p>
-                <h2
-                  className="mb-6 text-white"
-                  style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}
-                >
-                  Ce que vous recevez
-                </h2>
-                <p className="mb-8 text-white/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}>
-                  Pas un tableau de bord illisible. Un livrable concret, pensé pour que vous puissiez agir.
-                  Délai de livraison : <strong className="text-white/90">5 jours ouvrés</strong> après réception de vos accès.
-                </p>
                 <div className="space-y-4">
                   {livrables.map((l, i) => (
                     <div
