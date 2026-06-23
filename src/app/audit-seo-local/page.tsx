@@ -375,7 +375,7 @@ export default function AuditSEOLocalPage() {
 
                   {/* Carte GBP */}
                   <a
-                    href="https://maps.app.goo.gl/RJ82UwdqE6LWWZxr6"
+                    href="https://share.google/X8yIUSwEfhZAhSRGx"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: 'none', display: 'block' }}
