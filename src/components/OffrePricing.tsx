@@ -270,7 +270,7 @@ export default function OffrePricing() {
             className="mt-10 text-center text-sm text-white/30"
             style={{ fontFamily: inter.style.fontFamily }}
           >
-            Paiement sécurisé par virement · Facture fournie
+            Paiement sécurisé par virement pour le Diagnostic Visibilité et possibilité de régler en 3 fois pour le Sprint Local · Facture fournie
           </p>
         </ScrollReveal>
 
