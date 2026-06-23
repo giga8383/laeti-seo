@@ -56,7 +56,10 @@ export default function CookieConsent() {
 
   useEffect(() => {
     const stored = localStorage.getItem('cookie-consent');
-    if (!stored) setDecided(false);
+    if (!stored) {
+      setDecided(false);
+      setVisible(true);
+    }
   }, []);
 
   useEffect(() => {
@@ -188,7 +191,13 @@ export default function CookieConsent() {
               margin: 0,
               minWidth: '180px',
             }}>
-              Ce site utilise Google Analytics pour mesurer son audience. Vos données ne sont pas revendues et aucun cookie ne sera déposé si vous ne le voulez pas.
+              Ce site utilise Google Analytics pour mesurer son audience. Vos données ne sont pas revendues et aucun cookie ne sera déposé si vous ne le voulez pas.{' '}
+              <a
+                href="/politique-de-confidentialite"
+                style={{ color: '#264d8c', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: '2px' }}
+              >
+                Politique Cookies
+              </a>
             </p>
 
             {/* Actions */}
