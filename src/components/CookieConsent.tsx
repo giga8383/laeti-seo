@@ -63,6 +63,14 @@ export default function CookieConsent() {
   }, []);
 
   useEffect(() => {
+    if (visible) {
+      document.body.setAttribute('data-cookie-banner', 'open');
+    } else {
+      document.body.removeAttribute('data-cookie-banner');
+    }
+  }, [visible]);
+
+  useEffect(() => {
     const check = () => {
       // Détecte la couleur de fond au centre de l'écran
       const x = window.innerWidth / 2;

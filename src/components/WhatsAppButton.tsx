@@ -1,12 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const WA_NUMBER = '33626950750';
 const WA_MESSAGE = encodeURIComponent('Bonjour Laetitia, je souhaite en savoir plus sur vos services SEO local.');
 
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
+  const [cookieOpen, setCookieOpen] = useState(false);
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setCookieOpen(document.body.hasAttribute('data-cookie-banner'));
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['data-cookie-banner'] });
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <a
@@ -18,14 +27,14 @@ export default function WhatsAppButton() {
       onMouseLeave={() => setHovered(false)}
       style={{
         position: 'fixed',
-        bottom: '28px',
+        bottom: cookieOpen ? '90px' : '28px',
         right: '28px',
         zIndex: 9999,
         display: 'flex',
         alignItems: 'center',
         gap: '10px',
         textDecoration: 'none',
-        transition: 'transform 0.2s cubic-bezier(0.16,1,0.3,1)',
+        transition: 'transform 0.2s cubic-bezier(0.16,1,0.3,1), bottom 0.3s cubic-bezier(0.16,1,0.3,1)',
         transform: hovered ? 'scale(1.06)' : 'scale(1)',
       }}
     >
