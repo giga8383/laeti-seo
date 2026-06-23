@@ -64,21 +64,11 @@ export default function GBPComparison() {
       {/* ════ AVANT ════ */}
       <div style={{ display: 'flex', background: 'linear-gradient(135deg, #162248 0%, #1e3470 100%)' }}>
 
-        {/* Placeholder photo */}
-        <div style={{
-          width: '36%', minHeight: 185, flexShrink: 0,
-          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8,
-          background: 'rgba(0,0,0,0.18)', borderRight: '1px solid rgba(255,255,255,0.06)',
-        }}>
-          <svg width="38" height="32" viewBox="0 0 48 40" fill="none" opacity={0.35}>
-            <rect x="2" y="8" width="44" height="30" rx="4" stroke="white" strokeWidth="2.5"/>
-            <circle cx="24" cy="23" r="9" stroke="white" strokeWidth="2.5"/>
-            <circle cx="24" cy="23" r="4" fill="white"/>
-            <path d="M16 8 L16 3 Q16 1 18 1 L30 1 Q32 1 32 3 L32 8" stroke="white" strokeWidth="2" fill="none"/>
-          </svg>
-          <p style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: 'rgba(255,255,255,0.28)', textAlign: 'center', lineHeight: 1.5 }}>
-            Aucune photo<br/>0 / 10
-          </p>
+        {/* 1 photo AVANT */}
+        <div style={{ width: '36%', minHeight: 185, flexShrink: 0, position: 'relative', borderRight: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/deco-chambre.jpg" alt="Chambre avant optimisation" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'brightness(0.55) saturate(0.7)' }}/>
+          <span style={{ position: 'absolute', bottom: 8, left: 8, fontFamily: inter.style.fontFamily, fontSize: 10, color: 'rgba(255,255,255,0.55)', background: 'rgba(0,0,0,0.45)', borderRadius: 4, padding: '2px 6px' }}>1 photo · 1/10</span>
         </div>
 
         {/* Infos AVANT */}
@@ -87,9 +77,9 @@ export default function GBPComparison() {
 
           <div style={{ marginBottom: 5 }}><DarkBar width={190} height={17}/></div>
 
-          <span style={{ fontFamily: inter.style.fontFamily, fontSize: 10.5, color: '#f87171', background: 'rgba(220,38,38,0.15)', border: '1px solid rgba(220,38,38,0.25)', borderRadius: 12, padding: '2px 8px', display: 'inline-block', marginBottom: 9 }}>
-            Catégorie non renseignée
-          </span>
+          <p style={{ fontFamily: inter.style.fontFamily, fontSize: 11, color: 'rgba(255,255,255,0.45)', marginBottom: 9 }}>
+            Architecte d&apos;intérieur
+          </p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginBottom: 10 }}>
             <span style={{ color: '#fbbc04', fontSize: 13, letterSpacing: -1 }}>★★★</span>
