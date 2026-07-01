@@ -864,12 +864,13 @@ export default function SeoArtisansPage() {
                 </div>
                 <Quotes size={28} weight="fill" color="rgba(252,235,48,0.4)" className="mb-5" />
                 <blockquote className="text-white/80" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '1.6' }}>
-                  Je refuse régulièrement des clients,et c&apos;est l&apos;une des meilleures décisions que j&apos;aie prises.
+                  Je refuse régulièrement des clients, et c&apos;est l&apos;une des meilleures décisions que j&apos;aie prises.
                   Quand quelqu&apos;un me contacte en espérant dépasser ses concurrents en 15 jours ou remonter en 1re position
                   d&apos;ici la semaine prochaine, je décline. Non par manque d&apos;envie, mais parce que le SEO local ne fonctionne
-                  pas comme ça,et promettre l&apos;inverse serait vous mentir. Ce que j&apos;ai appris au fil des années :
+                  pas comme ça, et promettre l&apos;inverse serait vous mentir. Ce que j&apos;ai appris au fil des années est que
                   les professionnels qui obtiennent les meilleurs résultats sont ceux qui comprennent que la visibilité
-                  locale se <em>construit</em>, pas s&apos;achète. Ils répondent à leurs avis, mettent à jour leur fiche,
+                  locale se <em>construit</em> et ne s&apos;achète pas.{' '}
+                  Ils répondent à leurs avis, mettent à jour leur fiche,
                   jouent le jeu sur la durée. Ces clients-là, je les garde longtemps.
                 </blockquote>
               </figure>
