@@ -21,11 +21,11 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   },
-  // Force HTTPS — à activer uniquement une fois le site déployé en production HTTPS
-  // {
-  //   key: "Strict-Transport-Security",
-  //   value: "max-age=63072000; includeSubDomains; preload",
-  // },
+  // Force HTTPS
+  {
+    key: "Strict-Transport-Security",
+    value: "max-age=63072000; includeSubDomains; preload",
+  },
   // Content Security Policy : liste blanche des sources autorisées
   // Ajustez les domaines selon vos besoins (ex: Google Analytics, fonts)
   {
@@ -46,8 +46,7 @@ const securityHeaders = [
       "frame-ancestors 'self'",
       // Bloque les plugins Flash/Java/etc.
       "object-src 'none'",
-      // upgrade-insecure-requests : à activer uniquement en production HTTPS
-      // "upgrade-insecure-requests",
+      "upgrade-insecure-requests",
     ].join("; "),
   },
 ];
