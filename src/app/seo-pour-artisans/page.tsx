@@ -871,7 +871,7 @@ export default function SeoArtisansPage() {
                   les professionnels qui obtiennent les meilleurs résultats sont ceux qui comprennent que la visibilité
                   locale se <em>construit</em> et ne s&apos;achète pas.{' '}
                   Ils répondent à leurs avis, mettent à jour leur fiche,
-                  jouent le jeu sur la durée. Ces clients-là, je les garde longtemps.
+                  jouent le jeu sur la durée.<br />Ces clients-là, je les garde longtemps.
                 </blockquote>
               </figure>
             </ScrollReveal>
