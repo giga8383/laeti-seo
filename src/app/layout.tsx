@@ -6,9 +6,10 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Footer from "@/components/Footer";
 import PreFooter from "@/components/PreFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import SatoshiFontLoader from "@/components/SatoshiFontLoader";
 import { outfit, inter } from "@/lib/fonts";
 import "./globals.css";
+
+const SATOSHI_HREF = 'https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://laeti-seo.fr'),
@@ -90,9 +91,20 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://api.fontshare.com" />
         <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
+        {/* Charge la police Satoshi sans bloquer le rendu : preload démarre la requête dès le
+            parsing HTML, puis le script bascule le <link> en feuille de style une fois prêt
+            (React ne supporte pas l'attribut onload en chaîne sur un <link>, d'où ce script). */}
+        <link id="satoshi-preload" rel="preload" as="style" href={SATOSHI_HREF} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var l=document.getElementById('satoshi-preload');if(!l)return;l.onload=function(){l.rel='stylesheet';};})();`,
+          }}
+        />
+        <noscript>
+          <link rel="stylesheet" href={SATOSHI_HREF} />
+        </noscript>
       </head>
       <body className="min-h-full font-sans antialiased">
-        <SatoshiFontLoader />
         <GridBackground />
         <HabitatAccents />
         <div className="relative z-0">{children}</div>
