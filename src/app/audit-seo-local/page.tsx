@@ -323,7 +323,7 @@ export default function AuditSEOLocalPage() {
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full"
                       style={{ border: '2px solid rgba(252,235,48,0.5)' }}>
                       <Image
-                        src="/laeti-1.jpg"
+                        src="/laeti-1.webp"
                         alt="Laetitia Laghezza, consultante SEO local"
                         fill
                         className="object-cover object-center"

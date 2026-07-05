@@ -1190,7 +1190,7 @@ export default function ConsultantSEOAixPage() {
                     }}
                   >
                     <Image
-                      src="/laeti-1.jpg"
+                      src="/laeti-1.webp"
                       alt="Laetitia, consultante SEO local à Aix-en-Provence spécialisée décoration et habitat"
                       fill
                       className="object-cover object-center"

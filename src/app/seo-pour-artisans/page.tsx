@@ -335,7 +335,7 @@ export default function SeoArtisansPage() {
                 style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)' }}
               >
                 <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(252,235,48,0.5)' }}>
-                  <Image src="/laeti-1.jpg" alt="Laetitia Laghezza, consultante SEO local" fill className="object-cover object-center" sizes="48px" />
+                  <Image src="/laeti-1.webp" alt="Laetitia Laghezza, consultante SEO local" fill className="object-cover object-center" sizes="48px" />
                 </div>
                 <div>
                   <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff' }}>
@@ -855,7 +855,7 @@ export default function SeoArtisansPage() {
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(252,235,48,0.4)' }}>
-                    <Image src="/laeti-1.jpg" alt="Laetitia Laghezza" fill className="object-cover object-center" sizes="40px" />
+                    <Image src="/laeti-1.webp" alt="Laetitia Laghezza" fill className="object-cover object-center" sizes="40px" />
                   </div>
                   <div>
                     <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '13px', color: '#ffffff' }}>Laetitia Laghezza</p>
@@ -949,7 +949,7 @@ export default function SeoArtisansPage() {
                     </p>
                     <div className="flex items-start gap-4">
                       <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(252,235,48,0.35)' }}>
-                        <Image src="/laeti-1.jpg" alt="Laetitia Laghezza" fill className="object-cover object-center" sizes="36px" />
+                        <Image src="/laeti-1.webp" alt="Laetitia Laghezza" fill className="object-cover object-center" sizes="36px" />
                       </div>
                       <p className="text-white/80" style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '26px' }}>
                         {item.a}

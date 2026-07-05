@@ -61,6 +61,12 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ['192.168.31.57'],
+  images: {
+    // L'optimiseur /_next/image de Cloudflare Pages ne redimensionne pas réellement les
+    // images (il renvoie le fichier d'origine tel quel malgré les paramètres w/q). On désactive
+    // cette optimisation illusoire et on sert des fichiers déjà pré-optimisés (WebP, taille adaptée).
+    unoptimized: true,
+  },
   experimental: {
     // Ne charge que les icônes/fonctions réellement utilisées (réduit le JS inutilisé)
     optimizePackageImports: ['@phosphor-icons/react', 'framer-motion'],

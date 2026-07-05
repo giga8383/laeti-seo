@@ -67,7 +67,7 @@ export default function GBPComparison() {
 
         {/* 1 photo AVANT */}
         <div style={{ width: '36%', minHeight: 185, flexShrink: 0, position: 'relative', borderRight: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden' }}>
-          <Image src="/deco-chambre.jpg" alt="Chambre avant optimisation" fill sizes="(max-width: 768px) 40vw, 260px" style={{ objectFit: 'cover', filter: 'brightness(0.55) saturate(0.7)' }}/>
+          <Image src="/deco-chambre.webp" alt="Chambre avant optimisation" fill sizes="(max-width: 768px) 40vw, 260px" style={{ objectFit: 'cover', filter: 'brightness(0.55) saturate(0.7)' }}/>
           <span style={{ position: 'absolute', bottom: 8, left: 8, fontFamily: inter.style.fontFamily, fontSize: 10, color: 'rgba(255,255,255,0.55)', background: 'rgba(0,0,0,0.45)', borderRadius: 4, padding: '2px 6px' }}>1 photo · 1/10</span>
         </div>
 
@@ -111,14 +111,14 @@ export default function GBPComparison() {
         {/* Grille 3 photos */}
         <div style={{ width: '36%', flexShrink: 0, display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 2, minHeight: 200 }}>
           <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-            <Image src="/deco-salon.jpg" alt="Salon décoré" fill sizes="(max-width: 768px) 27vw, 175px" style={{ objectFit: 'cover' }}/>
+            <Image src="/deco-salon.webp" alt="Salon décoré" fill sizes="(max-width: 768px) 27vw, 175px" style={{ objectFit: 'cover' }}/>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <div style={{ position: 'relative', width: '100%', flex: 1, minHeight: 0 }}>
-              <Image src="/deco-cuisine.jpg" alt="Cuisine" fill sizes="(max-width: 768px) 13vw, 85px" style={{ objectFit: 'cover' }}/>
+              <Image src="/deco-cuisine.webp" alt="Cuisine" fill sizes="(max-width: 768px) 13vw, 85px" style={{ objectFit: 'cover' }}/>
             </div>
             <div style={{ position: 'relative', width: '100%', flex: 1, minHeight: 0 }}>
-              <Image src="/deco-chambre.jpg" alt="Chambre" fill sizes="(max-width: 768px) 13vw, 85px" style={{ objectFit: 'cover' }}/>
+              <Image src="/deco-chambre.webp" alt="Chambre" fill sizes="(max-width: 768px) 13vw, 85px" style={{ objectFit: 'cover' }}/>
             </div>
           </div>
         </div>

@@ -66,7 +66,7 @@ export default function PreFooter() {
               fontWeight: 700,
               fontSize: '22px',
               lineHeight: '1.3',
-              color: 'rgba(38,77,140,0.40)',
+              color: 'rgba(38,77,140,0.6)',
             }}>
               Un accompagnement direct, sans intermédiaire.
             </h2>
@@ -112,7 +112,7 @@ export default function PreFooter() {
                   fontWeight: 400,
                   fontSize: '14px',
                   lineHeight: '23px',
-                  color: 'rgba(38,77,140,0.65)',
+                  color: 'rgba(38,77,140,0.8)',
                 }}>
                   {body}
                 </p>
@@ -208,7 +208,7 @@ export default function PreFooter() {
                   fontFamily: inter.style.fontFamily,
                   fontWeight: 400,
                   fontSize: '13px',
-                  color: 'rgba(38,77,140,0.50)',
+                  color: 'rgba(38,77,140,0.8)',
                   marginTop: '5px',
                 }}>
                   Téléchargeable en 1 clic, professionnels de l&apos;habitat

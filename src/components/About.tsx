@@ -68,7 +68,7 @@ export default function About() {
                 }}
               >
                 <Image
-                  src="/laeti-3.jpg"
+                  src="/laeti-3.webp"
                   alt="Laeti, consultante SEO local pour les professionnels de l'habitat"
                   fill
                   className="object-cover object-center"
