@@ -19,7 +19,7 @@ Approche : terrain, pas théorique. Pas de jargon. Des corrections actionnables 
 - Plan d'action sur 30 jours
 - Livraison sous 5 jours ouvrés
 
-### Sprint local 3 mois — 490 €
+### Sprint local 3 mois — 790 €
 - Diagnostic visibilité inclus (point de départ)
 - Optimisation complète de la fiche Google Business Profile
 - Stratégie avis clients personnalisée
@@ -65,8 +65,26 @@ Non. Le diagnostic identifie les blocages et les actions prioritaires. Les résu
 | Offre | Prix | Délai |
 |---|---|---|
 | Diagnostic visibilité locale | 190 € | 5 jours ouvrés |
-| Sprint local 3 mois | 490 € | 3 mois |
+| Sprint local 3 mois | 790 € | 3 mois |
 
 ## Contact
 
 Réservation via le formulaire de diagnostic sur le site.
+
+## Pages du site
+
+- [Accueil](https://laeti-seo.fr/): présentation du diagnostic de visibilité locale et de l'offre Sprint local
+- [Offres et tarifs](https://laeti-seo.fr/offre): détail des deux offres, déroulé et tarifs
+- [Audit SEO local](https://laeti-seo.fr/audit-seo-local): contenu détaillé de l'audit (fiche Google, citations NAP, concurrents, Local Pack)
+- [SEO pour artisans](https://laeti-seo.fr/seo-pour-artisans): guide SEO local dédié aux artisans du bâtiment
+- [Feuille de route](https://laeti-seo.fr/feuille-de-route): étapes du diagnostic et de l'accompagnement
+- [Blog](https://laeti-seo.fr/blog): articles sur le SEO local et la visibilité Google des professionnels de l'habitat
+- [Consultante SEO Marseille](https://laeti-seo.fr/consultant-seo-marseille): page locale dédiée à Marseille
+- [Consultante SEO Aix-en-Provence](https://laeti-seo.fr/consultant-seo-aix-en-provence): page locale dédiée à Aix-en-Provence
+- [Consultante SEO Toulon](https://laeti-seo.fr/consultant-seo-toulon): page locale dédiée à Toulon
+
+## Optionnel
+
+- [Mentions légales](https://laeti-seo.fr/mentions-legales)
+- [Politique de confidentialité](https://laeti-seo.fr/politique-de-confidentialite)
+- [CGV](https://laeti-seo.fr/cgv)

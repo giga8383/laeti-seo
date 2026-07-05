@@ -6,6 +6,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Footer from "@/components/Footer";
 import PreFooter from "@/components/PreFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SatoshiFontLoader from "@/components/SatoshiFontLoader";
 import { outfit, inter } from "@/lib/fonts";
 import "./globals.css";
 
@@ -86,7 +87,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-full font-sans antialiased">
+        <SatoshiFontLoader />
         <GridBackground />
         <HabitatAccents />
         <div className="relative z-0">{children}</div>

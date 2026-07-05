@@ -488,7 +488,7 @@ export default function Offer() {
                 </h3>
                 <p
                   className="mt-1 text-sm"
-                  style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.55 }}
+                  style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.9 }}
                 >
                   190 € · livraison sous 5 jours ouvrés
                 </p>

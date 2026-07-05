@@ -43,7 +43,7 @@ export default function Benefits() {
                 </h2>
                 <p
                   className="mt-6 text-base leading-relaxed"
-                  style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.65 }}
+                  style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.9 }}
                 >
                   L&apos;objectif n&apos;est pas de tout faire. L&apos;objectif
                   est de faire les bonnes actions, dans le bon ordre.
@@ -139,7 +139,7 @@ export default function Benefits() {
                         </clipPath>
                       </defs>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <image href="/laeti-photo.png" x="28" y="30" width="144" height="196" preserveAspectRatio="xMidYMid slice" clipPath="url(#photoFrameClip)"/>
+                      <image href="/laeti-photo.webp" x="28" y="30" width="144" height="196" preserveAspectRatio="xMidYMid slice" clipPath="url(#photoFrameClip)"/>
                       {/* Surcadre finition */}
                       <rect x="28" y="30" width="144" height="196" rx="1.5" fill="none" stroke="#264d8c" strokeWidth="1.2"/>
 
@@ -155,7 +155,7 @@ export default function Benefits() {
                     <div className="flex items-start gap-5 py-6">
                       <span
                         className="mt-0.5 font-mono text-xl font-bold tabular-nums"
-                        style={{ color: '#3262ab', opacity: 0.25 }}
+                        style={{ color: '#3262ab', opacity: 0.7 }}
                       >
                         {String(i + 1).padStart(2, '0')}
                       </span>

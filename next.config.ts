@@ -26,14 +26,20 @@ const securityHeaders = [
     key: "Strict-Transport-Security",
     value: "max-age=63072000; includeSubDomains; preload",
   },
+  // Isole l'origine des fenêtres ouvertes par le site (protection contre les attaques cross-origin)
+  {
+    key: "Cross-Origin-Opener-Policy",
+    value: "same-origin",
+  },
   // Content Security Policy : liste blanche des sources autorisées
-  // Ajustez les domaines selon vos besoins (ex: Google Analytics, fonts)
+  // Note : pas de nonce par requête ici pour garder les pages statiques (SSG) sur Cloudflare Pages.
+  // 'unsafe-inline' reste nécessaire pour les styles inline (utilisés partout dans les composants).
   {
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Scripts : site lui-même + Google Analytics (à activer quand GA est branché)
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
+      // Scripts : site lui-même + Google Analytics (chargé après consentement)
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
       // Styles : site + Google Fonts + Fontshare (Satoshi)
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com",
       // Polices : site + Google Fonts + Fontshare (Satoshi)
@@ -46,6 +52,8 @@ const securityHeaders = [
       "frame-ancestors 'self'",
       // Bloque les plugins Flash/Java/etc.
       "object-src 'none'",
+      // Empêche l'injection d'une balise <base> malveillante qui détournerait les URLs relatives
+      "base-uri 'self'",
       "upgrade-insecure-requests",
     ].join("; "),
   },
@@ -53,6 +61,10 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ['192.168.31.57'],
+  experimental: {
+    // Ne charge que les icônes/fonctions réellement utilisées (réduit le JS inutilisé)
+    optimizePackageImports: ['@phosphor-icons/react', 'framer-motion'],
+  },
   async headers() {
     return [
       {
