@@ -19,6 +19,15 @@ export default function FinalCTA({
         Je vous aide à faire le point, à prioriser et à corriger ce qui
         freine vraiment votre visibilité locale.
       </p>
+      <p className="mx-auto mt-3 max-w-[50ch] text-base leading-relaxed text-white/65" style={{ fontFamily: inter.style.fontFamily }}>
+        Basée en Alpes-de-Haute-Provence, j&apos;interviens comme consultant SEO
+        région Sud auprès des professionnels de l&apos;habitat de tout le grand
+        Sud-Est. Que vous soyez à Digne-les-Bains, à Manosque, à Aix-en-Provence
+        ou ailleurs en Provence-Alpes-Côte d&apos;Azur, le référencement freelance
+        que je propose reste le même : un accompagnement direct, sans
+        sous-traitance, pensé pour des artisans et des indépendants, pas pour
+        des comptes-clés d&apos;agence.
+      </p>
     </>
   ),
   cta = 'Réserver un diagnostic visibilité locale',

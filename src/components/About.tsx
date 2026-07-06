@@ -216,8 +216,8 @@ export default function About() {
                   maxWidth: '52ch',
                 }}
               >
-                Je travaille seule, sans sous-traitance.<br />
-                Quand vous commandez un diagnostic, c&apos;est moi qui analyse et qui rédige.<br />
+                Je travaille seule, sans sous-traitance : que vous me cherchiez comme consultante SEO freelance ou comme consultant SEO freelance, c&apos;est la même personne et la même rigueur derrière chaque diagnostic.<br />
+                Sur certaines recherches, on me trouve aussi sous l&apos;appellation experte SEO freelance : peu importe le terme exact que vous tapez, quand vous commandez un diagnostic, c&apos;est moi qui analyse et qui rédige.<br />
                 Pas de stagiaire, pas de fausses promesses.
               </p>
             </ScrollReveal>
