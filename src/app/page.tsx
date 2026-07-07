@@ -78,6 +78,7 @@ const jsonLd = {
       priceRange: 'De 190 € à 790 €',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Rue du Commerce',
         addressLocality: 'Pourrières',
         postalCode: '83910',
         addressRegion: "Provence-Alpes-Côte d'Azur",
