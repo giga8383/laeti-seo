@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
-import QuizGBP from '@/components/QuizGBP';
+import RoiSimulator from '@/components/RoiSimulator';
 import { inter } from '@/lib/fonts';
 import {
   Check,
@@ -362,9 +362,9 @@ export default function SeoArtisansPage() {
           </div>
         </section>
 
-        {/* ── Quiz interactif ── */}
-        <div className="mx-auto max-w-3xl px-6 pb-16">
-          <QuizGBP />
+        {/* ── Simulateur interactif ── */}
+        <div className="mx-auto max-w-5xl px-6 pb-16">
+          <RoiSimulator />
         </div>
 
         <Sep />
