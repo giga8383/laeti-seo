@@ -72,7 +72,6 @@ const jsonLd = {
       foundingDate: '2007',
       description:
         "Diagnostic de visibilité locale et accompagnement SEO local pour les professionnels de l'habitat : décorateurs, architectes d'intérieur, cuisinistes, menuisiers et artisans.",
-      serviceType: 'SEO local, Référencement Google local',
       image: 'https://laeti-seo.fr/laeti-1.webp',
       telephone: '+33 6 26 95 07 50',
       priceRange: 'De 190 € à 790 €',
@@ -88,7 +87,7 @@ const jsonLd = {
         '@type': 'Country',
         name: 'France',
       },
-      offers: [
+      makesOffer: [
         {
           '@type': 'Offer',
           name: 'Diagnostic visibilité locale',
