@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
+import ReviewsMarquee from '@/components/ReviewsMarquee';
 import { inter } from '@/lib/fonts';
 import {
   Check,
@@ -582,6 +583,11 @@ export default function AuditSEOLocalPage() {
             </div>
           </div>
         </section>
+
+        {/* ══════════════════════════════════════════
+            BANDEAU D'AVIS
+        ══════════════════════════════════════════ */}
+        <ReviewsMarquee />
 
         {/* Séparateur */}
         <div className="mx-auto max-w-7xl px-6 pt-4">
