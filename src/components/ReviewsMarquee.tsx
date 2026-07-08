@@ -50,6 +50,18 @@ const reviews: Review[] = [
     source: 'google',
     text: "J'ai fait appel à Laetitia, coach SEO, pour améliorer la visibilité de mon site et avoir quelques conseils stratégiques, tout en respectant l'anonymat de mon activité. Laetitia est très professionnelle, à l'écoute et surtout très pédagogue. Elle prend le temps d'expliquer, propose des actions claires et efficaces, et on se sent vraiment accompagnée à chaque étape. Grâce à son travail, ma présence sur Google s'est nettement améliorée. Je recommande Laetitia sans hésiter à toute personne souhaitant développer son activité et sa visibilité locale avec une approche humaine et sérieuse.",
   },
+  {
+    name: 'Dinor75',
+    avatarColor: '#00838f',
+    source: 'pagesjaunes',
+    text: "Je suis très satisfait de l'accompagnement de Laetitia. Elle est bienveillante, pédagogue et prend le temps d'expliquer les choses simplement. Ses conseils SEO sont pertinents et adaptés à la situation. On sent qu'elle maîtrise son sujet et qu'elle a vraiment envie d'aider. Je recommande sans hésiter.",
+  },
+  {
+    name: '626cjjyyz2',
+    avatarColor: '#ef6c00',
+    source: 'pagesjaunes',
+    text: "Franchement très bonne expérience. Laetitia est super pro, agréable et surtout elle explique les choses simplement (même quand on n'y connaît pas grand-chose en SEO). Ses conseils sont clairs, utiles et adaptés à mon activité. J'ai apprécié son sérieux et sa disponibilité. Je recommande sans problème.",
+  },
 ];
 
 function GoogleBadge() {
