@@ -57,7 +57,7 @@ const reviews: Review[] = [
     text: "Je suis très satisfait de l'accompagnement de Laetitia. Elle est bienveillante, pédagogue et prend le temps d'expliquer les choses simplement. Ses conseils SEO sont pertinents et adaptés à la situation. On sent qu'elle maîtrise son sujet et qu'elle a vraiment envie d'aider. Je recommande sans hésiter.",
   },
   {
-    name: '626cjjyyz2',
+    name: 'Client Pages Jaunes',
     avatarColor: '#ef6c00',
     source: 'pagesjaunes',
     text: "Franchement très bonne expérience. Laetitia est super pro, agréable et surtout elle explique les choses simplement (même quand on n'y connaît pas grand-chose en SEO). Ses conseils sont clairs, utiles et adaptés à mon activité. J'ai apprécié son sérieux et sa disponibilité. Je recommande sans problème.",
