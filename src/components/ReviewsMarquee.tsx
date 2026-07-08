@@ -48,7 +48,7 @@ const reviews: Review[] = [
     name: 'mamie gisou',
     avatarColor: '#e53935',
     source: 'google',
-    text: "J'ai fait appel à Laetitia, coach SEO, pour améliorer la visibilité de mon site et avoir quelques conseils stratégiques, tout en respectant l'anonymat de mon activité.",
+    text: "J'ai fait appel à Laetitia, coach SEO, pour améliorer la visibilité de mon site et avoir quelques conseils stratégiques, tout en respectant l'anonymat de mon activité. Laetitia est très professionnelle, à l'écoute et surtout très pédagogue. Elle prend le temps d'expliquer, propose des actions claires et efficaces, et on se sent vraiment accompagnée à chaque étape. Grâce à son travail, ma présence sur Google s'est nettement améliorée. Je recommande Laetitia sans hésiter à toute personne souhaitant développer son activité et sa visibilité locale avec une approche humaine et sérieuse.",
   },
 ];
 
@@ -123,14 +123,23 @@ function ReviewCard({ review }: { review: Review }) {
 
       <p
         className="mt-3"
-        style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '22px', color: 'rgba(255,255,255,0.7)' }}
+        style={{
+          fontFamily: inter.style.fontFamily,
+          fontSize: '14px',
+          lineHeight: '22px',
+          color: 'rgba(255,255,255,0.7)',
+          display: '-webkit-box',
+          WebkitLineClamp: 6,
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden',
+        }}
       >
         {review.text}
       </p>
 
       <span
         className="mt-4 inline-flex items-center gap-1"
-        style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(252,235,48,0.85)' }}
+        style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(252,235,48,0.85)', marginTop: 'auto', paddingTop: '16px' }}
       >
         Voir l&apos;avis ↗
       </span>
