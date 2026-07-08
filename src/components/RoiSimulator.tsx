@@ -221,7 +221,17 @@ export default function RoiSimulator() {
         >
           Combien votre FICHE GOOGLE peut-elle vous rapporter ?
         </h3>
-        <p className="mx-auto mt-2 max-w-[48ch]" style={questionSub}>
+        <p
+          className="mx-auto mt-2 max-w-[48ch]"
+          style={{
+            fontFamily: inter.style.fontFamily,
+            fontStyle: 'normal',
+            fontWeight: 400,
+            fontSize: '16px',
+            lineHeight: '24px',
+            color: 'rgba(255,255,255,0.5)',
+          }}
+        >
           2 minutes pour estimer votre potentiel et trouver l’offre adaptée.
         </p>
       </div>
