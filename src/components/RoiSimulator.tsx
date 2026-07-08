@@ -211,9 +211,15 @@ export default function RoiSimulator() {
         </p>
         <h3
           className="mx-auto mt-2 max-w-[26ch] text-white"
-          style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(22px, 3vw, 30px)', lineHeight: '1.2' }}
+          style={{
+            fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif',
+            fontStyle: 'normal',
+            fontWeight: 700,
+            fontSize: '38px',
+            lineHeight: '44px',
+          }}
         >
-          Combien votre fiche Google peut-elle vous rapporter ?
+          Combien votre FICHE GOOGLE peut-elle vous rapporter ?
         </h3>
         <p className="mx-auto mt-2 max-w-[48ch]" style={questionSub}>
           2 minutes pour estimer votre potentiel et trouver l’offre adaptée.
