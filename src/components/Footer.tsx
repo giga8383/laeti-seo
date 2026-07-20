@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'Feuille de route', href: '/feuille-de-route' },
   { label: 'Blog SEO',         href: '/blog' },
   { label: 'À propos',         href: '/#qui-suis-je' },
-  { label: 'Contact',          href: 'mailto:contact@laeti-seo.fr' },
+  { label: 'Contact',          href: 'mailto:laetitia@laeti-seo.fr' },
 ];
 
 const seoLocal = [
@@ -198,13 +198,13 @@ export default function Footer() {
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, opacity: 0.45 }}>
                   <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="rgba(255,255,255,0.6)"/>
                 </svg>
-                <a href="mailto:contact@laeti-seo.fr" style={{
+                <a href="mailto:laetitia@laeti-seo.fr" style={{
                   fontFamily: inter.style.fontFamily,
                   fontSize: '13px',
                   color: 'rgba(252,235,48,0.65)',
                   textDecoration: 'none',
                 }}>
-                  contact@laeti-seo.fr
+                  laetitia@laeti-seo.fr
                 </a>
               </div>
             </div>

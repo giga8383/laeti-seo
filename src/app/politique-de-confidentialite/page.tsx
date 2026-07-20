@@ -229,8 +229,8 @@ export default function PolitiqueConfidentialite() {
                 <div className="mt-3" style={{ lineHeight: '1.9' }}>
                   <p><strong>Laetitia Laghezza</strong></p>
                   <p>Auto-entrepreneur, SIRET 52276783900023</p>
-                  <p>15 Rue du Commerce, 83910 Pourrières</p>
-                  <p><a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a></p>
+                  <p>Rue du Commerce, 83910 Pourrières</p>
+                  <p><a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a></p>
                 </div>
               </div>
             </section>
@@ -250,7 +250,7 @@ export default function PolitiqueConfidentialite() {
                 </ul>
                 <p className="mt-3">
                   Pour exercer ces droits, contactez :{' '}
-                  <a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a>.
+                  <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>.
                   En cas de litige, vous pouvez également saisir la{' '}
                   <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
                     CNIL
@@ -264,7 +264,7 @@ export default function PolitiqueConfidentialite() {
               <div style={bodyStyle}>
                 <p>
                   Pour toute question relative à cette politique :{' '}
-                  <a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a>
+                  <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>
                 </p>
               </div>
             </section>

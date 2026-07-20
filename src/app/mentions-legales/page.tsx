@@ -62,8 +62,8 @@ export default function MentionsLegales() {
               <div style={{ lineHeight: '1.9' }}>
                 <p><strong>Laetitia Laghezza</strong></p>
                 <p>Auto-entrepreneur, SIRET 52276783900023</p>
-                <p>15 Rue du Commerce, 83910 Pourrières, France</p>
-                <p><a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a></p>
+                <p>Rue du Commerce, 83910 Pourrières, France</p>
+                <p>Vous pouvez contacter le responsable de l&apos;édition du site internet par mail, à l&apos;adresse <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>.</p>
                 <p style={{ marginTop: '8px' }}><strong>Directrice de publication :</strong> Laetitia Laghezza</p>
               </div>
             </Section>
@@ -90,7 +90,7 @@ export default function MentionsLegales() {
               </p>
               <p className="mt-3">
                 Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d&apos;un droit d&apos;accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez :{' '}
-                <a href="mailto:contact@laeti-seo.fr" style={{ color: '#3262ab' }}>contact@laeti-seo.fr</a>.
+                <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>.
               </p>
             </Section>
 

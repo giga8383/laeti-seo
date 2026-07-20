@@ -60,8 +60,8 @@ export default function CGV() {
           <div className="mb-10" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.55)', lineHeight: '1.9' }}>
             <p><span style={{ color: 'rgba(255,255,255,0.40)' }}>Prestataire</span> <strong style={{ color: 'rgba(255,255,255,0.85)' }}>Laetitia Laghezza</strong></p>
             <p>Auto-entrepreneur, SIRET 52276783900023</p>
-            <p>15 Rue du Commerce, 83910 Pourrières</p>
-            <p><a href="mailto:contact@laeti-seo.fr" style={{ color: '#fceb30', textDecoration: 'none' }}>contact@laeti-seo.fr</a></p>
+            <p>Rue du Commerce, 83910 Pourrières</p>
+            <p><a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#fceb30', textDecoration: 'none' }}>laetitia@laeti-seo.fr</a></p>
           </div>
 
           {/* Table des matières */}
