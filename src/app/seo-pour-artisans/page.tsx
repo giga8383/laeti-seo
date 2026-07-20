@@ -290,15 +290,11 @@ export default function SeoArtisansPage() {
               </h1>
             </ScrollReveal>
 
-            {/* TL;DR */}
             <ScrollReveal delay={0.13}>
               <div
                 className="mb-8 max-w-[70ch] rounded-2xl p-5"
                 style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
               >
-                <p style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: 'rgba(252,235,48,0.8)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
-                  TL;DR
-                </p>
                 <p style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '25px', color: 'rgba(255,255,255,0.75)' }}>
                   Le référencement local, c&apos;est l&apos;ensemble des actions qui permettent à votre entreprise d&apos;apparaître en tête des résultats Google quand un client proche tape « plombier urgence Lyon » ou « cuisiniste Bordeaux ».
                   Pour un artisan, c&apos;est le levier numérique le plus rentable : <strong className="text-white/90">46 % des recherches Google ont une intention locale</strong>, et
