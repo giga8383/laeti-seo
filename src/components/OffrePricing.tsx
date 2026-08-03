@@ -181,6 +181,10 @@ function PricingCard({
 
       {/* CTA */}
       <MagneticButton
+        as="a"
+        href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-auto flex w-full items-center justify-center gap-2 rounded-full py-3.5 font-bold transition-all duration-300 active:scale-[0.98]"
         style={
           isYellow
