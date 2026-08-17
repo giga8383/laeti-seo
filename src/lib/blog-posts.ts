@@ -2,6 +2,7 @@ export interface BlogPost {
   slug: string;
   category: string;
   date: string;
+  publishedAt: string; // format ISO (YYYY-MM-DD), sert au tri chronologique
   readTime: string;
   title: string;
   excerpt: string;
@@ -18,6 +19,7 @@ export const blogPosts: BlogPost[] = [
     slug: "instagram-2026-pros-habitat",
     category: "Réseaux sociaux",
     date: "12 mai 2026",
+    publishedAt: "2026-05-12",
     readTime: "7 min",
     title: "Instagram en 2026 : pourquoi vous n'attirez pas les bons clients (et comment corriger)",
     excerpt:
@@ -86,6 +88,7 @@ export const blogPosts: BlogPost[] = [
     slug: "fiche-google-business-2026",
     category: "Google Business Profile",
     date: "28 avril 2026",
+    publishedAt: "2026-04-28",
     readTime: "6 min",
     title: "Fiche Google en 2026 : les réglages que vos concurrents n'ont pas encore faits",
     excerpt:
@@ -151,6 +154,7 @@ export const blogPosts: BlogPost[] = [
     slug: "seo-local-ia-2026",
     category: "SEO local",
     date: "7 avril 2026",
+    publishedAt: "2026-04-07",
     readTime: "8 min",
     title: "SEO local et IA en 2026 : comment vos clients vous trouvent (et comment être là au bon moment)",
     excerpt:
@@ -211,6 +215,7 @@ export const blogPosts: BlogPost[] = [
     slug: "pinterest-guide-2026",
     category: "Réseaux sociaux",
     date: "10 août 2026",
+    publishedAt: "2026-08-10",
     readTime: "10 min",
     title: "Pinterest : le guide complet pour réussir sur cette plateforme inexploitée en 2026",
     excerpt:
@@ -717,4 +722,9 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 
 export function getAllSlugs(): string[] {
   return blogPosts.map((p) => p.slug);
+}
+
+// Articles triés du plus récent au plus ancien, indépendamment de leur ordre dans le tableau
+export function getSortedPosts(): BlogPost[] {
+  return [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }

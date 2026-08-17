@@ -4,7 +4,9 @@ import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
 import { inter } from '@/lib/fonts';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
-import { blogPosts as articles } from '@/lib/blog-posts';
+import { getSortedPosts } from '@/lib/blog-posts';
+
+const articles = getSortedPosts();
 
 export const metadata: Metadata = {
   title: "Blog SEO local, Conseils pour professionnels de l'habitat",
