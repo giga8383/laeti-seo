@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
 import { inter } from '@/lib/fonts';
@@ -107,6 +108,22 @@ export default function BlogPage() {
                         textDecoration: "none",
                       }}
                     >
+                      {/* Image */}
+                      {article.image && (
+                        <div
+                          className="relative mb-5 -mx-7 -mt-7 h-40 overflow-hidden rounded-t-[1.5rem]"
+                          style={{ background: "rgba(255,255,255,0.04)" }}
+                        >
+                          <Image
+                            src={article.image}
+                            alt={article.imageAlt ?? article.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            style={{ objectFit: "cover" }}
+                          />
+                        </div>
+                      )}
+
                       {/* Catégorie + meta */}
                       <div className="mb-4 flex items-center justify-between gap-3">
                         <span

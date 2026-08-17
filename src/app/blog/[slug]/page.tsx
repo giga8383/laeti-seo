@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import { inter } from '@/lib/fonts';
 import { getPostBySlug, getAllSlugs } from '@/lib/blog-posts';
@@ -30,6 +31,7 @@ export async function generateMetadata({
       title: post.metaTitle,
       description: post.metaDescription,
       type: 'article',
+      images: post.image ? [{ url: `https://laeti-seo.fr${post.image}` }] : undefined,
     },
   };
 }
@@ -54,6 +56,12 @@ export default async function BlogArticlePage({
 
   return (
     <>
+      {post.jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(post.jsonLd) }}
+        />
+      )}
       <Navbar />
       <main>
 
@@ -137,6 +145,27 @@ export default async function BlogArticlePage({
             <div className="mb-10 h-px w-full" style={{ background: "rgba(255,255,255,0.07)" }} />
           </div>
         </section>
+
+        {/* ── Image de couverture ── */}
+        {post.image && (
+          <section className="relative bg-transparent">
+            <div className="mx-auto max-w-3xl px-6 pb-4">
+              <div
+                className="relative h-56 w-full overflow-hidden rounded-[1.25rem] md:h-80"
+                style={{ background: "rgba(255,255,255,0.04)" }}
+              >
+                <Image
+                  src={post.image}
+                  alt={post.imageAlt ?? post.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ── Corps de l'article ── */}
         <section className="relative bg-transparent">
