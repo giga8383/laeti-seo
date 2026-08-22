@@ -9,8 +9,6 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { outfit, inter } from "@/lib/fonts";
 import "./globals.css";
 
-const SATOSHI_HREF = 'https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap';
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://laeti-seo.fr'),
   title: {
@@ -89,20 +87,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://api.fontshare.com" />
-        <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="anonymous" />
-        {/* Charge la police Satoshi sans bloquer le rendu : preload démarre la requête dès le
-            parsing HTML, puis le script bascule le <link> en feuille de style une fois prêt
-            (React ne supporte pas l'attribut onload en chaîne sur un <link>, d'où ce script). */}
-        <link id="satoshi-preload" rel="preload" as="style" href={SATOSHI_HREF} />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){var l=document.getElementById('satoshi-preload');if(!l)return;l.onload=function(){l.rel='stylesheet';};})();`,
-          }}
-        />
-        <noscript>
-          <link rel="stylesheet" href={SATOSHI_HREF} />
-        </noscript>
+        {/* Satoshi est auto-hébergée (voir globals.css) : preload direct des fichiers
+            woff2 pour éviter le flash de police par défaut sur le texte au-dessus de la ligne de flottaison. */}
+        <link rel="preload" href="/fonts/satoshi-black.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/satoshi-bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body className="min-h-full font-sans antialiased">
         <GridBackground />

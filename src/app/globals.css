@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+/* Satoshi auto-hébergée (ex-Fontshare) — licence ITF Free Font License,
+   self-hosting explicitement autorisé (fontshare.com/licenses/itf-ffl). */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi-black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
 @theme {
   --color-brand-blue: #3262ab;
   --color-brand-dark: #264d8c;

@@ -45,10 +45,10 @@ const securityHeaders = [
       "default-src 'self'",
       // Scripts : site lui-même + Google Analytics (chargé après consentement)
       `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com`,
-      // Styles : site + Google Fonts + Fontshare (Satoshi)
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com",
-      // Polices : site + Google Fonts + Fontshare (Satoshi)
-      "font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com",
+      // Styles : site + Google Fonts (Satoshi est désormais auto-hébergée)
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      // Polices : site (Satoshi auto-hébergée) + Google Fonts
+      "font-src 'self' https://fonts.gstatic.com",
       // Images : site + données inline (pour les SVG/base64)
       "img-src 'self' data: https:",
       // Connexions réseau : GA
@@ -68,13 +68,21 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ['192.168.31.57'],
   images: {
     // L'optimiseur /_next/image de Cloudflare Pages ne redimensionne pas réellement les
-    // images (il renvoie le fichier d'origine tel quel malgré les paramètres w/q). On désactive
-    // cette optimisation illusoire et on sert des fichiers déjà pré-optimisés (WebP, taille adaptée).
-    unoptimized: true,
+    // images (il renvoie le fichier d'origine tel quel malgré les paramètres w/q). On contourne
+    // ce endpoint avec un loader personnalisé qui sert directement des fichiers WebP
+    // pré-générés par taille (voir src/lib/image-loader.ts), ce qui permet un vrai srcSet
+    // responsive sans dépendre de l'optimiseur cassé.
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts',
   },
   experimental: {
     // Ne charge que les icônes/fonctions réellement utilisées (réduit le JS inutilisé)
     optimizePackageImports: ['@phosphor-icons/react', 'framer-motion'],
+    // Inline le CSS de la page dans le <head> au lieu de <link rel="stylesheet">,
+    // ce qui supprime la requête réseau bloquant le rendu. Pertinent ici car le CSS
+    // (Tailwind) est petit (~10 Kio) et la priorité est la première visite (SEO/PageSpeed)
+    // plutôt que le cache entre visites répétées.
+    inlineCss: true,
   },
   async headers() {
     return [
@@ -82,6 +90,16 @@ const nextConfig: NextConfig = {
         // Applique les headers à toutes les pages
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        // Polices auto-hébergées : fichiers statiques immuables, cache long-terme côté navigateur
+        source: "/fonts/:path*.woff2",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
       },
     ];
   },
