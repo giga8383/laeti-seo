@@ -91,16 +91,6 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
-      {
-        // Polices auto-hébergées : fichiers statiques immuables, cache long-terme côté navigateur
-        source: "/fonts/:path*.woff2",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
     ];
   },
 };
