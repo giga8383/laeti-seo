@@ -228,7 +228,7 @@ export default function BlogPage() {
                 className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-7 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: "14px" }}
               >
-                Voir le diagnostic · 190 €
+                Voir le diagnostic · 290 €
                 <ArrowRight size={15} weight="bold" />
               </a>
             </ScrollReveal>

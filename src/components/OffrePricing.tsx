@@ -8,7 +8,7 @@ const diagnostic = {
   badge: 'Essentiel',
   badgeStyle: 'glass' as const,
   name: 'Diagnostic visibilité',
-  price: '190',
+  price: '290',
   unit: 'paiement unique',
   delay: '5 jours ouvrés',
   pitch: (
@@ -27,7 +27,7 @@ const diagnostic = {
     'Rapport synthétique avec les blocages identifiés',
     "Plan d'action 30 jours classé par priorité et impact",
   ],
-  cta: 'Réserver le diagnostic · 190 €',
+  cta: 'Réserver le diagnostic · 290 €',
 };
 
 const sprint = {

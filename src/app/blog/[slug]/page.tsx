@@ -214,7 +214,7 @@ export default async function BlogArticlePage({
                 className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: "14px" }}
               >
-                Voir le diagnostic · 190 €
+                Voir le diagnostic · 290 €
                 <ArrowRight size={14} weight="bold" />
               </a>
             </div>

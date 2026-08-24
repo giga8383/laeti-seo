@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Laeti SEO",
   },
   description:
-    "Décorateur, cuisiniste, menuisier, artisan : vous n'apparaissez pas assez sur Google ? J'analyse votre fiche Google Business Profile, vos avis et votre présence locale, et vous remets un plan d'action priorisé. Diagnostic SEO local à 190 €.",
+    "Décorateur, cuisiniste, menuisier, artisan : vous n'apparaissez pas assez sur Google ? J'analyse votre fiche Google Business Profile, vos avis et votre présence locale, et vous remets un plan d'action priorisé. Diagnostic SEO local à 290 €.",
   keywords: [
     "diagnostic visibilité locale",
     "SEO local professionnels habitat",
@@ -65,14 +65,14 @@ export const metadata: Metadata = {
     url: 'https://laeti-seo.fr',
     title: "Diagnostic visibilité locale pour professionnels de l'habitat | Laeti SEO",
     description:
-      "Vous n'apparaissez pas assez sur Google ? J'analyse votre fiche Google Business Profile, vos concurrents et votre présence locale. Plan d'action priorisé livré sous 5 jours. 190 €.",
+      "Vous n'apparaissez pas assez sur Google ? J'analyse votre fiche Google Business Profile, vos concurrents et votre présence locale. Plan d'action priorisé livré sous 5 jours. 290 €.",
     siteName: "Laeti SEO",
   },
   twitter: {
     card: "summary_large_image",
     title: "Diagnostic visibilité locale | Laeti SEO",
     description:
-      "Décorateur, cuisiniste, menuisier, artisan : comprenez pourquoi vous n'apparaissez pas assez sur Google. Diagnostic SEO local à 190 €.",
+      "Décorateur, cuisiniste, menuisier, artisan : comprenez pourquoi vous n'apparaissez pas assez sur Google. Diagnostic SEO local à 290 €.",
   },
   verification: {
     google: "DcYbOMnOtt1oMhlPULeAyJ3_Sf5joYz8nOuOoWgAON8",

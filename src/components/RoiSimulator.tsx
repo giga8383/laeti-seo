@@ -123,8 +123,8 @@ export default function RoiSimulator() {
       }
     : {
         title: 'Diagnostic visibilité',
-        price: '190 € · livré sous 5 jours',
-        invest: 190,
+        price: '290 € · livré sous 5 jours',
+        invest: 290,
         tagline:
           'Un rapport clair qui vous dit exactement quoi corriger sur votre fiche, dans l’ordre. Vous appliquez ensuite les corrections vous-même, à votre rythme.',
         cta: 'Demander mon diagnostic',

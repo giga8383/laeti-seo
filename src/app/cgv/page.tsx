@@ -132,7 +132,7 @@ export default function CGV() {
                 <p className="mb-4">Le Prestataire propose deux types de prestations :</p>
                 <div className="space-y-3">
                   <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(50,98,171,0.12)' }}>
-                    <strong style={{ color: '#0f1e48' }}>Diagnostic visibilité locale · 190 €</strong>
+                    <strong style={{ color: '#0f1e48' }}>Diagnostic visibilité locale · 290 €</strong>
                     <p className="mt-1" style={{ fontSize: '14px' }}>
                       Prestation ponctuelle. Analyse complète de la présence Google locale (fiche Google Business
                       Profile, avis clients, site web, positionnement face aux concurrents locaux). Livraison
@@ -212,7 +212,7 @@ export default function CGV() {
                 <p><strong>Moyen de paiement :</strong> virement bancaire uniquement. Les coordonnées bancaires sont communiquées lors de la confirmation de commande.</p>
                 <div className="mt-4 space-y-3">
                   <div className="rounded-xl px-5 py-4" style={{ background: '#f8f9fc', border: '1px solid rgba(50,98,171,0.10)' }}>
-                    <strong>Diagnostic visibilité locale :</strong> paiement intégral de 190 € à la commande.
+                    <strong>Diagnostic visibilité locale :</strong> paiement intégral de 290 € à la commande.
                     La prestation démarre après réception du virement.
                   </div>
                   <div className="rounded-xl px-5 py-4" style={{ background: '#f8f9fc', border: '1px solid rgba(50,98,171,0.10)' }}>

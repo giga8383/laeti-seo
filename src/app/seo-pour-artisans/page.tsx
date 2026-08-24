@@ -1047,7 +1047,7 @@ export default function SeoArtisansPage() {
               </h2>
               <p className="mx-auto mb-10 max-w-[52ch] text-white/55" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}>
                 Un audit SEO local complet identifie précisément ce qui bloque votre visibilité.
-                Rapport structuré en 5 jours ouvrés. Appel de restitution inclus. 190 €.
+                Rapport structuré en 5 jours ouvrés. Appel de restitution inclus. 290 €.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
@@ -1055,7 +1055,7 @@ export default function SeoArtisansPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Demander mon audit SEO local · 190 €
+                  Demander mon audit SEO local · 290 €
                   <ArrowRight size={15} weight="bold" />
                 </Link>
                 <Link

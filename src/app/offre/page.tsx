@@ -12,7 +12,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Mes offres, Diagnostic visibilité & Sprint local 3 mois',
   description:
-    "Deux offres SEO local pour les professionnels de l'habitat : un diagnostic de visibilité à 190 € livré sous 5 jours, ou un sprint d'accompagnement de 3 mois à 790 €. Découvrez le détail, le déroulé et les tarifs.",
+    "Deux offres SEO local pour les professionnels de l'habitat : un diagnostic de visibilité à 290 € livré sous 5 jours, ou un sprint d'accompagnement de 3 mois à 790 €. Découvrez le détail, le déroulé et les tarifs.",
   alternates: {
     canonical: 'https://laeti-seo.fr/offre',
   },
@@ -135,7 +135,7 @@ export default function OffrePage() {
               </p>
             </>
           }
-          cta="Réserver mon diagnostic · 190 €"
+          cta="Réserver mon diagnostic · 290 €"
         />
 
       </main>

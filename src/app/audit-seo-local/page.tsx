@@ -71,7 +71,7 @@ const jsonLd = {
       offers: {
         '@type': 'Offer',
         name: 'Audit SEO local',
-        price: '190',
+        price: '290',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
       },
@@ -1066,7 +1066,7 @@ export default function AuditSEOLocalPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Audit SEO local complet. Rapport structuré livré en 5 jours ouvrés.
-                Appel de restitution de 45 min inclus. 190 €. Sans engagement.
+                Appel de restitution de 45 min inclus. 290 €. Sans engagement.
               </p>
               <a
                 href="https://calendly.com/laetitia_laghezza_seo_local/30min"

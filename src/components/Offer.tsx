@@ -490,7 +490,7 @@ export default function Offer() {
                   className="mt-1 text-sm"
                   style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.9 }}
                 >
-                  190 € · livraison sous 5 jours ouvrés
+                  290 € · livraison sous 5 jours ouvrés
                 </p>
                 <p
                   className="mt-4"

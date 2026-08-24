@@ -116,7 +116,7 @@ export default function GuideTrouvable() {
               className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all hover:brightness-105 active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
             >
-              Découvrir l&apos;audit SEO local · 190 €
+              Découvrir l&apos;audit SEO local · 290 €
             </Link>
           </div>
         </section>

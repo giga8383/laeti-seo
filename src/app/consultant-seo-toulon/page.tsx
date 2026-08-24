@@ -9,7 +9,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Consultante SEO Toulon, Visibilité Google pour pros de l\'habitat dans le Var',
   description:
-    'Vous êtes artisan, cuisiniste, décorateur ou menuisier à Toulon ? Votre fiche Google ne vous rapporte pas assez de devis ? J\'analyse votre présence locale et vous livre un plan d\'action en 5 jours. Diagnostic à 190 €.',
+    'Vous êtes artisan, cuisiniste, décorateur ou menuisier à Toulon ? Votre fiche Google ne vous rapporte pas assez de devis ? J\'analyse votre présence locale et vous livre un plan d\'action en 5 jours. Diagnostic à 290 €.',
   alternates: {
     canonical: 'https://laeti-seo.fr/consultant-seo-toulon',
   },
@@ -134,7 +134,7 @@ const jsonLd = {
           name: 'Quelle différence entre un diagnostic SEO et un accompagnement long terme à Toulon ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le diagnostic est un état des lieux complet de votre visibilité locale à Toulon, livré en une fois sous 5 jours pour 190 €. Il vous donne toutes les clés pour comprendre votre situation et agir vous-même, ou faire agir quelqu'un. Le Sprint local (790 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations : fiche Google, site, contenu local, stratégie d'avis. C'est la suite logique du diagnostic pour ceux qui veulent déléguer la mise en œuvre.",
+            text: "Le diagnostic est un état des lieux complet de votre visibilité locale à Toulon, livré en une fois sous 5 jours pour 290 €. Il vous donne toutes les clés pour comprendre votre situation et agir vous-même, ou faire agir quelqu'un. Le Sprint local (790 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations : fiche Google, site, contenu local, stratégie d'avis. C'est la suite logique du diagnostic pour ceux qui veulent déléguer la mise en œuvre.",
           },
         },
       ],
@@ -261,7 +261,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Voir le diagnostic · 190 €
+                  Voir le diagnostic · 290 €
                   <ArrowRight size={15} weight="bold" />
                 </Link>
                 <Link
@@ -779,7 +779,7 @@ export default function ConsultantSEOToulonPage() {
                 },
                 {
                   q: 'Quelle différence entre le diagnostic et le Sprint local ?',
-                  a: "Le diagnostic (190 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (790 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls.",
+                  a: "Le diagnostic (290 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (790 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls.",
                 },
               ].map((faq, i) => (
                 <ScrollReveal key={i} delay={i * 0.05}>
@@ -831,7 +831,7 @@ export default function ConsultantSEOToulonPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Un diagnostic complet de votre visibilité Google à Toulon et dans le Var,
-                livré sous 5 jours. 190 €. Sans engagement.
+                livré sous 5 jours. 290 €. Sans engagement.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <a
@@ -841,7 +841,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Réserver mon diagnostic · 190 €
+                  Réserver mon diagnostic · 290 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link
