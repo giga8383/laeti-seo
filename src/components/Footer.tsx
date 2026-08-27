@@ -19,8 +19,6 @@ const seoLocal = [
   { label: 'Consultante SEO Toulon',           href: '/consultant-seo-toulon' },
   { label: 'SEO pour artisans',                href: '/seo-pour-artisans' },
   { label: 'Audit SEO local',                  href: '/audit-seo-local' },
-  { label: 'Consultante SEO Avignon',          href: '#', soon: true },
-  { label: 'Consultante SEO Nice',             href: '#', soon: true },
 ];
 
 const ressources = [
