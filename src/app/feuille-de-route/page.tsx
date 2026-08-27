@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Process from '@/components/Process';
 import ScrollReveal from '@/components/ScrollReveal';
+import PriceIncreaseCountdown from '@/components/PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 
@@ -72,6 +73,10 @@ export default function FeuilleDeRoutePage() {
                 le diagnostic et le sprint SEO local, de votre réservation jusqu&apos;à
                 la livraison.
               </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.18}>
+              <PriceIncreaseCountdown />
             </ScrollReveal>
           </div>
         </section>
