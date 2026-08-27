@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
 import ReviewsMarquee from '@/components/ReviewsMarquee';
+import PriceIncreaseCountdown from '@/components/PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 import {
   Check,
@@ -1068,6 +1069,13 @@ export default function AuditSEOLocalPage() {
                 Audit SEO local complet. Rapport structuré livré en 5 jours ouvrés.
                 Appel de restitution de 45 min inclus. 290 €. Sans engagement.
               </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.06}>
+              <PriceIncreaseCountdown />
+            </ScrollReveal>
+
+            <ScrollReveal>
               <a
                 href="https://calendly.com/laetitia_laghezza_seo_local/30min"
                 target="_blank"

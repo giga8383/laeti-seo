@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr';
 import MagneticButton from './MagneticButton';
 import ScrollReveal from './ScrollReveal';
+import PriceIncreaseCountdown from './PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 
 const diagnostic = {
@@ -254,6 +255,10 @@ export default function OffrePricing() {
             Ou passez directement à l&apos;action si vous êtes prêt.<br />
             Les deux offres s&apos;emboîtent naturellement.
           </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.14}>
+          <PriceIncreaseCountdown />
         </ScrollReveal>
 
         {/* cards */}

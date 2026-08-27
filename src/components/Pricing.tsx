@@ -1,6 +1,7 @@
 import { CheckCircle, ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import MagneticButton from './MagneticButton';
 import ScrollReveal from './ScrollReveal';
+import PriceIncreaseCountdown from './PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 
 const card1Includes = [
@@ -43,6 +44,10 @@ export default function Pricing() {
           >
             Tarif
           </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.08}>
+          <PriceIncreaseCountdown />
         </ScrollReveal>
 
         {/* cards grid */}
