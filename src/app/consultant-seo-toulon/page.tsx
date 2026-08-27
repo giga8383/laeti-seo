@@ -19,7 +19,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Consultante SEO dans le Var, référencement local pour les pros de l\'habitat',
   description:
-    'Vous êtes artisan, cuisiniste, décorateur ou menuisier dans le Var ? Votre fiche Google ne vous rapporte pas assez de devis ? J\'analyse votre présence locale et vous livre un plan d\'action en 5 jours. Diagnostic à 490 €.',
+    'Vous êtes artisan, cuisiniste, décorateur ou menuisier dans le Var ? Votre fiche Google ne vous rapporte pas assez de devis ? J\'analyse votre présence locale et vous livre un plan d\'action en 5 jours. Diagnostic à 290 € (490 € à partir du 1er septembre 2026).',
   alternates: {
     canonical: 'https://laeti-seo.fr/consultant-seo-toulon',
   },
@@ -76,7 +76,7 @@ const jsonLd = {
         { '@type': 'AdministrativeArea', name: 'Provence-Alpes-Côte d\'Azur' },
       ],
       serviceType: 'Référencement local, SEO Google, Google Business Profile',
-      priceRange: 'De 490 € à 1 500 €',
+      priceRange: 'De 290 € à 790 €',
       founder: {
         '@type': 'Person',
         name: 'Laetitia Laghezza',
@@ -89,16 +89,18 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Diagnostic SEO local',
-            price: '490',
+            price: '290',
             priceCurrency: 'EUR',
-            description: 'Analyse complète de votre fiche Google Business Profile, de vos avis, de vos concurrents directs dans le Var et de la présence locale de votre site, livrée sous 5 jours ouvrés avec un appel de restitution.',
+            priceValidUntil: '2026-08-31',
+            description: 'Analyse complète de votre fiche Google Business Profile, de vos avis, de vos concurrents directs dans le Var et de la présence locale de votre site, livrée sous 5 jours ouvrés avec un appel de restitution. Tarif de lancement valable jusqu\'au 31/08/2026, puis 490 €.',
           },
           {
             '@type': 'Offer',
             name: 'Sprint local 3 mois',
-            price: '1500',
+            price: '790',
             priceCurrency: 'EUR',
-            description: 'Diagnostic inclus, optimisation complète de la fiche Google, stratégie avis clients, optimisations SEO on-page, suivi mensuel et accès direct par WhatsApp pendant 3 mois.',
+            priceValidUntil: '2026-08-31',
+            description: 'Diagnostic inclus, optimisation complète de la fiche Google, stratégie avis clients, optimisations SEO on-page, suivi mensuel et accès direct par WhatsApp pendant 3 mois. Tarif de lancement valable jusqu\'au 31/08/2026, puis 1 500 €.',
           },
         ],
       },
@@ -167,7 +169,7 @@ const jsonLd = {
           name: 'Quelle différence entre le diagnostic et le Sprint local ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le diagnostic (490 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (1 500 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
+            text: "Le diagnostic (290 €, 490 € à partir du 1er septembre 2026) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (790 €, 1 500 € à partir du 1er septembre 2026) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
           },
         },
         {
@@ -216,7 +218,8 @@ const zones = [
 const diagnostic = {
   badge: 'Essentiel',
   name: 'Diagnostic SEO local',
-  price: '490',
+  price: '290',
+  futurePrice: '490 € à partir du 1er septembre 2026',
   unit: 'paiement unique',
   delay: 'Livré sous 5 jours ouvrés',
   pitch: "Vous voulez comprendre où vous en êtes avant de décider de la suite ? Ce diagnostic vous donne une vision claire de votre visibilité locale dans le Var, avec un plan d'action précis, classé par priorité et par impact.",
@@ -229,15 +232,16 @@ const diagnostic = {
     'Rapport livré sous 5 jours ouvrés, avec une feuille de route priorisée',
     'Appel de restitution en visio inclus pour décortiquer le rapport ensemble',
   ],
-  cta: 'Réserver le diagnostic · 490 €',
+  cta: 'Réserver le diagnostic · 290 €',
   yellow: false,
 };
 
 const sprint = {
-  badge: 'Le plus complet',
+  badge: 'Tarif de lancement',
   name: 'Sprint local 3 mois',
-  price: '1 500',
-  unit: 'soit environ 500 €/mois',
+  price: '790',
+  futurePrice: '1 500 € à partir du 1er septembre 2026',
+  unit: 'paiement en 2 fois possible',
   delay: 'Diagnostic inclus · démarrage rapide',
   pitch: "Vous préférez déléguer la mise en œuvre plutôt que de la gérer vous-même entre deux chantiers ? Je m'occupe de tout, pendant trois mois, avec un suivi mensuel et des ajustements en temps réel.",
   items: [
@@ -248,7 +252,7 @@ const sprint = {
     'Suivi mensuel de votre positionnement et ajustements en temps réel',
     'Accès direct par WhatsApp pendant toute la durée de l\'accompagnement',
   ],
-  cta: 'Réserver le sprint · 1 500 €',
+  cta: 'Réserver le sprint · 790 €',
   yellow: true,
 };
 
@@ -285,7 +289,7 @@ const temoignages = [
     role: 'Plombier chauffagiste · Toulon',
   },
   {
-    quote: "J'avais un beau site mais personne ne me trouvait sur Hyères. Laeti a identifié que mes catégories Google étaient complètement à côté, et que mon site ne mentionnait aucune commune précise. Deux mois après les corrections, je reçois des demandes de devis de Hyères, Carqueiranne et Le Pradet. Le diagnostic à 490 € s'est rentabilisé sur le premier chantier.",
+    quote: "J'avais un beau site mais personne ne me trouvait sur Hyères. Laeti a identifié que mes catégories Google étaient complètement à côté, et que mon site ne mentionnait aucune commune précise. Deux mois après les corrections, je reçois des demandes de devis de Hyères, Carqueiranne et Le Pradet. Le diagnostic à 290 € s'est rentabilisé sur le premier chantier.",
     name: 'Sophie',
     role: 'Cuisiniste · Hyères',
   },
@@ -381,7 +385,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Voir le diagnostic · 490 €
+                  Voir le diagnostic · 290 €
                   <ArrowRight size={15} weight="bold" />
                 </Link>
                 <Link
@@ -833,6 +837,9 @@ export default function ConsultantSEOToulonPage() {
                         {offer.price}<span style={{ color: '#fceb30' }}>&thinsp;€</span>
                       </span>
                     </div>
+                    <p className="mb-2 text-xs font-semibold" style={{ fontFamily: inter.style.fontFamily, color: '#fceb30' }}>
+                      {offer.futurePrice}
+                    </p>
                     <p className="mb-1 text-sm text-white/35" style={{ fontFamily: inter.style.fontFamily }}>
                       {offer.unit}
                     </p>
@@ -1191,7 +1198,7 @@ export default function ConsultantSEOToulonPage() {
                 },
                 {
                   q: 'Quelle différence entre le diagnostic et le Sprint local ?',
-                  a: "Le diagnostic (490 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (1 500 €) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
+                  a: "Le diagnostic (290 €, 490 € à partir du 1er septembre 2026) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (790 €, 1 500 € à partir du 1er septembre 2026) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
                 },
                 {
                   q: 'C\'est quoi le GEO et est-ce que ça me concerne en tant qu\'artisan dans le Var ?',
@@ -1303,7 +1310,7 @@ export default function ConsultantSEOToulonPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Un diagnostic complet de votre visibilité Google dans le Var,
-                livré sous 5 jours. 490 €. Sans engagement.
+                livré sous 5 jours. 290 € (490 € à partir du 1er septembre 2026). Sans engagement.
               </p>
               <p
                 className="mx-auto mb-10 max-w-[54ch] text-white/40"
@@ -1322,7 +1329,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Réserver mon diagnostic · 490 €
+                  Réserver mon diagnostic · 290 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link
@@ -1330,7 +1337,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 text-white/50 transition-colors hover:text-white/80"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}
                 >
-                  Voir le Sprint local 3 mois · 1 500 €
+                  Voir le Sprint local 3 mois · 790 €
                   <ArrowRight size={13} weight="bold" />
                 </Link>
                 <a
