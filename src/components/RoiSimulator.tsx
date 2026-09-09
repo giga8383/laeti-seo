@@ -114,8 +114,8 @@ export default function RoiSimulator() {
   const offre = recommendSprint
     ? {
         title: 'Sprint local 3 mois',
-        price: '790 € · 3 mois',
-        invest: 790,
+        price: '500 € / mois · 3 mois min.',
+        invest: 1500,
         tagline:
           'Diagnostic inclus, puis on corrige, on active et on suit : optimisation complète de votre fiche, stratégie avis, posts et rapport mensuel. Vous n’avez rien à faire.',
         cta: 'Démarrer mon Sprint local',
@@ -123,8 +123,8 @@ export default function RoiSimulator() {
       }
     : {
         title: 'Diagnostic visibilité',
-        price: '290 € · livré sous 5 jours',
-        invest: 290,
+        price: '490 € · livré sous 5 jours',
+        invest: 490,
         tagline:
           'Un rapport clair qui vous dit exactement quoi corriger sur votre fiche, dans l’ordre. Vous appliquez ensuite les corrections vous-même, à votre rythme.',
         cta: 'Demander mon diagnostic',

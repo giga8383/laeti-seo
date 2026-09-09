@@ -23,7 +23,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Consultant SEO local à Aix-en-Provence, spécialisé décoration & habitat',
   description:
-    'Consultante SEO freelance à Aix-en-Provence spécialisée décoration & habitat : décorateurs, architectes d\'intérieur, cuisinistes, artisans. J\'optimise votre fiche Google Business Profile et vos avis. Diagnostic à 290 € livré en 5 jours, sprint local à 790 €.',
+    'Consultante SEO freelance à Aix-en-Provence spécialisée décoration & habitat : décorateurs, architectes d\'intérieur, cuisinistes, artisans. J\'optimise votre fiche Google Business Profile et vos avis. Diagnostic à 490 € livré en 5 jours, sprint local à 500 €/mois (3 mois minimum).',
   alternates: {
     canonical: 'https://laeti-seo.fr/consultant-seo-aix-en-provence',
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     url: 'https://laeti-seo.fr/consultant-seo-aix-en-provence',
     title: 'Consultant SEO local à Aix-en-Provence | décoration & habitat | Laeti SEO',
     description:
-      'Spécialiste SEO local à Aix-en-Provence pour les pros de la décoration et de l\'habitat. Diagnostic à 290 €, sprint local 3 mois à 790 €. Résultats concrets, sans jargon.',
+      'Spécialiste SEO local à Aix-en-Provence pour les pros de la décoration et de l\'habitat. Diagnostic à 490 €, sprint local 3 mois à 500 €/mois (3 mois minimum). Résultats concrets, sans jargon.',
   },
 };
 
@@ -88,16 +88,16 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Diagnostic visibilité locale',
-            price: '290',
+            price: '490',
             priceCurrency: 'EUR',
             description: 'Analyse complète de votre fiche Google Business Profile, vos avis et votre positionnement local, livrée sous 5 jours ouvrés.',
           },
           {
             '@type': 'Offer',
             name: 'Sprint local 3 mois',
-            price: '790',
+            price: '1500',
             priceCurrency: 'EUR',
-            description: 'Diagnostic inclus, optimisation complète de la fiche Google, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi.',
+            description: 'Diagnostic inclus, optimisation complète de la fiche Google, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi. Payable en 3 mensualités de 500 €.',
           },
         ],
       },
@@ -147,7 +147,7 @@ const jsonLd = {
           name: 'Le diagnostic suffit-il si je veux juste un état des lieux ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Absolument. Le diagnostic à 290 € est une prestation complète et indépendante. Vous recevez un rapport détaillé avec toutes les corrections à faire, et vous pouvez très bien les appliquer vous-même. Il n'y a aucune obligation de continuer avec le sprint. Beaucoup de clients commencent par là pour savoir exactement où ils en sont.",
+            text: "Absolument. Le diagnostic à 490 € est une prestation complète et indépendante. Vous recevez un rapport détaillé avec toutes les corrections à faire, et vous pouvez très bien les appliquer vous-même. Il n'y a aucune obligation de continuer avec le sprint. Beaucoup de clients commencent par là pour savoir exactement où ils en sont.",
           },
         },
         {
@@ -163,7 +163,7 @@ const jsonLd = {
           name: 'Combien coûte une consultante SEO à Aix-en-Provence ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Mes tarifs sont transparents : un diagnostic de visibilité locale complet est à 290 €, livré sous 5 jours. Pour un accompagnement complet sur 3 mois (diagnostic + optimisations + suivi), le Sprint local est à 790 €. Contrairement à une agence SEO d'Aix-en-Provence ou de Marseille qui facture souvent des forfaits mensuels de 800 à 2 000 €/mois, je travaille sur un périmètre défini, avec des livrables concrets.",
+            text: "Mes tarifs sont transparents : un diagnostic de visibilité locale complet est à 490 €, livré sous 5 jours. Pour un accompagnement complet sur 3 mois (diagnostic + optimisations + suivi), le Sprint local est à 500 €/mois (accompagnement de 3 mois minimum). Contrairement à une agence SEO d'Aix-en-Provence ou de Marseille qui facture souvent des forfaits mensuels de 800 à 2 000 €/mois, je travaille sur un périmètre défini, avec des livrables concrets.",
           },
         },
       ],
@@ -193,7 +193,8 @@ const metiers = [
 const diagnostic = {
   badge: 'Essentiel',
   name: 'Diagnostic visibilité',
-  price: '290',
+  price: '490',
+  priceSuffix: '',
   unit: 'paiement unique',
   delay: 'Livraison sous 5 jours ouvrés',
   pitch: "Vous ne savez pas pourquoi vous n'apparaissez pas sur Google ? Le diagnostic répond à cette question en une semaine. J'analyse votre fiche Google Business Profile, vos avis, votre positionnement local et je vous remets un rapport clair avec les points à corriger, dans l'ordre.",
@@ -204,16 +205,17 @@ const diagnostic = {
     'Audit SEO local de votre site web',
     'Rapport clair avec corrections priorisées',
   ],
-  cta: 'Commander le diagnostic · 290 €',
+  cta: 'Commander le diagnostic · 490 €',
   yellow: false,
 };
 
 const sprint = {
   badge: 'Le plus complet',
   name: 'Sprint local 3 mois',
-  price: '790',
-  unit: 'sur 3 mois',
-  delay: 'Diagnostic inclus · démarrage rapide',
+  price: '500',
+  priceSuffix: '/mois',
+  unit: '3 mois minimum',
+  delay: 'soit 1 500 € au total',
   pitch: "Le diagnostic est inclus, c'est le point de départ. Ensuite on corrige, on active et on suit : optimisation complète de votre fiche, stratégie avis clients, deux Google Posts par mois, rapport mensuel et un appel de suivi. Trois mois pour que Google sache enfin qui vous êtes.",
   items: [
     'Diagnostic complet inclus (point de départ)',
@@ -222,7 +224,7 @@ const sprint = {
     '2 Google Posts rédigés et publiés par mois',
     'Rapport mensuel + appel de suivi',
   ],
-  cta: 'Démarrer le sprint · 790 €',
+  cta: 'Démarrer le sprint · 500 €/mois',
   yellow: true,
 };
 
@@ -366,8 +368,8 @@ export default function ConsultantSEOAixPage() {
               >
                 Vous êtes décoratrice, architecte d&apos;intérieur ou artisan dans le Pays d&apos;Aix
                 et vous n&apos;apparaissez pas sur Google ? Je vous aide à corriger ça, concrètement,
-                en partant de votre fiche Google. Deux offres : un diagnostic à 290 € livré en 5 jours,
-                ou un sprint de 3 mois à 790 € pour des résultats durables.
+                en partant de votre fiche Google. Deux offres : un diagnostic à 490 € livré en 5 jours,
+                ou un sprint de 3 mois à 500 €/mois (3 mois minimum) pour des résultats durables.
               </p>
             </ScrollReveal>
 
@@ -770,6 +772,11 @@ export default function ConsultantSEOAixPage() {
                       <span className="text-5xl font-bold text-white" style={{ fontFamily: 'Satoshi, sans-serif', lineHeight: '1' }}>
                         {offer.price}<span style={{ color: '#fceb30' }}>&thinsp;€</span>
                       </span>
+                      {offer.priceSuffix && (
+                        <span className="mb-1 text-sm text-white/40" style={{ fontFamily: inter.style.fontFamily }}>
+                          {offer.priceSuffix}
+                        </span>
+                      )}
                     </div>
                     <p className="mb-1 text-sm text-white/35" style={{ fontFamily: inter.style.fontFamily }}>
                       {offer.unit}
@@ -1136,11 +1143,11 @@ export default function ConsultantSEOAixPage() {
                 },
                 {
                   q: 'Le diagnostic suffit-il si je veux juste un état des lieux ?',
-                  a: "Absolument. Le diagnostic à 290 € est une prestation complète et indépendante. Vous recevez un rapport détaillé avec toutes les corrections à faire, et vous pouvez très bien les appliquer vous-même. Il n'y a aucune obligation de continuer avec le sprint. Beaucoup de clients commencent par là pour savoir exactement où ils en sont.",
+                  a: "Absolument. Le diagnostic à 490 € est une prestation complète et indépendante. Vous recevez un rapport détaillé avec toutes les corrections à faire, et vous pouvez très bien les appliquer vous-même. Il n'y a aucune obligation de continuer avec le sprint. Beaucoup de clients commencent par là pour savoir exactement où ils en sont.",
                 },
                 {
                   q: 'Combien coûte une consultante SEO à Aix-en-Provence ?',
-                  a: "Mes tarifs sont transparents : le diagnostic de visibilité locale est à 290 €, livré sous 5 jours. Pour un accompagnement complet sur 3 mois (diagnostic + optimisations + suivi), le Sprint local est à 790 €. Contrairement à une agence qui facture 800 à 2 000 €/mois en forfait, je travaille sur un périmètre défini, avec des livrables concrets et mesurables.",
+                  a: "Mes tarifs sont transparents : le diagnostic de visibilité locale est à 490 €, livré sous 5 jours. Pour un accompagnement complet sur 3 mois (diagnostic + optimisations + suivi), le Sprint local est à 500 €/mois (accompagnement de 3 mois minimum). Contrairement à une agence qui facture 800 à 2 000 €/mois en forfait, je travaille sur un périmètre défini, avec des livrables concrets et mesurables.",
                 },
               ].map((faq, i) => (
                 <ScrollReveal key={i} delay={i * 0.05}>
@@ -1341,7 +1348,7 @@ export default function ConsultantSEOAixPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Un diagnostic complet de votre présence locale sur Google à Aix-en-Provence.
-                Livré sous 5 jours. 290 €. Sans engagement.
+                Livré sous 5 jours. 490 €. Sans engagement.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <a
@@ -1351,7 +1358,7 @@ export default function ConsultantSEOAixPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Réserver mon diagnostic · 290 €
+                  Réserver mon diagnostic · 490 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link

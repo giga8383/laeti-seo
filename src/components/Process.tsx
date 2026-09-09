@@ -263,7 +263,7 @@ export default function Process() {
             className="mb-14 text-sm text-white/35"
             style={{ fontFamily: inter.style.fontFamily }}
           >
-            290 € · livraison sous 5 jours ouvrés
+            490 € · livraison sous 5 jours ouvrés
           </p>
         </ScrollReveal>
 
@@ -344,7 +344,7 @@ export default function Process() {
               className="inline-block rounded-full bg-[#fceb30] px-4 py-1 text-xs font-semibold uppercase tracking-widest text-[#264d8c]"
               style={{ fontFamily: inter.style.fontFamily }}
             >
-              Tarif de lancement
+              3 mois minimum
             </span>
           </div>
           <h2
@@ -357,7 +357,7 @@ export default function Process() {
             className="mb-14 text-sm text-white/35"
             style={{ fontFamily: inter.style.fontFamily }}
           >
-            790 € · diagnostic inclus
+            500 €/mois · diagnostic inclus
           </p>
         </ScrollReveal>
 

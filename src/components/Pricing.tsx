@@ -1,7 +1,6 @@
 import { CheckCircle, ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import MagneticButton from './MagneticButton';
 import ScrollReveal from './ScrollReveal';
-import PriceIncreaseCountdown from './PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 
 const card1Includes = [
@@ -44,10 +43,6 @@ export default function Pricing() {
           >
             Tarif
           </p>
-        </ScrollReveal>
-
-        <ScrollReveal delay={0.08}>
-          <PriceIncreaseCountdown />
         </ScrollReveal>
 
         {/* cards grid */}
@@ -113,7 +108,7 @@ export default function Pricing() {
               <div className="mt-auto">
                 <div className="mb-6 flex items-end gap-1">
                   <span className="text-5xl font-bold tracking-tighter text-white">
-                    290
+                    490
                   </span>
                   <span className="mb-1.5 text-2xl font-bold text-[#fceb30]">€</span>
                   <span
@@ -152,7 +147,7 @@ export default function Pricing() {
                   className="inline-block rounded-full bg-[#fceb30] px-4 py-1 text-xs font-semibold uppercase tracking-widest text-[#264d8c]"
                   style={{ fontFamily: inter.style.fontFamily }}
                 >
-                  Tarif de lancement
+                  3 mois minimum
                 </span>
                 <span
                   className="text-xs font-medium text-[#fceb30]/70"
@@ -208,14 +203,14 @@ export default function Pricing() {
               <div className="mt-auto">
                 <div className="mb-6 flex items-end gap-1">
                   <span className="text-5xl font-bold tracking-tighter text-white">
-                    790
+                    500
                   </span>
                   <span className="mb-1.5 text-2xl font-bold text-[#fceb30]">€</span>
                   <span
                     className="mb-1.5 ml-1 text-sm text-white/45"
                     style={{ fontFamily: inter.style.fontFamily }}
                   >
-                    / 3 mois
+                    / mois · 3 mois min.
                   </span>
                 </div>
 

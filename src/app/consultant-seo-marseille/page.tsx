@@ -9,7 +9,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Consultante SEO Marseille, Référencement local pros de l\'habitat',
   description:
-    'Artisan, cuisiniste, menuisier, décorateur à Marseille : votre fiche Google vous rapporte-t-elle vraiment des devis ? J\'analyse votre visibilité locale et vous livre un plan d\'action concret en 5 jours. Diagnostic à 290 €.',
+    'Artisan, cuisiniste, menuisier, décorateur à Marseille : votre fiche Google vous rapporte-t-elle vraiment des devis ? J\'analyse votre visibilité locale et vous livre un plan d\'action concret en 5 jours. Diagnostic à 490 €.',
   alternates: {
     canonical: 'https://laeti-seo.fr/consultant-seo-marseille',
   },
@@ -94,7 +94,7 @@ const jsonLd = {
           name: 'Combien coûte un consultant SEO à Marseille ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le marché du SEO à Marseille est très hétérogène : des agences qui facturent 1 500 € à 3 000 €/mois sur 12 mois d'engagement, des freelances généralistes à des tarifs variables, et peu de spécialistes du SEO local. Mon positionnement est différent : je propose un diagnostic de visibilité locale à 290 €, livré en 5 jours, sans abonnement. Si vous souhaitez aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 790 €. Pas de contrat long, pas de promesses vagues : des livrables précis et des actions concrètes.",
+            text: "Le marché du SEO à Marseille est très hétérogène : des agences qui facturent 1 500 € à 3 000 €/mois sur 12 mois d'engagement, des freelances généralistes à des tarifs variables, et peu de spécialistes du SEO local. Mon positionnement est différent : je propose un diagnostic de visibilité locale à 490 €, livré en 5 jours, sans abonnement. Si vous souhaitez aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 500 €/mois (accompagnement de 3 mois minimum). Pas de contrat long, pas de promesses vagues : des livrables précis et des actions concrètes.",
           },
         },
         {
@@ -261,7 +261,7 @@ export default function ConsultantSEOMarseilePage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Voir le diagnostic · 290 €
+                  Voir le diagnostic · 490 €
                   <ArrowRight size={15} weight="bold" />
                 </Link>
                 <Link
@@ -757,7 +757,7 @@ export default function ConsultantSEOMarseilePage() {
                 },
                 {
                   q: 'Combien coûte un consultant SEO à Marseille ?',
-                  a: "Le marché du SEO à Marseille est hétérogène : des agences à 1 500-3 000 €/mois sur engagement, des freelances généralistes à tarifs variables. Mon positionnement est différent : diagnostic de visibilité locale à 290 €, livré en 5 jours, sans abonnement. Pour aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 790 €. Des livrables précis, des actions concrètes, pas de contrat long.",
+                  a: "Le marché du SEO à Marseille est hétérogène : des agences à 1 500-3 000 €/mois sur engagement, des freelances généralistes à tarifs variables. Mon positionnement est différent : diagnostic de visibilité locale à 490 €, livré en 5 jours, sans abonnement. Pour aller plus loin avec un accompagnement de 3 mois incluant les optimisations, le Sprint local est à 500 €/mois (accompagnement de 3 mois minimum). Des livrables précis, des actions concrètes, pas de contrat long.",
                 },
                 {
                   q: 'Quels arrondissements de Marseille sont les plus compétitifs en SEO ?',
@@ -829,7 +829,7 @@ export default function ConsultantSEOMarseilePage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Un diagnostic complet de votre présence Google à Marseille, livré sous 5 jours.
-                290 €. Sans engagement. Vous repartez avec un plan d&apos;action clair.
+                490 €. Sans engagement. Vous repartez avec un plan d&apos;action clair.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <a
@@ -839,7 +839,7 @@ export default function ConsultantSEOMarseilePage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Réserver mon diagnostic · 290 €
+                  Réserver mon diagnostic · 490 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link

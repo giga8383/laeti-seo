@@ -490,7 +490,7 @@ export default function Offer() {
                   className="mt-1 text-sm"
                   style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.9 }}
                 >
-                  290 € · livraison sous 5 jours ouvrés
+                  490 € · livraison sous 5 jours ouvrés
                 </p>
                 <p
                   className="mt-4"
@@ -535,7 +535,7 @@ export default function Offer() {
                     color: '#fceb30',
                   }}
                 >
-                  Tarif de lancement
+                  3 mois minimum
                 </span>
                 <h3
                   className="text-2xl font-bold"
@@ -547,7 +547,7 @@ export default function Offer() {
                   className="mt-1 text-sm"
                   style={{ fontFamily: inter.style.fontFamily, color: '#92400e', opacity: 0.65 }}
                 >
-                  790 € · diagnostic inclus
+                  500 €/mois · diagnostic inclus
                 </p>
                 <p
                   className="mt-4"

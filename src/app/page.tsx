@@ -30,7 +30,7 @@ const jsonLd = {
       isPartOf: { '@id': '#website' },
       about: { '@id': '#service' },
       description:
-        "Décorateur, cuisiniste, menuisier, artisan : analysez votre présence Google avec un diagnostic SEO local à 290 €. Plan d'action priorisé livré sous 5 jours.",
+        "Décorateur, cuisiniste, menuisier, artisan : analysez votre présence Google avec un diagnostic SEO local à 490 €. Plan d'action priorisé livré sous 5 jours.",
       inLanguage: 'fr-FR',
       breadcrumb: {
         '@type': 'BreadcrumbList',
@@ -74,7 +74,7 @@ const jsonLd = {
         "Diagnostic de visibilité locale et accompagnement SEO local pour les professionnels de l'habitat : décorateurs, architectes d'intérieur, cuisinistes, menuisiers et artisans.",
       image: 'https://laeti-seo.fr/laeti-photo.webp',
       telephone: '+33 6 26 95 07 50',
-      priceRange: 'De 290 € à 790 €',
+      priceRange: 'De 490 € à 1 500 €',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Pourrières',
@@ -91,7 +91,7 @@ const jsonLd = {
           name: 'Diagnostic visibilité locale',
           description:
             "Analyse complète de votre fiche Google Business Profile, de vos avis clients, de vos concurrents locaux et de votre site. Rapport priorisé livré sous 5 jours ouvrés.",
-          price: '290',
+          price: '490',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
         },
@@ -99,8 +99,8 @@ const jsonLd = {
           '@type': 'Offer',
           name: 'Sprint local 3 mois',
           description:
-            "Diagnostic inclus + optimisation complète de la fiche Google Business Profile, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi.",
-          price: '790',
+            "Diagnostic inclus + optimisation complète de la fiche Google Business Profile, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi. Payable en 3 mensualités de 500 €.",
+          price: '1500',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
         },

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
 import ReviewsMarquee from '@/components/ReviewsMarquee';
-import PriceIncreaseCountdown from '@/components/PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 import {
   Check,
@@ -72,7 +71,7 @@ const jsonLd = {
       offers: {
         '@type': 'Offer',
         name: 'Audit SEO local',
-        price: '290',
+        price: '490',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
       },
@@ -1063,29 +1062,42 @@ export default function AuditSEOLocalPage() {
                 </span>
               </h2>
               <p
-                className="mx-auto mb-10 max-w-[50ch] text-white/55"
+                className="mx-auto mb-4 max-w-[50ch] text-white/55"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Audit SEO local complet. Rapport structuré livré en 5 jours ouvrés.
-                Appel de restitution de 45 min inclus. 290 €. Sans engagement.
+                Appel de restitution de 45 min inclus. 490 €. Sans engagement.
+              </p>
+              <p
+                className="mx-auto mb-10 max-w-[52ch] text-white/40"
+                style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '23px' }}
+              >
+                Besoin d&apos;un accompagnement complet sur 3 mois ? Le Sprint local est à
+                500 €/mois (accompagnement de 3 mois minimum).
               </p>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.06}>
-              <PriceIncreaseCountdown />
-            </ScrollReveal>
-
             <ScrollReveal>
-              <a
-                href="https://calendly.com/laetitia_laghezza_seo_local/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
-                style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
-              >
-                Demander mon audit SEO local
-                <ArrowRight size={15} weight="bold" />
-              </a>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
+                >
+                  Demander mon audit SEO local
+                  <ArrowRight size={15} weight="bold" />
+                </a>
+                <Link
+                  href="/offre#sprint"
+                  className="inline-flex items-center gap-2 text-white/50 transition-colors hover:text-white/80"
+                  style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}
+                >
+                  Voir le Sprint local 3 mois
+                  <ArrowRight size={13} weight="bold" />
+                </Link>
+              </div>
             </ScrollReveal>
           </div>
         </section>

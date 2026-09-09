@@ -2,14 +2,14 @@ import type { ReactNode } from 'react';
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr';
 import MagneticButton from './MagneticButton';
 import ScrollReveal from './ScrollReveal';
-import PriceIncreaseCountdown from './PriceIncreaseCountdown';
 import { inter } from '@/lib/fonts';
 
 const diagnostic = {
   badge: 'Essentiel',
   badgeStyle: 'glass' as const,
   name: 'Diagnostic visibilité',
-  price: '290',
+  price: '490',
+  priceSuffix: '',
   unit: 'paiement unique',
   delay: '5 jours ouvrés',
   pitch: (
@@ -28,16 +28,17 @@ const diagnostic = {
     'Rapport synthétique avec les blocages identifiés',
     "Plan d'action 30 jours classé par priorité et impact",
   ],
-  cta: 'Réserver le diagnostic · 290 €',
+  cta: 'Réserver le diagnostic · 490 €',
 };
 
 const sprint = {
-  badge: 'Tarif de lancement',
+  badge: '3 mois minimum',
   badgeStyle: 'yellow' as const,
   name: 'Sprint local 3 mois',
-  price: '790',
-  unit: 'paiement en 2 fois possible',
-  delay: 'Démarrage sous 48 h',
+  price: '500',
+  priceSuffix: '/mois',
+  unit: 'accompagnement 3 mois minimum',
+  delay: 'soit 1 500 € au total',
   pitch: (
     <>
       On ne s&apos;arrête pas au rapport.<br />
@@ -55,7 +56,7 @@ const sprint = {
     "Rapport mensuel d'avancement clair et lisible",
     'Appel de suivi mensuel (30 min) pour ajuster le cap',
   ],
-  cta: 'Réserver le sprint · 790 €',
+  cta: 'Réserver le sprint · 500 €/mois',
 };
 
 function PricingCard({
@@ -119,6 +120,14 @@ function PricingCard({
           {offer.price}
           <span style={{ color: '#fceb30' }}>&thinsp;€</span>
         </span>
+        {offer.priceSuffix && (
+          <span
+            className="mb-1 text-sm text-white/40"
+            style={{ fontFamily: inter.style.fontFamily }}
+          >
+            {offer.priceSuffix}
+          </span>
+        )}
       </div>
       <p
         className="mb-1 text-sm text-white/35"
@@ -255,10 +264,6 @@ export default function OffrePricing() {
             Ou passez directement à l&apos;action si vous êtes prêt.<br />
             Les deux offres s&apos;emboîtent naturellement.
           </p>
-        </ScrollReveal>
-
-        <ScrollReveal delay={0.14}>
-          <PriceIncreaseCountdown />
         </ScrollReveal>
 
         {/* cards */}
