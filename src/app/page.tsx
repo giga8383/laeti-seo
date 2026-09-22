@@ -89,9 +89,13 @@ const jsonLd = {
         { '@type': 'City', name: 'Aix-en-Provence' },
         { '@type': 'City', name: 'Marseille' },
         { '@type': 'City', name: 'Toulon' },
-        { '@type': 'AdministrativeArea', name: 'Bouches-du-Rhône' },
-        { '@type': 'AdministrativeArea', name: 'Var' },
-        { '@type': 'Country', name: 'France' },
+        { '@type': 'City', name: 'Nice' },
+        { '@type': 'City', name: 'Aubagne' },
+        { '@type': 'City', name: 'Brignoles' },
+        { '@type': 'City', name: 'Rousset' },
+        { '@type': 'City', name: 'Saint-Maximin-la-Sainte-Baume' },
+        { '@type': 'City', name: 'Pourrières' },
+        { '@type': 'AdministrativeArea', name: "Provence-Alpes-Côte d'Azur" },
       ],
       openingHoursSpecification: [
         {
