@@ -33,6 +33,7 @@ const legalLinks = [
   { label: 'CGV',                         href: '/cgv' },
   { label: 'Politique de confidentialité', href: '/politique-de-confidentialite' },
   { label: 'Cookies',                     href: '/politique-de-confidentialite' },
+  { label: 'Plan du site',                href: '/plan-du-site' },
 ];
 
 /* --- Sous-composants --- */
