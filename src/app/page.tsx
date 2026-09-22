@@ -68,23 +68,44 @@ const jsonLd = {
       '@type': ['ProfessionalService', 'LocalBusiness'],
       '@id': '#service',
       name: 'Laeti SEO',
+      url: 'https://laeti-seo.fr/',
       founder: { '@id': '#laeti' },
       foundingDate: '2007',
       description:
         "Diagnostic de visibilité locale et accompagnement SEO local pour les professionnels de l'habitat : décorateurs, architectes d'intérieur, cuisinistes, menuisiers et artisans.",
       image: 'https://laeti-seo.fr/laeti-photo.webp',
       telephone: '+33 6 26 95 07 50',
+      email: 'laetitia@laeti-seo.fr',
       priceRange: 'De 490 € à 1 500 €',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Rue du Commerce',
+        postalCode: '83910',
         addressLocality: 'Pourrières',
         addressRegion: "Provence-Alpes-Côte d'Azur",
         addressCountry: 'FR',
       },
-      areaServed: {
-        '@type': 'Country',
-        name: 'France',
-      },
+      areaServed: [
+        { '@type': 'City', name: 'Aix-en-Provence' },
+        { '@type': 'City', name: 'Marseille' },
+        { '@type': 'City', name: 'Toulon' },
+        { '@type': 'AdministrativeArea', name: 'Bouches-du-Rhône' },
+        { '@type': 'AdministrativeArea', name: 'Var' },
+        { '@type': 'Country', name: 'France' },
+      ],
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00',
+        },
+      ],
+      sameAs: [
+        'https://maps.google.com/?cid=1919604341859857439',
+        'https://www.linkedin.com/in/laetitia-laghezza/',
+        'https://www.pagesjaunes.fr/pros/64458463',
+      ],
       makesOffer: [
         {
           '@type': 'Offer',
