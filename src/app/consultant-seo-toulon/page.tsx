@@ -56,11 +56,12 @@ const jsonLd = {
       ],
     },
     {
-      '@type': ['LocalBusiness', 'ProfessionalService'],
-      '@id': 'https://laeti-seo.fr/#toulon',
-      name: 'Laeti SEO, Consultante SEO dans le Var',
+      '@type': 'Service',
+      '@id': 'https://laeti-seo.fr/consultant-seo-toulon#service',
+      name: 'Consultante SEO dans le Var',
       description: "Consultante SEO freelance spécialisée dans le référencement local des professionnels de l'habitat à Toulon et dans tout le Var.",
       url: 'https://laeti-seo.fr/consultant-seo-toulon',
+      provider: { '@id': 'https://laeti-seo.fr/#business' },
       areaServed: [
         { '@type': 'City', name: 'Toulon' },
         { '@type': 'City', name: 'La Seyne-sur-Mer' },
@@ -76,12 +77,6 @@ const jsonLd = {
         { '@type': 'AdministrativeArea', name: 'Provence-Alpes-Côte d\'Azur' },
       ],
       serviceType: 'Référencement local, SEO Google, Google Business Profile',
-      priceRange: 'De 490 € à 1 500 €',
-      founder: {
-        '@type': 'Person',
-        name: 'Laetitia Laghezza',
-        jobTitle: 'Consultante SEO local',
-      },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Offres SEO local dans le Var',

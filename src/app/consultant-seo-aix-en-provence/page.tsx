@@ -1233,7 +1233,7 @@ export default function ConsultantSEOAixPage() {
                   </div>
                   <div className="mt-8 flex flex-wrap items-center gap-4">
                     <a
-                      href="mailto:llaghezza83@gmail.com"
+                      href="mailto:laetitia@laeti-seo.fr"
                       className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                       style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                     >
