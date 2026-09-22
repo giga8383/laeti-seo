@@ -28,7 +28,7 @@ const jsonLd = {
       url: 'https://laeti-seo.fr',
       name: "Diagnostic visibilité locale pour professionnels de l'habitat",
       isPartOf: { '@id': '#website' },
-      about: { '@id': '#service' },
+      about: { '@id': 'https://laeti-seo.fr/#business' },
       description:
         "Décorateur, cuisiniste, menuisier, artisan : analysez votre présence Google avec un diagnostic SEO local à 490 €. Plan d'action priorisé livré sous 5 jours.",
       inLanguage: 'fr-FR',
@@ -52,7 +52,7 @@ const jsonLd = {
       jobTitle: 'Consultante SEO local',
       description: "Spécialiste SEO local pour les professionnels de l'habitat. Dans le marketing digital et l'e-commerce depuis 2007, dans le SEO depuis plus de 12 ans.",
       url: 'https://laeti-seo.fr',
-      worksFor: { '@id': '#service' },
+      worksFor: { '@id': 'https://laeti-seo.fr/#business' },
       knowsAbout: [
         'SEO local',
         'Google Business Profile',
@@ -66,7 +66,7 @@ const jsonLd = {
     },
     {
       '@type': ['ProfessionalService', 'LocalBusiness'],
-      '@id': '#service',
+      '@id': 'https://laeti-seo.fr/#business',
       name: 'Laeti SEO',
       url: 'https://laeti-seo.fr/',
       founder: { '@id': '#laeti' },

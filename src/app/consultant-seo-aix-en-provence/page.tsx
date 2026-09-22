@@ -61,12 +61,12 @@ const jsonLd = {
       ],
     },
     {
-      '@type': ['LocalBusiness', 'ProfessionalService'],
-      '@id': 'https://laeti-seo.fr/#aix',
-      name: 'Laeti SEO, Consultante SEO Aix-en-Provence',
+      '@type': 'Service',
+      '@id': 'https://laeti-seo.fr/consultant-seo-aix-en-provence#service',
+      name: 'Consultante SEO Aix-en-Provence',
       description: "Consultante SEO freelance spécialisée dans le référencement local des professionnels de la décoration et de l'habitat à Aix-en-Provence et dans le Pays d'Aix.",
       url: 'https://laeti-seo.fr/consultant-seo-aix-en-provence',
-      email: 'llaghezza83@gmail.com',
+      provider: { '@id': 'https://laeti-seo.fr/#business' },
       areaServed: [
         { '@type': 'City', name: 'Aix-en-Provence' },
         { '@type': 'City', name: 'Gardanne' },
@@ -80,7 +80,6 @@ const jsonLd = {
         { '@type': 'AdministrativeArea', name: 'Provence-Alpes-Côte d\'Azur' },
       ],
       serviceType: 'Référencement local, SEO Google, Google Business Profile',
-      priceRange: '€€',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Offres SEO local',
@@ -100,11 +99,6 @@ const jsonLd = {
             description: 'Diagnostic inclus, optimisation complète de la fiche Google, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi. Payable en 3 mensualités de 500 €.',
           },
         ],
-      },
-      founder: {
-        '@type': 'Person',
-        name: 'Laetitia Laghezza',
-        jobTitle: 'Consultante SEO local',
       },
     },
     {

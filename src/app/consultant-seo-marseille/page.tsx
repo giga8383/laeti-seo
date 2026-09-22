@@ -45,11 +45,12 @@ const jsonLd = {
       ],
     },
     {
-      '@type': ['LocalBusiness', 'ProfessionalService'],
-      '@id': 'https://laeti-seo.fr/#marseille',
-      name: 'Laeti SEO, Consultante SEO Marseille',
+      '@type': 'Service',
+      '@id': 'https://laeti-seo.fr/consultant-seo-marseille#service',
+      name: 'Consultante SEO Marseille',
       description: "Consultante SEO freelance spécialisée dans le référencement local des professionnels de l'habitat à Marseille et dans les Bouches-du-Rhône.",
       url: 'https://laeti-seo.fr/consultant-seo-marseille',
+      provider: { '@id': 'https://laeti-seo.fr/#business' },
       areaServed: [
         { '@type': 'City', name: 'Marseille' },
         { '@type': 'City', name: 'Aubagne' },
@@ -63,12 +64,6 @@ const jsonLd = {
         { '@type': 'AdministrativeArea', name: 'Provence-Alpes-Côte d\'Azur' },
       ],
       serviceType: 'Référencement local, SEO Google',
-      priceRange: '€€',
-      founder: {
-        '@type': 'Person',
-        name: 'Laetitia Laghezza',
-        jobTitle: 'Consultante SEO local',
-      },
     },
     {
       '@type': 'FAQPage',
