@@ -8,6 +8,7 @@ const WA_MESSAGE = encodeURIComponent('Bonjour Laetitia, je souhaite en savoir p
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
   const [cookieOpen, setCookieOpen] = useState(false);
+  const [footerVisible, setFooterVisible] = useState(false);
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
@@ -15,6 +16,19 @@ export default function WhatsAppButton() {
     });
     observer.observe(document.body, { attributes: true, attributeFilter: ['data-cookie-banner'] });
     return () => observer.disconnect();
+  }, []);
+
+  // Le bouton est fixe en bas à droite : sans cette vérification, il recouvre
+  // en permanence le coin bas-droit du footer (liens légaux, "Plan du site"…).
+  // On le masque dès que le footer entre dans le viewport.
+  useEffect(() => {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+    const io = new IntersectionObserver(([entry]) => setFooterVisible(entry.isIntersecting), {
+      rootMargin: '0px 0px -10px 0px',
+    });
+    io.observe(footer);
+    return () => io.disconnect();
   }, []);
 
   return (
@@ -34,8 +48,10 @@ export default function WhatsAppButton() {
         alignItems: 'center',
         gap: '10px',
         textDecoration: 'none',
-        transition: 'transform 0.2s cubic-bezier(0.16,1,0.3,1), bottom 0.3s cubic-bezier(0.16,1,0.3,1)',
+        transition: 'transform 0.2s cubic-bezier(0.16,1,0.3,1), bottom 0.3s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease',
         transform: hovered ? 'scale(1.06)' : 'scale(1)',
+        opacity: footerVisible ? 0 : 1,
+        pointerEvents: footerVisible ? 'none' : 'auto',
       }}
     >
       {/* Bulle label */}
