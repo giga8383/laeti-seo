@@ -135,7 +135,7 @@ export default function OffrePage() {
               </p>
             </>
           }
-          cta="Réserver mon diagnostic · 490 €"
+          cta="Faire le point sur ma visibilité · 490 €"
         />
 
       </main>

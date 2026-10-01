@@ -225,7 +225,7 @@ const diagnostic = {
     'Rapport livré sous 5 jours ouvrés, avec une feuille de route priorisée',
     'Appel de restitution en visio inclus pour décortiquer le rapport ensemble',
   ],
-  cta: 'Réserver le diagnostic · 490 €',
+  cta: 'Faire le point sur ma visibilité · 490 €',
   yellow: false,
 };
 
@@ -1324,7 +1324,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Réserver mon diagnostic · 490 €
+                  Faire le point sur ma visibilité · 490 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link

@@ -30,7 +30,7 @@ export default function FinalCTA({
       </p>
     </>
   ),
-  cta = 'Réserver un diagnostic visibilité locale',
+  cta = 'Faire le point sur ma visibilité',
 }: FinalCTAProps) {
   return (
     <section className="relative bg-transparent">

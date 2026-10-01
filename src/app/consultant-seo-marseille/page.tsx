@@ -834,7 +834,7 @@ export default function ConsultantSEOMarseilePage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Réserver mon diagnostic · 490 €
+                  Faire le point sur ma visibilité · 490 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link

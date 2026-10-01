@@ -240,7 +240,7 @@ export default function Navbar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#264d8c] opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-[#264d8c]" />
               </span>
-              Réserver un diagnostic
+              Faire le point sur ma visibilité
             </MagneticButton>
 
             {/* Burger mobile */}
@@ -321,7 +321,7 @@ export default function Navbar() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#264d8c] opacity-60" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[#264d8c]" />
                   </span>
-                  Réserver un diagnostic
+                  Faire le point sur ma visibilité
                 </a>
               </div>
             </div>

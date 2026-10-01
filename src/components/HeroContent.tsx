@@ -126,7 +126,7 @@ export default function HeroContent() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3262ab] opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-[#3262ab]" />
           </span>
-          Réserver un diagnostic
+          Faire le point sur ma visibilité
         </MagneticButton>
         <MagneticButton
           as="a"
