@@ -306,7 +306,7 @@ export default function AuditSEOLocalPage() {
                       className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                       style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                     >
-                      Demander mon audit SEO local
+                      Faire le point sur ma visibilité
                       <ArrowRight size={15} weight="bold" />
                     </a>
                   </div>
@@ -1086,7 +1086,7 @@ export default function AuditSEOLocalPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Demander mon audit SEO local
+                  Faire le point sur ma visibilité
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link
