@@ -1,14 +1,32 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import Testimonials from '@/components/Testimonials';
 import Problem from '@/components/Problem';
-import Target from '@/components/Target';
-import Benefits from '@/components/Benefits';
-import Differentiation from '@/components/Differentiation';
-import About from '@/components/About';
+import Deliverable from '@/components/Deliverable';
 import Pricing from '@/components/Pricing';
-import GuideDownload from '@/components/GuideDownload';
+import Method from '@/components/Method';
+import About from '@/components/About';
 import FAQ from '@/components/FAQ';
+import GuideDownload from '@/components/GuideDownload';
 import FinalCTA from '@/components/FinalCTA';
+import { homeFaqs } from '@/lib/home-faq';
+
+export const metadata: Metadata = {
+  title: { absolute: 'Laeti SEO | Visibilité locale pour les professionnels de l’habitat' },
+  description:
+    'Professionnels de l’habitat : diagnostic visibilité à 790 €. Audit de la fiche Google, d’une page locale et des réseaux sociaux, avec plan d’action priorisé.',
+  alternates: { canonical: 'https://laeti-seo.fr' },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://laeti-seo.fr',
+    siteName: 'Laeti SEO',
+    title: 'Laeti SEO | Visibilité locale pour les professionnels de l’habitat',
+    description:
+      'Diagnostic visibilité à 790 € : audit de votre fiche Google, d’une page locale de votre site et de vos réseaux sociaux, avec un plan d’action priorisé.',
+  },
+};
 
 /* -- Données structurées JSON-LD -- */
 const jsonLd = {
@@ -30,7 +48,7 @@ const jsonLd = {
       isPartOf: { '@id': '#website' },
       about: { '@id': 'https://laeti-seo.fr/#business' },
       description:
-        "Décorateur, cuisiniste, menuisier, artisan : analysez votre présence Google avec un diagnostic SEO local à 490 €. Plan d'action priorisé livré sous 5 jours.",
+        "Décorateur, cuisiniste, menuisier, artisan : analysez votre présence Google avec un diagnostic SEO local à 790 €. Plan d'action priorisé livré sous 5 jours.",
       inLanguage: 'fr-FR',
       breadcrumb: {
         '@type': 'BreadcrumbList',
@@ -76,7 +94,7 @@ const jsonLd = {
       image: 'https://laeti-seo.fr/laeti-photo.webp',
       telephone: '+33 6 26 95 07 50',
       email: 'laetitia@laeti-seo.fr',
-      priceRange: 'De 490 € à 1 500 €',
+      priceRange: 'De 790 € à 1 500 €',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Rue du Commerce',
@@ -115,8 +133,8 @@ const jsonLd = {
           '@type': 'Offer',
           name: 'Diagnostic visibilité locale',
           description:
-            "Analyse complète de votre fiche Google Business Profile, de vos avis clients, de vos concurrents locaux et de votre site. Rapport priorisé livré sous 5 jours ouvrés.",
-          price: '490',
+            "Audit de votre fiche Google Business Profile, analyse de la visibilité d'une page locale de votre site et de votre présence sur les réseaux sociaux. Plan d'action priorisé, rapport livré sous 5 jours ouvrés et appel de restitution de 45 minutes.",
+          price: '790',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
         },
@@ -141,48 +159,11 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: "Est-ce que ce diagnostic est utile si j'ai déjà une fiche Google ?",
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Oui. Avoir une fiche Google ne suffit pas. Ce qui compte, c'est ce qu'elle montre, comment elle ressort, si elle inspire confiance, et comment elle se compare aux concurrents de votre zone.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: "Est-ce que c'est uniquement pour Google Maps ?",
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Non. Google Maps est une partie importante du diagnostic, mais j'analyse aussi votre site, vos avis, votre présence locale et la cohérence globale de votre visibilité.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Est-ce que vous faites les corrections ensuite ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Le diagnostic sert d'abord à identifier clairement ce qui bloque. Si vous souhaitez être accompagné ensuite pour mettre en place certaines actions, on peut en discuter après le diagnostic.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Est-ce adapté si je débute ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Oui, si votre activité est déjà claire et que vous souhaitez construire une présence locale solide. En revanche, si votre offre, votre zone ou vos services ne sont pas encore définis, il faudra d'abord clarifier ces bases.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Est-ce que vous promettez plus de devis immédiatement ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Non. Et méfiez-vous de ceux qui le promettent. Le diagnostic permet d'identifier les blocages et les actions prioritaires pour améliorer votre visibilité locale. Les résultats dépendent ensuite de votre situation actuelle, de votre concurrence et des actions réellement mises en place.",
-          },
-        },
-      ],
+      mainEntity: homeFaqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
     },
   ],
 };
@@ -197,15 +178,26 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Testimonials />
         <Problem />
-        <Target />
-        <Benefits />
-        <Differentiation />
-        <About />
+        <Deliverable />
         <Pricing />
-        <GuideDownload />
+        <Method />
+        <About />
         <FAQ />
-        <FinalCTA />
+        <GuideDownload />
+        <FinalCTA
+          heading={<>Donnez aux bons clients une raison de vous contacter.</>}
+          body={
+            <p
+              className="mx-auto mt-6 max-w-[50ch] text-base leading-relaxed text-white/65"
+              style={{ fontFamily: 'Inter, "Inter Fallback"' }}
+            >
+              Votre métier, votre secteur, les projets que vous voulez attirer : faisons le point pour voir comment améliorer votre présence locale.
+            </p>
+          }
+          microcopy="Appel gratuit · 20 minutes · Sans engagement"
+        />
       </main>
     </>
   );

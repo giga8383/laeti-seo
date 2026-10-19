@@ -54,6 +54,23 @@ function GoogleMapCard() {
   );
 }
 
+const items = [
+  {
+    title: 'Vos concurrents apparaissent avant vous',
+    text: 'Vous avez une fiche Google, mais vous ne comprenez pas pourquoi d\u2019autres professionnels sont plus visibles dans votre zone.',
+  },
+  {
+    title: 'Votre présence ne reflète pas votre travail',
+    text: 'Des photos anciennes, des services peu détaillés ou des avis peu mis en valeur peuvent laisser vos futurs clients hésiter.',
+  },
+  {
+    title: 'Vous ne savez pas par où commencer',
+    text: 'Vous voulez consacrer votre temps aux actions utiles pour votre activité. Je vous aide à définir les priorités.',
+  },
+];
+
+const body = { fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' } as const;
+
 export default function Problem() {
   return (
     <section className="relative bg-transparent">
@@ -63,7 +80,7 @@ export default function Problem() {
           <div className="flex flex-col gap-10 md:sticky md:top-32 md:self-start">
             <ScrollReveal>
               <p className="uppercase tracking-widest" style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)' }}>
-                Le vrai sujet
+                Ce qui peut vous freiner
               </p>
             </ScrollReveal>
 
@@ -75,70 +92,44 @@ export default function Problem() {
           {/* right col : text */}
           <div className="space-y-10">
             <ScrollReveal delay={0.1}>
-              <h2 style={{ fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '48px', lineHeight: '53px', color: 'white' }}>
-                Ce n&apos;est pas{' '}
-                <span className="text-white/40">faire du SEO</span>
-                .
-                <br />
-                C&apos;est arrêter de perdre des demandes de devis{' '}
-                <span className="text-[#fceb30]">invisibles</span>.
+              <h2 style={{ fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: 'clamp(32px, 4.5vw, 48px)', lineHeight: '1.1', color: 'white' }}>
+                Votre savoir-faire doit aussi{' '}
+                <span className="text-[#fceb30]">se voir en ligne</span>.
               </h2>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
-              <p className="max-w-[60ch] text-white/70"
-                style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                Quand un prospect cherche un professionnel de l&apos;habitat près de chez lui, il décide vite.
-              </p>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.3}>
-              <p className="max-w-[60ch] text-white/70 mb-3"
-                style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                En quelques secondes, il regarde :
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Votre position sur Google',
-                  'Votre fiche, vos avis, vos photos',
-                  'Votre site',
-                  'L\'impression de confiance que vous dégagez',
-                ].map((s, i) => (
-                  <li key={i} className="flex items-center gap-3 text-white/80"
-                    style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/[0.06]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#fceb30]" />
-                    </span>
-                    {s}
-                  </li>
-                ))}
-              </ul>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.4}>
-              <div className="border-l-2 border-[#fceb30]/40 pl-5">
-                <p className="text-white/70"
-                  style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                  Si votre présence locale paraît floue, incomplète ou moins rassurante que celle de vos concurrents, vous ne perdez pas seulement en visibilité.
+              <div className="space-y-4">
+                <p className="max-w-[60ch] text-white/70" style={body}>
+                  Vos réalisations parlent pour vous. Encore faut-il que les clients de votre secteur les découvrent quand ils cherchent un professionnel.
                 </p>
-                <p className="mt-3 text-white"
-                  style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                  Vous perdez une demande de devis.
-                </p>
-                <p className="mt-3 text-white"
-                  style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                  Et parfois, un vrai chantier.
-                </p>
-                <p className="mt-3 text-white/55"
-                  style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                  Le problème ne vient pas de votre savoir-faire sur le terrain.
-                </p>
-                <p className="mt-3 text-white/55"
-                  style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>
-                  Il vient d&apos;une visibilité locale mal structurée, qui ne montre pas assez clairement pourquoi un client devrait vous choisir.
+                <p className="max-w-[60ch] text-white/70" style={body}>
+                  Je regarde ce qui les empêche de vous trouver et ce qui pourrait leur donner davantage confiance pour vous contacter.
                 </p>
               </div>
             </ScrollReveal>
+
+            <div>
+              {items.map((item, i) => (
+                <ScrollReveal key={item.title} delay={0.25 + i * 0.08}>
+                  <div className="grid grid-cols-[40px_1fr] gap-5 border-t border-white/10 py-6 first:border-t-0 first:pt-0">
+                    <span
+                      className="pt-1 text-[#fceb30]"
+                      style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '17px' }}
+                      aria-hidden="true"
+                    >
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <div>
+                      <h3 className="mb-2 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '21px', lineHeight: '1.3' }}>
+                        {item.title}
+                      </h3>
+                      <p className="max-w-[56ch] text-white/65" style={body}>{item.text}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </div>

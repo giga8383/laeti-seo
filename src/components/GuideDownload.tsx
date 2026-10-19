@@ -36,7 +36,7 @@ export default function GuideDownload() {
                 textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
               }}
             >
-              Guide gratuit
+              Le guide gratuit TROUVABLE
             </p>
 
             {/* title */}
@@ -44,8 +44,7 @@ export default function GuideDownload() {
               className="mx-auto max-w-2xl text-3xl font-bold tracking-tight leading-[1.15] text-[#264d8c] md:text-[42px]"
               style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700 }}
             >
-              Les 7 points à vérifier en priorité pour améliorer votre
-              visibilité locale sur Google
+              Commencez par vérifier votre présence sur Google.
             </h2>
 
             {/* subtitle */}
@@ -53,8 +52,8 @@ export default function GuideDownload() {
               className="mx-auto mt-5 max-w-[52ch] text-base leading-relaxed text-[#3262ab]/65"
               style={{ fontFamily: inter.style.fontFamily }}
             >
-              Un tour d&apos;horizon pratique pour identifier ce qui freine vos
-              demandes de devis, sans termes techniques ni blabla.
+              Sept points à regarder pour repérer les premières améliorations
+              possibles sur votre visibilité locale.
             </p>
 
             {/* CTA */}
@@ -68,9 +67,15 @@ export default function GuideDownload() {
                 strength={0.3}
               >
                 <DownloadSimple size={18} weight="bold" />
-                Télécharger le guide
+                Recevoir mon guide TROUVABLE
               </MagneticButton>
             </div>
+            <p
+              className="mt-4 text-sm text-[#264d8c]/55"
+              style={{ fontFamily: inter.style.fontFamily }}
+            >
+              Pour les professionnels de l&apos;habitat
+            </p>
           </div>
         </ScrollReveal>
       </div>

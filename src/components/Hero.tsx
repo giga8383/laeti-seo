@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import HeroContent from './HeroContent';
+import { inter } from '@/lib/fonts';
 
 function BlueprintHouse() {
   return (
@@ -118,8 +120,38 @@ export default function Hero() {
   return (
     <section className="relative bg-transparent overflow-hidden">
       <BlueprintHouse />
-      <div className="mx-auto flex min-h-[100dvh] max-w-5xl flex-col justify-start px-6 pt-28 pb-16 md:justify-center md:pt-40 md:pb-24">
+      <div className="mx-auto grid min-h-[100dvh] max-w-6xl grid-cols-1 content-start items-center gap-12 px-6 pt-28 pb-16 md:content-center md:pt-40 md:pb-24 lg:grid-cols-[1.45fr_0.85fr] lg:gap-16">
         <HeroContent />
+        <figure className="relative hidden w-full max-w-[350px] justify-self-end lg:block">
+          <div
+            className="relative overflow-hidden"
+            style={{
+              aspectRatio: '4 / 4.7',
+              borderRadius: '90px 12px 12px 12px',
+              border: '1px solid rgba(255,255,255,0.3)',
+              background: '#24477d',
+              boxShadow: '0 24px 64px -16px rgba(0,0,0,0.45), 0 0 48px -8px rgba(252,235,48,0.18)',
+            }}
+          >
+            <Image
+              src="/laeti-3.webp"
+              alt="Laetitia Laghezza, consultante SEO local pour les professionnels de l'habitat"
+              fill
+              priority
+              sizes="350px"
+              className="object-cover"
+              style={{ objectPosition: '50% 20%', filter: 'saturate(1.2) hue-rotate(18deg)' }}
+            />
+          </div>
+          <figcaption className="pt-4">
+            <strong className="block text-white" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', fontWeight: 600 }}>
+              Laetitia Laghezza
+            </strong>
+            <span className="block text-white/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}>
+              Consultante SEO local
+            </span>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

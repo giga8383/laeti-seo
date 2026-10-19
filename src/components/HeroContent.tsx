@@ -51,12 +51,12 @@ export default function HeroContent() {
         style={{
           fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif',
           fontWeight: 700,
-          fontSize: 'clamp(36px, 8vw, 72px)',
+          fontSize: 'clamp(34px, 6vw, 60px)',
           lineHeight: '1.08',
         }}
       >
-        <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>Être</span> <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>visible</span> localement, ce n&apos;est pas une question de chance.{' '}
-        <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>C&apos;est une</span> <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>stratégie</span>.
+        Votre prochain client vous cherche sur Google.{' '}
+        <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>Aidez-le à vous trouver.</span>
       </h1>
 
       {/* Sous-titre */}
@@ -64,8 +64,7 @@ export default function HeroContent() {
         className="max-w-[58ch] text-white/75"
         style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}
       >
-        Vous êtes bon dans votre métier, mais invisible sur Google ?<br />
-        J&apos;identifie ce qui vous freine et je corrige les blocages qui empêchent vos futurs clients de vous trouver.
+        J&apos;analyse votre fiche Google, une page locale de votre site et vos réseaux sociaux pour identifier ce qui freine votre visibilité et les actions à mener en priorité.
       </p>
 
       {/* Tags métiers */}
@@ -130,13 +129,35 @@ export default function HeroContent() {
         </MagneticButton>
         <MagneticButton
           as="a"
-          href="/feuille-de-route"
+          href="#tarif"
           className="rounded-full border border-white/30 px-7 py-3.5 font-semibold text-white transition-colors duration-300 hover:border-white/60 hover:bg-white/5 active:scale-[0.98]"
           style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '24px' }}
           strength={0.3}
         >
-          Voir ce qui est analysé
+          Découvrir les offres
         </MagneticButton>
+      </div>
+
+      {/* Microcopy + réassurance */}
+      <div className="-mt-2 space-y-5">
+        <p
+          className="max-w-[52ch] text-white/60"
+          style={{ fontFamily: inter.style.fontFamily, fontWeight: 400, fontSize: '14px', lineHeight: '22px' }}
+        >
+          Appel gratuit de 20 minutes · Sans engagement.<br />
+          Voyons si le diagnostic est adapté à votre activité.
+        </p>
+        <ul
+          className="flex flex-wrap gap-x-6 gap-y-2 text-white/75"
+          style={{ fontFamily: inter.style.fontFamily, fontWeight: 400, fontSize: '14px', lineHeight: '20px' }}
+        >
+          {['Plus de 12 ans en SEO', 'Une seule interlocutrice'].map((t) => (
+            <li key={t} className="flex items-center gap-2">
+              <span className="font-bold text-[#fceb30]" aria-hidden="true">✓</span>
+              {t}
+            </li>
+          ))}
+        </ul>
       </div>
 
     </div>

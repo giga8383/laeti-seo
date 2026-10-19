@@ -3,9 +3,8 @@ import ScrollReveal from './ScrollReveal';
 import { inter } from '@/lib/fonts';
 
 const stats = [
-  { value: '12+',  label: 'ans en ',          highlight: 'SEO' },
-  { value: '22+',  label: 'clients ',          highlight: 'accompagnés' },
-  { value: '5j',   label: 'livraison du ',     highlight: 'diagnostic' },
+  { value: '12+',     label: 'ans en ',       highlight: 'SEO' },
+  { value: 'En direct', label: 'avec votre ', highlight: 'consultante' },
 ];
 
 export default function About() {
@@ -162,7 +161,7 @@ export default function About() {
                   textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
                 }}
               >
-                Qui suis-je
+                Votre interlocutrice
               </p>
             </ScrollReveal>
 
@@ -178,7 +177,7 @@ export default function About() {
               >
                 Je suis Laetitia.{' '}
                 <span style={{ color: 'rgba(38,77,140,0.35)' }}>
-                  J&apos;aide les pros de l&apos;habitat à être mieux visibles là où ça compte.
+                  Et c&apos;est avec moi que vous travaillez.
                 </span>
               </h2>
             </ScrollReveal>
@@ -195,12 +194,7 @@ export default function About() {
                   maxWidth: '52ch',
                 }}
               >
-                J&apos;ai découvert le marketing digital en 2007, et je me suis lancée dans l&apos;e-commerce dès 2008.<br />
-                Par la suite, je me suis perfectionnée dans le SEO, un domaine que je pratique depuis plus de 12 ans maintenant.<br />
-                J&apos;ai arrêté mon e-commerce en 2014, puis je me suis lancée dans l&apos;affiliation. J&apos;ai tout appris sur le tas en lançant des dizaines de sites.<br />
-                Geek dans l&apos;âme, j&apos;adore explorer de nouvelles techniques pour être plus visibles et générer encore plus de chiffre d&apos;affaires.<br />
-                Aujourd&apos;hui, je me concentre sur la visibilité locale des professionnels de l&apos;habitat, parce que c&apos;est là que tout se joue.<br />
-                Une fiche Google bien structurée peut faire toute la différence face à un concurrent qui rafle les devis.
+                Depuis plus de 12 ans, je travaille sur le référencement. Aujourd&apos;hui, j&apos;accompagne les professionnels de l&apos;habitat qui veulent être davantage visibles auprès des clients de leur secteur.
               </p>
             </ScrollReveal>
 
@@ -216,16 +210,15 @@ export default function About() {
                   maxWidth: '52ch',
                 }}
               >
-                Je travaille seule, sans sous-traitance : que vous me cherchiez comme consultante SEO freelance ou comme consultant SEO freelance, c&apos;est la même personne et la même rigueur derrière chaque diagnostic.<br />
-                Sur certaines recherches, on me trouve aussi sous l&apos;appellation experte SEO freelance : peu importe le terme exact que vous tapez, quand vous commandez un diagnostic, c&apos;est moi qui analyse et qui rédige.<br />
-                Pas de stagiaire, pas de fausses promesses.
+                Je réalise personnellement l&apos;analyse et le suivi de votre activité.{' '}
+                <strong style={{ color: '#264d8c' }}>Vous échangez directement avec la personne qui s&apos;occupe de votre visibilité.</strong>
               </p>
             </ScrollReveal>
 
             {/* Stats */}
             <ScrollReveal delay={0.32}>
               <div
-                className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-6 border-t pt-8"
+                className="mt-2 flex flex-wrap gap-x-12 gap-y-6 border-t pt-8"
                 style={{ borderColor: 'rgba(38,77,140,0.10)' }}
               >
                 {stats.map((s, i) => (

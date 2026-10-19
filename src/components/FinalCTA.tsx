@@ -6,6 +6,7 @@ interface FinalCTAProps {
   heading?: React.ReactNode;
   body?: React.ReactNode;
   cta?: string;
+  microcopy?: string;
 }
 
 export default function FinalCTA({
@@ -31,6 +32,7 @@ export default function FinalCTA({
     </>
   ),
   cta = 'Faire le point sur ma visibilité',
+  microcopy,
 }: FinalCTAProps) {
   return (
     <section className="relative bg-transparent">
@@ -60,6 +62,11 @@ export default function FinalCTA({
                 {cta}
               </MagneticButton>
             </div>
+            {microcopy && (
+              <p className="mt-4 text-center text-sm text-white/55" style={{ fontFamily: inter.style.fontFamily }}>
+                {microcopy}
+              </p>
+            )}
           </ScrollReveal>
         </div>
       </div>

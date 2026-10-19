@@ -5,29 +5,9 @@ import { Plus, Minus } from '@phosphor-icons/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 import { inter } from '@/lib/fonts';
+import { homeFaqs } from '@/lib/home-faq';
 
-const faqs = [
-  {
-    q: 'Est-ce que ce diagnostic est utile si j\'ai déjà une fiche Google ?',
-    a: 'Oui. Avoir une fiche ne suffit pas. Ce qui compte, c\'est ce qu\'elle montre, comment elle ressort face à vos concurrents et si elle inspire confiance.',
-  },
-  {
-    q: 'Est-ce que c\'est uniquement pour Google Maps ?',
-    a: 'Non. Google Maps est une partie du diagnostic, mais j\'analyse aussi votre site, vos avis et la cohérence globale de votre présence locale.',
-  },
-  {
-    q: 'Est-ce que vous faites les corrections ensuite ?',
-    a: 'Le diagnostic identifie ce qui bloque. Si vous souhaitez être accompagné pour appliquer les corrections, on en discute à la livraison.',
-  },
-  {
-    q: 'Est-ce adapté si je débute ?',
-    a: 'Oui, si votre activité est déjà clairement définie. Si votre offre, votre zone ou vos services ne sont pas encore stables, il faut d\'abord clarifier ces bases.',
-  },
-  {
-    q: 'Est-ce que vous promettez plus de devis immédiatement ?',
-    a: 'Non. Le diagnostic identifie les blocages et les actions prioritaires. Les résultats dépendent de votre situation, de votre concurrence et de ce qui est réellement mis en place. Méfiez-vous de qui vous promet le contraire.',
-  },
-];
+const faqs = homeFaqs;
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -72,7 +52,7 @@ export default function FAQ() {
               Questions fréquentes
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-              Ce qu&apos;on me demande avant de se lancer
+              Avant de faire le premier pas.
             </h2>
           </ScrollReveal>
 
