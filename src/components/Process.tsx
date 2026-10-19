@@ -263,7 +263,7 @@ export default function Process() {
             className="mb-14 text-sm text-white/35"
             style={{ fontFamily: inter.style.fontFamily }}
           >
-            490 € · livraison sous 5 jours ouvrés
+            790 € · livraison sous 5 jours ouvrés
           </p>
         </ScrollReveal>
 

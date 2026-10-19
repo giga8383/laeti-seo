@@ -17,7 +17,7 @@ function getResult(score: number) {
   if (score <= 1) return {
     label: "Votre fiche freine votre visibilité",
     desc: "Des blocages importants limitent votre présence sur Google. Un audit identifiera précisément ce qui vous coûte des clients chaque jour.",
-    cta: "Demander un audit · 490 €",
+    cta: "Demander un audit · 790 €",
     level: 'low',
   };
   if (score <= 3) return {

@@ -71,7 +71,7 @@ const jsonLd = {
       offers: {
         '@type': 'Offer',
         name: 'Audit SEO local',
-        price: '490',
+        price: '790',
         priceCurrency: 'EUR',
         availability: 'https://schema.org/InStock',
       },
@@ -1066,7 +1066,7 @@ export default function AuditSEOLocalPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Audit SEO local complet. Rapport structuré livré en 5 jours ouvrés.
-                Appel de restitution de 45 min inclus. 490 €. Sans engagement.
+                Appel de restitution de 45 min inclus. 790 €. Sans engagement.
               </p>
               <p
                 className="mx-auto mb-10 max-w-[52ch] text-white/40"

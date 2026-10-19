@@ -19,7 +19,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Consultante SEO dans le Var, référencement local pour les pros de l\'habitat',
   description:
-    'Vous êtes artisan, cuisiniste, décorateur ou menuisier dans le Var ? Votre fiche Google ne vous rapporte pas assez de devis ? J\'analyse votre présence locale et vous livre un plan d\'action en 5 jours. Diagnostic à 490 €.',
+    'Vous êtes artisan, cuisiniste, décorateur ou menuisier dans le Var ? Votre fiche Google ne vous rapporte pas assez de devis ? J\'analyse votre présence locale et vous livre un plan d\'action en 5 jours. Diagnostic à 790 €.',
   alternates: {
     canonical: 'https://laeti-seo.fr/consultant-seo-toulon',
   },
@@ -84,7 +84,7 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Diagnostic SEO local',
-            price: '490',
+            price: '790',
             priceCurrency: 'EUR',
             description: 'Analyse complète de votre fiche Google Business Profile, de vos avis, de vos concurrents directs dans le Var et de la présence locale de votre site, livrée sous 5 jours ouvrés avec un appel de restitution.',
           },
@@ -162,7 +162,7 @@ const jsonLd = {
           name: 'Quelle différence entre le diagnostic et le Sprint local ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Le diagnostic (490 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (500 €/mois, accompagnement de 3 mois minimum) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
+            text: "Le diagnostic (790 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (500 €/mois, accompagnement de 3 mois minimum) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
           },
         },
         {
@@ -211,7 +211,7 @@ const zones = [
 const diagnostic = {
   badge: 'Essentiel',
   name: 'Diagnostic SEO local',
-  price: '490',
+  price: '790',
   priceSuffix: '',
   unit: 'paiement unique',
   delay: 'Livré sous 5 jours ouvrés',
@@ -225,7 +225,7 @@ const diagnostic = {
     'Rapport livré sous 5 jours ouvrés, avec une feuille de route priorisée',
     'Appel de restitution en visio inclus pour décortiquer le rapport ensemble',
   ],
-  cta: 'Faire le point sur ma visibilité · 490 €',
+  cta: 'Faire le point sur ma visibilité · 790 €',
   yellow: false,
 };
 
@@ -282,7 +282,7 @@ const temoignages = [
     role: 'Plombier chauffagiste · Toulon',
   },
   {
-    quote: "J'avais un beau site mais personne ne me trouvait sur Hyères. Laeti a identifié que mes catégories Google étaient complètement à côté, et que mon site ne mentionnait aucune commune précise. Deux mois après les corrections, je reçois des demandes de devis de Hyères, Carqueiranne et Le Pradet. Le diagnostic à 490 € s'est rentabilisé sur le premier chantier.",
+    quote: "J'avais un beau site mais personne ne me trouvait sur Hyères. Laeti a identifié que mes catégories Google étaient complètement à côté, et que mon site ne mentionnait aucune commune précise. Deux mois après les corrections, je reçois des demandes de devis de Hyères, Carqueiranne et Le Pradet. Le diagnostic à 790 € s'est rentabilisé sur le premier chantier.",
     name: 'Sophie',
     role: 'Cuisiniste · Hyères',
   },
@@ -378,7 +378,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Voir le diagnostic · 490 €
+                  Voir le diagnostic · 790 €
                   <ArrowRight size={15} weight="bold" />
                 </Link>
                 <Link
@@ -1193,7 +1193,7 @@ export default function ConsultantSEOToulonPage() {
                 },
                 {
                   q: 'Quelle différence entre le diagnostic et le Sprint local ?',
-                  a: "Le diagnostic (490 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (500 €/mois, accompagnement de 3 mois minimum) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
+                  a: "Le diagnostic (790 €) est un état des lieux complet livré en 5 jours : vous repartez avec une vision claire de votre situation et un plan d'action précis. Le Sprint local (500 €/mois, accompagnement de 3 mois minimum) est un accompagnement de 3 mois où je réalise moi-même les optimisations. C'est la suite naturelle pour ceux qui préfèrent déléguer la mise en œuvre plutôt que de la gérer seuls entre deux chantiers.",
                 },
                 {
                   q: 'C\'est quoi le GEO et est-ce que ça me concerne en tant qu\'artisan dans le Var ?',
@@ -1305,7 +1305,7 @@ export default function ConsultantSEOToulonPage() {
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '27px' }}
               >
                 Un diagnostic complet de votre visibilité Google dans le Var,
-                livré sous 5 jours. 490 €. Sans engagement.
+                livré sous 5 jours. 790 €. Sans engagement.
               </p>
               <p
                 className="mx-auto mb-10 max-w-[54ch] text-white/40"
@@ -1324,7 +1324,7 @@ export default function ConsultantSEOToulonPage() {
                   className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
-                  Faire le point sur ma visibilité · 490 €
+                  Faire le point sur ma visibilité · 790 €
                   <ArrowRight size={15} weight="bold" />
                 </a>
                 <Link
