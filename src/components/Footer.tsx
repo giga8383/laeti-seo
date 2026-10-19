@@ -6,6 +6,7 @@ import { inter } from '@/lib/fonts';
 
 const navLinks = [
   { label: 'Accueil',          href: '/' },
+  { label: 'Consultante SEO freelance', href: '/consultante-seo-freelance' },
   { label: 'Offre & Tarifs',   href: '/offre' },
   { label: 'Feuille de route', href: '/feuille-de-route' },
   { label: 'Blog SEO',         href: '/blog' },

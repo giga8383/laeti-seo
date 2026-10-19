@@ -7,7 +7,7 @@ import MagneticButton from './MagneticButton';
 import { inter } from '@/lib/fonts';
 
 const navLinks = [
-  { label: 'Consultante SEO freelance', href: '/'            },
+  { label: 'Consultante SEO freelance', href: '/consultante-seo-freelance' },
   { label: 'Blog',                      href: '/blog'        },
   { label: 'À propos',                  href: '/#qui-suis-je' },
 ];
@@ -116,7 +116,7 @@ export default function Navbar() {
 
             {/* Consultante SEO freelance en premier */}
             <a
-              href="/"
+              href="/consultante-seo-freelance"
               className="whitespace-nowrap hover:opacity-100"
               style={{
                 fontFamily: 'Inter, "Inter Fallback"',

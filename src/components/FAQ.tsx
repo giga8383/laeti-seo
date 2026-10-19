@@ -7,8 +7,6 @@ import ScrollReveal from './ScrollReveal';
 import { inter } from '@/lib/fonts';
 import { homeFaqs } from '@/lib/home-faq';
 
-const faqs = homeFaqs;
-
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
 
@@ -42,23 +40,33 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-export default function FAQ() {
+interface FAQProps {
+  items?: { q: string; a: string }[];
+  label?: string;
+  heading?: string;
+}
+
+export default function FAQ({
+  items = homeFaqs,
+  label = 'Questions fréquentes',
+  heading = 'Avant de faire le premier pas.',
+}: FAQProps) {
   return (
     <section id="faq" className="relative bg-transparent" style={{ scrollMarginTop: '80px' }}>
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-[2fr_3fr]">
           <ScrollReveal>
             <p className="mb-3" style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: 'rgb(252, 235, 48)', textTransform: 'uppercase', textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)' }}>
-              Questions fréquentes
+              {label}
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
-              Avant de faire le premier pas.
+              {heading}
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.15}>
             <div>
-              {faqs.map((faq, i) => (
+              {items.map((faq, i) => (
                 <FAQItem key={i} q={faq.q} a={faq.a} />
               ))}
             </div>
