@@ -126,21 +126,21 @@ export default function Hero() {
           <div
             className="relative overflow-hidden"
             style={{
-              aspectRatio: '4 / 4.7',
+              aspectRatio: '1 / 1.08',
               borderRadius: '90px 12px 12px 12px',
               border: '1px solid rgba(255,255,255,0.3)',
-              background: '#24477d',
+              background: '#ffeb26',
               boxShadow: '0 24px 64px -16px rgba(0,0,0,0.45), 0 0 48px -8px rgba(252,235,48,0.18)',
             }}
           >
             <Image
-              src="/laeti-3.webp"
+              src="/laeti-hero.webp"
               alt="Laetitia Laghezza, consultante SEO local pour les professionnels de l'habitat"
               fill
               priority
               sizes="350px"
               className="object-cover"
-              style={{ objectPosition: '50% 20%', filter: 'saturate(1.2) hue-rotate(18deg)' }}
+              style={{ objectPosition: '50% 30%' }}
             />
           </div>
           <figcaption className="pt-4">
