@@ -1,22 +1,26 @@
 export const homeFaqs = [
   {
-    q: 'Le premier appel est-il gratuit ?',
-    a: 'Oui. Nous échangeons pendant 20 minutes sur votre activité et votre visibilité. Vous ne commandez aucune prestation en réservant cet appel. Si le diagnostic à 790 € ou le Sprint local vous convient, nous en parlons ensuite.',
+    q: "Combien de temps avant d'être visible sur Google ?",
+    a: "Comptez plusieurs mois, pas plusieurs semaines. Une fiche Google bien reprise peut bouger en quelques semaines ; des pages locales neuves demandent généralement trois à six mois pour se positionner. Personne ne peut vous donner une date, et quiconque vous promet la première place en un mois vous raconte une histoire.",
   },
   {
-    q: 'Que comprend le diagnostic à 790 € ?',
-    a: 'L’audit de votre fiche Google Business Profile, l’analyse de la visibilité d’une page locale de votre site internet et de votre présence sur les réseaux sociaux. Vous recevez un plan d’action priorisé et des conseils à appliquer pour savoir quoi améliorer et par où commencer.',
+    q: "Est-ce que vous garantissez la première place sur Google ?",
+    a: "Non, et aucune personne sérieuse ne le fera. Google ne vend ni ne garantit de position. Ce que je garantis, c'est le travail : un diagnostic livré en 5 jours, un plan d'action précis, des comptes rendus mensuels et des indicateurs suivis. Le reste dépend de votre marché et de vos concurrents.",
   },
   {
-    q: 'J’ai déjà une fiche Google. Est-ce utile ?',
-    a: 'Une fiche existante peut encore gagner en clarté et en pertinence. Le diagnostic permet de comprendre votre situation et de repérer les écarts avec les professionnels qui apparaissent dans votre zone.',
+    q: "Pourquoi payer 790 € un diagnostic alors que je peux avoir un audit gratuit ?",
+    a: "Parce qu'un audit gratuit est un argument commercial : il liste des problèmes pour vous vendre la solution. Le diagnostic à 790 € est un travail complet de 5 jours, avec l'analyse de vos concurrents, un plan priorisé et une restitution de 45 minutes. Le document vous appartient, même si vous ne travaillez pas avec moi ensuite.",
   },
   {
-    q: 'Le diagnostic comprend-il les corrections ?',
-    a: 'Le diagnostic comprend l’audit et les recommandations pour votre fiche Google, une page locale de votre site et vos réseaux sociaux, avec un plan d’action priorisé et un appel de restitution de 45 minutes. Vous appliquez ensuite les conseils. Le Sprint local permet de me confier les actions prévues sur votre fiche Google.',
+    q: "Je suis seul dans mon entreprise, je n'ai pas le temps de fournir du contenu.",
+    a: "C'est le cas de la plupart de mes clients, et c'est prévu. Je vous demande des photos de chantier et 30 minutes d'échange par mois. La rédaction, la structuration et la mise en ligne, c'est mon travail. Si vous n'avez rien à fournir un mois donné, on avance sur l'optimisation des pages existantes.",
   },
   {
-    q: 'Quand puis-je voir des résultats ?',
-    a: 'Le rapport est livré sous 5 jours ouvrés après réception des éléments nécessaires. L’évolution de votre visibilité dépend ensuite de votre situation de départ, de la concurrence et des actions mises en place. Aucune position précise sur Google n’est garantie.',
+    q: "Est-ce que vous travaillez avec des entreprises hors de la région PACA ?",
+    a: "Oui. Je suis basée en PACA, entre Aix-Marseille et Toulon, et j'interviens partout en France à distance. Tout se fait en visio et par mail, avec les mêmes livrables et les mêmes délais. La proximité géographique n'est utile que si vous préférez un rendez-vous sur place.",
+  },
+  {
+    q: "Mon site a été fait par un prestataire, je n'ai pas les accès techniques.",
+    a: "Ce n'est pas bloquant. Le diagnostic se fait sur des données publiques et sur ce que vous pouvez me montrer. Pour la mise en œuvre, je vous fournis les demandes précises à transmettre à votre prestataire, ou je travaille directement avec lui. Vous n'avez pas besoin de toucher au code.",
   },
 ];

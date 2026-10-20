@@ -10,23 +10,20 @@ Approche : terrain, pas théorique. Pas de jargon. Des corrections actionnables 
 
 ## Services proposés
 
-### Diagnostic visibilité locale — 790 €
-- Analyse complète de la fiche Google Business Profile
-- Audit des avis clients et signaux de confiance
-- Benchmark des concurrents dans la zone géographique
-- Analyse du site web sur les points qui freinent la visibilité locale
-- Rapport clair avec corrections priorisées
-- Plan d'action sur 30 jours
-- Livraison sous 5 jours ouvrés
+### Diagnostic visibilité — 790 €
+- Audit de la fiche Google Business Profile (catégories, champs vides, incohérences avec le site, avis et réponses)
+- Audit technique et éditorial du site (indexation, balises, structure, vitesse, mobile, données structurées)
+- Cartographie des 3 à 5 concurrents locaux qui devancent le client sur ses requêtes
+- Plan d'action priorisé par impact et par effort
+- Suivi de départ : indicateurs à relever pour mesurer le progrès
+- Livraison sous 5 jours ouvrés après réception des accès, restitution de 45 minutes en visio
 
-### Sprint local 3 mois — 500 €/mois (3 mois minimum, 1 500 € au total)
-- Diagnostic visibilité inclus (point de départ)
-- Optimisation complète de la fiche Google Business Profile
-- Stratégie avis clients personnalisée
-- 2 Google Posts par mois rédigés et publiés
-- Cohérence locale : zone, services, catégories, messages
-- Rapport mensuel de suivi
-- Appel de suivi mensuel
+### Sprint local — 500 €/mois, 3 mois minimum (1 500 € au total)
+- Mois 1 : fondations (reprise de la fiche Google, indexation, suivi des appels et demandes)
+- Mois 2 : pages locales ville/métier
+- Mois 3 : contenu, aperçus IA, citations locales
+- Chaque mois : point de 30 minutes et compte rendu écrit
+- Sans reconduction forcée, périmètre fixé par écrit après le diagnostic
 
 ## À qui s'adresse ce service
 
@@ -63,7 +60,7 @@ Non. Le diagnostic identifie les blocages et les actions prioritaires. Les résu
 
 | Offre | Prix | Délai |
 |---|---|---|
-| Diagnostic visibilité locale | 790 € | 5 jours ouvrés |
+| Diagnostic visibilité | 790 € | 5 jours ouvrés |
 | Sprint local 3 mois | 500 €/mois, 1 500 € au total | 3 mois minimum |
 
 ## Contact

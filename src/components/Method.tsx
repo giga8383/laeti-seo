@@ -3,16 +3,20 @@ import { inter } from '@/lib/fonts';
 
 const steps = [
   {
-    title: 'Nous parlons de votre activité',
-    text: 'Un premier échange de 20 minutes pour comprendre votre zone, vos objectifs et voir si mes prestations répondent à votre besoin.',
+    title: "L'appel de 20 minutes",
+    text: "On se parle, gratuitement. Vous décrivez votre activité, votre zone, ce qui coince. Je vous dis si je peux aider, et si ce n'est pas le cas, je vous le dis aussi. Aucun argumentaire de vente pendant cet appel.",
   },
   {
-    title: 'J’analyse vos trois leviers',
-    text: 'Votre fiche Google, une page locale de votre site et votre présence sur les réseaux sociaux sont examinées pour identifier vos axes d’amélioration.',
+    title: 'Le diagnostic',
+    text: "Si on avance, je réalise le diagnostic visibilité (790 €). C'est un travail d'analyse, pas un devis déguisé. À la fin, vous avez le document et vous décidez.",
   },
   {
-    title: 'Vous savez quoi appliquer',
-    text: 'Vous recevez les actions à mettre en place dans l’ordre des priorités et des conseils concrets pour votre site et vos réseaux sociaux. Le Sprint local permet ensuite de me confier les actions prévues sur votre fiche Google.',
+    title: 'La restitution et la décision',
+    text: "45 minutes pour parcourir le diagnostic ensemble. À l'issue, trois issues possibles : vous appliquez vous-même, vous confiez la mise en œuvre à un prestataire, ou on travaille ensemble en Sprint local. Les trois sont légitimes.",
+  },
+  {
+    title: "L'exécution et le suivi",
+    text: "En Sprint local, je pilote les actions, je vous sollicite pour les contenus et les photos, et je vous rends compte chaque mois. Vous gardez la main sur votre site et vos accès, à tout moment.",
   },
 ];
 
@@ -38,11 +42,11 @@ export default function Method() {
             className="mb-12 text-white"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' }}
           >
-            Vous savez comment avancer.
+            Comment je travaille
           </h2>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {steps.map((s, i) => (
             <ScrollReveal key={s.title} delay={0.08 + i * 0.08}>
               <div className="border-t border-white/15 pt-7">

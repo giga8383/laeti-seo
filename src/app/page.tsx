@@ -1,30 +1,30 @@
 import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Testimonials from '@/components/Testimonials';
 import Problem from '@/components/Problem';
-import Deliverable from '@/components/Deliverable';
-import Pricing from '@/components/Pricing';
+import Pillars from '@/components/Pillars';
+import DiagnosticSection from '@/components/DiagnosticSection';
+import SprintSection from '@/components/SprintSection';
 import Method from '@/components/Method';
 import About from '@/components/About';
+import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
-import GuideDownload from '@/components/GuideDownload';
 import FinalCTA from '@/components/FinalCTA';
 import { homeFaqs } from '@/lib/home-faq';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Laeti SEO | Visibilité locale pour les professionnels de l’habitat' },
+  title: { absolute: "Consultant SEO local pour artisans et entreprises de l'habitat" },
   description:
-    'Professionnels de l’habitat : diagnostic visibilité à 790 €. Audit de la fiche Google, d’une page locale et des réseaux sociaux, avec plan d’action priorisé.',
+    "Consultant SEO local indépendant, 12 ans d'expérience, basé en PACA. Diagnostic visibilité à 790 € en 5 jours. Appel découverte gratuit de 20 min.",
   alternates: { canonical: 'https://laeti-seo.fr' },
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://laeti-seo.fr',
     siteName: 'Laeti SEO',
-    title: 'Laeti SEO | Visibilité locale pour les professionnels de l’habitat',
+    title: "Consultant SEO local pour artisans et entreprises de l'habitat | Laeti SEO",
     description:
-      'Diagnostic visibilité à 790 € : audit de votre fiche Google, d’une page locale de votre site et de vos réseaux sociaux, avec un plan d’action priorisé.',
+      "Consultant SEO local indépendant, 12 ans d'expérience, basé en PACA. Diagnostic visibilité à 790 € en 5 jours. Appel découverte gratuit de 20 min.",
   },
 };
 
@@ -44,11 +44,11 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': '#webpage',
       url: 'https://laeti-seo.fr',
-      name: "Diagnostic visibilité locale pour professionnels de l'habitat",
+      name: "Consultant SEO local pour artisans et entreprises de l'habitat",
       isPartOf: { '@id': '#website' },
       about: { '@id': 'https://laeti-seo.fr/#business' },
       description:
-        "Décorateur, cuisiniste, menuisier, artisan : analysez votre présence Google avec un diagnostic SEO local à 790 €. Plan d'action priorisé livré sous 5 jours.",
+        "Consultant SEO local indépendant pour les décorateurs, architectes d'intérieur, cuisinistes, menuisiers et entreprises de rénovation. Diagnostic visibilité à 790 € livré en 5 jours ouvrés, accompagnement Sprint local à 500 €/mois.",
       inLanguage: 'fr-FR',
       breadcrumb: {
         '@type': 'BreadcrumbList',
@@ -133,7 +133,7 @@ const jsonLd = {
           '@type': 'Offer',
           name: 'Diagnostic visibilité locale',
           description:
-            "Audit de votre fiche Google Business Profile, analyse de la visibilité d'une page locale de votre site et de votre présence sur les réseaux sociaux. Plan d'action priorisé, rapport livré sous 5 jours ouvrés et appel de restitution de 45 minutes.",
+            "Audit de votre fiche Google Business Profile, audit technique et éditorial de votre site, cartographie de vos concurrents locaux, plan d'action priorisé et suivi de départ. Livré sous 5 jours ouvrés avec une restitution de 45 minutes.",
           price: '790',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
@@ -142,7 +142,7 @@ const jsonLd = {
           '@type': 'Offer',
           name: 'Sprint local 3 mois',
           description:
-            "Diagnostic inclus + optimisation complète de la fiche Google Business Profile, stratégie avis clients, 2 Google Posts par mois, rapport mensuel et appel de suivi. Payable en 3 mensualités de 500 €.",
+            "Mois 1 : fondations (fiche Google, indexation, suivi). Mois 2 : pages locales. Mois 3 : contenu et autorité locale. Un point de 30 minutes et un compte rendu écrit chaque mois. 500 € par mois, 3 mois minimum (1 500 € au total), sans reconduction forcée.",
           price: '1500',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',
@@ -178,25 +178,27 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Testimonials />
         <Problem />
-        <Deliverable />
-        <Pricing />
+        <Pillars />
+        <DiagnosticSection />
+        <SprintSection />
         <Method />
         <About />
-        <FAQ />
-        <GuideDownload />
+        <Testimonials showReviewTip />
+        <FAQ label="FAQ" heading="Questions fréquentes" />
         <FinalCTA
-          heading={<>Donnez aux bons clients une raison de vous contacter.</>}
+          heading={<>On regarde où vous en êtes&nbsp;?</>}
           body={
             <p
-              className="mx-auto mt-6 max-w-[50ch] text-base leading-relaxed text-white/65"
+              className="mx-auto mt-6 max-w-[56ch] text-base leading-relaxed text-white/65"
               style={{ fontFamily: 'Inter, "Inter Fallback"' }}
             >
-              Votre métier, votre secteur, les projets que vous voulez attirer : faisons le point pour voir comment améliorer votre présence locale.
+              20 minutes au téléphone, gratuit, sans engagement. Vous décrivez votre activité et votre zone. Je vous dis ce qui, à mon avis, vous coûte le plus de clients aujourd&apos;hui. Si je ne suis pas la bonne personne pour vous, je vous le dis.
             </p>
           }
-          microcopy="Appel gratuit · 20 minutes · Sans engagement"
+          cta="Réserver mon appel gratuit de 20 min"
+          secondaryCta={{ label: 'Demander le diagnostic à 790 €', href: '/offre#diagnostic' }}
+          microcopy="Réponse sous 24 heures ouvrées. Aucune relance commerciale automatisée."
         />
       </main>
     </>

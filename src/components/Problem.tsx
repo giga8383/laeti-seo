@@ -54,18 +54,18 @@ function GoogleMapCard() {
   );
 }
 
-const items = [
+const situations = [
   {
-    title: 'Vos concurrents apparaissent avant vous',
-    text: 'Vous avez une fiche Google, mais vous ne comprenez pas pourquoi d\u2019autres professionnels sont plus visibles dans votre zone.',
+    title: 'Votre fiche Google est vide',
+    text: "Vous avez créé une fiche Google il y a trois ans, à la va-vite. Pas de photos, pas de description, pas d'horaires à jour. Résultat : quand un client tape « cuisiniste Aix-en-Provence », Google ne sait pas quoi faire de vous et affiche trois concurrents à votre place. Vous avez pourtant pignon sur rue.",
   },
   {
-    title: 'Votre présence ne reflète pas votre travail',
-    text: 'Des photos anciennes, des services peu détaillés ou des avis peu mis en valeur peuvent laisser vos futurs clients hésiter.',
+    title: 'Votre site est invisible',
+    text: "Votre site est joli. Il a coûté cher. Mais il ne parle jamais de votre ville, ni de vos prestations réelles. Vous n'apparaissez que si quelqu'un tape exactement le nom de votre entreprise. Autant dire jamais. Et vous ne savez pas quoi changer, ni par où commencer.",
   },
   {
-    title: 'Vous ne savez pas par où commencer',
-    text: 'Vous voulez consacrer votre temps aux actions utiles pour votre activité. Je vous aide à définir les priorités.',
+    title: 'Les demandes qui arrivent sont hors budget',
+    text: "Vous recevez des appels pour des projets à 800 € alors que votre panier moyen est à 15 000 €. Vous perdez du temps au téléphone, vous vous déplacez pour rien. Le problème n'est pas votre prix : c'est la façon dont vous êtes trouvé. Vous n'attirez pas les bonnes recherches.",
   },
 ];
 
@@ -76,14 +76,8 @@ export default function Problem() {
     <section className="relative bg-transparent">
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-[2fr_3fr]">
-          {/* left col : label + card */}
+          {/* left col : card */}
           <div className="flex flex-col gap-10 md:sticky md:top-32 md:self-start">
-            <ScrollReveal>
-              <p className="uppercase tracking-widest" style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)' }}>
-                Ce qui peut vous freiner
-              </p>
-            </ScrollReveal>
-
             <ScrollReveal delay={0.15}>
               <GoogleMapCard />
             </ScrollReveal>
@@ -93,26 +87,17 @@ export default function Problem() {
           <div className="space-y-10">
             <ScrollReveal delay={0.1}>
               <h2 style={{ fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: 'clamp(32px, 4.5vw, 48px)', lineHeight: '1.1', color: 'white' }}>
-                Votre savoir-faire doit aussi{' '}
-                <span className="text-[#fceb30]">se voir en ligne</span>.
+                Vous vous <span className="text-[#fceb30]">reconnaissez</span> ?
               </h2>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.2}>
-              <div className="space-y-4">
-                <p className="max-w-[60ch] text-white/70" style={body}>
-                  Vos réalisations parlent pour vous. Encore faut-il que les clients de votre secteur les découvrent quand ils cherchent un professionnel.
-                </p>
-                <p className="max-w-[60ch] text-white/70" style={body}>
-                  Je regarde ce qui les empêche de vous trouver et ce qui pourrait leur donner davantage confiance pour vous contacter.
-                </p>
-              </div>
+              <p className="mt-5 max-w-[60ch] text-white/70" style={body}>
+                Trois situations que j&apos;entends à chaque appel. Si l&apos;une d&apos;elles vous parle, vous êtes au bon endroit.
+              </p>
             </ScrollReveal>
 
             <div>
-              {items.map((item, i) => (
-                <ScrollReveal key={item.title} delay={0.25 + i * 0.08}>
-                  <div className="grid grid-cols-[40px_1fr] gap-5 border-t border-white/10 py-6 first:border-t-0 first:pt-0">
+              {situations.map((item, i) => (
+                <ScrollReveal key={item.title} delay={0.15 + i * 0.08}>
+                  <div className="grid grid-cols-[40px_1fr] gap-5 border-t border-white/10 py-7 first:border-t-0 first:pt-0">
                     <span
                       className="pt-1 text-[#fceb30]"
                       style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '17px' }}
@@ -124,12 +109,20 @@ export default function Problem() {
                       <h3 className="mb-2 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '21px', lineHeight: '1.3' }}>
                         {item.title}
                       </h3>
-                      <p className="max-w-[56ch] text-white/65" style={body}>{item.text}</p>
+                      <p className="max-w-[58ch] text-white/65" style={body}>{item.text}</p>
                     </div>
                   </div>
                 </ScrollReveal>
               ))}
             </div>
+
+            <ScrollReveal delay={0.4}>
+              <div className="border-l-2 border-[#fceb30]/40 pl-5">
+                <p className="text-white" style={body}>
+                  Ces trois problèmes ont la même cause : votre visibilité locale n&apos;est pas construite. Elle se construit, et ça se mesure.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>

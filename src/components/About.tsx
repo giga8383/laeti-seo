@@ -175,14 +175,11 @@ export default function About() {
                   color: '#264d8c',
                 }}
               >
-                Je suis Laetitia.{' '}
-                <span style={{ color: 'rgba(38,77,140,0.35)' }}>
-                  Et c&apos;est avec moi que vous travaillez.
-                </span>
+                Qui je suis
               </h2>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.2}>
+            <ScrollReveal delay={0.20}>
               <p
                 style={{
                   fontFamily: 'Inter, "Inter Fallback"',
@@ -191,10 +188,10 @@ export default function About() {
                   fontSize: '16px',
                   lineHeight: '26px',
                   color: 'rgba(38,77,140,0.72)',
-                  maxWidth: '52ch',
+                  maxWidth: '56ch',
                 }}
               >
-                Depuis plus de 12 ans, je travaille sur le référencement. Aujourd&apos;hui, j&apos;accompagne les professionnels de l&apos;habitat qui veulent être davantage visibles auprès des clients de leur secteur.
+                {"Je m'appelle Laetitia Laghezza. Je suis consultante SEO local indépendante, installée en Provence-Alpes-Côte d'Azur, entre Aix-Marseille et Toulon. J'interviens aussi partout en France, à distance, avec la même méthode."}
               </p>
             </ScrollReveal>
 
@@ -207,11 +204,42 @@ export default function About() {
                   fontSize: '16px',
                   lineHeight: '26px',
                   color: 'rgba(38,77,140,0.72)',
-                  maxWidth: '52ch',
+                  maxWidth: '56ch',
                 }}
               >
-                Je réalise personnellement l&apos;analyse et le suivi de votre activité.{' '}
-                <strong style={{ color: '#264d8c' }}>Vous échangez directement avec la personne qui s&apos;occupe de votre visibilité.</strong>
+                {"J'ai 12 ans d'expérience du référencement. Pendant ces années, j'ai vu passer beaucoup de sites d'artisans et d'entreprises de l'habitat : des sites refaits trois fois, des fiches Google abandonnées, des budgets publicitaires brûlés pour des demandes hors sujet."}
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.32}>
+              <p
+                style={{
+                  fontFamily: 'Inter, "Inter Fallback"',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  fontSize: '16px',
+                  lineHeight: '26px',
+                  color: 'rgba(38,77,140,0.72)',
+                  maxWidth: '56ch',
+                }}
+              >
+                {"J'ai choisi ce secteur pour une raison simple. Vos clients cherchent près de chez eux, avec des mots très précis : un métier, une ville, un type de chantier. C'est exactement le terrain où le référencement local fait la différence, et où les grandes agences ne vont pas, parce que les budgets sont trop petits pour elles. Chez vous, une page bien faite peut changer le mois."}
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.38}>
+              <p
+                style={{
+                  fontFamily: 'Inter, "Inter Fallback"',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  fontSize: '16px',
+                  lineHeight: '26px',
+                  color: 'rgba(38,77,140,0.72)',
+                  maxWidth: '56ch',
+                }}
+              >
+                {"Je travaille seule. Vous parlez à la personne qui fait le travail, pas à un commercial puis à un chef de projet. Et je ne promets pas de place dans Google : je promets une méthode, un livrable et des comptes rendus."}
               </p>
             </ScrollReveal>
 
