@@ -3,9 +3,9 @@ import { inter } from '@/lib/fonts';
 
 const reviews = [
   {
-    quote: 'Merci à Laetitia qui a su optimiser notre fiche Google et améliorer notre visibilité',
-    name: 'Pôle Assainissement',
-    initials: 'PA',
+    quote: 'J’ai fait appel à Laetitia pour un audit d’un site internet. L’idée, avoir un œil neuf sur ce que j’avais déjà mis en place. 2 Quick Wins à mettre en place dans les jours à venir. Je recommande.',
+    name: 'Philippe Donnart',
+    initials: 'PD',
   },
   {
     quote: 'Je recommande fortement, hausse de mon activité significative',
