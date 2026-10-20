@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import { inter } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-  title: 'Politique de cookies et confidentialité | Laeti SEO',
+  title: 'Politique de cookies et confidentialité',
   description: 'Politique de cookies et de confidentialité du site laeti-seo.fr.',
   alternates: { canonical: 'https://laeti-seo.fr/politique-de-confidentialite' },
   robots: { index: false, follow: false },

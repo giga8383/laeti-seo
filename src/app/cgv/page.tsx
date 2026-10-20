@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import { inter } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-  title: 'Conditions Générales de Vente | Laeti SEO',
+  title: 'Conditions Générales de Vente',
   description: 'CGV de Laeti SEO, conditions de vente des prestations de consulting SEO local.',
   alternates: { canonical: 'https://laeti-seo.fr/cgv' },
   robots: { index: false, follow: false },

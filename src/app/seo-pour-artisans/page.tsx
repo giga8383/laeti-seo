@@ -18,7 +18,7 @@ import GBPComparison from '@/components/GBPComparison';
 
 /* ── Métadonnées SEO ── */
 export const metadata: Metadata = {
-  title: 'Référencement local pour artisans : soyez visible sur Google | Laeti SEO',
+  title: 'Référencement local pour artisans : soyez visible sur Google',
   description:
     "46 % des recherches Google ont une intention locale. Découvrez comment les artisans et professionnels de l'habitat peuvent apparaître dans le Local Pack : fiche GBP, avis clients, NAP, site web. Guide complet + quiz gratuit.",
   alternates: {

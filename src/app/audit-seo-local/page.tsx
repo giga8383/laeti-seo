@@ -16,7 +16,7 @@ import Link from 'next/link';
 
 /* ── Métadonnées SEO ── */
 export const metadata: Metadata = {
-  title: 'Audit SEO local : identifiez pourquoi vos clients ne vous trouvent pas | Laeti SEO',
+  title: 'Audit SEO local : identifiez pourquoi vos clients ne vous trouvent pas',
   description:
     "Audit SEO local pour artisans et professionnels de l'habitat : fiche Google Business Profile, citations NAP, concurrents locaux, Local Pack. Rapport en 5 jours, appel de restitution inclus.",
   alternates: {

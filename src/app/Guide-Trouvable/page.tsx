@@ -8,7 +8,7 @@ const PDF_PATH = '/guide-trouvable-seo-local.pdf';
 const PDF_LABEL = 'guide-trouvable-seo-local.pdf';
 
 export const metadata: Metadata = {
-  title: 'TROUVABLE · Le guide SEO local gratuit | Laeti SEO',
+  title: 'TROUVABLE · Le guide SEO local gratuit',
   description:
     "Téléchargez TROUVABLE, le guide SEO local offert par Laeti SEO : 7 points pour améliorer votre visibilité Google en tant que professionnel de l'habitat.",
   alternates: {

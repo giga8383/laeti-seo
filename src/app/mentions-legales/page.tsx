@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import { inter } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-  title: 'Mentions légales | Laeti SEO',
+  title: 'Mentions légales',
   description: 'Mentions légales du site laeti-seo.fr — Laetitia Laghezza, consultante SEO local.',
   alternates: { canonical: 'https://laeti-seo.fr/mentions-legales' },
   robots: { index: false, follow: false },

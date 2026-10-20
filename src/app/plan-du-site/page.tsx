@@ -5,7 +5,7 @@ import { inter } from '@/lib/fonts';
 import { getSortedPosts } from '@/lib/blog-posts';
 
 export const metadata: Metadata = {
-  title: 'Plan du site | Laeti SEO',
+  title: 'Plan du site',
   description: "Toutes les pages du site laeti-seo.fr : offres, pages villes, articles de blog et informations légales.",
   alternates: { canonical: 'https://laeti-seo.fr/plan-du-site' },
 };
