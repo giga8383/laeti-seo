@@ -207,7 +207,7 @@ export default function About() {
                   maxWidth: '56ch',
                 }}
               >
-                {"J'ai 12 ans d'expérience du référencement. Pendant ces années, j'ai vu passer beaucoup de sites d'artisans et d'entreprises de l'habitat : des sites refaits trois fois, des fiches Google abandonnées, des budgets publicitaires brûlés pour des demandes hors sujet."}
+                {"J'ai 12 ans d'expérience du référencement. Pendant ces années, j'ai vu passer beaucoup de sites d'artisans et d'entreprises de l'habitat, avec des sites refaits trois fois, des fiches Google abandonnées et des budgets publicitaires brûlés pour des demandes hors sujet."}
               </p>
             </ScrollReveal>
 
@@ -223,7 +223,7 @@ export default function About() {
                   maxWidth: '56ch',
                 }}
               >
-                {"J'ai choisi ce secteur pour une raison simple. Vos clients cherchent près de chez eux, avec des mots très précis : un métier, une ville, un type de chantier. C'est exactement le terrain où le référencement local fait la différence, et où les grandes agences ne vont pas, parce que les budgets sont trop petits pour elles. Chez vous, une page bien faite peut changer le mois."}
+                {"J'ai choisi ce secteur pour une raison simple. Vos clients cherchent près de chez eux, avec des mots très précis, comme un métier, une ville ou un type de chantier. C'est exactement le terrain où le référencement local fait la différence, et où les grandes agences ne vont pas, parce que les budgets sont trop petits pour elles. Chez vous, une page bien faite peut changer le mois."}
               </p>
             </ScrollReveal>
 
@@ -239,7 +239,7 @@ export default function About() {
                   maxWidth: '56ch',
                 }}
               >
-                {"Je travaille seule. Vous parlez à la personne qui fait le travail, pas à un commercial puis à un chef de projet. Et je ne promets pas de place dans Google : je promets une méthode, un livrable et des comptes rendus."}
+                {"Je travaille seule. Vous parlez à la personne qui fait le travail, pas à un commercial puis à un chef de projet. Et je ne promets pas de place dans Google. Je promets une méthode, un livrable et des comptes rendus."}
               </p>
             </ScrollReveal>
 

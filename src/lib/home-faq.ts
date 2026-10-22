@@ -5,11 +5,11 @@ export const homeFaqs = [
   },
   {
     q: "Est-ce que vous garantissez la première place sur Google ?",
-    a: "Non, et aucune personne sérieuse ne le fera. Google ne vend ni ne garantit de position. Ce que je garantis, c'est le travail : un diagnostic livré en 5 jours, un plan d'action précis, des comptes rendus mensuels et des indicateurs suivis. Le reste dépend de votre marché et de vos concurrents.",
+    a: "Non, et aucune personne sérieuse ne le fera. Google ne vend ni ne garantit de position. Ce que je garantis, c'est le travail, à savoir un diagnostic livré en 5 jours, un plan d'action précis, des comptes rendus mensuels et des indicateurs suivis. Le reste dépend de votre marché et de vos concurrents.",
   },
   {
     q: "Pourquoi payer 790 € un diagnostic alors que je peux avoir un audit gratuit ?",
-    a: "Parce qu'un audit gratuit est un argument commercial : il liste des problèmes pour vous vendre la solution. Le diagnostic à 790 € est un travail complet de 5 jours, avec l'analyse de vos concurrents, un test de visibilité IA, un plan priorisé et une restitution de 45 minutes. Le document vous appartient, même si vous ne travaillez pas avec moi ensuite.",
+    a: "Parce qu'un audit gratuit est un argument commercial. Il liste des problèmes pour vous vendre la solution. Le diagnostic à 790 € est un travail complet de 5 jours, avec l'analyse de vos concurrents, un test de visibilité IA, un plan priorisé et une restitution de 45 minutes. Le document vous appartient, même si vous ne travaillez pas avec moi ensuite.",
   },
   {
     q: "Je suis seul dans mon entreprise, je n'ai pas le temps de fournir du contenu.",

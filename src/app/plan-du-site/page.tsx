@@ -16,7 +16,7 @@ const principales = [
   { label: 'Offre & Tarifs', href: '/offre' },
   { label: 'Feuille de route', href: '/feuille-de-route' },
   { label: 'Blog SEO', href: '/blog' },
-  { label: 'Guide offert : 7 points visibilité locale', href: '/Guide-Trouvable' },
+  { label: 'Guide offert sur les 7 points de visibilité locale', href: '/Guide-Trouvable' },
 ];
 
 const seoLocal = [

@@ -4,15 +4,15 @@ import { inter } from '@/lib/fonts';
 
 const months = [
   {
-    title: 'Mois 1 - Fondations.',
+    title: 'Mois 1, les fondations.',
     text: "Reprise complète de la fiche Google Business Profile, correction des pages qui bloquent l'indexation, mise en place du suivi des appels et des demandes. On assainit avant d'accélérer.",
   },
   {
-    title: 'Mois 2 - Pages locales.',
+    title: 'Mois 2, les pages locales.',
     text: "Rédaction et mise en ligne des pages ville/métier prioritaires, avec vos réalisations et vos mots de vos clients. Optimisation des pages existantes qui ont du potentiel.",
   },
   {
-    title: 'Mois 3 - Contenu et autorité locale.',
+    title: 'Mois 3, contenu et autorité locale.',
     text: "Articles et pages qui répondent aux vraies questions de vos clients, structuration pour les aperçus IA, inscriptions et citations locales cohérentes (annuaires métier, presse locale, partenaires).",
   },
 ];
@@ -40,7 +40,7 @@ export default function SprintSection() {
               className="text-[#264d8c]"
               style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' }}
             >
-              Le Sprint local - 500 €/mois, 3 mois minimum
+              Le Sprint local à 500 €/mois, 3 mois minimum
             </h2>
             <p className="mt-5 text-[#264d8c]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
               Pour appliquer le plan d&apos;action et tenir la cadence. Trois mois, parce qu&apos;en dessous, on ne peut rien observer de sérieux.
@@ -66,7 +66,7 @@ export default function SprintSection() {
         <ScrollReveal delay={0.2}>
           <div className="mt-6 rounded-[1.75rem] border border-[#264d8c]/10 bg-white p-8">
             <p className="text-[#264d8c]" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
-              <strong>Chaque mois, sans exception :</strong> un point de 30 minutes, un compte rendu écrit avec ce qui a été fait et ce qui est prévu, et le relevé des indicateurs. Vous savez ce que vous payez.
+              <strong>Chaque mois, sans exception,</strong> vous avez un point de 30 minutes, un compte rendu écrit avec ce qui a été fait et ce qui est prévu, et le relevé des indicateurs. Vous savez ce que vous payez.
             </p>
           </div>
         </ScrollReveal>

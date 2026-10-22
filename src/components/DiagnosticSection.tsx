@@ -21,7 +21,7 @@ const points = [
   },
   {
     title: "Le plan d'action priorisé.",
-    text: "Une liste d'actions classées par impact et par effort, avec pour chacune : quoi faire, qui le fait, combien de temps ça prend. Pas de liste de 80 recommandations : celles qui comptent.",
+    text: "Une liste d'actions classées par impact et par effort. Pour chacune, vous savez quoi faire, qui le fait et combien de temps ça prend. Pas de liste de 80 recommandations, seulement celles qui comptent.",
   },
   {
     title: 'Le suivi de départ.',
@@ -52,7 +52,7 @@ export default function DiagnosticSection() {
                 className="text-white"
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' }}
               >
-                Le diagnostic visibilité - <span className="text-[#fceb30]">790 €</span>
+                Le diagnostic visibilité à <span className="text-[#fceb30]">790 €</span>
               </h2>
               <p className="mt-5 max-w-[52ch] text-white/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
                 Un état des lieux complet de votre visibilité locale, livré en 5 jours ouvrés, avec une restitution de 45 minutes pour décider quoi faire ensuite.
@@ -63,7 +63,7 @@ export default function DiagnosticSection() {
               <div className="mt-8 rounded-[1.25rem] border border-white/10 bg-white/[0.06] p-6">
                 <p className="text-white/75" style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px' }}>
                   Livraison sous <strong className="text-white">5 jours ouvrés</strong> après réception des accès.{' '}
-                  <strong className="text-white">Restitution de 45 minutes</strong> en visio, enregistrée si vous le souhaitez, pour parcourir le document ensemble et répondre à vos questions. Le document reste votre propriété : vous pouvez le faire appliquer par votre prestataire actuel.
+                  <strong className="text-white">Restitution de 45 minutes</strong> en visio, enregistrée si vous le souhaitez, pour parcourir le document ensemble et répondre à vos questions. Le document reste votre propriété et vous pouvez le faire appliquer par votre prestataire actuel.
                 </p>
               </div>
 
@@ -80,7 +80,7 @@ export default function DiagnosticSection() {
               </div>
 
               <p className="mt-5 max-w-[52ch] text-white/55" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '22px' }}>
-                Le diagnostic ne garantit aucune position dans Google. Il garantit une chose : à la fin, vous saurez exactement où vous en êtes et ce qu&apos;il faut faire.
+                Le diagnostic ne garantit aucune position dans Google. Il garantit une chose. À la fin, vous saurez exactement où vous en êtes et ce qu&apos;il faut faire.
               </p>
             </ScrollReveal>
           </div>

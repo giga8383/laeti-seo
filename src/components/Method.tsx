@@ -12,7 +12,7 @@ const steps = [
   },
   {
     title: 'La restitution et la décision',
-    text: "45 minutes pour parcourir le diagnostic ensemble. À l'issue, trois issues possibles : vous appliquez vous-même, vous confiez la mise en œuvre à un prestataire, ou on travaille ensemble en Sprint local. Les trois sont légitimes.",
+    text: "45 minutes pour parcourir le diagnostic ensemble. À l'issue, vous avez trois possibilités. Vous appliquez vous-même, vous confiez la mise en œuvre à un prestataire, ou on travaille ensemble en Sprint local. Les trois sont légitimes.",
   },
   {
     title: "L'exécution et le suivi",

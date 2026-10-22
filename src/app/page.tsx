@@ -90,7 +90,7 @@ const jsonLd = {
       founder: { '@id': '#laeti' },
       foundingDate: '2007',
       description:
-        "Diagnostic de visibilité locale et accompagnement SEO local pour les professionnels de l'habitat : décorateurs, architectes d'intérieur, cuisinistes, menuisiers et artisans.",
+        "Diagnostic de visibilité locale et accompagnement SEO local pour les professionnels de l'habitat, comme les décorateurs, architectes d'intérieur, cuisinistes, menuisiers et artisans.",
       image: 'https://laeti-seo.fr/laeti-photo.webp',
       telephone: '+33 6 26 95 07 50',
       email: 'laetitia@laeti-seo.fr',
@@ -142,7 +142,7 @@ const jsonLd = {
           '@type': 'Offer',
           name: 'Sprint local 3 mois',
           description:
-            "Mois 1 : fondations (fiche Google, indexation, suivi). Mois 2 : pages locales. Mois 3 : contenu et autorité locale. Un point de 30 minutes et un compte rendu écrit chaque mois. 500 € par mois, 3 mois minimum (1 500 € au total), sans reconduction forcée.",
+            "Mois 1 pour les fondations (fiche Google, indexation, suivi), mois 2 pour les pages locales, mois 3 pour le contenu et l'autorité locale. Un point de 30 minutes et un compte rendu écrit chaque mois. 500 € par mois, 3 mois minimum (1 500 € au total), sans reconduction forcée.",
           price: '1500',
           priceCurrency: 'EUR',
           availability: 'https://schema.org/InStock',

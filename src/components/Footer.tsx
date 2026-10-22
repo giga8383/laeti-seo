@@ -23,7 +23,7 @@ const seoLocal = [
 ];
 
 const ressources = [
-  { label: 'Guide offert : 7 points visibilité locale', href: '/Guide-Trouvable' },
+  { label: 'Guide offert sur les 7 points de visibilité locale', href: '/Guide-Trouvable' },
   { label: 'Blog SEO local',                 href: '/blog' },
   { label: 'FAQ',                            href: '/#faq' },
   { label: 'Réserver un appel découverte',   href: '/offre' },

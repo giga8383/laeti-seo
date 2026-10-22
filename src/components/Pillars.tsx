@@ -4,15 +4,15 @@ import { inter } from '@/lib/fonts';
 const pillars = [
   {
     title: 'Votre fiche Google Business Profile',
-    text: "C'est la première chose que vos clients voient, avant même votre site. Je reprends la fiche de A à Z : catégories, description, prestations, zone d'intervention, photos, horaires, questions-réponses. Je mets en place une routine d'avis simple à tenir, pour que votre fiche reste vivante sans vous prendre du temps.",
+    text: "C'est la première chose que vos clients voient, avant même votre site. Je reprends la fiche de A à Z, avec les catégories, la description, les prestations, la zone d'intervention, les photos, les horaires et les questions-réponses. Je mets en place une routine d'avis simple à tenir, pour que votre fiche reste vivante sans vous prendre du temps.",
   },
   {
     title: 'Vos pages locales',
-    text: "Une page par ville et par métier, avec le vocabulaire de vos clients : « rénovation de cuisine à Toulon », « menuisier sur mesure à Marseille ». Chaque page répond à une intention précise, avec vos réalisations, vos contraintes de chantier et vos zones d'intervention. C'est ce qui fait la différence entre exister et être trouvé.",
+    text: "Une page par ville et par métier, avec le vocabulaire de vos clients, par exemple « rénovation de cuisine à Toulon » ou « menuisier sur mesure à Marseille ». Chaque page répond à une intention précise, avec vos réalisations, vos contraintes de chantier et vos zones d'intervention. C'est ce qui fait la différence entre exister et être trouvé.",
   },
   {
     title: 'Contenu et visibilité dans les réponses IA',
-    text: "Google ne répond plus seul : les aperçus IA et les assistants type ChatGPT citent des sources. Je structure votre contenu pour qu'il soit compréhensible et citable : réponses claires, données vérifiables, pages bien hiérarchisées. Vous restez visible là où vos clients cherchent vraiment.",
+    text: "Google ne répond plus seul. Les aperçus IA et les assistants type ChatGPT citent des sources. Je structure votre contenu pour qu'il soit compréhensible et citable, avec des réponses claires, des données vérifiables et des pages bien hiérarchisées. Vous restez visible là où vos clients cherchent vraiment.",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function Pillars() {
               Ce que je fais sur mon site, <span className="text-[#fceb30]">je le fais chez vous.</span>
             </p>
             <p className="max-w-[70ch] text-white/75" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
-              Ce site est mon propre terrain d&apos;application : structure des pages, balisage, contenu local, vitesse, données structurées. Ouvrez le code source, inspectez les pages : tout ce que je vous recommande, je l&apos;applique ici d&apos;abord. Vous pouvez juger le travail avant de payer.
+              Ce site est mon propre terrain d&apos;application, avec la structure des pages, le balisage, le contenu local, la vitesse et les données structurées. Ouvrez le code source, inspectez les pages. Tout ce que je vous recommande, je l&apos;applique ici d&apos;abord. Vous pouvez juger le travail avant de payer.
             </p>
           </div>
         </ScrollReveal>

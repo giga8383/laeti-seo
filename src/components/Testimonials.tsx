@@ -105,15 +105,15 @@ export default function Testimonials({ showReviewTip = false }: { showReviewTip?
             >
               <p className="mb-3 text-[18px] font-semibold text-white">Comment demander un avis qui vous sert vraiment</p>
               <p className="max-w-[80ch] text-[15px] leading-[24px] text-white/70">
-                Un avis « Super, je recommande » ne dit rien à Google ni à un futur client. Demandez à votre client trois éléments :{' '}
-                <strong className="text-white">son métier ou son type de projet</strong>, <strong className="text-white">sa ville ou son quartier</strong>, et{' '}
+                Un avis « Super, je recommande » ne dit rien à Google ni à un futur client. Demandez à votre client de préciser{' '}
+                <strong className="text-white">son métier ou son type de projet</strong>, <strong className="text-white">sa ville ou son quartier</strong> et{' '}
                 <strong className="text-white">ce qui s&apos;est concrètement bien passé</strong> (le délai, la pose, le conseil, le budget tenu).
               </p>
               <p className="mt-4 max-w-[80ch] text-[15px] leading-[24px] text-white/70">
-                Exemple de message à envoyer : « Bonjour [prénom], merci pour votre confiance sur [projet]. Si vous avez deux minutes, un avis Google m&apos;aiderait beaucoup. Si vous pouvez préciser votre projet et votre ville, ça m&apos;aide à être trouvé par des clients qui me cherchent près de chez vous. Voici le lien : [lien fiche Google]. »
+                Voici un exemple de message à envoyer. « Bonjour [prénom], merci pour votre confiance sur [projet]. Si vous avez deux minutes, un avis Google m&apos;aiderait beaucoup. Si vous pouvez préciser votre projet et votre ville, ça m&apos;aide à être trouvé par des clients qui me cherchent près de chez vous. Voici le lien pour le faire [lien fiche Google]. »
               </p>
               <p className="mt-4 max-w-[80ch] text-[15px] leading-[24px] text-white/70">
-                Objectif : un avis par mois, minimum. Un avis récent et détaillé vaut mieux que dix avis anciens et vagues.
+                Visez un avis par mois, au minimum. Un avis récent et détaillé vaut mieux que dix avis anciens et vagues.
               </p>
             </aside>
           </ScrollReveal>

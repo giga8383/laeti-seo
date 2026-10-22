@@ -57,7 +57,7 @@ function GoogleMapCard() {
 const situations = [
   {
     title: 'Votre fiche Google est vide',
-    text: "Vous avez créé une fiche Google il y a trois ans, à la va-vite. Pas de photos, pas de description, pas d'horaires à jour. Résultat : quand un client tape « cuisiniste Aix-en-Provence », Google ne sait pas quoi faire de vous et affiche trois concurrents à votre place. Vous avez pourtant pignon sur rue.",
+    text: "Vous avez créé une fiche Google il y a trois ans, à la va-vite. Pas de photos, pas de description, pas d'horaires à jour. Résultat, quand un client tape « cuisiniste Aix-en-Provence », Google ne sait pas quoi faire de vous et affiche trois concurrents à votre place. Vous avez pourtant pignon sur rue.",
   },
   {
     title: 'Votre site est invisible',
@@ -65,7 +65,7 @@ const situations = [
   },
   {
     title: 'Les demandes qui arrivent sont hors budget',
-    text: "Vous recevez des appels pour des projets à 800 € alors que votre panier moyen est à 15 000 €. Vous perdez du temps au téléphone, vous vous déplacez pour rien. Le problème n'est pas votre prix : c'est la façon dont vous êtes trouvé. Vous n'attirez pas les bonnes recherches.",
+    text: "Vous recevez des appels pour des projets à 800 € alors que votre panier moyen est à 15 000 €. Vous perdez du temps au téléphone, vous vous déplacez pour rien. Le problème n'est pas votre prix. C'est la façon dont vous êtes trouvé. Vous n'attirez pas les bonnes recherches.",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function Problem() {
             <ScrollReveal delay={0.4}>
               <div className="border-l-2 border-[#fceb30]/40 pl-5">
                 <p className="text-white" style={body}>
-                  Ces trois problèmes ont la même cause : votre visibilité locale n&apos;est pas construite. Elle se construit, et ça se mesure.
+                  Ces trois problèmes ont la même cause. Votre visibilité locale n&apos;est pas construite. Elle se construit, et ça se mesure.
                 </p>
               </div>
             </ScrollReveal>
