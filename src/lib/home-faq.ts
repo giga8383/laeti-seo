@@ -9,7 +9,7 @@ export const homeFaqs = [
   },
   {
     q: "Pourquoi payer 790 € un diagnostic alors que je peux avoir un audit gratuit ?",
-    a: "Parce qu'un audit gratuit est un argument commercial : il liste des problèmes pour vous vendre la solution. Le diagnostic à 790 € est un travail complet de 5 jours, avec l'analyse de vos concurrents, un plan priorisé et une restitution de 45 minutes. Le document vous appartient, même si vous ne travaillez pas avec moi ensuite.",
+    a: "Parce qu'un audit gratuit est un argument commercial : il liste des problèmes pour vous vendre la solution. Le diagnostic à 790 € est un travail complet de 5 jours, avec l'analyse de vos concurrents, un test de visibilité IA, un plan priorisé et une restitution de 45 minutes. Le document vous appartient, même si vous ne travaillez pas avec moi ensuite.",
   },
   {
     q: "Je suis seul dans mon entreprise, je n'ai pas le temps de fournir du contenu.",

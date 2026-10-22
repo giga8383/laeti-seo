@@ -16,6 +16,10 @@ const points = [
     text: "Les 3 à 5 entreprises qui vous devancent sur vos requêtes, ce qu'elles font mieux, et ce qui est réellement copiable dans votre contexte.",
   },
   {
+    title: 'Le test de visibilité IA.',
+    text: "Je pose 5 à 10 requêtes de vos clients (métier + ville) à ChatGPT, Perplexity et aux aperçus IA de Google. Vous voyez si vous êtes cité, qui l'est à votre place et sur quelles sources les IA s'appuient. Les actions pour devenir citable sont intégrées au plan d'action. Aucune apparition n'est garantie.",
+  },
+  {
     title: "Le plan d'action priorisé.",
     text: "Une liste d'actions classées par impact et par effort, avec pour chacune : quoi faire, qui le fait, combien de temps ça prend. Pas de liste de 80 recommandations : celles qui comptent.",
   },

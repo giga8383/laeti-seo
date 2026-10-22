@@ -14,6 +14,7 @@ Approche : terrain, pas théorique. Pas de jargon. Des corrections actionnables 
 - Audit de la fiche Google Business Profile (catégories, champs vides, incohérences avec le site, avis et réponses)
 - Audit technique et éditorial du site (indexation, balises, structure, vitesse, mobile, données structurées)
 - Cartographie des 3 à 5 concurrents locaux qui devancent le client sur ses requêtes
+- Test de visibilité IA : 5 à 10 requêtes clients posées à ChatGPT, Perplexity et aux aperçus IA de Google (qui est cité, sur quelles sources)
 - Plan d'action priorisé par impact et par effort
 - Suivi de départ : indicateurs à relever pour mesurer le progrès
 - Livraison sous 5 jours ouvrés après réception des accès, restitution de 45 minutes en visio
