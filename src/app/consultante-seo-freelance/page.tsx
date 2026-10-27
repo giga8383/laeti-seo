@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import Navbar from '@/components/Navbar';
 import ScrollReveal from '@/components/ScrollReveal';
 import MagneticButton from '@/components/MagneticButton';
@@ -12,44 +13,88 @@ import { inter } from '@/lib/fonts';
 const URL = 'https://laeti-seo.fr/consultante-seo-freelance';
 const CALENDLY = 'https://calendly.com/laetitia_laghezza_seo_local/30min';
 
+const TITLE = "Consultante SEO freelance pour les pros de l'habitat";
+const DESCRIPTION =
+  "Consultante SEO freelance pour artisans et pros de l'habitat, en Provence et en France. Diagnostic à 790 € livré en 5 jours, tarifs affichés.";
+
 export const metadata: Metadata = {
-  title: "Consultante SEO freelance pour les professionnels de l'habitat",
-  description:
-    "Laetitia, consultante SEO freelance : plus de 12 ans de référencement, spécialisée dans la visibilité locale des professionnels de l'habitat. Je travaille seule, à distance, partout en France.",
+  // `absolute` : le title tient en 467 px sans le suffixe « | Laeti SEO » du gabarit global.
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
     type: 'profile',
     locale: 'fr_FR',
     url: URL,
     siteName: 'Laeti SEO',
-    title: "Consultante SEO freelance pour les professionnels de l'habitat | Laeti SEO",
-    description:
-      "Plus de 12 ans de référencement, une seule interlocutrice : j'analyse votre visibilité locale et je vous dis quoi améliorer, dans quel ordre.",
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 
-const faqs = [
+const enBref = [
+  'Une interlocutrice unique, du diagnostic à la mise en œuvre.',
+  'Des tarifs affichés, pas de devis qui gonflent en cours de route.',
+  'Deux chantiers prioritaires : la fiche Google Business Profile et les pages locales.',
+  'Un diagnostic livré en 5 jours ouvrés, à votre nom.',
+];
+
+const reasons = [
   {
-    q: 'Travaillez-vous seule ?',
-    a: "Oui. Je réalise personnellement l'analyse, les recommandations et le suivi. Il n'y a ni sous-traitance, ni stagiaire : vous échangez directement avec la personne qui s'occupe de votre visibilité.",
+    title: 'Une interlocutrice unique.',
+    text: "Pas de chef de projet qui relaie à un pôle technique, puis revient avec une réponse approximative. Vous parlez à celle qui ouvre votre fiche, écrit vos pages et lit vos statistiques. Une question, une réponse. Pas de téléphone arabe.",
   },
   {
-    q: 'Travaillez-vous uniquement en Provence ?',
-    a: "Non. Je suis basée à Pourrières, dans le Var, mais je travaille à distance, en visioconférence et par e-mail, avec des professionnels de l'habitat partout en France. Des pages dédiées existent pour Aix-en-Provence, Marseille et Toulon.",
+    title: 'Pas de frais de structure.',
+    text: "Une agence facture ses bureaux, son équipe commerciale, son turnover. Sur une mission de visibilité, ces coûts ne vous apportent rien. Chez moi, le budget part dans le travail.",
   },
   {
-    q: 'Quelle différence avec une agence SEO ?',
-    a: "Vous échangez directement avec la personne qui réalise le travail, sur un périmètre défini et avec des tarifs affichés. Je me concentre sur un seul sujet : la visibilité locale des professionnels de l'habitat.",
+    title: 'Une réactivité de 24 h ouvrées.',
+    text: "Un horaire à changer, un chantier à mettre en avant, un avis à traiter : réponse sous 24 h ouvrées. Vous n'avez pas à relancer trois fois.",
   },
   {
-    q: 'Combien coûtent vos prestations ?',
-    a: "Le diagnostic visibilité est à 790 €, en paiement unique. Le Sprint local est à 500 € par mois, avec un engagement de 3 mois minimum (1 500 € au total), diagnostic de départ inclus. Le premier appel de 20 minutes est gratuit et sans engagement.",
-  },
-  {
-    q: 'Promettez-vous des résultats ?',
-    a: "Non. Personne ne peut garantir une position sur Google. Je vous indique ce qui freine votre visibilité et les actions à mener en priorité ; les résultats dépendent ensuite de votre situation de départ, de la concurrence et de ce qui est réellement mis en place.",
+    title: 'Des tarifs affichés.',
+    text: "790 € le diagnostic, écrit noir sur blanc sur ce site. Vous savez ce que vous payez avant de décrocher le téléphone. C'est rare. C'est volontaire.",
   },
 ];
+
+// Mêmes textes pour l'accordéon visible et pour le FAQPage du JSON-LD : ne les modifier qu'ensemble.
+const faqs = [
+  {
+    q: 'Freelance ou agence : quelle différence réelle ?',
+    a: "Le nombre d'intermédiaires. En agence, vous êtes souvent le dernier informé. Ici, vous parlez directement à celle qui exécute, sans réunion de calage. La contrepartie est assumée : je ne couvre pas tout, et je le dis quand ce n'est pas mon métier.",
+  },
+  {
+    q: 'Combien de temps avant de voir des résultats ?',
+    a: "Je ne promets pas de délai, et personne ne devrait. Un horaire corrigé sur une fiche peut se voir vite. Une page locale qui doit se positionner face à des concurrents installés prend plus de temps, et dépend de votre marché. Le diagnostic vous donne l'ordre de priorité, pas une date.",
+  },
+  {
+    q: 'Travaillez-vous à distance ?',
+    a: "Oui. Provence en priorité, France entière ensuite. Tout passe par des outils partagés : accès à votre fiche, documents, visios courtes. Le travail à distance n'a jamais empêché de vérifier ce qui a été fait.",
+  },
+  {
+    q: 'Y a-t-il un engagement de durée ?',
+    a: "Pas d'abonnement automatique. Le diagnostic est un livrable autonome. Si vous voulez la mise en œuvre ensuite, on cadre un périmètre et une durée. Si vous préférez l'appliquer vous-même, le document est fait pour ça.",
+  },
+  {
+    q: 'Et si ça ne marche pas ?',
+    a: 'Vous jugez sur pièce. Le diagnostic arrive en 5 jours ouvrés, avec des correctifs nommés et applicables. Vous lisez, vous testez, vous décidez. Aucune clause ne vous retient.',
+  },
+  {
+    q: "L'IA et les Aperçus IA changent-ils la donne ?",
+    a: 'Oui, sur un point : la précision des faits devient un critère de citation. Fiche complète, pages factuelles, avis récents, données structurées. Le reste - posture, bourrage de mots-clés, pages vides - perd de la valeur.',
+  },
+  {
+    q: 'Pourquoi 790 € alors que d’autres proposent un audit gratuit ?',
+    a: 'Un audit SEO local gratuit est presque toujours une plaquette commerciale : cinq constats génériques, et un devis qui suit. Le mien est mesuré, chiffré, livré en 5 jours, et utilisable sans moi. 790 €, c’est le prix d’un travail, pas d’un rendez-vous de vente.',
+  },
+  {
+    q: 'Combien de clients suivez-vous en même temps ?',
+    a: 'Un nombre volontairement limité. Au-delà, la réactivité de 24 h ouvrées devient une promesse creuse. Je préfère refuser une mission que dégrader le suivi.',
+  },
+];
+
+const PERSON_ID = `${URL}#person`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -58,63 +103,58 @@ const jsonLd = {
       '@type': 'ProfilePage',
       '@id': `${URL}#webpage`,
       url: URL,
-      name: "Consultante SEO freelance pour les professionnels de l'habitat",
-      isPartOf: { '@id': 'https://laeti-seo.fr/#website' },
-      about: { '@id': 'https://laeti-seo.fr/#laeti' },
-      mainEntity: { '@id': 'https://laeti-seo.fr/#laeti' },
+      name: TITLE,
+      description: DESCRIPTION,
       inLanguage: 'fr-FR',
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://laeti-seo.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Consultante SEO freelance', item: URL },
-        ],
-      },
+      isPartOf: { '@id': 'https://laeti-seo.fr/#website' },
+      // @id local : à basculer vers https://laeti-seo.fr/#person quand l'accueil déclarera ce nœud.
+      about: { '@id': PERSON_ID },
+      mainEntity: { '@id': PERSON_ID },
+      breadcrumb: { '@id': `${URL}#breadcrumb` },
+      hasPart: { '@id': `${URL}#faq` },
+      datePublished: '2026-10-27',
+      dateModified: '2026-10-27',
+    },
+    {
+      '@type': 'Person',
+      '@id': PERSON_ID,
+      name: 'Laetitia Laghezza',
+      jobTitle: 'Consultante SEO freelance',
+      description:
+        "Consultante SEO freelance depuis 12 ans, spécialisée dans les artisans et les entreprises de l'habitat, en Provence et en France.",
+      url: URL,
+      knowsAbout: [
+        'Google Business Profile',
+        'Pages locales',
+        'Artisans du bâtiment',
+        "Entreprises de l'habitat",
+        'Visibilité dans les réponses IA',
+      ],
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: "Provence-Alpes-Côte d'Azur" },
+        { '@type': 'Country', name: 'France' },
+      ],
     },
     {
       '@type': 'FAQPage',
+      '@id': `${URL}#faq`,
+      isPartOf: { '@id': `${URL}#webpage` },
       mainEntity: faqs.map((f) => ({
         '@type': 'Question',
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
     },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${URL}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://laeti-seo.fr/' },
+        { '@type': 'ListItem', position: 2, name: 'Consultante SEO freelance', item: URL },
+      ],
+    },
   ],
 };
-
-const timeline = [
-  { when: '2007', text: 'Je découvre le marketing digital.' },
-  { when: '2008', text: "Je me lance dans l'e-commerce." },
-  { when: 'Les années suivantes', text: 'Je me perfectionne dans le SEO, que je pratique depuis plus de 12 ans.' },
-  { when: '2014', text: "J'arrête l'e-commerce et je me lance dans l'affiliation. J'apprends sur le tas, en lançant des dizaines de sites." },
-  { when: "Aujourd'hui", text: "Je me concentre sur la visibilité locale des professionnels de l'habitat, parce que c'est là que tout se joue." },
-];
-
-const principles = [
-  {
-    title: 'Je travaille seule',
-    text: "Pas de sous-traitance, pas de stagiaire : c'est moi qui analyse, qui rédige et qui assure le suivi.",
-  },
-  {
-    title: 'Un langage clair',
-    text: "Pas de jargon. Des actions concrètes, classées par priorité, que vous pouvez appliquer vous-même ou me confier.",
-  },
-  {
-    title: 'Aucune fausse promesse',
-    text: "Personne ne peut garantir une position sur Google. Je vous dis ce qui freine votre visibilité et ce qui peut s'améliorer.",
-  },
-  {
-    title: 'À distance, partout en France',
-    text: "Basée à Pourrières (Var), je travaille en visioconférence et par e-mail avec des professionnels de toute la France.",
-  },
-];
-
-const differences = [
-  'Un seul interlocuteur, du premier appel à la restitution.',
-  'Un périmètre défini et des tarifs affichés : 790 € le diagnostic, 500 € par mois le Sprint local.',
-  'Pas d’engagement caché : le diagnostic est un paiement unique, le Sprint local s’engage sur 3 mois minimum.',
-  'Vous écrivez directement à la personne qui fait le travail.',
-];
 
 const yellowLabel = {
   fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif',
@@ -133,7 +173,21 @@ const blueLabel = {
 } as const;
 
 const h2 = { fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' } as const;
+const h3 = { fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px', lineHeight: '1.25' } as const;
 const body = { fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' } as const;
+
+const extLink = 'underline underline-offset-4 text-[#fceb30] hover:brightness-110';
+
+function Block({ title, children, delay = 0 }: { title: string; children: ReactNode; delay?: number }) {
+  return (
+    <ScrollReveal delay={delay} className="h-full">
+      <div className="h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
+        <h3 className="mb-4 text-white" style={h3}>{title}</h3>
+        <div className="space-y-4 text-white/70" style={body}>{children}</div>
+      </div>
+    </ScrollReveal>
+  );
+}
 
 export default function ConsultanteSeoFreelancePage() {
   return (
@@ -146,7 +200,7 @@ export default function ConsultanteSeoFreelancePage() {
           <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-12 md:pt-20 lg:grid-cols-[1.45fr_0.85fr] lg:gap-16">
             <div>
               <ScrollReveal>
-                <p className="mb-5" style={yellowLabel}>Consultante SEO freelance</p>
+                <p className="mb-5" style={yellowLabel}>Laetitia Laghezza</p>
               </ScrollReveal>
               <ScrollReveal delay={0.08}>
                 <h1
@@ -154,21 +208,22 @@ export default function ConsultanteSeoFreelancePage() {
                   style={{
                     fontFamily: 'Satoshi, "Satoshi Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif',
                     fontWeight: 700,
-                    fontSize: 'clamp(34px, 6vw, 60px)',
+                    fontSize: 'clamp(32px, 5.4vw, 54px)',
                     lineHeight: '1.08',
                     textTransform: 'uppercase',
                   }}
                 >
-                  Une seule interlocutrice.{' '}
+                  Consultante SEO freelance{' '}
                   <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
-                    De l&apos;analyse au suivi.
+                    pour les pros de l&apos;habitat
                   </span>
                 </h1>
               </ScrollReveal>
               <ScrollReveal delay={0.14}>
-                <p className="max-w-[56ch] text-white/75" style={body}>
-                  Je m&apos;appelle Laetitia. Depuis plus de 12 ans, je travaille sur le référencement. Aujourd&apos;hui, j&apos;aide les
-                  décorateurs, architectes d&apos;intérieur, cuisinistes, menuisiers et artisans à être plus visibles auprès des clients de leur secteur.
+                <p className="max-w-[58ch] text-white/75" style={body}>
+                  Je m&apos;appelle Laetitia Laghezza. Consultante SEO freelance depuis 12 ans, je travaille avec les artisans et les
+                  entreprises de l&apos;habitat : cuisine, salle de bain, menuiserie, rénovation, toiture, aménagement. En Provence, et
+                  partout en France. Mon livrable d&apos;entrée tient en une ligne : un diagnostic à 790 €, rendu en 5 jours ouvrés.
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
@@ -229,170 +284,203 @@ export default function ConsultanteSeoFreelancePage() {
           </div>
         </section>
 
-        {/* ── Parcours ── */}
+        {/* ── En bref ── */}
         <section className="relative bg-white" style={{ backgroundColor: '#ffffff' }}>
-          <div className="mx-auto max-w-7xl px-6 py-24 md:py-28">
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-[1fr_1.2fr] md:gap-20">
-              <ScrollReveal>
-                <p className="mb-4" style={blueLabel}>Mon parcours</p>
-                <h2 className="max-w-[16ch] text-[#264d8c]" style={h2}>
-                  Du e-commerce au SEO local.
-                </h2>
-                <p className="mt-6 max-w-[46ch] text-[#264d8c]/70" style={body}>
-                  Geek dans l&apos;âme, j&apos;aime explorer de nouvelles techniques pour être plus visible. Une fiche Google bien structurée
-                  peut faire toute la différence face à un concurrent qui rafle les devis.
-                </p>
-              </ScrollReveal>
-
-              <ol className="relative space-y-8 border-l-2 border-[#264d8c]/15 pl-8">
-                {timeline.map((t, i) => (
-                  <ScrollReveal key={t.when} delay={0.05 + i * 0.07}>
-                    <li className="relative">
-                      <span className="absolute -left-[41px] top-1.5 h-4 w-4 rounded-full border-[3px] border-white bg-[#fceb30] shadow-[0_0_0_2px_rgba(38,77,140,0.25)]" aria-hidden="true" />
-                      <p className="mb-1 text-[#2355b6]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                        {t.when}
-                      </p>
-                      <p className="text-[#264d8c]" style={{ ...body, fontSize: '17px' }}>{t.text}</p>
-                    </li>
-                  </ScrollReveal>
-                ))}
-              </ol>
-            </div>
+          <div className="mx-auto max-w-7xl px-6 py-20 md:py-24">
+            <ScrollReveal>
+              <p className="mb-4" style={blueLabel}>En bref</p>
+            </ScrollReveal>
+            <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              {enBref.map((item, i) => (
+                <ScrollReveal key={item} delay={0.05 + i * 0.06}>
+                  <li className="flex items-start gap-4 rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] px-6 py-5">
+                    <span className="mt-0.5 font-bold text-[#2355b6]" aria-hidden="true">✓</span>
+                    <span className="text-[#264d8c]" style={{ ...body, fontSize: '17px' }}>{item}</span>
+                  </li>
+                </ScrollReveal>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* ── Façon de travailler ── */}
+        {/* ── Freelance plutôt qu'agence ── */}
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
             <ScrollReveal>
-              <p className="mb-3" style={yellowLabel}>Ma façon de travailler</p>
-              <h2 className="mb-12 max-w-[20ch] text-white" style={h2}>
-                Simple, directe et sans détour.
+              <p className="mb-3" style={yellowLabel}>Freelance ou agence</p>
+              <h2 className="mb-8 max-w-[26ch] text-white" style={h2}>
+                Pourquoi une consultante SEO freelance plutôt qu&apos;une agence
+              </h2>
+              <div className="mb-12 max-w-[68ch] space-y-4 text-white/70" style={body}>
+                <p>
+                  Vous avez demandé trois devis. Vous avez reçu trois propositions, aucune mesure de votre visibilité actuelle, et des
+                  tarifs différents sans explication. Normal : vous avez parlé à des commerciaux, pas à la personne qui fera le travail.
+                </p>
+                <p>Voici ce qui change avec une indépendante.</p>
+              </div>
+            </ScrollReveal>
+            <ol className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              {reasons.map((r, i) => (
+                <ScrollReveal key={r.title} delay={0.06 + i * 0.07} className="h-full">
+                  <li className="h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
+                    <p className="mb-3 text-[#fceb30]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
+                      0{i + 1}
+                    </p>
+                    <h3 className="mb-3 text-white" style={{ ...h3, fontSize: '22px' }}>{r.title}</h3>
+                    <p className="text-white/65" style={body}>{r.text}</p>
+                  </li>
+                </ScrollReveal>
+              ))}
+            </ol>
+            <ScrollReveal delay={0.1}>
+              <p className="mt-10 max-w-[68ch] text-white/70" style={body}>
+                Une agence n&apos;est pas un mauvais choix en soi. Elle devient un mauvais choix quand votre besoin est clair, votre
+                périmètre petit et votre budget réel.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── Ce que je fais concrètement ── */}
+        <section className="relative bg-transparent">
+          <div className="mx-auto max-w-7xl px-6 pb-24 md:pb-32">
+            <ScrollReveal>
+              <p className="mb-3" style={yellowLabel}>Concrètement</p>
+              <h2 className="mb-12 max-w-[26ch] text-white" style={h2}>
+                Ce que je fais concrètement pour votre visibilité
               </h2>
             </ScrollReveal>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {principles.map((p, i) => (
-                <ScrollReveal key={p.title} delay={0.06 + i * 0.07} className="h-full">
-                  <div className="h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
-                    <h3 className="mb-3 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '22px', lineHeight: '1.3' }}>
-                      {p.title}
-                    </h3>
-                    <p className="text-white/65" style={body}>{p.text}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Freelance vs structure ── */}
-        <section className="relative bg-[#f2f5fb]">
-          <div className="mx-auto max-w-7xl px-6 py-24 md:py-28">
-            <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[1fr_1.1fr] md:gap-20">
-              <ScrollReveal>
-                <p className="mb-4" style={blueLabel}>Freelance ou agence ?</p>
-                <h2 className="max-w-[18ch] text-[#264d8c]" style={h2}>
-                  Ce que ça change concrètement.
-                </h2>
-                <p className="mt-6 max-w-[44ch] text-[#264d8c]/70" style={body}>
-                  Travailler avec une consultante SEO freelance, c&apos;est avoir en face de vous la personne qui fait réellement le travail.
+              <Block title="Votre fiche Google Business Profile : le levier le plus sous-exploité" delay={0.05}>
+                <p>
+                  Seule une entreprise sur deux utilise Google Business Profile, selon le{' '}
+                  <a
+                    href="https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/google-business-profile-le-service-de"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={extLink}
+                  >
+                    Baromètre France Num 2025
+                  </a>
+                  . Les autres ont une fiche créée par Google, jamais revendiquée. Pas de photos, pas de description, pas d&apos;horaires
+                  à jour. Elles existent. Elles ne sont pas trouvées.
                 </p>
-              </ScrollReveal>
-              <ul className="space-y-4">
-                {differences.map((d, i) => (
-                  <ScrollReveal key={d} delay={0.05 + i * 0.07}>
-                    <li className="flex items-start gap-4 rounded-[1.25rem] border border-[#264d8c]/10 bg-white px-6 py-5">
-                      <span className="mt-0.5 font-bold text-[#2355b6]" aria-hidden="true">✓</span>
-                      <span className="text-[#264d8c]" style={{ ...body, fontSize: '17px' }}>{d}</span>
-                    </li>
-                  </ScrollReveal>
-                ))}
-              </ul>
+                <p>
+                  Votre fiche est souvent le premier contact. Et les recherches contenant « près de moi » ont progressé de plus de 250 %
+                  ces dernières années, selon Google. Vos clients décident en quelques minutes. La fiche doit être prête.
+                </p>
+                <p>
+                  Ce que je corrige : catégorie principale, zone desservie, section Services, description, photos de chantier
+                  géolocalisées, horaires réels, réponses aux avis, Google Posts. Rien de spectaculaire. Presque toujours les mêmes oublis.
+                </p>
+              </Block>
+
+              <Block title="Vos pages locales : une page par intention, pas quarante pages creuses" delay={0.12}>
+                <p>
+                  Un client ne tape pas « menuisier ». Il tape <strong className="text-white">« rénovation de cuisine à Toulon »</strong>,
+                  « pose de fenêtres Aix-en-Provence », « réparation toiture fuite Marseille ». Chaque intention mérite sa page.
+                </p>
+                <p>
+                  Une page locale utile contient : la ville, votre zone réelle d&apos;intervention, vos prestations, des réalisations
+                  locales, des avis, un numéro cliquable. Pas de texte dupliqué avec la ville remplacée au kilomètre. Google le repère.
+                  Vos clients aussi.
+                </p>
+                <p>
+                  Vous n&apos;avez pas besoin de 40 pages. Vous avez besoin de 6 pages justes. Si vous êtes artisan et que vous démarrez,
+                  commencez par la{' '}
+                  <Link href="/seo-pour-artisans" className={extLink}>page dédiée aux artisans</Link>.
+                </p>
+              </Block>
+
+              <Block title="Votre contenu et vos réalisations : la matière première est déjà chez vous" delay={0.05}>
+                <p>
+                  Vous avez des chantiers. Ils valent mieux que n&apos;importe quel article générique sur la rénovation. Photos
+                  avant/après, descriptif de prestation, contraintes d&apos;accès, délais réels, prix de départ quand c&apos;est
+                  possible, zones couvertes.
+                </p>
+                <p>
+                  Et vos avis. 96 % des consommateurs consultent des avis en ligne pour une entreprise locale, d&apos;après la{' '}
+                  <a
+                    href="https://www.brightlocal.com/research/local-consumer-review-survey-2025/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={extLink}
+                  >
+                    Local Consumer Review Survey 2025
+                  </a>{' '}
+                  de BrightLocal. Un avis sans réponse, c&apos;est une conversation laissée en suspens. Je structure la collecte et je
+                  traite les réponses.
+                </p>
+              </Block>
+
+              <Block title="Votre visibilité dans les réponses IA" delay={0.12}>
+                <p>
+                  Les Aperçus IA et le Mode IA sont arrivés en France le 22 juillet 2026, comme l&apos;annonce{' '}
+                  <a
+                    href="https://blog.google/intl/fr-fr/nouveautes-produits/explorez-obtenez-des-reponses/recherche-ia-apercus-mode/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={extLink}
+                  >
+                    Google
+                  </a>
+                  . Une partie des réponses se construit désormais à partir de sources citées.
+                </p>
+                <p>
+                  Conséquence directe : une entreprise absente des sources n&apos;est pas citée. Et une fiche incomplète donne peu de
+                  matière à citer.
+                </p>
+                <p>
+                  Le travail ne change pas de nature. Il devient plus exigeant. Des faits précis, une fiche complète, des pages qui
+                  répondent vraiment, des avis récents, des données structurées propres. Même discipline, enjeu de plus.
+                </p>
+              </Block>
             </div>
           </div>
         </section>
 
-        {/* ── Avis ── */}
-        <Testimonials />
-
-        {/* ── Offres ── */}
+        {/* ── Le jour du diagnostic ── */}
         <section className="relative bg-white" style={{ backgroundColor: '#ffffff' }}>
           <div className="mx-auto max-w-7xl px-6 py-24 md:py-28">
-            <ScrollReveal>
-              <div className="mb-12 text-center">
-                <p className="mb-4" style={blueLabel}>Travailler ensemble</p>
-                <h2 className="mx-auto max-w-[22ch] text-[#264d8c]" style={h2}>
-                  Deux façons de travailler avec moi.
+            <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[1fr_1.2fr] md:gap-20">
+              <ScrollReveal>
+                <p className="mb-4" style={blueLabel}>Le diagnostic</p>
+                <h2 className="max-w-[18ch] text-[#264d8c]" style={h2}>
+                  Ce que vous recevez le jour du diagnostic
                 </h2>
-              </div>
-            </ScrollReveal>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <ScrollReveal delay={0.05} className="h-full">
-                <div className="flex h-full flex-col rounded-[2rem] bg-[#264d8c] p-8 md:p-10">
-                  <h3 className="mb-2 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px' }}>
-                    Diagnostic visibilité
-                  </h3>
-                  <p className="mb-6 text-white/70" style={{ ...body, fontSize: '15px' }}>
-                    Vous savez ce qui freine votre visibilité, quoi améliorer et dans quel ordre agir.
-                  </p>
-                  <p className="mb-6 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '40px', lineHeight: 1 }}>
-                    790 <span className="text-[#fceb30]">€</span>
-                  </p>
-                  <Link
-                    href="/offre#diagnostic"
-                    className="mt-auto rounded-full border border-white/25 bg-white/[0.08] py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-white/[0.14]"
-                    style={{ fontFamily: inter.style.fontFamily }}
-                  >
-                    Découvrir le diagnostic
-                  </Link>
-                </div>
               </ScrollReveal>
-              <ScrollReveal delay={0.12} className="h-full">
-                <div
-                  className="flex h-full flex-col rounded-[2rem] p-8 md:p-10"
-                  style={{ background: 'linear-gradient(145deg, #2c58b0 0%, #264d8c 60%, #1d3e77 100%)', boxShadow: '0 0 0 1.5px rgba(252,235,48,0.45)' }}
-                >
-                  <h3 className="mb-2 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px' }}>
-                    Sprint local 3 mois
-                  </h3>
-                  <p className="mb-6 text-white/70" style={{ ...body, fontSize: '15px' }}>
-                    Je mets les actions en place sur votre fiche Google et nous suivons l&apos;évolution de votre présence locale.
+              <ScrollReveal delay={0.1}>
+                <div className="space-y-5 text-[#264d8c]/80" style={{ ...body, fontSize: '17px', lineHeight: '28px' }}>
+                  <p>
+                    Pas un rapport de 90 pages. Un document de travail, en 5 jours ouvrés : votre position réelle sur vos requêtes
+                    métier, ce qui bloque, les correctifs par ordre de priorité, et les expressions que vos clients tapent vraiment. Le
+                    tout à votre nom. Vous gardez le document, même si nous ne travaillons pas ensemble ensuite.
                   </p>
-                  <p className="mb-6 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '40px', lineHeight: 1 }}>
-                    500 <span className="text-[#fceb30]">€</span>
-                    <span className="ml-2 text-sm font-normal text-white/50" style={{ fontFamily: inter.style.fontFamily }}>
-                      / mois · 3 mois minimum
-                    </span>
+                  <p>
+                    Le périmètre complet est sur la{' '}
+                    <Link href="/offre" className="font-semibold text-[#2355b6] underline underline-offset-4">page Offre</Link>.
                   </p>
-                  <Link
-                    href="/offre#sprint"
-                    className="mt-auto rounded-full bg-[#fceb30] py-3.5 text-center text-sm font-semibold text-[#264d8c] transition-[filter] hover:brightness-105"
-                    style={{ fontFamily: inter.style.fontFamily }}
-                  >
-                    Découvrir l&apos;accompagnement
-                  </Link>
                 </div>
               </ScrollReveal>
             </div>
-            <p className="mt-8 text-center text-[#264d8c]/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}>
-              Je travaille aussi avec des professionnels situés à{' '}
-              <Link href="/consultant-seo-aix-en-provence" className="underline underline-offset-4">Aix-en-Provence</Link>,{' '}
-              <Link href="/consultant-seo-marseille" className="underline underline-offset-4">Marseille</Link> et{' '}
-              <Link href="/consultant-seo-toulon" className="underline underline-offset-4">Toulon</Link>.
-            </p>
           </div>
         </section>
 
+        {/* Les réponses sont rendues dans le HTML initial (accordéon replié en CSS) : le FAQPage du JSON-LD les reprend mot pour mot. */}
         <FAQ items={faqs} label="Questions fréquentes" heading="Travailler avec une consultante freelance" />
 
+        {/* ── Avis (3 avis Google, non reformulés) ── */}
+        <Testimonials />
+
         <FinalCTA
-          heading={<>Parlons de votre activité.</>}
+          heading={<>Parlons de votre visibilité.</>}
           body={
             <p className="mx-auto mt-6 max-w-[50ch] text-base leading-relaxed text-white/65" style={{ fontFamily: inter.style.fontFamily }}>
-              Un échange de 20 minutes pour comprendre votre zone, vos objectifs et voir si mes prestations répondent à votre besoin.
+              Vingt minutes au téléphone. Sans engagement, sans présentation commerciale. Vous repartez avec un premier verdict : votre
+              fiche tient-elle la route, et qu&apos;est-ce qui bloque en premier.
             </p>
           }
-          microcopy="Appel gratuit · 20 minutes · Sans engagement"
+          cta="Demander un appel de 20 minutes"
         />
       </main>
     </>
