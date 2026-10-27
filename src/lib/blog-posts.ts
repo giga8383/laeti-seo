@@ -635,7 +635,7 @@ export const blogPosts: BlogPost[] = [
             name: "Laetitia Laghezza",
             jobTitle: "Consultante SEO local",
             url: "https://laeti-seo.fr",
-            sameAs: "https://www.linkedin.com/in/laetitia-laghezza/",
+            sameAs: "https://www.linkedin.com/in/laetitia-laghezza-seo-local/",
           },
           publisher: {
             "@type": "Organization",

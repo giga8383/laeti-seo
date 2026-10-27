@@ -191,7 +191,7 @@ export default function Footer() {
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="rgba(255,255,255,0.6)"/>
                 </svg>
                 <span style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.40)' }}>
-                  Aix-en-Provence &amp; toute la France
+                  Pourrières (Var), à distance partout en France
                 </span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
@@ -225,7 +225,7 @@ export default function Footer() {
             {/* LinkedIn */}
             <div style={{ display: 'flex', gap: '10px', marginTop: '2px' }}>
               <a
-                href="https://www.linkedin.com/in/laetitia-laghezza/"
+                href="https://www.linkedin.com/in/laetitia-laghezza-seo-local/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Laeti SEO"
@@ -291,7 +291,7 @@ export default function Footer() {
             fontSize: '12px',
             color: 'rgba(255,255,255,0.28)',
           }}>
-            © {new Date().getFullYear()} Laeti SEO · Tous droits réservés. Consultante SEO freelance, Aix-en-Provence.
+            © {new Date().getFullYear()} Laeti SEO · Tous droits réservés. Consultante SEO freelance, Pourrières (Var).
           </p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>

@@ -59,11 +59,7 @@ const jsonLd = {
       serviceType: 'Audit SEO local',
       description: "Diagnostic complet de visibilité locale pour artisans et professionnels de l'habitat : Google Business Profile, citations NAP, site web, concurrents locaux. Livraison en 5 jours ouvrés.",
       url: 'https://laeti-seo.fr/audit-seo-local',
-      provider: {
-        '@type': 'Organization',
-        name: 'Laeti SEO',
-        url: 'https://laeti-seo.fr',
-      },
+      provider: { '@id': 'https://laeti-seo.fr/#business' },
       areaServed: {
         '@type': 'Country',
         name: 'France',
@@ -340,7 +336,7 @@ export default function AuditSEOLocalPage() {
                       </p>
                     </div>
                     <a
-                      href="https://www.linkedin.com/in/laetitia-laghezza/"
+                      href="https://www.linkedin.com/in/laetitia-laghezza-seo-local/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ml-2 flex items-center gap-1 transition-opacity hover:opacity-80"

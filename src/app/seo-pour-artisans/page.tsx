@@ -62,16 +62,13 @@ const jsonLd = {
       url: 'https://laeti-seo.fr/seo-pour-artisans',
       author: {
         '@type': 'Person',
+        '@id': 'https://laeti-seo.fr/#laeti',
         name: 'Laetitia Laghezza',
         jobTitle: 'Consultante SEO local',
         url: 'https://laeti-seo.fr',
-        sameAs: 'https://www.linkedin.com/in/laetitia-laghezza/',
+        sameAs: 'https://www.linkedin.com/in/laetitia-laghezza-seo-local/',
       },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Laeti SEO',
-        url: 'https://laeti-seo.fr',
-      },
+      publisher: { '@id': 'https://laeti-seo.fr/#business' },
       datePublished: '2026-06-05',
       dateModified: '2026-06-05',
       inLanguage: 'fr-FR',
@@ -342,7 +339,7 @@ export default function SeoArtisansPage() {
                   </p>
                 </div>
                 <a
-                  href="https://www.linkedin.com/in/laetitia-laghezza/"
+                  href="https://www.linkedin.com/in/laetitia-laghezza-seo-local/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-2 flex items-center gap-1 transition-opacity hover:opacity-80"

@@ -34,7 +34,7 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'WebSite',
-      '@id': '#website',
+      '@id': 'https://laeti-seo.fr/#website',
       url: 'https://laeti-seo.fr',
       name: 'Laeti SEO',
       description: "Diagnostic de visibilité locale pour professionnels de l'habitat",
@@ -42,10 +42,11 @@ const jsonLd = {
     },
     {
       '@type': 'WebPage',
-      '@id': '#webpage',
+      '@id': 'https://laeti-seo.fr/#webpage',
       url: 'https://laeti-seo.fr',
       name: "Consultant SEO local pour artisans et entreprises de l'habitat",
-      isPartOf: { '@id': '#website' },
+      isPartOf: { '@id': 'https://laeti-seo.fr/#website' },
+      publisher: { '@id': 'https://laeti-seo.fr/#business' },
       about: { '@id': 'https://laeti-seo.fr/#business' },
       description:
         "Consultant SEO local indépendant pour les décorateurs, architectes d'intérieur, cuisinistes, menuisiers et entreprises de rénovation. Diagnostic visibilité à 790 € livré en 5 jours ouvrés, accompagnement Sprint local à 500 €/mois.",
@@ -64,13 +65,14 @@ const jsonLd = {
     },
     {
       '@type': 'Person',
-      '@id': '#laeti',
+      '@id': 'https://laeti-seo.fr/#laeti',
       name: 'Laetitia Laghezza',
       alternateName: 'Laeti SEO',
       jobTitle: 'Consultante SEO local',
       description: "Spécialiste SEO local pour les professionnels de l'habitat. Dans le marketing digital et l'e-commerce depuis 2007, dans le SEO depuis plus de 12 ans.",
       url: 'https://laeti-seo.fr',
       worksFor: { '@id': 'https://laeti-seo.fr/#business' },
+      sameAs: ['https://www.linkedin.com/in/laetitia-laghezza-seo-local/'],
       knowsAbout: [
         'SEO local',
         'Google Business Profile',
@@ -87,8 +89,7 @@ const jsonLd = {
       '@id': 'https://laeti-seo.fr/#business',
       name: 'Laeti SEO',
       url: 'https://laeti-seo.fr/',
-      founder: { '@id': '#laeti' },
-      foundingDate: '2007',
+      founder: { '@id': 'https://laeti-seo.fr/#laeti' },
       description:
         "Diagnostic de visibilité locale et accompagnement SEO local pour les professionnels de l'habitat, comme les décorateurs, architectes d'intérieur, cuisinistes, menuisiers et artisans.",
       image: 'https://laeti-seo.fr/laeti-photo.webp',
@@ -125,7 +126,7 @@ const jsonLd = {
       ],
       sameAs: [
         'https://maps.google.com/?cid=1919604341859857439',
-        'https://www.linkedin.com/in/laetitia-laghezza/',
+        'https://www.linkedin.com/in/laetitia-laghezza-seo-local/',
         'https://www.pagesjaunes.fr/pros/64458463',
       ],
       makesOffer: [
@@ -143,8 +144,14 @@ const jsonLd = {
           name: 'Sprint local 3 mois',
           description:
             "Mois 1 pour les fondations (fiche Google, indexation, suivi), mois 2 pour les pages locales, mois 3 pour le contenu et l'autorité locale. Un point de 30 minutes et un compte rendu écrit chaque mois. 500 € par mois, 3 mois minimum (1 500 € au total), sans reconduction forcée.",
-          price: '1500',
-          priceCurrency: 'EUR',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '500',
+            priceCurrency: 'EUR',
+            unitCode: 'MON',
+            billingDuration: 3,
+            billingIncrement: 1,
+          },
           availability: 'https://schema.org/InStock',
         },
       ],
@@ -159,6 +166,8 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
+      '@id': 'https://laeti-seo.fr/#faq',
+      isPartOf: { '@id': 'https://laeti-seo.fr/#webpage' },
       mainEntity: homeFaqs.map((f) => ({
         '@type': 'Question',
         name: f.q,
