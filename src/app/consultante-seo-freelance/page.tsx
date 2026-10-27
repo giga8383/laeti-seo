@@ -123,6 +123,7 @@ const jsonLd = {
       description:
         "Consultante SEO freelance depuis 12 ans, spécialisée dans les artisans et les entreprises de l'habitat, en Provence et en France.",
       url: URL,
+      sameAs: ['https://www.linkedin.com/in/laetitia-laghezza-seo-local/'],
       knowsAbout: [
         'Google Business Profile',
         'Pages locales',
