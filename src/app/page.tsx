@@ -137,6 +137,7 @@ const jsonLd = {
             "Audit de votre fiche Google Business Profile, audit technique et éditorial de votre site, cartographie de vos concurrents locaux, test de visibilité IA (ChatGPT, Perplexity, aperçus IA de Google), plan d'action priorisé et suivi de départ. Livré sous 5 jours ouvrés avec une restitution de 45 minutes.",
           price: '790',
           priceCurrency: 'EUR',
+          valueAddedTaxIncluded: true,
           availability: 'https://schema.org/InStock',
         },
         {
@@ -149,6 +150,7 @@ const jsonLd = {
             price: '500',
             priceCurrency: 'EUR',
             unitCode: 'MON',
+            valueAddedTaxIncluded: true,
             billingDuration: 3,
             billingIncrement: 1,
           },
