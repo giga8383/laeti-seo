@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import PreFooter from "@/components/PreFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { outfit, inter } from "@/lib/fonts";
+import { siteJsonLd } from "@/lib/site-jsonld";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -87,6 +88,8 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
+        {/* Entités du site (WebSite, Person, LocalBusiness) : référencées par @id depuis toutes les pages. */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
         {/* Satoshi est auto-hébergée (voir globals.css) : preload direct des fichiers
             woff2 pour éviter le flash de police par défaut sur le texte au-dessus de la ligne de flottaison. */}
         <link rel="preload" href="/fonts/satoshi-black.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
