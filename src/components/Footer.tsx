@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { inter } from '@/lib/fonts';
 
 /* --- Données --- */
@@ -14,10 +15,19 @@ const navLinks = [
   { label: 'Contact',          href: 'mailto:laetitia@laeti-seo.fr' },
 ];
 
-const seoLocal = [
+type SeoLink = { label: string; href: string; soon?: boolean; children?: { label: string; href: string }[] };
+
+/* `children` : pages rattachées, affichées dans un sous-menu au survol (toujours présentes dans le HTML). */
+const seoLocal: SeoLink[] = [
   { label: 'Consultante SEO Aix-en-Provence', href: '/consultant-seo-aix-en-provence' },
   { label: 'Consultante SEO Marseille',        href: '/consultant-seo-marseille' },
-  { label: 'Consultante SEO Toulon',           href: '/consultant-seo-toulon' },
+  {
+    label: 'Consultante SEO Toulon',
+    href: '/consultant-seo-toulon',
+    children: [
+      { label: 'Consultant SEO Six-Fours-les-Plages', href: '/consultant-seo-six-fours' },
+    ],
+  },
   { label: 'SEO pour artisans',                href: '/seo-pour-artisans' },
   { label: 'Audit SEO local',                  href: '/audit-seo-local' },
 ];
@@ -98,9 +108,19 @@ function NavItem({ label, href, soon }: { label: string; href: string; soon?: bo
   );
 }
 
-function SeoItem({ label, href, soon }: { label: string; href: string; soon?: boolean }) {
+function SeoItem({ label, href, soon, children }: SeoLink) {
+  const [open, setOpen] = useState(false);
+  const hasChildren = !!children?.length;
+
   return (
-    <li>
+    <li
+      style={{ position: 'relative' }}
+      onMouseEnter={hasChildren ? () => setOpen(true) : undefined}
+      onMouseLeave={hasChildren ? () => setOpen(false) : undefined}
+      onFocus={hasChildren ? () => setOpen(true) : undefined}
+      onBlur={hasChildren ? e => { if (!e.currentTarget.contains(e.relatedTarget)) setOpen(false); } : undefined}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
       <a
         href={soon ? undefined : href}
         aria-disabled={soon}
@@ -137,6 +157,75 @@ function SeoItem({ label, href, soon }: { label: string; href: string; soon?: bo
           </span>
         )}
       </a>
+      {hasChildren && (
+        <button
+          type="button"
+          aria-label={`Pages liées à ${label}`}
+          aria-expanded={open}
+          onClick={() => setOpen(v => !v)}
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: '2px',
+            cursor: 'pointer',
+            color: 'rgba(252,235,48,0.80)',
+            fontSize: '10px',
+            lineHeight: 1,
+            transform: open ? 'rotate(180deg)' : 'none',
+            transition: 'transform 0.2s',
+          }}
+        >
+          ▾
+        </button>
+      )}
+      </div>
+      {hasChildren && (
+        // Toujours dans le HTML (masqué en CSS) : les liens restent explorables par les robots.
+        <ul
+          className="left-0 max-sm:left-auto max-sm:right-0"
+          style={{
+            position: 'absolute',
+            top: '100%',
+            zIndex: 30,
+            width: 'max-content',
+            minWidth: '220px',
+            maxWidth: 'min(300px, calc(100vw - 2rem))',
+            maxHeight: '320px',
+            overflowY: 'auto',
+            margin: 0,
+            padding: '8px 0',
+            listStyle: 'none',
+            background: '#ffffff',
+            borderRadius: '8px',
+            boxShadow: '0 12px 32px rgba(0,0,0,0.35)',
+            opacity: open ? 1 : 0,
+            visibility: open ? 'visible' : 'hidden',
+            transform: open ? 'translateY(0)' : 'translateY(-4px)',
+            transition: 'opacity 0.2s, transform 0.2s, visibility 0.2s',
+          }}
+        >
+          {children!.map(c => (
+            <li key={c.href}>
+              <a
+                href={c.href}
+                style={{
+                  display: 'block',
+                  padding: '9px 18px',
+                  fontFamily: inter.style.fontFamily,
+                  fontSize: '14px',
+                  lineHeight: '22px',
+                  color: '#264d8c',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = '#f2f5fb'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+              >
+                {c.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </li>
   );
 }

@@ -25,6 +25,7 @@ const seoLocal = [
   { label: 'Consultante SEO Aix-en-Provence', href: '/consultant-seo-aix-en-provence' },
   { label: 'Consultante SEO Marseille', href: '/consultant-seo-marseille' },
   { label: 'Consultante SEO dans le Var (Toulon)', href: '/consultant-seo-toulon' },
+  { label: 'Consultant SEO Six-Fours-les-Plages', href: '/consultant-seo-six-fours' },
 ];
 
 const legal = [

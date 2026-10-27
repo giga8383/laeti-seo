@@ -60,6 +60,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://laeti-seo.fr/consultant-seo-six-fours',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://laeti-seo.fr/audit-seo-local',
       lastModified: new Date(),
       changeFrequency: 'monthly',

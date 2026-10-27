@@ -199,7 +199,7 @@ const zones = [
   { label: 'Sanary-sur-Mer',     href: null },
   { label: 'Fréjus',             href: null },
   { label: 'Draguignan',         href: null },
-  { label: 'Six-Fours-les-Plages', href: null },
+  { label: 'Six-Fours-les-Plages', href: '/consultant-seo-six-fours' },
   { label: 'Bandol',             href: null },
   { label: 'Le Pradet',          href: null },
   { label: 'La Garde',           href: null },
