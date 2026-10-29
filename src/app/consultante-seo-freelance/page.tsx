@@ -132,10 +132,7 @@ const jsonLd = {
         "Entreprises de l'habitat",
         'Visibilité dans les réponses IA',
       ],
-      areaServed: [
-        { '@type': 'AdministrativeArea', name: "Provence-Alpes-Côte d'Azur" },
-        { '@type': 'Country', name: 'France' },
-      ],
+      // `areaServed` n'existe pas sur Person (schema.org) : la zone est portée par le LocalBusiness #business.
     },
     {
       '@type': 'FAQPage',
