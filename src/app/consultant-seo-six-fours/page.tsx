@@ -127,7 +127,12 @@ const jsonLd = {
               "État des lieux complet : fiche Google Business Profile, cohérence NAP, pages existantes, avis, concurrents visibles sur Six-Fours et Sanary, requêtes réelles avec impressions et positions. Plan d'action priorisé et appel de 45 minutes pour le passer en revue. Livré en 5 jours ouvrés.",
             price: '790',
             priceCurrency: 'EUR',
-            valueAddedTaxIncluded: true,
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: '790',
+              priceCurrency: 'EUR',
+              valueAddedTaxIncluded: true,
+            },
             availability: 'https://schema.org/InStock',
             url: URL,
             itemOffered: {
