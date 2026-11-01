@@ -20,6 +20,62 @@ export const metadata: Metadata = {
   },
 };
 
+const BLOG_URL = 'https://laeti-seo.fr/blog';
+
+/* -- Données structurées JSON-LD : Blog + BlogPosting (WebSite, Person et LocalBusiness sont dans le <head> du layout) -- */
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${BLOG_URL}#webpage`,
+      url: BLOG_URL,
+      name: "Blog SEO local, Conseils pour professionnels de l'habitat",
+      description:
+        'Conseils pratiques sur le référencement local, Google Business Profile et la visibilité en ligne pour les décorateurs, cuisinistes, menuisiers et artisans du bâtiment.',
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': 'https://laeti-seo.fr/#website' },
+      breadcrumb: { '@id': `${BLOG_URL}#breadcrumb` },
+      mainEntity: { '@id': `${BLOG_URL}#blog` },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${BLOG_URL}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://laeti-seo.fr/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: BLOG_URL },
+      ],
+    },
+    {
+      '@type': 'Blog',
+      '@id': `${BLOG_URL}#blog`,
+      url: BLOG_URL,
+      name: 'Blog SEO local de Laeti SEO',
+      description:
+        "Conseils sur le référencement local, Google Business Profile et la visibilité en ligne des professionnels de l'habitat.",
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': 'https://laeti-seo.fr/#website' },
+      publisher: { '@id': 'https://laeti-seo.fr/#business' },
+      author: { '@id': 'https://laeti-seo.fr/#laeti' },
+      blogPost: articles.map((a) => ({
+        '@type': 'BlogPosting',
+        '@id': `${BLOG_URL}/${a.slug}#article`,
+        url: `${BLOG_URL}/${a.slug}`,
+        mainEntityOfPage: `${BLOG_URL}/${a.slug}`,
+        headline: a.title,
+        description: a.metaDescription,
+        articleSection: a.category,
+        datePublished: a.publishedAt,
+        dateModified: a.publishedAt,
+        inLanguage: 'fr-FR',
+        ...(a.image ? { image: `https://laeti-seo.fr${a.image}` } : {}),
+        author: { '@id': 'https://laeti-seo.fr/#laeti' },
+        publisher: { '@id': 'https://laeti-seo.fr/#business' },
+      })),
+    },
+  ],
+};
+
 const categoryColors: Record<string, { bg: string; text: string }> = {
   "Google Business Profile": { bg: "rgba(252,235,48,0.12)",  text: "#fceb30" },
   "Réseaux sociaux":          { bg: "rgba(200,210,160,0.12)", text: "rgba(200,210,160,0.9)" },
@@ -31,6 +87,7 @@ const categoryColors: Record<string, { bg: string; text: string }> = {
 export default function BlogPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
       <main>
 
