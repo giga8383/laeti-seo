@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
 import { inter } from '@/lib/fonts';
 
@@ -191,7 +192,10 @@ export default function About() {
                   maxWidth: '56ch',
                 }}
               >
-                {"Je m'appelle Laetitia Laghezza. Je suis consultante SEO local indépendante, installée en Provence-Alpes-Côte d'Azur, entre Aix-Marseille et Toulon. J'interviens aussi partout en France, à distance, avec la même méthode."}
+                Je m&apos;appelle Laetitia Laghezza. Je suis consultante SEO local indépendante, installée en Provence-Alpes-Côte d&apos;Azur, entre{' '}
+                <Link href="/consultant-seo-aix-en-provence" className="font-semibold text-[#2355b6] underline underline-offset-4">Aix-en-Provence</Link>,{' '}
+                <Link href="/consultant-seo-marseille" className="font-semibold text-[#2355b6] underline underline-offset-4">Marseille</Link> et{' '}
+                <Link href="/consultant-seo-toulon" className="font-semibold text-[#2355b6] underline underline-offset-4">Toulon</Link>. J&apos;interviens aussi partout en France, à distance, avec la même méthode.
               </p>
             </ScrollReveal>
 

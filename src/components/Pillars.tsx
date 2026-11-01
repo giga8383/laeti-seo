@@ -1,14 +1,28 @@
+import type { ReactNode } from 'react';
+import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
 import { inter } from '@/lib/fonts';
 
-const pillars = [
+const linkClass = 'font-semibold text-[#2355b6] underline underline-offset-4';
+
+const pillars: { title: string; text: ReactNode }[] = [
   {
     title: 'Votre fiche Google Business Profile',
     text: "C'est la première chose que vos clients voient, avant même votre site. Je reprends la fiche de A à Z, avec les catégories, la description, les prestations, la zone d'intervention, les photos, les horaires et les questions-réponses. Je mets en place une routine d'avis simple à tenir, pour que votre fiche reste vivante sans vous prendre du temps.",
   },
   {
     title: 'Vos pages locales',
-    text: "Une page par ville et par métier, avec le vocabulaire de vos clients, par exemple « rénovation de cuisine à Toulon » ou « menuisier sur mesure à Marseille ». Chaque page répond à une intention précise, avec vos réalisations, vos contraintes de chantier et vos zones d'intervention. C'est ce qui fait la différence entre exister et être trouvé.",
+    text: (
+      <>
+        Une page par ville et par métier, avec le vocabulaire de vos clients, par exemple « rénovation de cuisine à Toulon » ou
+        « menuisier sur mesure à Marseille ». Chaque page répond à une intention précise, avec vos réalisations, vos contraintes de
+        chantier et vos zones d&apos;intervention. C&apos;est ce qui fait la différence entre exister et être trouvé. Je détaille
+        l&apos;approche pour <Link href="/consultant-seo-toulon" className={linkClass}>Toulon</Link>,{' '}
+        <Link href="/consultant-seo-marseille" className={linkClass}>Marseille</Link> et{' '}
+        <Link href="/consultant-seo-aix-en-provence" className={linkClass}>Aix-en-Provence</Link>. Si vous êtes artisan, le guide{' '}
+        <Link href="/seo-pour-artisans" className={linkClass}>SEO pour artisans</Link> est écrit pour les métiers du chantier.
+      </>
+    ),
   },
   {
     title: 'Contenu et visibilité dans les réponses IA',
