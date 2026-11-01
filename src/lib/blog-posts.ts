@@ -627,8 +627,8 @@ export const blogPosts: BlogPost[] = [
           headline: "Pinterest : le guide complet pour réussir sur cette plateforme inexploitée en 2026",
           description: "Découvrez comment utiliser Pinterest comme moteur de recherche visuel pour générer du trafic qualifié. Guide complet 2026 : stratégie, SEO, publicité et GEO.",
           image: "https://laeti-seo.fr/pinterest-guide-2026.webp",
-          datePublished: "2026-08-10",
-          dateModified: "2026-08-10",
+          datePublished: "2026-08-10T08:00:00Z",
+          dateModified: "2026-08-10T08:00:00Z",
           inLanguage: "fr-FR",
           author: {
             "@type": "Person",

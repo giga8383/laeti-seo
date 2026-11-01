@@ -65,8 +65,9 @@ const jsonLd = {
         headline: a.title,
         description: a.metaDescription,
         articleSection: a.category,
-        datePublished: a.publishedAt,
-        dateModified: a.publishedAt,
+        // date-heure avec fuseau (ISO 8601) : Google signale les dates sans heure
+        datePublished: `${a.publishedAt}T08:00:00Z`,
+        dateModified: `${a.publishedAt}T08:00:00Z`,
         inLanguage: 'fr-FR',
         ...(a.image ? { image: `https://laeti-seo.fr${a.image}` } : {}),
         author: { '@id': 'https://laeti-seo.fr/#laeti' },
