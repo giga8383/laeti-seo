@@ -458,6 +458,8 @@ export default function ConsultanteSeoFreelancePage() {
                   <p>
                     Le périmètre complet est sur la{' '}
                     <Link href="/offre" className="font-semibold text-[#2355b6] underline underline-offset-4">page Offre</Link>.
+                    La méthode détaillée de l&apos;analyse est décrite sur la page{' '}
+                    <Link href="/audit-seo-local" className="font-semibold text-[#2355b6] underline underline-offset-4">audit SEO local</Link>.
                   </p>
                 </div>
               </ScrollReveal>
