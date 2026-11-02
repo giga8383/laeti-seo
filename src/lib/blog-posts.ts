@@ -99,6 +99,8 @@ export const blogPosts: BlogPost[] = [
       "Optimiser sa fiche Google Business Profile en 2026 : 8 points concrets",
     metaDescription:
       "Architectes d'intérieur, cuisinistes, menuisiers : 8 réglages précis pour transformer votre fiche Google en source régulière de demandes de devis.",
+    image: "/fiche-google-business-2026.webp",
+    imageAlt: "Illustration d'une fiche d'établissement Google avec cinq étoiles et des boutons d'action, posée sur un plan avec des épingles rouges",
     content: `
 <p>Votre fiche Google Business Profile existe. C'est déjà bien. Mais une fiche qui existe et une fiche qui convertit, ce sont deux réalités très différentes.</p>
 
@@ -165,6 +167,8 @@ export const blogPosts: BlogPost[] = [
       "SEO local et IA en 2026 : guide pratique pour les pros de l'habitat",
     metaDescription:
       "Comment rester visible localement quand vos clients cherchent avec ChatGPT ou Google AI. Les trois signaux qui comptent et les actions concrètes pour les renforcer.",
+    image: "/seo-local-ia-2026.webp",
+    imageAlt: "Recherche « décoratrice d'intérieur près de chez moi » avec une réponse de l'IA qui cite la fiche, les avis et le site, à côté d'une carte de résultats locaux",
     content: `
 <p>Depuis début 2025, quelque chose a changé dans les comportements de recherche. Une part croissante de vos clients potentiels ne tape plus "architecte d'intérieur Nantes" dans Google. Ils posent la question directement à ChatGPT, Perplexity ou au mode IA intégré dans Google.</p>
 
