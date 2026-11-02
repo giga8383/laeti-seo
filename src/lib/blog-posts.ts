@@ -28,6 +28,8 @@ export const blogPosts: BlogPost[] = [
       "Instagram en 2026 pour les pros de l'habitat : ce qui fonctionne vraiment",
     metaDescription:
       "Architectes d'intérieur, décoratrices, cuisinistes : pourquoi votre compte Instagram ne génère pas de demandes de devis, et les ajustements concrets pour y remédier.",
+    image: "/instagram-2026-pros-habitat.webp",
+    imageAlt: "Illustration d'un smartphone incliné dont l'écran affiche l'icône Instagram sur un fond bleu et violet",
     content: `
 <p>Vous publiez régulièrement. Vous choisissez vos meilleures photos, vous rédigez une légende soignée, et vous attendez. Le post fait quelques dizaines de likes. Personne ne vous écrit.</p>
 
