@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import { inter } from '@/lib/fonts';
-import { getPostBySlug, getAllSlugs } from '@/lib/blog-posts';
+import { getPostBySlug, getAllSlugs, type BlogPost } from '@/lib/blog-posts';
 import { ArrowLeft, ArrowRight, Clock } from '@phosphor-icons/react/dist/ssr';
 
 /* ── SSG : génère une page statique pour chaque slug ── */
@@ -36,6 +36,43 @@ export async function generateMetadata({
   };
 }
 
+/* JSON-LD par défaut (BlogPosting + fil d'Ariane) pour les articles qui n'ont pas de balisage dédié.
+   Auteur et éditeur renvoient aux entités du site déclarées dans le <head> du layout. */
+function defaultJsonLd(post: BlogPost) {
+  const url = `https://laeti-seo.fr/blog/${post.slug}`;
+  const date = `${post.publishedAt}T08:00:00Z`;
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': `${url}#article`,
+        url,
+        mainEntityOfPage: url,
+        headline: post.title,
+        description: post.metaDescription,
+        articleSection: post.category,
+        datePublished: date,
+        dateModified: date,
+        inLanguage: 'fr-FR',
+        ...(post.image ? { image: `https://laeti-seo.fr${post.image}` } : {}),
+        isPartOf: { '@id': 'https://laeti-seo.fr/blog#blog' },
+        author: { '@id': 'https://laeti-seo.fr/#laeti' },
+        publisher: { '@id': 'https://laeti-seo.fr/#business' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://laeti-seo.fr/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://laeti-seo.fr/blog' },
+          { '@type': 'ListItem', position: 3, name: post.title, item: url },
+        ],
+      },
+    ],
+  };
+}
+
 const categoryColors: Record<string, { bg: string; text: string }> = {
   "Réseaux sociaux":          { bg: "rgba(200,210,160,0.12)", text: "rgba(200,210,160,0.9)" },
   "Google Business Profile":  { bg: "rgba(252,235,48,0.12)",  text: "#fceb30" },
@@ -56,12 +93,10 @@ export default async function BlogArticlePage({
 
   return (
     <>
-      {post.jsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(post.jsonLd) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(post.jsonLd ?? defaultJsonLd(post)) }}
+      />
       <Navbar />
       <main>
 
