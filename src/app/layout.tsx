@@ -68,11 +68,11 @@ export const metadata: Metadata = {
     description:
       "Vous n'apparaissez pas assez sur Google ? J'analyse votre fiche Google Business Profile, vos concurrents et votre présence locale. Plan d'action priorisé livré sous 5 jours. 790 €.",
     siteName: "Laeti SEO",
-    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
+    images: [{ url: 'https://laeti-seo.fr/og-image-2.jpg', width: 2400, height: 1260, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://laeti-seo.fr/og-image.jpg"],
+    images: ["https://laeti-seo.fr/og-image-2.jpg"],
     title: "Diagnostic visibilité locale | Laeti SEO",
     description:
       "Décorateur, cuisiniste, menuisier, artisan : comprenez pourquoi vous n'apparaissez pas assez sur Google. Diagnostic SEO local à 790 €.",

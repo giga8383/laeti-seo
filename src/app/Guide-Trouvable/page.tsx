@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     url: 'https://laeti-seo.fr/Guide-Trouvable',
-    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
+    images: [{ url: 'https://laeti-seo.fr/og-image-2.jpg', width: 2400, height: 1260, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     title: 'TROUVABLE · Le guide SEO local gratuit | Laeti SEO',
     description:
       "7 points concrets pour améliorer votre visibilité locale sur Google. Guide offert pour les professionnels de l'habitat.",

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     url: 'https://laeti-seo.fr/consultant-seo-toulon',
-    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
+    images: [{ url: 'https://laeti-seo.fr/og-image-2.jpg', width: 2400, height: 1260, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     title: 'Consultante SEO dans le Var | Laeti SEO',
     description:
       'Spécialiste SEO local dans le Var pour les pros de l\'habitat. Diagnostic de visibilité Google, fiche Google Business Profile, plan d\'action priorisé en 5 jours.',

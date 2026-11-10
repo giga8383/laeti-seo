@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     url: 'https://laeti-seo.fr/audit-seo-local',
-    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
+    images: [{ url: 'https://laeti-seo.fr/og-image-2.jpg', width: 2400, height: 1260, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     title: 'Audit SEO local | Diagnostic visibilité Google | Laeti SEO',
     description:
       "Identifiez pourquoi vos clients ne vous trouvent pas sur Google. Audit SEO local complet pour professionnels de l'habitat : rapport en 5 jours + appel de restitution.",

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     url: 'https://laeti-seo.fr/seo-pour-artisans',
-    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
+    images: [{ url: 'https://laeti-seo.fr/og-image-2.jpg', width: 2400, height: 1260, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     title: 'Référencement local pour artisans | Laeti SEO',
     description:
       "Comment les artisans et professionnels de l'habitat apparaissent dans le Local Pack de Google. Guide complet : fiche GBP, NAP, avis, site web, citations locales.",
