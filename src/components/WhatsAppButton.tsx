@@ -41,7 +41,7 @@ export default function WhatsAppButton() {
       onMouseLeave={() => setHovered(false)}
       style={{
         position: 'fixed',
-        bottom: cookieOpen ? '90px' : '28px',
+        bottom: cookieOpen ? 'calc(var(--cookie-banner-h, 74px) + 16px)' : '28px',
         right: '28px',
         zIndex: 9999,
         display: 'flex',

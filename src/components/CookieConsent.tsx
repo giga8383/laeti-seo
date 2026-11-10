@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, X } from '@phosphor-icons/react';
 import { inter } from '@/lib/fonts';
@@ -53,6 +53,26 @@ export default function CookieConsent() {
   const [visible, setVisible]   = useState(false);
   const [decided, setDecided]   = useState(true);
   const [onLight, setOnLight]   = useState(false); // true si fond blanc sous le bouton
+  const barRef = useRef<HTMLDivElement>(null);
+
+  // Publie la hauteur réelle du bandeau (variable CSS --cookie-banner-h) : sur smartphone le
+  // texte passe sur plusieurs lignes, et le bouton WhatsApp doit se placer au-dessus.
+  useEffect(() => {
+    const root = document.documentElement;
+    const el = barRef.current;
+    if (!visible || !el) {
+      root.style.removeProperty('--cookie-banner-h');
+      return;
+    }
+    const update = () => root.style.setProperty('--cookie-banner-h', `${el.offsetHeight}px`);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => {
+      ro.disconnect();
+      root.style.removeProperty('--cookie-banner-h');
+    };
+  }, [visible]);
 
   useEffect(() => {
     const stored = localStorage.getItem('cookie-consent');
@@ -161,6 +181,7 @@ export default function CookieConsent() {
       <AnimatePresence>
         {visible && (
           <motion.div
+            ref={barRef}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
