@@ -43,6 +43,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     url: 'https://laeti-seo.fr/consultant-seo-aix-en-provence',
+    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     title: 'Consultant SEO local à Aix-en-Provence | décoration & habitat | Laeti SEO',
     description:
       'Spécialiste SEO local à Aix-en-Provence pour les pros de la décoration et de l\'habitat. Diagnostic à 790 €, sprint local 3 mois à 500 €/mois (3 mois minimum). Résultats concrets, sans jargon.',

@@ -31,7 +31,7 @@ export async function generateMetadata({
       title: post.metaTitle,
       description: post.metaDescription,
       type: 'article',
-      images: post.image ? [{ url: `https://laeti-seo.fr${post.image}` }] : undefined,
+      images: [{ url: post.image ? `https://laeti-seo.fr${post.image}` : 'https://laeti-seo.fr/og-image.jpg' }],
     },
   };
 }

@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     type: 'profile',
     locale: 'fr_FR',
     url: URL,
+    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     siteName: 'Laeti SEO',
     title: TITLE,
     description: DESCRIPTION,

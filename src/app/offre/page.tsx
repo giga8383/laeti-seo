@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: 'https://laeti-seo.fr/offre',
+    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
   },
 };
 

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     url: 'https://laeti-seo.fr',
     siteName: 'Laeti SEO',
+    images: [{ url: 'https://laeti-seo.fr/og-image.jpg', width: 1200, height: 630, alt: 'Laeti SEO, consultante SEO local pour artisans et professionnels de l’habitat' }],
     title: "Consultant SEO local pour artisans et entreprises de l'habitat | Laeti SEO",
     description:
       "Consultant SEO local indépendant, 12 ans d'expérience, basé en PACA. Diagnostic visibilité à 790 € en 5 jours. Appel découverte gratuit de 20 min.",
