@@ -132,6 +132,14 @@ export const blogPosts: BlogPost[] = [
 
 <p>Évitez le texte marketing générique du type "passionné par mon métier depuis 15 ans". Soyez précis : types de projets, zones d'intervention, ce qui distingue concrètement votre façon de travailler.</p>
 
+<h2>5. Les avis : en obtenir régulièrement, pas une fois par an</h2>
+
+<p>Le nombre d'avis compte, mais leur régularité compte autant. Une fiche qui reçoit un ou deux avis récents chaque mois inspire plus confiance, à Google comme à vos futurs clients, qu'une fiche dont les derniers avis datent d'il y a deux ans.</p>
+
+<p>Le plus simple : demandez au bon moment, juste après la livraison d'un projet, quand le client est encore enthousiaste. Envoyez-lui le lien direct vers le formulaire d'avis (Google le génère pour vous depuis votre fiche) avec deux lignes personnalisées. Un message envoyé le jour même fonctionne mieux qu'une relance trois semaines plus tard.</p>
+
+<p>Une règle à respecter : n'achetez jamais d'avis et ne proposez pas de contrepartie en échange. Google les détecte et peut supprimer des avis, voire suspendre la fiche. Des avis authentiques, même peu nombreux, valent mieux.</p>
+
 <h2>6. Répondre à tous les avis, y compris les négatifs</h2>
 
 <p>Les fiches avec des réponses à tous leurs avis ressortent mieux que celles qui ignorent certains commentaires. Une réponse soignée à un avis négatif en dit souvent plus sur votre professionnalisme qu'une dizaine d'avis cinq étoiles sans réaction de votre part.</p>
