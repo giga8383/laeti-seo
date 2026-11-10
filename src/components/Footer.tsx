@@ -166,10 +166,18 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
           style={{
             background: 'none',
             border: 'none',
-            padding: '2px',
+            // Zone tactile 32 x 32 px (WCAG 2.5.8 : 24 px minimum). Les marges négatives
+            // évitent d'agrandir la hauteur de la ligne du menu.
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '32px',
+            height: '32px',
+            margin: '-5px 0 -5px -6px',
+            padding: 0,
             cursor: 'pointer',
             color: 'rgba(252,235,48,0.80)',
-            fontSize: '10px',
+            fontSize: '14px',
             lineHeight: 1,
             transform: open ? 'rotate(180deg)' : 'none',
             transition: 'transform 0.2s',
