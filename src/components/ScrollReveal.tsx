@@ -7,6 +7,8 @@ interface ScrollRevealProps {
   className?: string;
   delay?: number;
   y?: number;
+  /** Élément rendu : `li` quand le composant est un enfant direct d'un <ol>/<ul> (HTML valide). */
+  as?: 'div' | 'li';
 }
 
 export default function ScrollReveal({
@@ -14,8 +16,9 @@ export default function ScrollReveal({
   className = '',
   delay = 0,
   y = 20,
+  as: Tag = 'div',
 }: ScrollRevealProps) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement & HTMLLIElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -35,7 +38,7 @@ export default function ScrollReveal({
   }, []);
 
   return (
-    <div
+    <Tag
       ref={ref}
       className={className}
       style={{
@@ -46,6 +49,6 @@ export default function ScrollReveal({
       }}
     >
       {children}
-    </div>
+    </Tag>
   );
 }

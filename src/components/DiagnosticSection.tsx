@@ -94,8 +94,12 @@ export default function DiagnosticSection() {
             </ScrollReveal>
             <ol className="space-y-4">
               {points.map((p, i) => (
-                <ScrollReveal key={p.title} delay={0.06 + i * 0.07}>
-                  <li className="grid grid-cols-[44px_1fr] gap-4 rounded-[1.25rem] border border-white/10 bg-white/[0.05] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+                <ScrollReveal
+                  key={p.title}
+                  as="li"
+                  delay={0.06 + i * 0.07}
+                  className="grid grid-cols-[44px_1fr] gap-4 rounded-[1.25rem] border border-white/10 bg-white/[0.05] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
+                >
                     <span
                       className="flex h-10 w-10 items-center justify-center rounded-full bg-[#fceb30] text-[#264d8c]"
                       style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px' }}
@@ -107,7 +111,6 @@ export default function DiagnosticSection() {
                       <strong className="mb-1 block text-[17px] font-semibold text-white">{p.title}</strong>
                       <span className="block text-[15px] leading-[24px] text-white/65">{p.text}</span>
                     </div>
-                  </li>
                 </ScrollReveal>
               ))}
             </ol>

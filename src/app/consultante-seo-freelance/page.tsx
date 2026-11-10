@@ -292,11 +292,9 @@ export default function ConsultanteSeoFreelancePage() {
             </ScrollReveal>
             <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {enBref.map((item, i) => (
-                <ScrollReveal key={item} delay={0.05 + i * 0.06}>
-                  <li className="flex items-start gap-4 rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] px-6 py-5">
+                <ScrollReveal key={item} delay={0.05 + i * 0.06} as="li" className="flex items-start gap-4 rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] px-6 py-5">
                     <span className="mt-0.5 font-bold text-[#2355b6]" aria-hidden="true">✓</span>
                     <span className="text-[#264d8c]" style={{ ...body, fontSize: '17px' }}>{item}</span>
-                  </li>
                 </ScrollReveal>
               ))}
             </ul>
@@ -321,14 +319,12 @@ export default function ConsultanteSeoFreelancePage() {
             </ScrollReveal>
             <ol className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {reasons.map((r, i) => (
-                <ScrollReveal key={r.title} delay={0.06 + i * 0.07} className="h-full">
-                  <li className="h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
+                <ScrollReveal key={r.title} delay={0.06 + i * 0.07} as="li" className="h-full h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
                     <p className="mb-3 text-[#fceb30]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
                       0{i + 1}
                     </p>
                     <h3 className="mb-3 text-white" style={{ ...h3, fontSize: '22px' }}>{r.title}</h3>
                     <p className="text-white/65" style={body}>{r.text}</p>
-                  </li>
                 </ScrollReveal>
               ))}
             </ol>
