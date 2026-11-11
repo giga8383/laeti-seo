@@ -155,3 +155,8 @@ body {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
 }
+
+/* Menu mobile ouvert : le bouton WhatsApp flottant ne doit pas recouvrir le panneau. */
+body[data-mobile-menu] a[aria-label^="Nous contacter"] {
+  display: none !important;
+}

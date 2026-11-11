@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { List, X, CaretDown } from '@phosphor-icons/react';
+import { List, X, CaretDown, CaretRight } from '@phosphor-icons/react';
 import MagneticButton from './MagneticButton';
 import { inter } from '@/lib/fonts';
 
@@ -23,6 +23,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [offreOpen, setOffreOpen] = useState(false);
   const offreRef = useRef<HTMLDivElement>(null);
+  const burgerRef = useRef<HTMLButtonElement>(null);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const check = () => {
@@ -62,14 +64,42 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
+  // Menu mobile : fermeture avec Échap, blocage du défilement de la page, fermeture automatique
+  // si l'écran passe en mode desktop, focus sur le premier lien à l'ouverture.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setMenuOpen(false);
+        burgerRef.current?.focus();
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    const prevOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = 'hidden';
+    document.body.setAttribute('data-mobile-menu', 'open'); // masque le bouton WhatsApp (voir globals.css)
+    const mq = window.matchMedia('(min-width: 1024px)');
+    const onMq = () => { if (mq.matches) setMenuOpen(false); };
+    mq.addEventListener('change', onMq);
+    firstLinkRef.current?.focus();
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.documentElement.style.overflow = prevOverflow;
+      document.body.removeAttribute('data-mobile-menu');
+      mq.removeEventListener('change', onMq);
+    };
+  }, [menuOpen]);
+
   const p = Math.min(scrollY / 80, 1);
 
   const linkColor = isOverLight ? 'rgba(30,58,100,0.80)' : 'rgba(255,255,255,0.85)';
-  const logoTop   = isOverLight ? '#264d8c' : '#ffffff';
-  const logoBot   = isOverLight ? '#0ea5e9' : '#fceb30';
+  // Menu ouvert : fond assombri derrière, donc logo et burger restent clairs.
+  const onLight   = isOverLight && !menuOpen;
+  const logoTop   = onLight ? '#264d8c' : '#ffffff';
+  const logoBot   = onLight ? '#0ea5e9' : '#fceb30';
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center px-6 pt-3 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-6 pt-3 pointer-events-none">
       <nav
         data-navbar
         className="pointer-events-auto w-full"
@@ -87,7 +117,7 @@ export default function Navbar() {
           transition: 'max-width 0.5s cubic-bezier(0.16,1,0.3,1), border-radius 0.5s cubic-bezier(0.16,1,0.3,1), padding 0.5s cubic-bezier(0.16,1,0.3,1)',
         }}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}>
+        <div className="flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
 
           {/* Logo */}
           <a href="/" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, fontSize: '16px', lineHeight: '1', display: 'flex', flexDirection: 'column', gap: '0px', textDecoration: 'none' }}>
@@ -243,89 +273,117 @@ export default function Navbar() {
               Faire le point sur ma visibilité
             </MagneticButton>
 
-            {/* Burger mobile */}
+            {/* Burger mobile : zone tactile 44 x 44 px */}
             <button
+              ref={burgerRef}
+              type="button"
               onClick={() => setMenuOpen((v) => !v)}
-              className="lg:hidden flex items-center justify-center w-9 h-9 rounded-full"
+              className="lg:hidden flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
               style={{
-                background: 'rgba(255,255,255,0.10)',
-                border: '1px solid rgba(255,255,255,0.18)',
-                color: isOverLight ? '#264d8c' : '#ffffff',
+                background: 'rgba(255,255,255,0.12)',
+                border: '1px solid rgba(255,255,255,0.22)',
+                color: onLight ? '#264d8c' : '#ffffff',
               }}
-              aria-label="Menu"
+              aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
             >
-              {menuOpen ? <X size={17} weight="bold" /> : <List size={17} weight="bold" />}
+              {menuOpen ? <X size={22} weight="bold" /> : <List size={22} weight="bold" />}
             </button>
           </div>
 
         </div>
       </nav>
 
-      {/* Menu mobile déroulant */}
+      {/* Menu mobile : voile + panneau pleine largeur (visible sous 1024 px, comme le burger) */}
       <AnimatePresence>
         {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className="pointer-events-auto mx-auto mt-2 w-full max-w-sm rounded-2xl px-4 py-4 md:hidden"
-            style={{
-              background: 'rgba(20, 40, 100, 0.92)',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255,255,255,0.14)',
-              boxShadow: '0 16px 40px -8px rgba(0,0,0,0.3)',
-            }}
-          >
-            <div className="flex flex-col gap-1">
-              {/* Offre mobile */}
-              <div className="px-1 py-1">
-                <p style={{ fontFamily: inter.style.fontFamily, fontSize: '11px', fontWeight: 600, color: 'rgba(252,235,48,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '4px 12px 2px' }}>
-                  Offre
-                </p>
-                {offreItems.map(({ label, sub, href }) => (
-                  <a
-                    key={href}
-                    href={href}
-                    onClick={() => setMenuOpen(false)}
-                    className="flex flex-col rounded-xl px-4 py-3 transition-colors hover:bg-white/10"
-                  >
-                    <span style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff' }}>{label}</span>
-                    <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)', marginTop: '1px' }}>{sub}</span>
-                  </a>
+          <>
+            <motion.div
+              key="menu-overlay"
+              aria-hidden="true"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setMenuOpen(false)}
+              className="pointer-events-auto fixed inset-0 -z-10 lg:hidden"
+              style={{ background: 'rgba(8,18,50,0.60)', backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)' }}
+            />
+            <motion.div
+              key="menu-sheet"
+              id="mobile-menu"
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
+              className="pointer-events-auto mt-2 w-full overflow-y-auto rounded-3xl p-3 lg:hidden"
+              style={{
+                maxHeight: 'calc(100dvh - 96px)',
+                background: 'linear-gradient(165deg, #0c1a40 0%, #112258 100%)',
+                border: '1px solid rgba(255,255,255,0.14)',
+                boxShadow: '0 24px 48px -12px rgba(0,0,0,0.45)',
+              }}
+            >
+              <p
+                className="px-3 pb-1 pt-2"
+                style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(252,235,48,0.85)', textTransform: 'uppercase', letterSpacing: '0.12em' }}
+              >
+                Offre
+              </p>
+              <ul className="flex flex-col">
+                {offreItems.map(({ label, sub, href }, i) => (
+                  <li key={href}>
+                    <a
+                      ref={i === 0 ? firstLinkRef : undefined}
+                      href={href}
+                      onClick={() => setMenuOpen(false)}
+                      className="flex min-h-[60px] items-center justify-between gap-3 rounded-2xl px-3 py-2 transition-colors active:bg-white/10"
+                    >
+                      <span className="flex flex-col">
+                        <span style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', lineHeight: '24px', color: '#ffffff' }}>{label}</span>
+                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', lineHeight: '18px', color: 'rgba(255,255,255,0.65)' }}>{sub}</span>
+                      </span>
+                      <CaretRight size={16} weight="bold" color="rgba(255,255,255,0.45)" aria-hidden="true" />
+                    </a>
+                  </li>
                 ))}
-              </div>
-              <div className="h-px mx-3" style={{ background: 'rgba(255,255,255,0.10)' }} />
-              {navLinks.map(({ label, href }) => (
-                <a
-                  key={href}
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className="rounded-xl px-4 py-3 text-sm font-medium text-white/85 transition-colors hover:bg-white/10 hover:text-white"
-                  style={{ fontFamily: inter.style.fontFamily }}
-                >
-                  {label}
-                </a>
-              ))}
-              <div className="mt-2 border-t border-white/10 pt-3">
-                <a
-                  href="https://calendly.com/laetitia_laghezza_seo_local/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-[#fceb30] py-3 text-sm font-bold text-[#264d8c]"
-                  style={{ fontFamily: inter.style.fontFamily }}
-                >
-                  <span className="relative flex h-2 w-2 shrink-0">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#264d8c] opacity-60" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#264d8c]" />
-                  </span>
-                  Faire le point sur ma visibilité
-                </a>
-              </div>
-            </div>
-          </motion.div>
+              </ul>
+
+              <div className="mx-3 my-2 h-px" style={{ background: 'rgba(255,255,255,0.10)' }} />
+
+              <ul className="flex flex-col">
+                {navLinks.map(({ label, href }) => (
+                  <li key={href}>
+                    <a
+                      href={href}
+                      onClick={() => setMenuOpen(false)}
+                      className="flex min-h-[52px] items-center justify-between gap-3 rounded-2xl px-3 transition-colors active:bg-white/10"
+                      style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', color: '#ffffff' }}
+                    >
+                      {label}
+                      <CaretRight size={16} weight="bold" color="rgba(255,255,255,0.45)" aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="https://calendly.com/laetitia_laghezza_seo_local/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="mt-3 flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-[#fceb30] px-4 text-[#264d8c] active:scale-[0.98]"
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '15px' }}
+              >
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#264d8c] opacity-60" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#264d8c]" />
+                </span>
+                Faire le point sur ma visibilité
+              </a>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </div>
