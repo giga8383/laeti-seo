@@ -173,6 +173,7 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
             justifyContent: 'center',
             width: '32px',
             height: '32px',
+            flexShrink: 0, // sinon la largeur se comprime à 24 px quand le libellé passe sur 2 lignes (mobile)
             margin: '-5px 0 -5px -6px',
             padding: 0,
             cursor: 'pointer',
