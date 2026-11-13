@@ -27,7 +27,7 @@ export default function HeroContent() {
           }}
         >
           <Image
-            src="/laeti-hero.webp"
+            src="/laeti-avatar.webp"
             alt="Laeti"
             fill
             className="object-cover object-top"
