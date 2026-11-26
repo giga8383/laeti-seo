@@ -44,7 +44,7 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Scripts : site lui-même + Google Analytics (chargé après consentement)
-      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com`,
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com`,
       // Styles : site + Google Fonts (Satoshi est désormais auto-hébergée)
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       // Polices : site (Satoshi auto-hébergée) + Google Fonts
@@ -52,7 +52,7 @@ const securityHeaders = [
       // Images : site + données inline (pour les SVG/base64)
       "img-src 'self' data: https:",
       // Connexions réseau : GA
-      `connect-src 'self'${isDev ? " ws:" : ""} https://www.google-analytics.com https://region1.google-analytics.com`,
+      `connect-src 'self'${isDev ? " ws:" : ""} https://www.google-analytics.com https://region1.google-analytics.com https://cloudflareinsights.com`,
       // Interdit les iframes de sources inconnues
       "frame-ancestors 'self'",
       // Bloque les plugins Flash/Java/etc.
