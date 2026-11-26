@@ -92,9 +92,10 @@ export default function Navbar() {
 
   const p = Math.min(scrollY / 80, 1);
 
-  const linkColor = isOverLight ? 'rgba(30,58,100,0.80)' : 'rgba(255,255,255,0.85)';
-  // Menu ouvert : fond assombri derrière, donc logo et burger restent clairs.
-  const onLight   = isOverLight && !menuOpen;
+  // Une fois la barre « pastille » (défilement), son fond est foncé et opaque : texte toujours clair.
+  // Les couleurs sombres ne servent qu'en haut de page, quand la barre est transparente sur un fond clair.
+  const onLight   = isOverLight && !menuOpen && p < 0.5;
+  const linkColor = onLight ? 'rgba(30,58,100,0.80)' : 'rgba(255,255,255,0.92)';
   const logoTop   = onLight ? '#264d8c' : '#ffffff';
   const logoBot   = onLight ? '#0ea5e9' : '#fceb30';
 
@@ -107,10 +108,10 @@ export default function Navbar() {
           maxWidth:             `${1280 - p * 360}px`,
           borderRadius:         `${p * 9999}px`,
           padding:              `${p * 6}px ${p * 18}px`,
-          background:           `rgba(255,255,255,${p * 0.12})`,
+          background:           `rgba(12,26,64,${p * 0.94})`,
           backdropFilter:       `blur(${p * 18}px)`,
           WebkitBackdropFilter: `blur(${p * 18}px)`,
-          border:               `1px solid rgba(255,255,255,${p * 0.22})`,
+          border:               `1px solid rgba(255,255,255,${p * 0.18})`,
           boxShadow: p > 0.05
             ? `inset 0 1px 0 rgba(255,255,255,${p * 0.25}), 0 8px 32px -8px rgba(0,0,0,${p * 0.15})`
             : 'none',

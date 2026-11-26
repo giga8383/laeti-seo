@@ -100,7 +100,7 @@ export default function RootLayout({
       <body className="min-h-full font-sans antialiased">
         <GridBackground />
         <HabitatAccents />
-        <div className="relative z-0">{children}</div>
+        <div className="relative">{children}</div>
         <PreFooter />
         <Footer />
         <WhatsAppButton />
