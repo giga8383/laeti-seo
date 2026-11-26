@@ -96,7 +96,7 @@ function Stars() {
   return (
     <div className="flex gap-0.5" aria-label="Note : 5 étoiles sur 5">
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="#fceb30" aria-hidden="true">
+        <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="#ffd426" aria-hidden="true">
           <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
         </svg>
       ))}
@@ -151,7 +151,7 @@ function ReviewCard({ review }: { review: Review }) {
 
       <span
         className="mt-4 inline-flex items-center gap-1"
-        style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(252,235,48,0.85)', marginTop: 'auto', paddingTop: '16px' }}
+        style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(255,212,38,0.85)', marginTop: 'auto', paddingTop: '16px' }}
       >
         Voir l&apos;avis ↗
       </span>
@@ -171,7 +171,7 @@ export default function ReviewsMarquee() {
             .reviews-track { display: flex; width: max-content; animation: reviews-scroll 55s linear infinite; }
             .reviews-marquee:hover .reviews-track { animation-play-state: paused; }
             .reviews-card { display: flex; flex-direction: column; width: 340px; margin-right: 20px; padding: 22px; border-radius: 20px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); box-shadow: inset 0 1px 0 rgba(255,255,255,0.06); transition: border-color .25s ease, background .25s ease, transform .25s ease; }
-            .reviews-card:hover { border-color: rgba(252,235,48,0.4); background: rgba(255,255,255,0.06); transform: translateY(-3px); }
+            .reviews-card:hover { border-color: rgba(255,212,38,0.4); background: rgba(255,255,255,0.06); transform: translateY(-3px); }
             @keyframes reviews-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
             @media (prefers-reduced-motion: reduce) {
               .reviews-marquee { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -185,7 +185,7 @@ export default function ReviewsMarquee() {
       <div className="mx-auto mb-10 max-w-7xl px-6 text-center">
         <p
           className="mb-3 uppercase tracking-widest"
-          style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+          style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
         >
           Avis clients
         </p>

@@ -6,6 +6,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Footer from "@/components/Footer";
 import PreFooter from "@/components/PreFooter";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PencilCursor from "@/components/PencilCursor";
 import { outfit, inter } from "@/lib/fonts";
 import { siteJsonLd } from "@/lib/site-jsonld";
 import "./globals.css";
@@ -104,6 +105,7 @@ export default function RootLayout({
         <PreFooter />
         <Footer />
         <WhatsAppButton />
+        <PencilCursor />
         <CookieConsent />
         <GoogleAnalytics />
       </body>

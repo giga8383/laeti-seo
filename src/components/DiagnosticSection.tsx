@@ -35,8 +35,8 @@ const label = {
   fontSize: '22px',
   lineHeight: '28px',
   textTransform: 'uppercase',
-  color: '#fceb30',
-  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+  color: '#ffd426',
+  textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
 } as const;
 
 export default function DiagnosticSection() {
@@ -52,7 +52,7 @@ export default function DiagnosticSection() {
                 className="text-white"
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' }}
               >
-                Le diagnostic visibilité à <span className="text-[#fceb30]">790 €</span>
+                Le diagnostic visibilité à <span className="glow text-[#ffd426]">790 €</span>
               </h2>
               <p className="mt-5 max-w-[52ch] text-white/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
                 Un état des lieux complet de votre visibilité locale, livré en 5 jours ouvrés, avec une restitution de 45 minutes pour décider quoi faire ensuite.
@@ -71,7 +71,7 @@ export default function DiagnosticSection() {
                 <MagneticButton
                   as="a"
                   href="/offre#diagnostic"
-                  className="inline-flex rounded-full bg-[#fceb30] px-8 py-4 text-[#264d8c] transition-[filter] duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex rounded-full bg-[#ffd426] px-8 py-4 text-[#1b1b5e] transition-[filter] duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '24px' }}
                   strength={0.3}
                 >
@@ -88,7 +88,7 @@ export default function DiagnosticSection() {
           {/* Colonne livrable */}
           <div>
             <ScrollReveal>
-              <p className="mb-6 text-white/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600 }}>
+              <p className="glow mb-6 w-fit text-white/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600 }}>
                 Ce que contient le livrable
               </p>
             </ScrollReveal>
@@ -101,7 +101,7 @@ export default function DiagnosticSection() {
                   className="grid grid-cols-[44px_1fr] gap-4 rounded-[1.25rem] border border-white/10 bg-white/[0.05] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
                 >
                     <span
-                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#fceb30] text-[#264d8c]"
+                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#ffd426] text-[#1b1b5e]"
                       style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px' }}
                       aria-hidden="true"
                     >

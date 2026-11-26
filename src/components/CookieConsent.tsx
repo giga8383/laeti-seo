@@ -152,24 +152,24 @@ export default function CookieConsent() {
               width: '44px',
               height: '44px',
               borderRadius: '50%',
-              background: onLight ? 'rgba(38,77,140,0.08)' : 'rgba(255,255,255,0.08)',
-              border: onLight ? '1px solid rgba(38,77,140,0.20)' : '1px solid rgba(255,255,255,0.15)',
+              background: onLight ? 'rgba(39,39,154,0.08)' : 'rgba(255,255,255,0.08)',
+              border: onLight ? '1px solid rgba(39,39,154,0.20)' : '1px solid rgba(255,255,255,0.15)',
               backdropFilter: 'blur(12px)',
               WebkitBackdropFilter: 'blur(12px)',
               boxShadow: onLight
-                ? 'inset 0 1px 0 rgba(255,255,255,0.80), 0 2px 8px rgba(38,77,140,0.10)'
+                ? 'inset 0 1px 0 rgba(255,255,255,0.80), 0 2px 8px rgba(39,39,154,0.10)'
                 : 'inset 0 1px 0 rgba(255,255,255,0.12)',
               cursor: 'pointer',
-              color: onLight ? 'rgba(38,77,140,0.60)' : 'rgba(255,255,255,0.55)',
+              color: onLight ? 'rgba(39,39,154,0.60)' : 'rgba(255,255,255,0.55)',
               transition: 'background 0.35s, color 0.35s, border-color 0.35s, box-shadow 0.35s',
             }}
             onMouseEnter={e => {
-              (e.currentTarget as HTMLButtonElement).style.background = onLight ? 'rgba(38,77,140,0.14)' : 'rgba(255,255,255,0.14)';
-              (e.currentTarget as HTMLButtonElement).style.color = onLight ? 'rgba(38,77,140,1)' : 'rgba(255,255,255,0.9)';
+              (e.currentTarget as HTMLButtonElement).style.background = onLight ? 'rgba(39,39,154,0.14)' : 'rgba(255,255,255,0.14)';
+              (e.currentTarget as HTMLButtonElement).style.color = onLight ? 'rgba(39,39,154,1)' : 'rgba(255,255,255,0.9)';
             }}
             onMouseLeave={e => {
-              (e.currentTarget as HTMLButtonElement).style.background = onLight ? 'rgba(38,77,140,0.08)' : 'rgba(255,255,255,0.08)';
-              (e.currentTarget as HTMLButtonElement).style.color = onLight ? 'rgba(38,77,140,0.60)' : 'rgba(255,255,255,0.55)';
+              (e.currentTarget as HTMLButtonElement).style.background = onLight ? 'rgba(39,39,154,0.08)' : 'rgba(255,255,255,0.08)';
+              (e.currentTarget as HTMLButtonElement).style.color = onLight ? 'rgba(39,39,154,0.60)' : 'rgba(255,255,255,0.55)';
             }}
           >
             <CookieIcon />
@@ -193,7 +193,7 @@ export default function CookieConsent() {
               right: 0,
               zIndex: 50,
               background: 'rgba(255,255,255,0.88)',
-              borderTop: '1px solid rgba(38,77,140,0.12)',
+              borderTop: '1px solid rgba(39,39,154,0.12)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
               boxShadow: '0 -4px 24px -4px rgba(0,0,0,0.08)',
@@ -205,7 +205,7 @@ export default function CookieConsent() {
             }}
           >
             {/* Icône */}
-            <span style={{ color: '#264d8c', flexShrink: 0 }}>
+            <span style={{ color: '#27279a', flexShrink: 0 }}>
               <Cookie size={20} weight="regular" />
             </span>
 
@@ -215,7 +215,7 @@ export default function CookieConsent() {
               fontWeight: 400,
               fontSize: '13px',
               lineHeight: '20px',
-              color: 'rgba(30,58,100,0.80)',
+              color: 'rgba(27,27,94,0.80)',
               flex: 1,
               margin: 0,
               minWidth: '180px',
@@ -223,7 +223,7 @@ export default function CookieConsent() {
               Ce site utilise Google Analytics pour mesurer son audience. Vos données ne sont pas revendues et aucun cookie ne sera déposé si vous ne le voulez pas.{' '}
               <a
                 href="/politique-de-confidentialite"
-                style={{ color: '#264d8c', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: '2px' }}
+                style={{ color: '#27279a', fontWeight: 500, textDecoration: 'underline', textUnderlineOffset: '2px' }}
               >
                 Politique Cookies
               </a>
@@ -238,21 +238,21 @@ export default function CookieConsent() {
                   fontWeight: 500,
                   fontSize: '13px',
                   lineHeight: '20px',
-                  color: 'rgba(30,58,100,0.70)',
+                  color: 'rgba(27,27,94,0.70)',
                   background: '#ffffff',
-                  border: '1px solid rgba(38,77,140,0.22)',
+                  border: '1px solid rgba(39,39,154,0.22)',
                   cursor: 'pointer',
                   padding: '6px 14px',
                   borderRadius: '9999px',
                   transition: 'border-color 0.2s, color 0.2s',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = 'rgba(38,77,140,0.45)';
-                  e.currentTarget.style.color = 'rgba(30,58,100,1)';
+                  e.currentTarget.style.borderColor = 'rgba(39,39,154,0.45)';
+                  e.currentTarget.style.color = 'rgba(27,27,94,1)';
                 }}
                 onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = 'rgba(38,77,140,0.22)';
-                  e.currentTarget.style.color = 'rgba(30,58,100,0.70)';
+                  e.currentTarget.style.borderColor = 'rgba(39,39,154,0.22)';
+                  e.currentTarget.style.color = 'rgba(27,27,94,0.70)';
                 }}
               >
                 Pas la peine
@@ -264,8 +264,8 @@ export default function CookieConsent() {
                   fontWeight: 600,
                   fontSize: '13px',
                   lineHeight: '20px',
-                  color: '#264d8c',
-                  background: '#fceb30',
+                  color: '#27279a',
+                  background: '#ffd426',
                   border: 'none',
                   cursor: 'pointer',
                   padding: '6px 16px',
@@ -287,15 +287,15 @@ export default function CookieConsent() {
                 background: 'transparent',
                 border: 'none',
                 cursor: 'pointer',
-                color: 'rgba(30,58,100,0.30)',
+                color: 'rgba(27,27,94,0.30)',
                 padding: '4px',
                 display: 'flex',
                 alignItems: 'center',
                 flexShrink: 0,
                 transition: 'color 0.2s',
               }}
-              onMouseEnter={e => (e.currentTarget.style.color = 'rgba(30,58,100,0.70)')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(30,58,100,0.30)')}
+              onMouseEnter={e => (e.currentTarget.style.color = 'rgba(27,27,94,0.70)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(27,27,94,0.30)')}
             >
               <X size={14} weight="bold" />
             </button>

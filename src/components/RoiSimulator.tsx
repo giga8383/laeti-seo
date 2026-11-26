@@ -169,13 +169,13 @@ export default function RoiSimulator() {
 
   const optionBtn = (selected: boolean) => ({
     fontFamily: inter.style.fontFamily,
-    background: selected ? 'rgba(252,235,48,0.14)' : 'rgba(255,255,255,0.06)',
-    border: selected ? '1px solid rgba(252,235,48,0.65)' : '1px solid rgba(255,255,255,0.12)',
+    background: selected ? 'rgba(255,212,38,0.14)' : 'rgba(255,255,255,0.06)',
+    border: selected ? '1px solid rgba(255,212,38,0.65)' : '1px solid rgba(255,255,255,0.12)',
     color: selected ? '#ffffff' : 'rgba(255,255,255,0.75)',
-    boxShadow: selected ? '0 0 20px rgba(252,235,48,0.15)' : 'none',
+    boxShadow: selected ? '0 0 20px rgba(255,212,38,0.15)' : 'none',
   });
 
-  const sliderStyle = { accentColor: '#fceb30', width: '100%', height: '6px', cursor: 'pointer' };
+  const sliderStyle = { accentColor: '#ffd426', width: '100%', height: '6px', cursor: 'pointer' };
 
   const questionTitle = {
     fontFamily: 'Satoshi, sans-serif',
@@ -196,7 +196,7 @@ export default function RoiSimulator() {
     <div
       className="rounded-[2rem] p-6 md:p-12"
       style={{
-        background: 'linear-gradient(145deg, rgba(38,77,140,0.18) 0%, rgba(15,30,72,0.35) 100%)',
+        background: 'linear-gradient(145deg, rgba(39,39,154,0.18) 0%, rgba(27,27,94,0.35) 100%)',
         border: '1px solid rgba(255,255,255,0.12)',
         boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.08)',
       }}
@@ -205,7 +205,7 @@ export default function RoiSimulator() {
       <div className="mb-8 text-center">
         <p
           className="uppercase tracking-widest"
-          style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '11px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+          style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '11px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
         >
           Simulateur · 6 questions
         </p>
@@ -254,13 +254,13 @@ export default function RoiSimulator() {
                   <span
                     className="flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 md:h-10 md:w-10"
                     style={{
-                      background: isCurrent ? '#fceb30' : isDone ? 'rgba(252,235,48,0.18)' : 'rgba(255,255,255,0.06)',
-                      border: isDone ? '1px solid rgba(252,235,48,0.4)' : '1px solid transparent',
+                      background: isCurrent ? '#ffd426' : isDone ? 'rgba(255,212,38,0.18)' : 'rgba(255,255,255,0.06)',
+                      border: isDone ? '1px solid rgba(255,212,38,0.4)' : '1px solid transparent',
                       transform: isCurrent ? 'scale(1.1)' : 'scale(1)',
-                      boxShadow: isCurrent ? '0 0 16px rgba(252,235,48,0.4)' : 'none',
+                      boxShadow: isCurrent ? '0 0 16px rgba(255,212,38,0.4)' : 'none',
                     }}
                   >
-                    <Icon size={16} weight="bold" color={isCurrent ? '#264d8c' : isDone ? '#fceb30' : 'rgba(255,255,255,0.35)'} />
+                    <Icon size={16} weight="bold" color={isCurrent ? '#27279a' : isDone ? '#ffd426' : 'rgba(255,255,255,0.35)'} />
                   </span>
                   <span
                     className="hidden uppercase tracking-wider sm:block"
@@ -268,7 +268,7 @@ export default function RoiSimulator() {
                       fontFamily: inter.style.fontFamily,
                       fontWeight: 700,
                       fontSize: '9px',
-                      color: isCurrent ? '#fceb30' : isDone ? 'rgba(252,235,48,0.6)' : 'rgba(255,255,255,0.25)',
+                      color: isCurrent ? '#ffd426' : isDone ? 'rgba(255,212,38,0.6)' : 'rgba(255,255,255,0.25)',
                     }}
                   >
                     {label}
@@ -282,7 +282,7 @@ export default function RoiSimulator() {
           <div className="mx-auto mb-10 h-1 max-w-xl overflow-hidden rounded-full" style={{ background: 'rgba(255,255,255,0.08)' }}>
             <div
               className="h-full rounded-full transition-all duration-500"
-              style={{ width: `${((step + 1) / 6) * 100}%`, background: '#fceb30', boxShadow: '0 0 8px rgba(252,235,48,0.5)' }}
+              style={{ width: `${((step + 1) / 6) * 100}%`, background: '#ffd426', boxShadow: '0 0 8px rgba(255,212,38,0.5)' }}
             />
           </div>
 
@@ -308,7 +308,7 @@ export default function RoiSimulator() {
                         className="flex items-center gap-3 rounded-2xl p-4 text-left transition-all duration-200 hover:scale-[1.01]"
                         style={optionBtn(selected)}
                       >
-                        <Icon size={20} weight={selected ? 'fill' : 'regular'} color={selected ? '#fceb30' : 'rgba(255,255,255,0.5)'} />
+                        <Icon size={20} weight={selected ? 'fill' : 'regular'} color={selected ? '#ffd426' : 'rgba(255,255,255,0.5)'} />
                         <span style={{ fontSize: '14px', fontWeight: 700 }}>{d.label}</span>
                       </button>
                     );
@@ -326,7 +326,7 @@ export default function RoiSimulator() {
                 <p className="mb-8 text-center" style={questionSub}>
                   Panier moyen ou valeur d’un client pour vous
                 </p>
-                <p className="mb-6 text-center" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(34px, 5vw, 46px)', color: '#fceb30', textShadow: '0 0 24px rgba(252,235,48,0.35)' }}>
+                <p className="mb-6 text-center" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(34px, 5vw, 46px)', color: '#ffd426', textShadow: '0 0 24px rgba(255,212,38,0.35)' }}>
                   {formatEuro(panier)} €
                 </p>
                 <input
@@ -354,7 +354,7 @@ export default function RoiSimulator() {
                 <p className="mb-8 text-center" style={questionSub}>
                   Appels, demandes de devis ou messages venus de votre fiche ou de votre site
                 </p>
-                <p className="mb-6 text-center" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(34px, 5vw, 46px)', color: '#fceb30', textShadow: '0 0 24px rgba(252,235,48,0.35)' }}>
+                <p className="mb-6 text-center" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(34px, 5vw, 46px)', color: '#ffd426', textShadow: '0 0 24px rgba(255,212,38,0.35)' }}>
                   {contacts}
                   <span style={{ fontSize: '18px', color: 'rgba(255,255,255,0.45)', fontFamily: inter.style.fontFamily, fontWeight: 400 }}> /mois</span>
                 </p>
@@ -474,7 +474,7 @@ export default function RoiSimulator() {
               {(step === 1 || step === 2) && (
                 <button
                   onClick={() => setStep((s) => s + 1)}
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}
                 >
                   Suivant
@@ -506,7 +506,7 @@ export default function RoiSimulator() {
                     border: '1px solid rgba(255,255,255,0.1)',
                   }}
                 >
-                  <Icon size={12} weight="bold" color="rgba(252,235,48,0.7)" />
+                  <Icon size={12} weight="bold" color="rgba(255,212,38,0.7)" />
                   {r.label}
                 </span>
               );
@@ -523,17 +523,17 @@ export default function RoiSimulator() {
                   className="relative rounded-3xl p-6 transition-all duration-300 md:p-7"
                   style={{
                     background: isRealiste
-                      ? 'linear-gradient(160deg, #2c58b0 0%, #264d8c 60%, #1d3e77 100%)'
+                      ? 'linear-gradient(160deg, #3b3fc4 0%, #27279a 60%, #1b1b5e 100%)'
                       : 'rgba(255,255,255,0.04)',
-                    border: isRealiste ? '1.5px solid rgba(252,235,48,0.5)' : '1px solid rgba(255,255,255,0.1)',
-                    boxShadow: isRealiste ? '0 20px 48px -16px rgba(252,235,48,0.18)' : 'none',
+                    border: isRealiste ? '1.5px solid rgba(255,212,38,0.5)' : '1px solid rgba(255,255,255,0.1)',
+                    boxShadow: isRealiste ? '0 20px 48px -16px rgba(255,212,38,0.18)' : 'none',
                     transform: isRealiste ? 'translateY(-6px)' : 'none',
                   }}
                 >
                   {isRealiste && (
                     <span
                       className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full px-4 py-1 uppercase tracking-wider"
-                      style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '10px', background: '#fceb30', color: '#264d8c' }}
+                      style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '10px', background: '#ffd426', color: '#27279a' }}
                     >
                       Le plus probable
                     </span>
@@ -545,7 +545,7 @@ export default function RoiSimulator() {
                     {r.label}
                   </p>
                   <div className="mb-6 text-center">
-                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '34px', lineHeight: 1, color: isRealiste ? '#fceb30' : '#ffffff', textShadow: isRealiste ? '0 0 20px rgba(252,235,48,0.35)' : 'none' }}>
+                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '34px', lineHeight: 1, color: isRealiste ? '#ffd426' : '#ffffff', textShadow: isRealiste ? '0 0 20px rgba(255,212,38,0.35)' : 'none' }}>
                       +{r.gainContacts}
                     </p>
                     <p className="mt-1.5" style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>
@@ -563,7 +563,7 @@ export default function RoiSimulator() {
                       return (
                         <div key={i} className="flex items-center justify-between gap-2">
                           <span className="flex items-center gap-2" style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>
-                            <RowIcon size={13} weight="bold" color={isRealiste ? 'rgba(252,235,48,0.8)' : 'rgba(255,255,255,0.35)'} />
+                            <RowIcon size={13} weight="bold" color={isRealiste ? 'rgba(255,212,38,0.8)' : 'rgba(255,255,255,0.35)'} />
                             {row.label}
                           </span>
                           <span style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '13px', color: '#ffffff', whiteSpace: 'nowrap' }}>
@@ -582,20 +582,20 @@ export default function RoiSimulator() {
           <div
             className="rounded-3xl p-6 text-center md:p-10"
             style={{
-              background: 'linear-gradient(145deg, rgba(252,235,48,0.08) 0%, rgba(38,77,140,0.15) 100%)',
-              border: '1px solid rgba(252,235,48,0.25)',
+              background: 'linear-gradient(145deg, rgba(255,212,38,0.08) 0%, rgba(39,39,154,0.15) 100%)',
+              border: '1px solid rgba(255,212,38,0.25)',
             }}
           >
             <p
               className="mb-3 uppercase tracking-widest"
-              style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '11px', color: 'rgba(252,235,48,0.8)' }}
+              style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '11px', color: 'rgba(255,212,38,0.8)' }}
             >
               Notre recommandation pour vous
             </p>
             <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(22px, 3vw, 28px)', color: '#ffffff', lineHeight: 1.2 }}>
               {offre.title}
             </p>
-            <p className="mt-1.5" style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '15px', color: '#fceb30' }}>
+            <p className="mt-1.5" style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '15px', color: '#ffd426' }}>
               {offre.price}
             </p>
             <p className="mx-auto mt-3 max-w-xl" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '23px', color: 'rgba(255,255,255,0.65)' }}>
@@ -604,7 +604,7 @@ export default function RoiSimulator() {
             <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 href={offre.href}
-                className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-7 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-7 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}
               >
                 {offre.cta}

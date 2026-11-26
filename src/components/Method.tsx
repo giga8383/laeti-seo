@@ -32,8 +32,8 @@ export default function Method() {
               fontWeight: 700,
               fontSize: '22px',
               lineHeight: '28px',
-              color: '#fceb30',
-              textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+              color: '#ffd426',
+              textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
             }}
           >
             La méthode
@@ -48,10 +48,10 @@ export default function Method() {
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {steps.map((s, i) => (
-            <ScrollReveal key={s.title} delay={0.08 + i * 0.08}>
+            <ScrollReveal key={s.title} delay={0.2 + i * 0.4} duration={1.8}>
               <div className="border-t border-white/15 pt-7">
                 <span
-                  className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#fceb30] text-[#264d8c]"
+                  className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#ffd426] text-[#1b1b5e]"
                   style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px' }}
                   aria-hidden="true"
                 >

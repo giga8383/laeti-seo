@@ -42,7 +42,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
           fontFamily: 'Satoshi, sans-serif',
           fontWeight: 700,
           fontSize: '18px',
-          color: '#0f1e48',
+          color: '#1b1b5e',
           marginBottom: '14px',
         }}
       >
@@ -65,7 +65,7 @@ function SiteLink({ href, label, meta }: { href: string; label: string; meta?: s
           style={{
             fontFamily: inter.style.fontFamily,
             fontSize: '15px',
-            color: '#264d8c',
+            color: '#27279a',
             fontWeight: 500,
           }}
         >
@@ -79,7 +79,7 @@ function SiteLink({ href, label, meta }: { href: string; label: string; meta?: s
           )}
           <span
             className="opacity-0 transition-opacity group-hover:opacity-100"
-            style={{ color: '#3262ab', fontSize: '14px' }}
+            style={{ color: '#3b3fc4', fontSize: '14px' }}
           >
             →
           </span>
@@ -100,7 +100,7 @@ export default function PlanDuSitePage() {
 
           <h1 className="mb-3" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, lineHeight: '1.0', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
             <span style={{ display: 'block', fontSize: 'clamp(42px, 8vw, 80px)', color: '#ffffff' }}>Plan</span>
-            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#fceb30', textShadow: '0 0 40px rgba(252,235,48,0.35)' }}>du site</span>
+            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#ffd426', textShadow: '0 0 40px rgba(255,212,38,0.35)' }}>du site</span>
           </h1>
           <p
             className="mb-12"
@@ -111,7 +111,7 @@ export default function PlanDuSitePage() {
 
           <div
             className="rounded-2xl bg-white px-6 py-8 md:px-10 md:py-10"
-            style={{ border: '1px solid rgba(50,98,171,0.10)', boxShadow: '0 4px 24px -8px rgba(15,30,72,0.08)' }}
+            style={{ border: '1px solid rgba(59,63,196,0.10)', boxShadow: '0 4px 24px -8px rgba(27,27,94,0.08)' }}
           >
 
             <Section title="Pages principales">

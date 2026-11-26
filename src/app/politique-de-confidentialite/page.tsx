@@ -23,7 +23,7 @@ const h2Style = {
   fontFamily: 'Satoshi, sans-serif',
   fontWeight: 700,
   fontSize: '17px',
-  color: '#0f1e48',
+  color: '#1b1b5e',
   marginBottom: '12px',
   scrollMarginTop: '100px',
 };
@@ -39,11 +39,11 @@ const tableHead = {
   fontFamily: inter.style.fontFamily,
   fontWeight: 700,
   fontSize: '12px',
-  color: '#0f1e48',
+  color: '#1b1b5e',
   background: '#eef2ff',
   padding: '10px 14px',
   textAlign: 'left' as const,
-  borderBottom: '1px solid rgba(50,98,171,0.15)',
+  borderBottom: '1px solid rgba(59,63,196,0.15)',
 };
 
 const tableCell = {
@@ -51,7 +51,7 @@ const tableCell = {
   fontSize: '13px',
   color: '#3d4a6b',
   padding: '10px 14px',
-  borderBottom: '1px solid rgba(50,98,171,0.07)',
+  borderBottom: '1px solid rgba(59,63,196,0.07)',
   verticalAlign: 'top' as const,
 };
 
@@ -64,7 +64,7 @@ export default function PolitiqueConfidentialite() {
 
           <h1 className="mb-3" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, lineHeight: '1.0', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
             <span style={{ display: 'block', fontSize: 'clamp(42px, 8vw, 80px)', color: '#ffffff' }}>Cookies &amp;</span>
-            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#fceb30', textShadow: '0 0 40px rgba(252,235,48,0.35)' }}>Confidentialité</span>
+            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#ffd426', textShadow: '0 0 40px rgba(255,212,38,0.35)' }}>Confidentialité</span>
           </h1>
           <p className="mb-12" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.40)' }}>
             Dernière mise à jour : juin 2026
@@ -73,12 +73,12 @@ export default function PolitiqueConfidentialite() {
           {/* Table des matières */}
           <nav
             className="rounded-2xl mb-10 px-7 py-6"
-            style={{ background: '#eef2ff', border: '1px solid rgba(50,98,171,0.15)' }}
+            style={{ background: '#eef2ff', border: '1px solid rgba(59,63,196,0.15)' }}
             aria-label="Table des matières"
           >
             <p
               className="mb-4 uppercase tracking-widest"
-              style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '11px', color: '#3262ab' }}
+              style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '11px', color: '#3b3fc4' }}
             >
               Table des matières
             </p>
@@ -87,7 +87,7 @@ export default function PolitiqueConfidentialite() {
                 <li key={s.id}>
                   <a
                     href={`#${s.id}`}
-                    style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: '#3262ab', textDecoration: 'none' }}
+                    style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: '#3b3fc4', textDecoration: 'none' }}
                     className="hover:underline"
                   >
                     {s.label}
@@ -100,7 +100,7 @@ export default function PolitiqueConfidentialite() {
           {/* Contenu */}
           <div
             className="rounded-2xl bg-white px-8 py-10 space-y-10"
-            style={{ border: '1px solid rgba(50,98,171,0.10)', boxShadow: '0 4px 24px -8px rgba(15,30,72,0.08)' }}
+            style={{ border: '1px solid rgba(59,63,196,0.10)', boxShadow: '0 4px 24px -8px rgba(27,27,94,0.08)' }}
           >
 
             <section id="s1">
@@ -118,7 +118,7 @@ export default function PolitiqueConfidentialite() {
               <h2 style={h2Style}>2. Cookies utilisés sur ce site</h2>
               <div style={bodyStyle}>
                 <p className="mb-4">Le site laeti-seo.fr utilise deux catégories de cookies :</p>
-                <div className="overflow-hidden rounded-xl" style={{ border: '1px solid rgba(50,98,171,0.12)' }}>
+                <div className="overflow-hidden rounded-xl" style={{ border: '1px solid rgba(59,63,196,0.12)' }}>
                   <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                     <thead>
                       <tr>
@@ -163,14 +163,14 @@ export default function PolitiqueConfidentialite() {
                   L&apos;adresse IP des visiteurs est anonymisée avant toute transmission à Google. Aucune donnée
                   permettant d&apos;identifier personnellement un visiteur n&apos;est transmise.
                 </p>
-                <div className="mt-4 rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(50,98,171,0.12)' }}>
+                <div className="mt-4 rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(59,63,196,0.12)' }}>
                   <p style={{ fontSize: '13px' }}>
                     Pour en savoir plus sur la politique de confidentialité de Google :{' '}
                     <a
                       href="https://policies.google.com/privacy"
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ color: '#3262ab' }}
+                      style={{ color: '#3b3fc4' }}
                     >
                       policies.google.com/privacy
                     </a>
@@ -192,22 +192,22 @@ export default function PolitiqueConfidentialite() {
                 </p>
                 <ul className="mt-3 space-y-1" style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
                   <li>
-                    <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
+                    <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" style={{ color: '#3b3fc4' }}>
                       Google Chrome
                     </a>
                   </li>
                   <li>
-                    <a href="https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
+                    <a href="https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox" target="_blank" rel="noopener noreferrer" style={{ color: '#3b3fc4' }}>
                       Mozilla Firefox
                     </a>
                   </li>
                   <li>
-                    <a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
+                    <a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" style={{ color: '#3b3fc4' }}>
                       Safari
                     </a>
                   </li>
                   <li>
-                    <a href="https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
+                    <a href="https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" style={{ color: '#3b3fc4' }}>
                       Microsoft Edge
                     </a>
                   </li>
@@ -230,7 +230,7 @@ export default function PolitiqueConfidentialite() {
                   <p><strong>Laetitia Laghezza</strong></p>
                   <p>Auto-entrepreneur, SIRET 52276783900023</p>
                   <p>Rue du Commerce, 83910 Pourrières</p>
-                  <p><a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a></p>
+                  <p><a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3b3fc4' }}>laetitia@laeti-seo.fr</a></p>
                 </div>
               </div>
             </section>
@@ -250,9 +250,9 @@ export default function PolitiqueConfidentialite() {
                 </ul>
                 <p className="mt-3">
                   Pour exercer ces droits, contactez :{' '}
-                  <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>.
+                  <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3b3fc4' }}>laetitia@laeti-seo.fr</a>.
                   En cas de litige, vous pouvez également saisir la{' '}
-                  <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
+                  <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={{ color: '#3b3fc4' }}>
                     CNIL
                   </a>.
                 </p>
@@ -264,7 +264,7 @@ export default function PolitiqueConfidentialite() {
               <div style={bodyStyle}>
                 <p>
                   Pour toute question relative à cette politique :{' '}
-                  <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>
+                  <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3b3fc4' }}>laetitia@laeti-seo.fr</a>
                 </p>
               </div>
             </section>

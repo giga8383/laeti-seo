@@ -269,7 +269,7 @@ export default function SeoArtisansPage() {
             <ScrollReveal delay={0.05}>
               <p
                 className="mb-4 flex items-center gap-2 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.7)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.7)' }}
               >
                 <MapPin size={13} weight="bold" />
                 Guide SEO local · Artisans &amp; pros de l&apos;habitat
@@ -282,7 +282,7 @@ export default function SeoArtisansPage() {
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(36px, 5.5vw, 64px)', lineHeight: '1.08' }}
               >
                 Référencement local pour artisans :{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   soyez visible sur Google
                 </span>
               </h1>
@@ -291,7 +291,7 @@ export default function SeoArtisansPage() {
             <ScrollReveal delay={0.13}>
               <div
                 className="mb-8 max-w-[70ch] rounded-2xl p-5"
-                style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
               >
                 <p style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '25px', color: 'rgba(255,255,255,0.75)' }}>
                   Le référencement local, c&apos;est l&apos;ensemble des actions qui permettent à votre entreprise d&apos;apparaître en tête des résultats Google quand un client proche tape « plombier urgence Lyon » ou « cuisiniste Bordeaux ».
@@ -305,7 +305,7 @@ export default function SeoArtisansPage() {
               <div className="flex flex-wrap items-center gap-4 mb-12">
                 <Link
                   href="/audit-seo-local"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Demander mon audit SEO local
@@ -328,7 +328,7 @@ export default function SeoArtisansPage() {
                 className="inline-flex items-center gap-4 rounded-2xl px-5 py-4 mb-6"
                 style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)' }}
               >
-                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(252,235,48,0.5)' }}>
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(255,212,38,0.5)' }}>
                   <Image src="/laeti-1.webp" alt="Laetitia Laghezza, consultante SEO local" fill className="object-cover object-center" sizes="48px" />
                 </div>
                 <div>
@@ -344,7 +344,7 @@ export default function SeoArtisansPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-2 flex items-center gap-1 transition-opacity hover:opacity-80"
-                  style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(252,235,48,0.75)' }}
+                  style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,212,38,0.75)' }}
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   LinkedIn
@@ -369,7 +369,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 01
               </p>
               <h2 className="mb-4 max-w-[28ch] text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -389,7 +389,7 @@ export default function SeoArtisansPage() {
                     className="flex h-full flex-col rounded-[1.5rem] p-6"
                     style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)' }}
                   >
-                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '40px', lineHeight: '1', color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.4)' }}>
+                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '40px', lineHeight: '1', color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.4)' }}>
                       {s.value}
                     </p>
                     <p className="mt-3 flex-1 text-white/75" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '22px' }}>
@@ -406,7 +406,7 @@ export default function SeoArtisansPage() {
             <ScrollReveal delay={0.4}>
               <div
                 className="mt-8 rounded-2xl p-6"
-                style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
               >
                 <p style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '25px', color: 'rgba(255,255,255,0.80)' }}>
                   Si vous êtes plombier, électricien, menuisier, peintre, carreleur, cuisiniste ou décorateur,
@@ -427,7 +427,7 @@ export default function SeoArtisansPage() {
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:items-center">
               <ScrollReveal>
-                <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+                <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                   02
                 </p>
                 <h2 className="mb-6 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -445,7 +445,7 @@ export default function SeoArtisansPage() {
                     { num: '3', title: 'Notoriété',  desc: 'Avez-vous des avis, des citations, une présence en ligne cohérente et solide ?' },
                   ].map((f, i) => (
                     <div key={i} className="flex items-start gap-4 rounded-2xl p-5" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)' }}>
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg font-mono font-bold text-sm" style={{ background: 'rgba(252,235,48,0.12)', color: '#fceb30' }}>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg font-mono font-bold text-sm" style={{ background: 'rgba(255,212,38,0.12)', color: '#ffd426' }}>
                         {f.num}
                       </span>
                       <div>
@@ -471,9 +471,9 @@ export default function SeoArtisansPage() {
                     C&apos;est exactement ce que le SEO local travaille.
                   </p>
                   <div className="mt-8 h-px w-full" style={{ background: 'rgba(255,255,255,0.08)' }} />
-                  <p className="mt-6" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '20px', lineHeight: '1.35', color: 'rgba(255,255,255,0.90)', borderLeft: '2px solid rgba(252,235,48,0.55)', paddingLeft: '16px' }}>
+                  <p className="mt-6" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '20px', lineHeight: '1.35', color: 'rgba(255,255,255,0.90)', borderLeft: '2px solid rgba(255,212,38,0.55)', paddingLeft: '16px' }}>
                     Pas nécessairement meilleur.<br />
-                    <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55)' }}>Juste mieux visible.</span>
+                    <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55)' }}>Juste mieux visible.</span>
                   </p>
                 </div>
               </ScrollReveal>
@@ -489,7 +489,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 03
               </p>
               <h2 className="mb-4 max-w-[30ch] text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -506,8 +506,8 @@ export default function SeoArtisansPage() {
               {gbpChecklist.map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.06}>
                   <div className="flex h-full items-start gap-4 rounded-2xl p-5" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)' }}>
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                      <Check size={10} weight="bold" color="#fceb30" />
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.15)' }}>
+                      <Check size={10} weight="bold" color="#ffd426" />
                     </span>
                     <div>
                       <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '14px', color: '#ffffff', marginBottom: '4px' }}>{item.title}</p>
@@ -533,7 +533,7 @@ export default function SeoArtisansPage() {
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:items-start">
               <ScrollReveal>
-                <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+                <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                   04
                 </p>
                 <h2 className="mb-6 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -553,8 +553,8 @@ export default function SeoArtisansPage() {
                     'Auditez et corrigez les annuaires existants (PagesJaunes, Yelp, Houzz…)',
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                        <Check size={9} weight="bold" color="#fceb30" />
+                      <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.15)' }}>
+                        <Check size={9} weight="bold" color="#ffd426" />
                       </span>
                       <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: '24px' }}>{item}</span>
                     </div>
@@ -567,7 +567,7 @@ export default function SeoArtisansPage() {
                   className="rounded-[2rem] p-8"
                   style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.10)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.07)' }}
                 >
-                  <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
+                  <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
                   <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', color: '#ffffff', marginBottom: '12px' }}>
                     Exemple concret
                   </p>
@@ -577,9 +577,9 @@ export default function SeoArtisansPage() {
                       { label: 'PagesJaunes',   value: '« Dupont Plomberie & Chauffage »',        bad: true },
                       { label: 'Fiche GBP',     value: '« Dupont Jean-Pierre »',                  bad: true },
                     ].map((row, i) => (
-                      <div key={i} className="flex items-center gap-3 rounded-xl px-4 py-3" style={{ background: row.bad ? 'rgba(255,80,80,0.07)' : 'rgba(252,235,48,0.07)', border: `1px solid ${row.bad ? 'rgba(255,80,80,0.20)' : 'rgba(252,235,48,0.20)'}` }}>
+                      <div key={i} className="flex items-center gap-3 rounded-xl px-4 py-3" style={{ background: row.bad ? 'rgba(255,80,80,0.07)' : 'rgba(255,212,38,0.07)', border: `1px solid ${row.bad ? 'rgba(255,80,80,0.20)' : 'rgba(255,212,38,0.20)'}` }}>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)', width: '80px', flexShrink: 0 }}>{row.label}</span>
-                        <span style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 600, fontSize: '13px', color: row.bad ? 'rgba(255,140,140,0.85)' : 'rgba(252,235,48,0.85)' }}>{row.value}</span>
+                        <span style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 600, fontSize: '13px', color: row.bad ? 'rgba(255,140,140,0.85)' : 'rgba(255,212,38,0.85)' }}>{row.value}</span>
                       </div>
                     ))}
                   </div>
@@ -600,7 +600,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 05
               </p>
               <h2 className="mb-4 max-w-[28ch] text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -620,7 +620,7 @@ export default function SeoArtisansPage() {
                     { stat: '85 %', txt: 'des utilisateurs accordent autant de crédit aux avis en ligne qu\'aux recommandations personnelles' },
                   ].map((s, i) => (
                     <div key={i} className="flex items-start gap-5 rounded-2xl p-5" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)' }}>
-                      <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '32px', lineHeight: '1', color: '#fceb30', flexShrink: 0 }}>{s.stat}</p>
+                      <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '32px', lineHeight: '1', color: '#ffd426', flexShrink: 0 }}>{s.stat}</p>
                       <p style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '22px', color: 'rgba(255,255,255,0.65)' }}>{s.txt}</p>
                     </div>
                   ))}
@@ -629,8 +629,8 @@ export default function SeoArtisansPage() {
               </ScrollReveal>
 
               <ScrollReveal delay={0.15}>
-                <div className="rounded-[2rem] p-8" style={{ background: 'linear-gradient(145deg, #2a57b8 0%, #3262ab 55%, #1d3f8f 100%)', boxShadow: '0 30px 60px -15px rgba(50,98,171,0.45)' }}>
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#fceb30' }} />
+                <div className="rounded-[2rem] p-8" style={{ background: 'linear-gradient(145deg, #3b3fc4 0%, #27279a 55%, #1b1b5e 100%)', boxShadow: '0 30px 60px -15px rgba(59,63,196,0.45)' }}>
+                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#ffd426' }} />
                   <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '17px', color: '#ffffff', marginBottom: '20px' }}>
                     Comment obtenir plus d&apos;avis (légalement)
                   </p>
@@ -642,13 +642,13 @@ export default function SeoArtisansPage() {
                       'Répondez à tous les avis, positifs comme négatifs, dans les 48 heures',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-mono font-bold text-xs" style={{ background: 'rgba(252,235,48,0.20)', color: '#fceb30' }}>{i + 1}</span>
+                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-mono font-bold text-xs" style={{ background: 'rgba(255,212,38,0.20)', color: '#ffd426' }}>{i + 1}</span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '23px', color: 'rgba(255,255,255,0.80)' }}>{item}</span>
                       </li>
                     ))}
                   </ol>
                   <div className="mt-6 flex items-start gap-3 rounded-xl p-4" style={{ background: 'rgba(0,0,0,0.20)' }}>
-                    <Warning size={16} weight="fill" color="rgba(252,235,48,0.7)" className="mt-0.5 shrink-0" />
+                    <Warning size={16} weight="fill" color="rgba(255,212,38,0.7)" className="mt-0.5 shrink-0" />
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', lineHeight: '21px', color: 'rgba(255,255,255,0.60)' }}>
                       Ne jamais acheter des avis ni demander à des proches d&apos;en laisser sans avoir utilisé vos services. Google détecte ces pratiques.
                     </p>
@@ -667,7 +667,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 06
               </p>
               <h2 className="mb-4 max-w-[28ch] text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -709,7 +709,7 @@ export default function SeoArtisansPage() {
               ].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.07}>
                   <div className="h-full rounded-[1.5rem] p-6" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)' }}>
-                    <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
+                    <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
                     <h3 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', color: '#ffffff', marginBottom: '8px', lineHeight: '1.3' }}>{item.title}</h3>
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '23px', color: 'rgba(255,255,255,0.55)' }}>{item.desc}</p>
                   </div>
@@ -728,7 +728,7 @@ export default function SeoArtisansPage() {
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:items-start">
               <ScrollReveal>
-                <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+                <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                   07
                 </p>
                 <h2 className="mb-6 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -739,7 +739,7 @@ export default function SeoArtisansPage() {
                   chambre des métiers, blog local, presse régionale. Chaque citation cohérente renforce
                   la confiance de Google dans votre existence et votre localisation.
                 </p>
-                <div className="rounded-2xl p-5" style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}>
+                <div className="rounded-2xl p-5" style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}>
                   <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', color: '#ffffff', marginBottom: '8px' }}>
                     Règle d&apos;or
                   </p>
@@ -762,7 +762,7 @@ export default function SeoArtisansPage() {
                       </div>
                       <div className="flex gap-0.5">
                         {Array.from({ length: 5 }).map((_, s) => (
-                          <Star key={s} size={12} weight={s < c.stars ? 'fill' : 'regular'} color={s < c.stars ? '#fceb30' : 'rgba(255,255,255,0.15)'} />
+                          <Star key={s} size={12} weight={s < c.stars ? 'fill' : 'regular'} color={s < c.stars ? '#ffd426' : 'rgba(255,255,255,0.15)'} />
                         ))}
                       </div>
                     </div>
@@ -781,7 +781,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 08
               </p>
               <h2 className="mb-12 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -792,10 +792,10 @@ export default function SeoArtisansPage() {
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-16">
               <ScrollReveal delay={0.1}>
-                <div className="h-full rounded-[2rem] p-10" style={{ background: 'linear-gradient(145deg, #2a57b8 0%, #3262ab 55%, #1d3f8f 100%)', boxShadow: '0 30px 60px -15px rgba(50,98,171,0.45)' }}>
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#fceb30' }} />
+                <div className="h-full rounded-[2rem] p-10" style={{ background: 'linear-gradient(145deg, #3b3fc4 0%, #27279a 55%, #1b1b5e 100%)', boxShadow: '0 30px 60px -15px rgba(59,63,196,0.45)' }}>
+                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#ffd426' }} />
                   <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#ffffff' }}>
-                    Particulièrement efficace <span style={{ color: '#fceb30' }}>pour</span>
+                    Particulièrement efficace <span style={{ color: '#ffd426' }}>pour</span>
                   </h3>
                   <ul className="space-y-4">
                     {[
@@ -806,8 +806,8 @@ export default function SeoArtisansPage() {
                       'Les entreprises qui reçoivent des demandes urgentes (dépannage, urgence)',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.20)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.20)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '23px', color: 'rgba(255,255,255,0.85)' }}>{item}</span>
                       </li>
@@ -848,15 +848,15 @@ export default function SeoArtisansPage() {
                 style={{ background: 'linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)', border: '1px solid rgba(255,255,255,0.10)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.07)' }}
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(252,235,48,0.4)' }}>
+                  <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(255,212,38,0.4)' }}>
                     <Image src="/laeti-1.webp" alt="Laetitia Laghezza" fill className="object-cover object-center" sizes="40px" />
                   </div>
                   <div>
                     <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '13px', color: '#ffffff' }}>Laetitia Laghezza</p>
-                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '11px', color: 'rgba(252,235,48,0.65)', marginTop: '1px', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Mon avis</p>
+                    <p style={{ fontFamily: inter.style.fontFamily, fontSize: '11px', color: 'rgba(255,212,38,0.65)', marginTop: '1px', textTransform: 'uppercase', letterSpacing: '0.07em' }}>Mon avis</p>
                   </div>
                 </div>
-                <Quotes size={28} weight="fill" color="rgba(252,235,48,0.4)" className="mb-5" />
+                <Quotes size={28} weight="fill" color="rgba(255,212,38,0.4)" className="mb-5" />
                 <blockquote className="text-white/80" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '1.6' }}>
                   Je refuse régulièrement des clients, et c&apos;est l&apos;une des meilleures décisions que j&apos;aie prises.
                   Quand quelqu&apos;un me contacte en espérant dépasser ses concurrents en 15 jours ou remonter en 1re position
@@ -880,7 +880,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 font-mono font-bold uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 09
               </p>
               <h2 className="mb-4 max-w-[28ch] text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15' }}>
@@ -902,7 +902,7 @@ export default function SeoArtisansPage() {
               ].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.06}>
                   <div className="h-full rounded-[1.5rem] p-7" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)' }}>
-                    <div className="mb-4 flex h-8 w-8 items-center justify-center rounded-lg font-mono font-bold text-sm" style={{ background: 'rgba(252,235,48,0.12)', border: '1px solid rgba(252,235,48,0.25)', color: '#fceb30' }}>
+                    <div className="mb-4 flex h-8 w-8 items-center justify-center rounded-lg font-mono font-bold text-sm" style={{ background: 'rgba(255,212,38,0.12)', border: '1px solid rgba(255,212,38,0.25)', color: '#ffd426' }}>
                       {item.num}
                     </div>
                     <h3 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', color: '#ffffff', marginBottom: '8px', lineHeight: '1.3' }}>{item.title}</h3>
@@ -930,7 +930,7 @@ export default function SeoArtisansPage() {
 
             {/* Expert Q&A */}
             <ScrollReveal>
-              <p className="mb-10 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-10 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 Questions terrain
               </p>
             </ScrollReveal>
@@ -942,7 +942,7 @@ export default function SeoArtisansPage() {
                       &ldquo;{item.q}&rdquo;
                     </p>
                     <div className="flex items-start gap-4">
-                      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(252,235,48,0.35)' }}>
+                      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full" style={{ border: '2px solid rgba(255,212,38,0.35)' }}>
                         <Image src="/laeti-1.webp" alt="Laetitia Laghezza" fill className="object-cover object-center" sizes="36px" />
                       </div>
                       <p className="text-white/80" style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '26px' }}>
@@ -964,7 +964,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-4xl px-6 py-20 md:py-28">
             <ScrollReveal>
-              <p className="mb-4 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 Questions fréquentes
               </p>
               <h2 className="mb-14 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(26px, 3.5vw, 42px)', lineHeight: '1.15' }}>
@@ -996,7 +996,7 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-20 md:py-24">
             <ScrollReveal>
-              <p className="mb-4 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 Sources
               </p>
               <h2 className="mb-12 max-w-[26ch] text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(24px, 3vw, 38px)', lineHeight: '1.2' }}>
@@ -1014,7 +1014,7 @@ export default function SeoArtisansPage() {
                     style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)' }}
                   >
                     <div className="mb-4 flex items-center justify-between">
-                      <span className="h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
+                      <span className="h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
                       <ArrowSquareOut size={18} weight="bold" color="rgba(255,255,255,0.35)" />
                     </div>
                     <h3 className="mb-3 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', lineHeight: '1.3' }}>{s.title}</h3>
@@ -1034,12 +1034,12 @@ export default function SeoArtisansPage() {
         <section className="relative bg-transparent">
           <div className="mx-auto max-w-7xl px-6 py-24 text-center md:py-32">
             <ScrollReveal>
-              <p className="mb-4 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}>
+              <p className="mb-4 uppercase tracking-widest" style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}>
                 Prochaine étape
               </p>
               <h2 className="mb-6 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: '1.1' }}>
                 Vos clients cherchent déjà.{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   Est-ce que c&apos;est vous qu&apos;ils trouvent ?
                 </span>
               </h2>
@@ -1050,7 +1050,7 @@ export default function SeoArtisansPage() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/audit-seo-local"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-8 py-4 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Demander mon audit SEO local · 790 €

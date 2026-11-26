@@ -162,21 +162,21 @@ const yellowLabel = {
   fontSize: '22px',
   lineHeight: '28px',
   textTransform: 'uppercase',
-  color: '#fceb30',
-  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+  color: '#ffd426',
+  textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
 } as const;
 
 const blueLabel = {
   ...yellowLabel,
-  color: '#2355b6',
-  textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
+  color: '#3b3fc4',
+  textShadow: '0 0 12px rgba(59,63,196,0.6), 0 0 28px rgba(59,63,196,0.35), 0 0 56px rgba(59,63,196,0.15)',
 } as const;
 
 const h2 = { fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' } as const;
 const h3 = { fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px', lineHeight: '1.25' } as const;
 const body = { fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' } as const;
 
-const extLink = 'underline underline-offset-4 text-[#fceb30] hover:brightness-110';
+const extLink = 'underline underline-offset-4 text-[#ffd426] hover:brightness-110';
 
 function Block({ title, children, delay = 0 }: { title: string; children: ReactNode; delay?: number }) {
   return (
@@ -214,7 +214,7 @@ export default function ConsultanteSeoFreelancePage() {
                   }}
                 >
                   Consultante SEO freelance{' '}
-                  <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                  <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                     pour les pros de l&apos;habitat
                   </span>
                 </h1>
@@ -233,8 +233,8 @@ export default function ConsultanteSeoFreelancePage() {
                     href={CALENDLY}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-[#fceb30] px-7 py-3.5 text-[#264d8c] active:scale-[0.98]"
-                    style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '24px', boxShadow: '0 0 20px -4px rgba(252,235,48,0.5), 0 0 48px -8px rgba(252,235,48,0.25)' }}
+                    className="rounded-full bg-[#ffd426] px-7 py-3.5 text-[#1b1b5e] active:scale-[0.98]"
+                    style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '24px', boxShadow: '0 0 20px -4px rgba(255,212,38,0.5), 0 0 48px -8px rgba(255,212,38,0.25)' }}
                     strength={0.3}
                   >
                     Faire le point sur ma visibilité
@@ -261,18 +261,18 @@ export default function ConsultanteSeoFreelancePage() {
                     aspectRatio: '4 / 4.7',
                     borderRadius: '90px 12px 12px 12px',
                     border: '1px solid rgba(255,255,255,0.3)',
-                    background: '#24477d',
-                    boxShadow: '0 24px 64px -16px rgba(0,0,0,0.45), 0 0 48px -8px rgba(252,235,48,0.18)',
+                    background: '#27279a',
+                    boxShadow: '0 24px 64px -16px rgba(0,0,0,0.45), 0 0 48px -8px rgba(255,212,38,0.18)',
                   }}
                 >
                   <Image
-                    src="/laeti-3.webp"
+                    src="/laeti-3-indigo.webp"
                     alt="Laetitia Laghezza, consultante SEO freelance"
                     fill
                     priority
                     sizes="350px"
                     className="object-cover"
-                    style={{ objectPosition: '50% 20%', filter: 'saturate(1.2) hue-rotate(18deg)' }}
+                    style={{ objectPosition: '50% 20%' }}
                   />
                 </div>
                 <figcaption className="pt-4" style={{ fontFamily: inter.style.fontFamily }}>
@@ -292,9 +292,9 @@ export default function ConsultanteSeoFreelancePage() {
             </ScrollReveal>
             <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {enBref.map((item, i) => (
-                <ScrollReveal key={item} delay={0.05 + i * 0.06} as="li" className="flex items-start gap-4 rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] px-6 py-5">
-                    <span className="mt-0.5 font-bold text-[#2355b6]" aria-hidden="true">✓</span>
-                    <span className="text-[#264d8c]" style={{ ...body, fontSize: '17px' }}>{item}</span>
+                <ScrollReveal key={item} delay={0.05 + i * 0.06} as="li" className="flex items-start gap-4 rounded-[1.25rem] border border-[#27279a]/10 bg-[#f2f5fb] px-6 py-5">
+                    <span className="mt-0.5 font-bold text-[#3b3fc4]" aria-hidden="true">✓</span>
+                    <span className="text-[#27279a]" style={{ ...body, fontSize: '17px' }}>{item}</span>
                 </ScrollReveal>
               ))}
             </ul>
@@ -320,7 +320,7 @@ export default function ConsultanteSeoFreelancePage() {
             <ol className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {reasons.map((r, i) => (
                 <ScrollReveal key={r.title} delay={0.06 + i * 0.07} as="li" className="h-full h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
-                    <p className="mb-3 text-[#fceb30]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
+                    <p className="mb-3 text-[#ffd426]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
                       0{i + 1}
                     </p>
                     <h3 className="mb-3 text-white" style={{ ...h3, fontSize: '22px' }}>{r.title}</h3>
@@ -441,12 +441,12 @@ export default function ConsultanteSeoFreelancePage() {
             <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[1fr_1.2fr] md:gap-20">
               <ScrollReveal>
                 <p className="mb-4" style={blueLabel}>Le diagnostic</p>
-                <h2 className="max-w-[18ch] text-[#264d8c]" style={h2}>
+                <h2 className="max-w-[18ch] text-[#27279a]" style={h2}>
                   Ce que vous recevez le jour du diagnostic
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
-                <div className="space-y-5 text-[#264d8c]/80" style={{ ...body, fontSize: '17px', lineHeight: '28px' }}>
+                <div className="space-y-5 text-[#27279a]/80" style={{ ...body, fontSize: '17px', lineHeight: '28px' }}>
                   <p>
                     Pas un rapport de 90 pages. Un document de travail, en 5 jours ouvrés : votre position réelle sur vos requêtes
                     métier, ce qui bloque, les correctifs par ordre de priorité, et les expressions que vos clients tapent vraiment. Le
@@ -454,9 +454,9 @@ export default function ConsultanteSeoFreelancePage() {
                   </p>
                   <p>
                     Le périmètre complet est sur la{' '}
-                    <Link href="/offre" className="font-semibold text-[#2355b6] underline underline-offset-4">page Offre</Link>.
+                    <Link href="/offre" className="font-semibold text-[#3b3fc4] underline underline-offset-4">page Offre</Link>.
                     La méthode détaillée de l&apos;analyse est décrite sur la page{' '}
-                    <Link href="/audit-seo-local" className="font-semibold text-[#2355b6] underline underline-offset-4">audit SEO local</Link>.
+                    <Link href="/audit-seo-local" className="font-semibold text-[#3b3fc4] underline underline-offset-4">audit SEO local</Link>.
                   </p>
                 </div>
               </ScrollReveal>

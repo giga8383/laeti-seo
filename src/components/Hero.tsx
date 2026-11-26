@@ -1,117 +1,91 @@
 import Image from 'next/image';
 import HeroContent from './HeroContent';
+import HeroRoom from './HeroRoom';
 import { inter } from '@/lib/fonts';
 
-function BlueprintHouse() {
+/* Halos de lumière doux derrière la pièce : 100 % CSS. */
+function Halos() {
+  return (
+    <div className="hero-halos pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      <span className="hh hh-a" />
+      <span className="hh hh-b" />
+      <style>{`
+        .hero-halos .hh { position: absolute; display: block; border-radius: 50%; will-change: transform; }
+        .hh-a { top: -12%; right: -8%; width: 46vw; height: 46vw; max-width: 640px; max-height: 640px;
+                background: radial-gradient(circle at 35% 35%, rgba(255,212,38,0.26), rgba(255,212,38,0) 68%);
+                filter: blur(30px); animation: hh-float-a 14s ease-in-out infinite; }
+        .hh-b { bottom: -18%; left: -10%; width: 52vw; height: 52vw; max-width: 720px; max-height: 720px;
+                background: radial-gradient(circle at 60% 40%, rgba(59,63,196,0.40), rgba(59,63,196,0) 68%);
+                filter: blur(36px); animation: hh-float-b 18s ease-in-out infinite; }
+        @keyframes hh-float-a { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(-30px,40px,0); } }
+        @keyframes hh-float-b { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(50px,-30px,0); } }
+        @media (prefers-reduced-motion: reduce) { .hero-halos .hh { animation: none !important; } }
+      `}</style>
+    </div>
+  );
+}
+
+/* Bandeau fin et sobre : filets, texte espacé, défilement très lent. 100 % CSS. */
+const bandWords = [
+  'Fiche Google',
+  'Décorateurs d’intérieur',
+  'SEO local',
+  'Avis clients',
+  'Architectes d’intérieur',
+  'Visibilité',
+  'Appels entrants',
+  'Artisans de l’habitat',
+  'Résultats concrets',
+];
+
+function HeroBand() {
+  return (
+    <div className="hero-band relative z-10" aria-hidden="true">
+      <div className="hero-band-track">
+        {[0, 1].map((k) => (
+          <ul key={k} className="hero-band-list">
+            {[...bandWords, ...bandWords].map((w, i) => (
+              <li key={`${k}-${i}`}>
+                <span>{w}</span>
+                <i />
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
+      <style>{`
+        .hero-band { overflow: hidden; border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14);
+                     background: rgba(14,14,64,0.35); backdrop-filter: blur(8px);
+                     -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+                     mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+        .hero-band-track { display: flex; width: max-content; animation: hero-band-move 70s linear infinite; }
+        .hero-band-list { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; }
+        .hero-band-list li { display: flex; align-items: center; gap: 40px; padding: 18px 0 18px 40px;
+                             font-family: Inter, "Inter Fallback", sans-serif; font-weight: 500; text-transform: uppercase;
+                             font-size: 12px; letter-spacing: 0.28em; color: rgba(255,255,255,0.72); white-space: nowrap; }
+        .hero-band-list i { display: block; width: 6px; height: 6px; background: #ffd426; transform: rotate(45deg); }
+        @keyframes hero-band-move { to { transform: translateX(-50%); } }
+        @media (prefers-reduced-motion: reduce) { .hero-band-track { animation: none; } }
+      `}</style>
+    </div>
+  );
+}
+
+/* Pastilles flottantes autour de la photo (chiffres déjà présents sur la page). */
+function Chip({ children, style }: { children: React.ReactNode; style: React.CSSProperties }) {
   return (
     <div
-      className="pointer-events-none absolute inset-0 flex items-center justify-end overflow-hidden"
-      aria-hidden="true"
+      className="hero-chip absolute whitespace-nowrap rounded-2xl px-4 py-2.5"
+      style={{
+        fontFamily: inter.style.fontFamily,
+        background: 'rgba(22,22,88,0.82)',
+        border: '1px solid rgba(255,255,255,0.22)',
+        backdropFilter: 'blur(10px)',
+        boxShadow: '0 14px 32px -10px rgba(0,0,0,0.5)',
+        ...style,
+      }}
     >
-      <svg
-        viewBox="0 0 720 520"
-        fill="none"
-        stroke="white"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-[72%] max-w-[820px] translate-x-16 translate-y-8 opacity-[0.07]"
-      >
-        {/* ── construction / dimension lines ── */}
-        <line x1="0"   y1="472" x2="720" y2="472" strokeWidth="0.6" strokeDasharray="5 4" />
-        <line x1="48"  y1="220" x2="48"  y2="480" strokeWidth="0.5" />
-        <line x1="155" y1="220" x2="38"  y2="220" strokeWidth="0.5" strokeDasharray="5 3" />
-        <line x1="155" y1="472" x2="38"  y2="472" strokeWidth="0.5" strokeDasharray="5 3" />
-        <line x1="43"  y1="220" x2="53"  y2="220" strokeWidth="0.8" />
-        <line x1="43"  y1="472" x2="53"  y2="472" strokeWidth="0.8" />
-
-        <line x1="590" y1="220" x2="650" y2="220" strokeWidth="0.5" strokeDasharray="5 3" />
-        <line x1="590" y1="472" x2="650" y2="472" strokeWidth="0.5" strokeDasharray="5 3" />
-        <line x1="640" y1="212" x2="640" y2="480" strokeWidth="0.5" />
-        <line x1="635" y1="220" x2="645" y2="220" strokeWidth="0.8" />
-        <line x1="635" y1="472" x2="645" y2="472" strokeWidth="0.8" />
-
-        <line x1="370" y1="82"  x2="700" y2="82"  strokeWidth="0.5" strokeDasharray="5 3" />
-        <line x1="690" y1="72"  x2="690" y2="482" strokeWidth="0.5" />
-        <line x1="685" y1="82"  x2="695" y2="82"  strokeWidth="0.8" />
-        <line x1="685" y1="472" x2="695" y2="472" strokeWidth="0.8" />
-
-        {/* ── left wing body ── */}
-        <rect x="58"  y="292" width="148" height="180" strokeWidth="1.3" />
-        <polyline points="38,292 132,188 226,292" strokeWidth="1.3" />
-        <rect x="98"  y="196" width="24" height="64" strokeWidth="1" />
-        <rect x="94"  y="190" width="32" height="9"  strokeWidth="1" />
-        <rect x="80"  y="326" width="58" height="52" strokeWidth="1" />
-        <line x1="109" y1="326" x2="109" y2="378" strokeWidth="0.9" />
-        <line x1="80"  y1="352" x2="138" y2="352" strokeWidth="0.9" />
-        <rect x="148" y="375" width="42" height="97" strokeWidth="1" />
-        <line x1="169" y1="375" x2="169" y2="472" strokeWidth="0.8" />
-        <circle cx="183" cy="422" r="3.5" strokeWidth="0.9" />
-
-        {/* ── main house body ── */}
-        <rect x="188" y="222" width="402" height="250" strokeWidth="1.5" />
-        <polyline points="162,222 389,82 616,222" strokeWidth="1.5" />
-        <line x1="389" y1="82" x2="389" y2="145" strokeWidth="0.7" strokeDasharray="4 3" />
-        <rect x="272" y="96"  width="30" height="98" strokeWidth="1.1" />
-        <rect x="268" y="90"  width="38" height="10" strokeWidth="1" />
-
-        {/* ── upper windows ── */}
-        <rect x="210" y="252" width="72" height="68" strokeWidth="1" />
-        <line x1="246" y1="252" x2="246" y2="320" strokeWidth="0.9" />
-        <line x1="210" y1="286" x2="282" y2="286" strokeWidth="0.9" />
-        <line x1="246" y1="269" x2="282" y2="269" strokeWidth="0.6" />
-        <line x1="210" y1="269" x2="246" y2="269" strokeWidth="0.6" />
-        <line x1="246" y1="303" x2="282" y2="303" strokeWidth="0.6" />
-        <line x1="210" y1="303" x2="246" y2="303" strokeWidth="0.6" />
-
-        <rect x="506" y="252" width="72" height="68" strokeWidth="1" />
-        <line x1="542" y1="252" x2="542" y2="320" strokeWidth="0.9" />
-        <line x1="506" y1="286" x2="578" y2="286" strokeWidth="0.9" />
-        <line x1="506" y1="269" x2="542" y2="269" strokeWidth="0.6" />
-        <line x1="542" y1="269" x2="578" y2="269" strokeWidth="0.6" />
-        <line x1="506" y1="303" x2="542" y2="303" strokeWidth="0.6" />
-        <line x1="542" y1="303" x2="578" y2="303" strokeWidth="0.6" />
-
-        {/* ── front door ── */}
-        <rect x="346" y="346" width="86" height="126" strokeWidth="1.2" />
-        <path  d="M346,346 Q389,308 432,346" strokeWidth="1" />
-        <line  x1="389" y1="346" x2="389" y2="472" strokeWidth="0.9" />
-        <circle cx="420" cy="408" r="4" strokeWidth="0.9" />
-        <rect x="352" y="354" width="33" height="46" strokeWidth="0.6" />
-        <rect x="393" y="354" width="33" height="46" strokeWidth="0.6" />
-        <rect x="352" y="408" width="33" height="30" strokeWidth="0.6" />
-        <rect x="393" y="408" width="33" height="30" strokeWidth="0.6" />
-
-        {/* ── lower windows ── */}
-        <rect x="214" y="348" width="78" height="68" strokeWidth="1" />
-        <line x1="253" y1="348" x2="253" y2="416" strokeWidth="0.9" />
-        <line x1="214" y1="382" x2="292" y2="382" strokeWidth="0.9" />
-
-        <rect x="496" y="348" width="78" height="68" strokeWidth="1" />
-        <line x1="535" y1="348" x2="535" y2="416" strokeWidth="0.9" />
-        <line x1="496" y1="382" x2="574" y2="382" strokeWidth="0.9" />
-
-        {/* ── attic window ── */}
-        <rect x="360" y="154" width="58" height="44" strokeWidth="0.9" />
-        <line x1="389" y1="154" x2="389" y2="198" strokeWidth="0.7" />
-        <line x1="360" y1="176" x2="418" y2="176" strokeWidth="0.7" />
-
-        {/* ── antenna ── */}
-        <line x1="520" y1="154" x2="520" y2="105" strokeWidth="0.8" />
-        <line x1="504" y1="108" x2="536" y2="108" strokeWidth="0.8" />
-        <line x1="504" y1="111" x2="504" y2="116" strokeWidth="0.8" />
-        <line x1="520" y1="109" x2="520" y2="116" strokeWidth="0.8" />
-        <line x1="536" y1="111" x2="536" y2="116" strokeWidth="0.8" />
-
-        {/* ── ground & steps ── */}
-        <line x1="0" y1="472" x2="720" y2="472" strokeWidth="1.2" />
-        <rect x="334" y="468" width="110" height="6"  strokeWidth="0.8" />
-        <rect x="326" y="474" width="126" height="6"  strokeWidth="0.8" />
-
-        {/* ── fascia ── */}
-        <line x1="162" y1="222" x2="616" y2="222" strokeWidth="0.7" strokeDasharray="3 3" />
-        <line x1="38"  y1="292" x2="226" y2="292" strokeWidth="0.7" strokeDasharray="3 3" />
-      </svg>
+      {children}
     </div>
   );
 }
@@ -119,40 +93,67 @@ function BlueprintHouse() {
 export default function Hero() {
   return (
     <section className="relative bg-transparent overflow-hidden">
-      <BlueprintHouse />
-      <div className="mx-auto grid min-h-[100dvh] max-w-6xl grid-cols-1 content-start items-center gap-12 px-6 pt-28 pb-16 md:content-center md:pt-40 md:pb-24 lg:grid-cols-[1.45fr_0.85fr] lg:gap-16">
+      <Halos />
+      {/* Mobile / tablette : la pièce reste en fond discret derrière le texte */}
+      <HeroRoom className="absolute -right-[10%] top-[8%] w-[92%] opacity-[0.22] sm:w-[70%] lg:hidden" />
+      <div className="relative mx-auto grid min-h-[calc(100dvh-72px)] max-w-7xl grid-cols-1 content-start items-center gap-12 px-6 pt-28 pb-10 md:content-center md:pt-36 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
         <HeroContent />
-        <figure className="relative hidden w-full max-w-[350px] justify-self-end lg:block">
-          <div
-            className="relative overflow-hidden"
-            style={{
-              aspectRatio: '1 / 1.08',
-              borderRadius: '90px 12px 12px 12px',
-              border: '1px solid rgba(255,255,255,0.3)',
-              background: '#ffeb26',
-              boxShadow: '0 24px 64px -16px rgba(0,0,0,0.45), 0 0 48px -8px rgba(252,235,48,0.18)',
-            }}
-          >
-            <Image
-              src="/laeti-hero.webp"
-              alt="Laetitia Laghezza, consultante SEO local pour les professionnels de l'habitat"
-              fill
-              priority
-              sizes="350px"
-              className="object-cover"
-              style={{ objectPosition: '50% 30%' }}
-            />
-          </div>
-          <figcaption className="pt-4">
-            <strong className="block text-white" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', fontWeight: 600 }}>
-              Laetitia Laghezza
-            </strong>
-            <span className="block text-white/60" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}>
-              Consultante SEO local
-            </span>
-          </figcaption>
-        </figure>
+
+        {/* Bureau : la pièce se meuble, ton portrait est posé devant */}
+        <div className="relative hidden w-full max-w-[700px] justify-self-end pb-[150px] lg:block">
+          <HeroRoom className="w-full" />
+
+          <figure className="absolute bottom-0 right-3 m-0 flex w-[190px] flex-col items-center">
+            <div
+              className="relative overflow-hidden rounded-full"
+              style={{
+                width: '190px',
+                height: '190px',
+                border: '4px solid #ffd426',
+                background: '#ffd426',
+                boxShadow: '0 0 0 8px rgba(255,212,38,0.18), 0 26px 50px -14px rgba(0,0,0,0.6)',
+              }}
+            >
+              <Image
+                src="/laeti-hero.webp"
+                alt="Laetitia Laghezza, consultante SEO local pour les professionnels de l'habitat"
+                fill
+                priority
+                sizes="190px"
+                className="object-cover"
+                style={{ objectPosition: '50% 22%' }}
+              />
+            </div>
+            <figcaption className="pt-3 text-center">
+              <strong className="block text-white" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', fontWeight: 700 }}>
+                Laetitia Laghezza
+              </strong>
+              <span className="block text-white/65" style={{ fontFamily: inter.style.fontFamily, fontSize: '13px' }}>
+                Consultante SEO local
+              </span>
+            </figcaption>
+          </figure>
+
+          <Chip style={{ bottom: '262px', right: '4px', animation: 'chip-bob 6s ease-in-out infinite' }}>
+            <strong className="block text-[22px] font-extrabold leading-none text-[#ffd426]">5 jours</strong>
+            <span className="text-[12px] text-white/75">diagnostic livré</span>
+          </Chip>
+          <Chip style={{ bottom: '120px', right: '222px', animation: 'chip-bob 7s ease-in-out -2s infinite' }}>
+            <strong className="block text-[22px] font-extrabold leading-none text-[#ffd426]">12 ans</strong>
+            <span className="text-[12px] text-white/75">de métier</span>
+          </Chip>
+          <Chip style={{ bottom: '48px', right: '222px', animation: 'chip-bob 8s ease-in-out -4s infinite' }}>
+            <strong className="block text-[22px] font-extrabold leading-none text-[#ffd426]">★ 5/5</strong>
+            <span className="text-[12px] text-white/75">avis Google</span>
+          </Chip>
+
+          <style>{`
+            @keyframes chip-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+            @media (prefers-reduced-motion: reduce) { .hero-chip { animation: none !important; } }
+          `}</style>
+        </div>
       </div>
+      <HeroBand />
     </section>
   );
 }

@@ -48,7 +48,7 @@ export default function OffrePage() {
                     }}
                   >
                     Comprendre ce qui bloque.<br />
-                    <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>Puis corriger.</span>
+                    <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>Puis corriger.</span>
                   </h1>
                 </ScrollReveal>
                 <ScrollReveal delay={0.14}>
@@ -122,7 +122,7 @@ export default function OffrePage() {
 
         {/* -- CTA final -- */}
         <FinalCTA
-          heading={<>Vous avez les réponses.<br /><span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>Il reste une décision.</span></>}
+          heading={<>Vous avez les réponses.<br /><span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>Il reste une décision.</span></>}
           body={
             <>
               <p className="mx-auto mt-6 max-w-[50ch] text-base leading-relaxed text-white/65" style={{ fontFamily: 'Inter, "Inter Fallback"' }}>

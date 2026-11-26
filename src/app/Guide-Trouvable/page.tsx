@@ -28,7 +28,7 @@ export default function GuideTrouvable() {
   return (
     <>
       <Navbar />
-      <main style={{ background: 'linear-gradient(165deg, #0c1a40 0%, #112258 55%, #0f1e48 100%)', minHeight: '100vh' }}>
+      <main style={{ background: 'linear-gradient(165deg, #23237f 0%, #1b1b5e 55%, #14144a 100%)', minHeight: '100vh' }}>
 
         {/* Hero */}
         <section style={{ paddingTop: '120px' }}>
@@ -51,8 +51,8 @@ export default function GuideTrouvable() {
                 fontFamily: inter.style.fontFamily,
                 fontWeight: 600,
                 fontSize: '12px',
-                color: '#fceb30',
-                textShadow: '0 0 12px rgba(252,235,48,0.6)',
+                color: '#ffd426',
+                textShadow: '0 0 12px rgba(255,212,38,0.6)',
               }}
             >
               Guide offert
@@ -69,7 +69,7 @@ export default function GuideTrouvable() {
               }}
             >
               TROUVABLE{' '}
-              <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.45)' }}>
+              <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.45)' }}>
                 Le guide SEO local
               </span>
             </h1>
@@ -87,7 +87,7 @@ export default function GuideTrouvable() {
               href="https://tally.so/r/rjq8K5"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all hover:brightness-105 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3.5 font-bold text-[#1b1b5e] transition-all hover:brightness-105 active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', textDecoration: 'none' }}
             >
               <ArrowDown size={15} weight="bold" />
@@ -114,7 +114,7 @@ export default function GuideTrouvable() {
             </h2>
             <Link
               href="/audit-seo-local"
-              className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all hover:brightness-105 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3.5 font-bold text-[#1b1b5e] transition-all hover:brightness-105 active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
             >
               Découvrir l&apos;audit SEO local · 790 €

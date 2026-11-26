@@ -17,6 +17,24 @@ const offreItems = [
   { label: 'Sprint local 3 mois', sub: 'Accompagnement complet', href: '/offre' },
 ];
 
+/* Convertit n'importe quelle couleur CSS (rgb, oklab, lab…) en [r, g, b, alpha]. */
+let colorCtx: CanvasRenderingContext2D | null = null;
+function toRgba(css: string): [number, number, number, number] | null {
+  if (!css) return null;
+  if (!colorCtx) {
+    const c = document.createElement('canvas');
+    c.width = c.height = 1;
+    colorCtx = c.getContext('2d', { willReadFrequently: true });
+  }
+  if (!colorCtx) return null;
+  colorCtx.clearRect(0, 0, 1, 1);
+  colorCtx.fillStyle = '#000';
+  colorCtx.fillStyle = css;
+  colorCtx.fillRect(0, 0, 1, 1);
+  const d = colorCtx.getImageData(0, 0, 1, 1).data;
+  return [d[0], d[1], d[2], d[3] / 255];
+}
+
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0);
   const [isOverLight, setIsOverLight] = useState(false);
@@ -32,14 +50,17 @@ export default function Navbar() {
 
       // elementsFromPoint retourne tous les éléments empilés à ce point
       // on ignore la navbar elle-même et on cherche la 1ère couleur non transparente
-      const stack = document.elementsFromPoint(window.innerWidth / 2, 90);
+      const stack = document.elementsFromPoint(window.innerWidth / 2, 40);
       for (const el of stack) {
         if (el.closest('[data-navbar]')) continue; // ignore la navbar
         let node: Element | null = el;
         while (node && node !== document.body) {
-          const bg = window.getComputedStyle(node).backgroundColor;
-          if (bg && bg !== 'rgba(0, 0, 0, 0)') {
-            setIsOverLight(bg === 'rgb(255, 255, 255)');
+          const rgba = toRgba(window.getComputedStyle(node).backgroundColor);
+          // on ignore les fonds transparents ou presque (voiles, cartes en verre) et on remonte
+          if (rgba && rgba[3] > 0.5) {
+            // luminosité perçue : fond clair (blanc, jaune, lavande…) => texte sombre
+            const lum = (0.299 * rgba[0] + 0.587 * rgba[1] + 0.114 * rgba[2]) / 255;
+            setIsOverLight(lum > 0.6);
             return;
           }
           node = node.parentElement;
@@ -92,15 +113,20 @@ export default function Navbar() {
 
   const p = Math.min(scrollY / 80, 1);
 
-  // Une fois la barre « pastille » (défilement), son fond est foncé et opaque : texte toujours clair.
-  // Les couleurs sombres ne servent qu'en haut de page, quand la barre est transparente sur un fond clair.
-  const onLight   = isOverLight && !menuOpen && p < 0.5;
-  const linkColor = onLight ? 'rgba(30,58,100,0.80)' : 'rgba(255,255,255,0.92)';
-  const logoTop   = onLight ? '#264d8c' : '#ffffff';
-  const logoBot   = onLight ? '#0ea5e9' : '#fceb30';
+  // Barre en verre translucide : les couleurs suivent le fond qui passe derrière.
+  // Menu ouvert : fond assombri derrière, donc logo et burger restent clairs.
+  const onLight   = isOverLight && !menuOpen;
+  const linkColor = onLight ? 'rgba(27,27,94,0.85)' : 'rgba(255,255,255,0.88)';
+  const logoTop   = onLight ? '#27279a' : '#ffffff';
+  const logoBot   = onLight ? '#5a5fe0' : '#ffd426';
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-6 pt-3 pointer-events-none">
+    <div
+      className="fixed top-0 left-0 right-0 flex flex-col items-center px-6 pt-3 pointer-events-none"
+      // Menu mobile ouvert : la barre, le voile et le panneau passent au-dessus de tout (bandeau de cookies,
+      // bouton WhatsApp, etc.) pour que rien de la page ne reste cliquable à travers.
+      style={{ zIndex: menuOpen ? 9980 : 50 }}
+    >
       <nav
         data-navbar
         className="pointer-events-auto w-full"
@@ -108,14 +134,15 @@ export default function Navbar() {
           maxWidth:             `${1280 - p * 360}px`,
           borderRadius:         `${p * 9999}px`,
           padding:              `${p * 6}px ${p * 18}px`,
-          background:           `rgba(12,26,64,${p * 0.94})`,
+          // sur fond clair, le verre prend un voile blanc plus dense pour que le texte derrière ne gêne pas la lecture
+          background:           `rgba(255,255,255,${p * (onLight ? 0.68 : 0.12)})`,
           backdropFilter:       `blur(${p * 18}px)`,
           WebkitBackdropFilter: `blur(${p * 18}px)`,
-          border:               `1px solid rgba(255,255,255,${p * 0.18})`,
+          border:               `1px solid rgba(255,255,255,${p * 0.22})`,
           boxShadow: p > 0.05
             ? `inset 0 1px 0 rgba(255,255,255,${p * 0.25}), 0 8px 32px -8px rgba(0,0,0,${p * 0.15})`
             : 'none',
-          transition: 'max-width 0.5s cubic-bezier(0.16,1,0.3,1), border-radius 0.5s cubic-bezier(0.16,1,0.3,1), padding 0.5s cubic-bezier(0.16,1,0.3,1)',
+          transition: 'max-width 0.5s cubic-bezier(0.16,1,0.3,1), border-radius 0.5s cubic-bezier(0.16,1,0.3,1), padding 0.5s cubic-bezier(0.16,1,0.3,1), background 0.35s ease',
         }}
       >
         <div className="flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
@@ -206,8 +233,8 @@ export default function Navbar() {
                       minWidth: '220px',
                       background: 'rgba(255,255,255,0.98)',
                       borderRadius: '16px',
-                      boxShadow: '0 8px 32px -4px rgba(38,77,140,0.18), 0 2px 8px rgba(0,0,0,0.08)',
-                      border: '1px solid rgba(38,77,140,0.10)',
+                      boxShadow: '0 8px 32px -4px rgba(39,39,154,0.18), 0 2px 8px rgba(0,0,0,0.08)',
+                      border: '1px solid rgba(39,39,154,0.10)',
                       padding: '8px',
                       zIndex: 100,
                     }}
@@ -220,9 +247,9 @@ export default function Navbar() {
                         style={{ textDecoration: 'none', display: 'block' }}
                       >
                         <div
-                          className="rounded-xl px-4 py-3 transition-colors hover:bg-[rgba(38,77,140,0.06)]"
+                          className="rounded-xl px-4 py-3 transition-colors hover:bg-[rgba(39,39,154,0.06)]"
                         >
-                          <p style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 700, fontSize: '14px', lineHeight: '20px', color: '#3262AB', textTransform: 'uppercase' }}>
+                          <p style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 700, fontSize: '14px', lineHeight: '20px', color: '#3b3fc4', textTransform: 'uppercase' }}>
                             {label}
                           </p>
                           <p style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '12px', lineHeight: '16px', color: 'lab(19.1245 51.5264 -84.3836 / 0.5)', marginTop: '2px' }}>
@@ -263,13 +290,13 @@ export default function Navbar() {
               href="https://calendly.com/laetitia_laghezza_seo_local/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="group hidden lg:flex items-center gap-2 rounded-full bg-[#fceb30] px-4 py-2 text-[#264d8c] active:scale-[0.98]"
+              className="group hidden lg:flex items-center gap-2 rounded-full bg-[#ffd426] px-4 py-2 text-[#1b1b5e] active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '12px', lineHeight: '17px', whiteSpace: 'nowrap' }}
               strength={0.25}
             >
               <span className="relative flex h-2 w-2 shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#264d8c] opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#264d8c]" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1b1b5e] opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#1b1b5e]" />
               </span>
               Faire le point sur ma visibilité
             </MagneticButton>
@@ -283,7 +310,7 @@ export default function Navbar() {
               style={{
                 background: 'rgba(255,255,255,0.12)',
                 border: '1px solid rgba(255,255,255,0.22)',
-                color: onLight ? '#264d8c' : '#ffffff',
+                color: onLight ? '#27279a' : '#ffffff',
               }}
               aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
               aria-expanded={menuOpen}
@@ -309,7 +336,7 @@ export default function Navbar() {
               transition={{ duration: 0.2 }}
               onClick={() => setMenuOpen(false)}
               className="pointer-events-auto fixed inset-0 -z-10 lg:hidden"
-              style={{ background: 'rgba(8,18,50,0.60)', backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)' }}
+              style={{ background: 'rgba(14,14,64,0.60)', backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)', touchAction: 'none' }}
             />
             <motion.div
               key="menu-sheet"
@@ -321,14 +348,15 @@ export default function Navbar() {
               className="pointer-events-auto mt-2 w-full overflow-y-auto rounded-3xl p-3 lg:hidden"
               style={{
                 maxHeight: 'calc(100dvh - 96px)',
-                background: 'linear-gradient(165deg, #0c1a40 0%, #112258 100%)',
+                overscrollBehavior: 'contain',
+                background: 'linear-gradient(165deg, #16164f 0%, #1b1b5e 100%)',
                 border: '1px solid rgba(255,255,255,0.14)',
                 boxShadow: '0 24px 48px -12px rgba(0,0,0,0.45)',
               }}
             >
               <p
                 className="px-3 pb-1 pt-2"
-                style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(252,235,48,0.85)', textTransform: 'uppercase', letterSpacing: '0.12em' }}
+                style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', fontWeight: 600, color: 'rgba(255,212,38,0.85)', textTransform: 'uppercase', letterSpacing: '0.12em' }}
               >
                 Offre
               </p>
@@ -374,12 +402,12 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
-                className="mt-3 flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-[#fceb30] px-4 text-[#264d8c] active:scale-[0.98]"
+                className="mt-3 flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-[#ffd426] px-4 text-[#1b1b5e] active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '15px' }}
               >
                 <span className="relative flex h-2 w-2 shrink-0">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#264d8c] opacity-60" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#264d8c]" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1b1b5e] opacity-60" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#1b1b5e]" />
                 </span>
                 Faire le point sur ma visibilité
               </a>

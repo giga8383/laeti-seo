@@ -62,7 +62,7 @@ export default function QuizGBP() {
     <div
       className="rounded-[2rem] p-8 md:p-10"
       style={{
-        background: 'linear-gradient(145deg, rgba(38,77,140,0.18) 0%, rgba(15,30,72,0.35) 100%)',
+        background: 'linear-gradient(145deg, rgba(39,39,154,0.18) 0%, rgba(27,27,94,0.35) 100%)',
         border: '1px solid rgba(255,255,255,0.12)',
         boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.08)',
       }}
@@ -72,7 +72,7 @@ export default function QuizGBP() {
         <div>
           <p
             className="uppercase tracking-widest"
-            style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '11px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+            style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '11px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
           >
             Quiz · 5 questions
           </p>
@@ -90,9 +90,9 @@ export default function QuizGBP() {
               fontFamily: inter.style.fontFamily,
               fontSize: '12px',
               fontWeight: 600,
-              color: 'rgba(252,235,48,0.8)',
-              background: 'rgba(252,235,48,0.10)',
-              border: '1px solid rgba(252,235,48,0.20)',
+              color: 'rgba(255,212,38,0.8)',
+              background: 'rgba(255,212,38,0.10)',
+              border: '1px solid rgba(255,212,38,0.20)',
             }}
           >
             {step + 1} / 5
@@ -105,7 +105,7 @@ export default function QuizGBP() {
         <div className="mb-8 h-1 w-full overflow-hidden rounded-full" style={{ background: 'rgba(255,255,255,0.08)' }}>
           <div
             className="h-full rounded-full transition-all duration-500"
-            style={{ width: `${(step / 5) * 100}%`, background: '#fceb30', boxShadow: '0 0 8px rgba(252,235,48,0.5)' }}
+            style={{ width: `${(step / 5) * 100}%`, background: '#ffd426', boxShadow: '0 0 8px rgba(255,212,38,0.5)' }}
           />
         </div>
       )}
@@ -136,13 +136,13 @@ export default function QuizGBP() {
                     fontSize: '14px',
                     cursor: selected !== null ? 'default' : 'pointer',
                     background: isSelected
-                      ? (value ? '#fceb30' : 'rgba(255,255,255,0.15)')
+                      ? (value ? '#ffd426' : 'rgba(255,255,255,0.15)')
                       : 'rgba(255,255,255,0.07)',
                     border: isSelected
-                      ? (value ? '1px solid #fceb30' : '1px solid rgba(255,255,255,0.3)')
+                      ? (value ? '1px solid #ffd426' : '1px solid rgba(255,255,255,0.3)')
                       : '1px solid rgba(255,255,255,0.12)',
                     color: isSelected
-                      ? (value ? '#264d8c' : '#ffffff')
+                      ? (value ? '#27279a' : '#ffffff')
                       : 'rgba(255,255,255,0.75)',
                     transform: isSelected ? 'scale(1.04)' : 'scale(1)',
                   }}
@@ -163,9 +163,9 @@ export default function QuizGBP() {
           <div className="mb-6 flex items-center gap-4">
             <div
               className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl"
-              style={{ background: 'rgba(252,235,48,0.12)', border: '1px solid rgba(252,235,48,0.25)' }}
+              style={{ background: 'rgba(255,212,38,0.12)', border: '1px solid rgba(255,212,38,0.25)' }}
             >
-              <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px', color: '#fceb30' }}>
+              <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px', color: '#ffd426' }}>
                 {score}/5
               </p>
             </div>
@@ -178,7 +178,7 @@ export default function QuizGBP() {
                   <div
                     key={i}
                     className="h-2 w-8 rounded-full"
-                    style={{ background: i < score ? '#fceb30' : 'rgba(255,255,255,0.12)' }}
+                    style={{ background: i < score ? '#ffd426' : 'rgba(255,255,255,0.12)' }}
                   />
                 ))}
               </div>
@@ -198,10 +198,10 @@ export default function QuizGBP() {
               <div key={i} className="flex items-start gap-3">
                 <span
                   className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full"
-                  style={{ background: answers[i] ? 'rgba(252,235,48,0.15)' : 'rgba(255,255,255,0.08)' }}
+                  style={{ background: answers[i] ? 'rgba(255,212,38,0.15)' : 'rgba(255,255,255,0.08)' }}
                 >
                   {answers[i]
-                    ? <Check size={10} weight="bold" color="#fceb30" />
+                    ? <Check size={10} weight="bold" color="#ffd426" />
                     : <X size={10} weight="bold" color="rgba(255,255,255,0.4)" />}
                 </span>
                 <p style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.55)', lineHeight: '20px' }}>
@@ -214,7 +214,7 @@ export default function QuizGBP() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href="/audit-seo-local"
-              className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}
             >
               {result.cta}

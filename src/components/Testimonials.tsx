@@ -1,4 +1,5 @@
 import ScrollReveal from './ScrollReveal';
+import EnvelopeFlight from './EnvelopeFlight';
 import { inter } from '@/lib/fonts';
 
 const GOOGLE_REVIEWS_URL = 'https://share.google/X8yIUSwEfhZAhSRGx';
@@ -34,8 +35,8 @@ export default function Testimonials({ showReviewTip = false }: { showReviewTip?
                 fontWeight: 700,
                 fontSize: '22px',
                 lineHeight: '28px',
-                color: '#fceb30',
-                textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+                color: '#ffd426',
+                textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
               }}
             >
               Avis Google
@@ -58,7 +59,7 @@ export default function Testimonials({ showReviewTip = false }: { showReviewTip?
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block whitespace-nowrap text-[#fceb30] underline underline-offset-4 transition-opacity hover:opacity-80"
+              className="inline-block whitespace-nowrap text-[#ffd426] underline underline-offset-4 transition-opacity hover:opacity-80"
               style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '15px' }}
             >
               Voir tous les avis sur Google
@@ -70,7 +71,7 @@ export default function Testimonials({ showReviewTip = false }: { showReviewTip?
           {reviews.map((r, i) => (
             <ScrollReveal key={r.name} delay={0.08 + i * 0.08} className="h-full">
               <article className="flex h-full flex-col rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
-                <div className="mb-4 text-lg tracking-[0.12em] text-[#fceb30]" role="img" aria-label="5 étoiles sur 5">
+                <div className="mb-4 text-lg tracking-[0.12em] text-[#ffd426]" role="img" aria-label="5 étoiles sur 5">
                   ★★★★★
                 </div>
                 <blockquote
@@ -100,9 +101,10 @@ export default function Testimonials({ showReviewTip = false }: { showReviewTip?
         {showReviewTip && (
           <ScrollReveal delay={0.2}>
             <aside
-              className="mt-10 rounded-[1.5rem] border border-[#fceb30]/30 bg-[#fceb30]/[0.06] p-7 md:p-9"
+              className="relative mt-10 rounded-[1.5rem] border border-[#ffd426]/30 bg-[#ffd426]/[0.06] p-7 md:p-9"
               style={{ fontFamily: inter.style.fontFamily }}
             >
+              <EnvelopeFlight className="absolute right-6 top-1/2 hidden h-[240px] w-[380px] -translate-y-1/2 xl:block" />
               <p className="mb-3 text-[18px] font-semibold text-white">Comment demander un avis qui vous sert vraiment</p>
               <p className="max-w-[80ch] text-[15px] leading-[24px] text-white/70">
                 Un avis « Super, je recommande » ne dit rien à Google ni à un futur client. Demandez à votre client de préciser{' '}

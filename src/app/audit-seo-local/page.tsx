@@ -256,8 +256,8 @@ export default function AuditSEOLocalPage() {
                       fontFamily: inter.style.fontFamily,
                       fontWeight: 600,
                       fontSize: '13px',
-                      color: '#fceb30',
-                      textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)',
+                      color: '#ffd426',
+                      textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4)',
                     }}
                   >
                     Diagnostic visibilité
@@ -275,7 +275,7 @@ export default function AuditSEOLocalPage() {
                     }}
                   >
                     Audit SEO local :{' '}
-                    <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                    <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                       identifiez pourquoi vos clients ne vous trouvent pas
                     </span>
                   </h1>
@@ -300,7 +300,7 @@ export default function AuditSEOLocalPage() {
                       href="https://calendly.com/laetitia_laghezza_seo_local/30min"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                       style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                     >
                       Faire le point sur ma visibilité
@@ -319,7 +319,7 @@ export default function AuditSEOLocalPage() {
                     }}
                   >
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full"
-                      style={{ border: '2px solid rgba(252,235,48,0.5)' }}>
+                      style={{ border: '2px solid rgba(255,212,38,0.5)' }}>
                       <Image
                         src="/laeti-1.webp"
                         alt="Laetitia Laghezza, consultante SEO local"
@@ -341,7 +341,7 @@ export default function AuditSEOLocalPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ml-2 flex items-center gap-1 transition-opacity hover:opacity-80"
-                      style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(252,235,48,0.75)' }}
+                      style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,212,38,0.75)' }}
                     >
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -564,11 +564,11 @@ export default function AuditSEOLocalPage() {
                   <div
                     className="mt-3 flex items-center gap-2 rounded-xl px-4 py-3"
                     style={{
-                      background: 'rgba(252,235,48,0.08)',
-                      border: '1px solid rgba(252,235,48,0.18)',
+                      background: 'rgba(255,212,38,0.08)',
+                      border: '1px solid rgba(255,212,38,0.18)',
                     }}
                   >
-                    <Check size={14} weight="bold" color="#fceb30" style={{ flexShrink: 0 }} />
+                    <Check size={14} weight="bold" color="#ffd426" style={{ flexShrink: 0 }} />
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.65)', lineHeight: '18px' }}>
                       C&apos;est exactement ce type de fiche que j&apos;analyse dans votre audit.
                     </p>
@@ -599,7 +599,7 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Ce qu&apos;on analyse
               </p>
@@ -633,7 +633,7 @@ export default function AuditSEOLocalPage() {
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-[auto_1fr]">
                       <div
                         className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl font-mono font-bold"
-                        style={{ background: 'rgba(252,235,48,0.12)', border: '1px solid rgba(252,235,48,0.25)', color: '#fceb30', fontSize: '13px' }}
+                        style={{ background: 'rgba(255,212,38,0.12)', border: '1px solid rgba(255,212,38,0.25)', color: '#ffd426', fontSize: '13px' }}
                       >
                         {a.num}
                       </div>
@@ -650,8 +650,8 @@ export default function AuditSEOLocalPage() {
                         <ul className="space-y-2">
                           {a.items.map((item, j) => (
                             <li key={j} className="flex items-start gap-3">
-                              <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                                <Check size={9} weight="bold" color="#fceb30" />
+                              <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.15)' }}>
+                                <Check size={9} weight="bold" color="#ffd426" />
                               </span>
                               <span style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.70)', lineHeight: '22px' }}>
                                 {item}
@@ -662,7 +662,7 @@ export default function AuditSEOLocalPage() {
                         {a.note && (
                           <div
                             className="mt-5 rounded-xl px-4 py-3"
-                            style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                            style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
                           >
                             <p style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.65)', lineHeight: '21px', fontStyle: 'italic' }}>
                               {a.note}
@@ -693,7 +693,7 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Votre livrable
               </p>
@@ -722,7 +722,7 @@ export default function AuditSEOLocalPage() {
                     >
                       <span
                         className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg font-mono font-bold text-sm"
-                        style={{ background: 'rgba(252,235,48,0.12)', color: '#fceb30' }}
+                        style={{ background: 'rgba(255,212,38,0.12)', color: '#ffd426' }}
                       >
                         {String(i + 1).padStart(2, '0')}
                       </span>
@@ -776,10 +776,10 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <h2
                 className="mb-12"
-                style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15', color: '#0f1e48' }}
+                style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(28px, 3.5vw, 44px)', lineHeight: '1.15', color: '#1b1b5e' }}
               >
                 Cet audit est fait pour vous{' '}
-                <span style={{ color: '#3262ab' }}>si vous êtes professionnel de l&apos;habitat avec une zone locale</span>
+                <span style={{ color: '#3b3fc4' }}>si vous êtes professionnel de l&apos;habitat avec une zone locale</span>
               </h2>
             </ScrollReveal>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -787,19 +787,19 @@ export default function AuditSEOLocalPage() {
                 <div
                   className="h-full rounded-[2rem] p-10"
                   style={{
-                    background: 'linear-gradient(145deg, #2a57b8 0%, #3262ab 55%, #1d3f8f 100%)',
-                    boxShadow: '0 30px 60px -15px rgba(50,98,171,0.30)',
+                    background: 'linear-gradient(145deg, #3b3fc4 0%, #27279a 55%, #1b1b5e 100%)',
+                    boxShadow: '0 30px 60px -15px rgba(59,63,196,0.30)',
                   }}
                 >
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#fceb30' }} />
+                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#ffd426' }} />
                   <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#ffffff' }}>
-                    Pour <span style={{ color: '#fceb30' }}>vous</span>
+                    Pour <span style={{ color: '#ffd426' }}>vous</span>
                   </h3>
                   <ul className="space-y-5">
                     {forYou.map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.20)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.20)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(255,255,255,0.85)' }}>
                           {item}
@@ -813,25 +813,25 @@ export default function AuditSEOLocalPage() {
                 <div
                   className="relative h-full overflow-hidden rounded-[2rem] p-10"
                   style={{
-                    background: 'linear-gradient(145deg, #7dd3fc 0%, #bae6fd 55%, #e0f2fe 100%)',
-                    border: '1px solid rgba(125,211,252,0.6)',
-                    boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(125,211,252,0.45), 0 0 80px -8px rgba(56,189,248,0.25), 0 24px 60px -16px rgba(125,211,252,0.30)',
+                    background: 'linear-gradient(145deg, #aeb1ff 0%, #cfd1ff 55%, #e9eaff 100%)',
+                    border: '1px solid rgba(99,102,241,0.6)',
+                    boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(99,102,241,0.45), 0 0 80px -8px rgba(59,63,196,0.25), 0 24px 60px -16px rgba(99,102,241,0.30)',
                   }}
                 >
                   <div className="pointer-events-none absolute -right-6 -top-6 opacity-[0.25]">
                     <X size={180} weight="bold" color="#ffffff" />
                   </div>
                   <div className="mb-6 h-[3px] w-10 rounded-full bg-white" />
-                  <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#264d8c' }}>
+                  <h3 className="mb-7" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#27279a' }}>
                     N&apos;est <span style={{ color: '#ffffff' }}>pas adapté</span>
                   </h3>
                   <ul className="space-y-5">
                     {notForYou.map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#1e40af]/50">
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#3b3fc4]/50">
                           <X size={11} weight="bold" color="#ffffff" />
                         </span>
-                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(38,77,140,0.80)' }}>
+                        <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(39,39,154,0.80)' }}>
                           {item}
                         </span>
                       </li>
@@ -856,7 +856,7 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <p
                 className="mb-10 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Ils en parlent
               </p>
@@ -883,12 +883,12 @@ export default function AuditSEOLocalPage() {
                   </span>
                   <div className="flex gap-0.5 ml-1">
                     {Array.from({ length: 5 }).map((_, s) => (
-                      <Star key={s} size={13} weight="fill" color="#fceb30" />
+                      <Star key={s} size={13} weight="fill" color="#ffd426" />
                     ))}
                   </div>
                 </div>
 
-                <Quotes size={32} weight="fill" color="rgba(252,235,48,0.5)" className="mb-6" />
+                <Quotes size={32} weight="fill" color="rgba(255,212,38,0.5)" className="mb-6" />
                 <blockquote
                   className="mb-8 text-white/80"
                   style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500, fontSize: 'clamp(18px, 2.5vw, 24px)', lineHeight: '1.5' }}
@@ -940,7 +940,7 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Questions fréquentes
               </p>
@@ -994,7 +994,7 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Sources utiles
               </p>
@@ -1016,7 +1016,7 @@ export default function AuditSEOLocalPage() {
                     style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)' }}
                   >
                     <div className="mb-4 flex items-center justify-between">
-                      <span className="h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
+                      <span className="h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
                       <ArrowSquareOut size={18} weight="bold" color="rgba(255,255,255,0.35)" />
                     </div>
                     <h3 className="mb-3 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', lineHeight: '1.3' }}>
@@ -1045,7 +1045,7 @@ export default function AuditSEOLocalPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Prochaine étape
               </p>
@@ -1054,7 +1054,7 @@ export default function AuditSEOLocalPage() {
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: '1.1' }}
               >
                 Je veux savoir pourquoi{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   je suis invisible.
                 </span>
               </h2>
@@ -1080,7 +1080,7 @@ export default function AuditSEOLocalPage() {
                   href="https://calendly.com/laetitia_laghezza_seo_local/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-8 py-4 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Faire le point sur ma visibilité

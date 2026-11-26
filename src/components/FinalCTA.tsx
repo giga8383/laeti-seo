@@ -48,7 +48,7 @@ export default function FinalCTA({
                 href="https://calendly.com/laetitia_laghezza_seo_local/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-[#fceb30] px-9 py-4 text-[#264d8c] transition-[filter] duration-300 hover:brightness-105 active:scale-[0.98]"
+                className="rounded-full bg-[#ffd426] px-9 py-4 text-[#1b1b5e] transition-[filter] duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '24px' }}
                 strength={0.35}
               >

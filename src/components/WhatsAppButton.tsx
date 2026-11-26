@@ -61,7 +61,7 @@ export default function WhatsAppButton() {
           fontSize: '13px',
           fontWeight: 600,
           color: '#ffffff',
-          background: 'rgba(15,30,72,0.88)',
+          background: 'rgba(27,27,94,0.88)',
           backdropFilter: 'blur(10px)',
           WebkitBackdropFilter: 'blur(10px)',
           border: '1px solid rgba(255,255,255,0.12)',

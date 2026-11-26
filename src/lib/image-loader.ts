@@ -9,5 +9,8 @@ export default function imageLoader({ src, width }: { src: string; width: number
   if (src === '/laeti-3.webp') {
     return width <= 768 ? '/laeti-3-mobile.webp' : '/laeti-3-desktop.webp';
   }
+  if (src === '/laeti-3-indigo.webp') {
+    return width <= 768 ? '/laeti-3-indigo-mobile.webp' : '/laeti-3-indigo-desktop.webp';
+  }
   return src;
 }

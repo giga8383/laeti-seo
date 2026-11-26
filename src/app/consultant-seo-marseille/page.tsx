@@ -213,8 +213,8 @@ export default function ConsultantSEOMarseilePage() {
                   fontFamily: inter.style.fontFamily,
                   fontWeight: 600,
                   fontSize: '13px',
-                  color: '#fceb30',
-                  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)',
+                  color: '#ffd426',
+                  textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4)',
                 }}
               >
                 <MapPin size={14} weight="bold" />
@@ -233,7 +233,7 @@ export default function ConsultantSEOMarseilePage() {
                 }}
               >
                 Consultante SEO<br />
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   Marseille
                 </span>
               </h1>
@@ -254,7 +254,7 @@ export default function ConsultantSEOMarseilePage() {
               <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href="/offre"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Voir le diagnostic · 790 €
@@ -283,7 +283,7 @@ export default function ConsultantSEOMarseilePage() {
                   { value: '5j',  label: 'livraison du diagnostic' },
                 ].map((s, i) => (
                   <div key={i}>
-                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '34px', lineHeight: '1', color: '#fceb30' }}>
+                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '34px', lineHeight: '1', color: '#ffd426' }}>
                       {s.value}
                     </p>
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)', marginTop: '5px' }}>
@@ -311,7 +311,7 @@ export default function ConsultantSEOMarseilePage() {
               <ScrollReveal>
                 <p
                   className="mb-4 uppercase tracking-widest"
-                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
                 >
                   Le marché marseillais
                 </p>
@@ -349,12 +349,12 @@ export default function ConsultantSEOMarseilePage() {
                     fontSize: '20px',
                     lineHeight: '1.35',
                     color: 'rgba(255,255,255,0.90)',
-                    borderLeft: '2px solid rgba(252,235,48,0.55)',
+                    borderLeft: '2px solid rgba(255,212,38,0.55)',
                     paddingLeft: '16px',
                     marginTop: '4px',
                   }}>
                     Pas nécessairement meilleur.<br />
-                    <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 40px rgba(252,235,48,0.25)' }}>
+                    <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 40px rgba(255,212,38,0.25)' }}>
                       Juste mieux visible.
                     </span>
                   </p>
@@ -385,8 +385,8 @@ export default function ConsultantSEOMarseilePage() {
                       'Les avis clients sont réguliers et font l\'objet de réponses soignées',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.15)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: '24px' }}>
                           {item}
@@ -396,7 +396,7 @@ export default function ConsultantSEOMarseilePage() {
                   </ul>
                   <div
                     className="mt-8 rounded-xl p-4"
-                    style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                    style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
                   >
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: '22px' }}>
                       À Marseille, une fiche bien optimisée peut faire passer de 2 à 20 contacts par mois. C&apos;est ça, le SEO local.
@@ -421,7 +421,7 @@ export default function ConsultantSEOMarseilePage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Le diagnostic SEO local
               </p>
@@ -477,7 +477,7 @@ export default function ConsultantSEOMarseilePage() {
                       boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)',
                     }}
                   >
-                    <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
+                    <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
                     <h3
                       className="mb-3 text-white"
                       style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '17px', lineHeight: '1.3' }}
@@ -519,22 +519,22 @@ export default function ConsultantSEOMarseilePage() {
                 <div
                   className="h-full rounded-[2rem] p-10"
                   style={{
-                    background: 'linear-gradient(145deg, #2a57b8 0%, #3262ab 55%, #1d3f8f 100%)',
-                    boxShadow: '0 30px 60px -15px rgba(50,98,171,0.45)',
+                    background: 'linear-gradient(145deg, #3b3fc4 0%, #27279a 55%, #1b1b5e 100%)',
+                    boxShadow: '0 30px 60px -15px rgba(59,63,196,0.45)',
                   }}
                 >
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#fceb30' }} />
+                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#ffd426' }} />
                   <h3
                     className="mb-7"
                     style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#ffffff' }}
                   >
-                    Pour <span style={{ color: '#fceb30' }}>vous</span>
+                    Pour <span style={{ color: '#ffd426' }}>vous</span>
                   </h3>
                   <ul className="space-y-5">
                     {forYou.map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.20)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.20)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(255,255,255,0.85)' }}>
                           {item}
@@ -591,7 +591,7 @@ export default function ConsultantSEOMarseilePage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Le déroulé
               </p>
@@ -622,7 +622,7 @@ export default function ConsultantSEOMarseilePage() {
                   >
                     <p
                       className="mb-5 font-mono font-bold"
-                      style={{ fontSize: '13px', color: 'rgba(252,235,48,0.5)', letterSpacing: '0.08em' }}
+                      style={{ fontSize: '13px', color: 'rgba(255,212,38,0.5)', letterSpacing: '0.08em' }}
                     >
                       {step.num}
                     </p>
@@ -685,12 +685,12 @@ export default function ConsultantSEOMarseilePage() {
               <div className="flex flex-wrap gap-3">
                 {zones.map((zone, i) => {
                   const sharedStyle: React.CSSProperties = {
-                    background: i === 0 ? 'rgba(252,235,48,0.12)' : zone.href ? 'rgba(252,235,48,0.07)' : 'rgba(255,255,255,0.05)',
-                    border: i === 0 ? '1px solid rgba(252,235,48,0.30)' : zone.href ? '1px solid rgba(252,235,48,0.25)' : '1px solid rgba(255,255,255,0.09)',
+                    background: i === 0 ? 'rgba(255,212,38,0.12)' : zone.href ? 'rgba(255,212,38,0.07)' : 'rgba(255,255,255,0.05)',
+                    border: i === 0 ? '1px solid rgba(255,212,38,0.30)' : zone.href ? '1px solid rgba(255,212,38,0.25)' : '1px solid rgba(255,255,255,0.09)',
                     fontFamily: inter.style.fontFamily,
                     fontSize: '13px',
                     fontWeight: i === 0 || zone.href ? 600 : 400,
-                    color: i === 0 ? '#fceb30' : zone.href ? 'rgba(252,235,48,0.75)' : 'rgba(255,255,255,0.55)',
+                    color: i === 0 ? '#ffd426' : zone.href ? 'rgba(255,212,38,0.75)' : 'rgba(255,255,255,0.55)',
                     textDecoration: 'none',
                     transition: zone.href ? 'background 0.2s, color 0.2s' : undefined,
                   };
@@ -729,7 +729,7 @@ export default function ConsultantSEOMarseilePage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Questions fréquentes
               </p>
@@ -807,7 +807,7 @@ export default function ConsultantSEOMarseilePage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Prochaine étape
               </p>
@@ -816,7 +816,7 @@ export default function ConsultantSEOMarseilePage() {
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: '1.1' }}
               >
                 Marseille est une ville immense.{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   Vos clients sont déjà en train de chercher.
                 </span>
               </h2>
@@ -832,7 +832,7 @@ export default function ConsultantSEOMarseilePage() {
                   href="https://calendly.com/laetitia_laghezza_seo_local/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-8 py-4 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Faire le point sur ma visibilité · 790 €

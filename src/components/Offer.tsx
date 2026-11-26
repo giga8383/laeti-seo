@@ -56,7 +56,7 @@ function OfferCard({
       className="h-full rounded-2xl p-6"
       style={{
         background: 'rgba(255,255,255,0.70)',
-        border: '1px solid rgba(35,85,182,0.12)',
+        border: '1px solid rgba(59,63,196,0.12)',
         boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.9)',
       }}
     >
@@ -69,7 +69,7 @@ function OfferCard({
         </span>
         <h4
           className="font-semibold"
-          style={{ fontFamily: inter.style.fontFamily, color: '#1e3a6e' }}
+          style={{ fontFamily: inter.style.fontFamily, color: '#27279a' }}
         >
           {title}
         </h4>
@@ -83,7 +83,7 @@ function OfferCard({
               fontFamily: inter.style.fontFamily,
               fontSize: '14px',
               lineHeight: '22px',
-              color: '#3262ab',
+              color: '#3b3fc4',
               opacity: 0.85,
             }}
           >
@@ -111,12 +111,12 @@ function OfferHabitatAccents() {
         width="150" height="135" viewBox="0 0 120 110" fill="none"
       >
         {/* Dossier */}
-        <path d="M25 60 Q25 25 50 22 Q75 20 95 28 Q97 45 92 65" stroke="#2355b6" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+        <path d="M25 60 Q25 25 50 22 Q75 20 95 28 Q97 45 92 65" stroke="#3b3fc4" strokeWidth="1.4" fill="none" strokeLinecap="round" />
         {/* Assise */}
-        <path d="M22 62 Q22 70 30 72 L88 72 Q96 70 96 62" stroke="#2355b6" strokeWidth="1.4" fill="none" />
-        <line x1="22" y1="62" x2="96" y2="62" stroke="#2355b6" strokeWidth="1.2" />
+        <path d="M22 62 Q22 70 30 72 L88 72 Q96 70 96 62" stroke="#3b3fc4" strokeWidth="1.4" fill="none" />
+        <line x1="22" y1="62" x2="96" y2="62" stroke="#3b3fc4" strokeWidth="1.2" />
         {/* Coussin */}
-        <path d="M30 60 Q30 50 40 50 L78 50 Q88 50 88 60" stroke="#2355b6" strokeWidth="0.9" fill="none" opacity="0.6" />
+        <path d="M30 60 Q30 50 40 50 L78 50 Q88 50 88 60" stroke="#3b3fc4" strokeWidth="0.9" fill="none" opacity="0.6" />
         {/* Pieds en bois */}
         <line x1="30" y1="72" x2="22" y2="98" stroke="#92400e" strokeWidth="1.5" strokeLinecap="round" />
         <line x1="88" y1="72" x2="96" y2="98" stroke="#92400e" strokeWidth="1.5" strokeLinecap="round" />
@@ -159,7 +159,7 @@ function OfferHabitatAccents() {
           height: '760px',
           maxWidth: '95vw',
           background:
-            'radial-gradient(ellipse 55% 70% at 50% 0%, rgba(252,235,48,0.22) 0%, rgba(252,220,40,0.12) 25%, rgba(252,200,40,0.05) 50%, transparent 75%)',
+            'radial-gradient(ellipse 55% 70% at 50% 0%, rgba(255,212,38,0.22) 0%, rgba(255,212,38,0.12) 25%, rgba(255,212,38,0.05) 50%, transparent 75%)',
           filter: 'blur(30px)',
           pointerEvents: 'none',
         }}
@@ -176,7 +176,7 @@ function OfferHabitatAccents() {
           height: '450px',
           maxWidth: '90vw',
           background:
-            'radial-gradient(ellipse 50% 60% at 50% 0%, rgba(254,243,199,0.55) 0%, rgba(252,235,48,0.30) 20%, rgba(252,200,40,0.12) 50%, transparent 80%)',
+            'radial-gradient(ellipse 50% 60% at 50% 0%, rgba(254,243,199,0.55) 0%, rgba(255,212,38,0.30) 20%, rgba(255,212,38,0.12) 50%, transparent 80%)',
           filter: 'blur(20px)',
           pointerEvents: 'none',
         }}
@@ -192,7 +192,7 @@ function OfferHabitatAccents() {
           width: '300px',
           height: '200px',
           background:
-            'radial-gradient(ellipse 50% 60% at 50% 0%, rgba(254,243,199,0.55) 0%, rgba(252,235,48,0.20) 40%, transparent 80%)',
+            'radial-gradient(ellipse 50% 60% at 50% 0%, rgba(254,243,199,0.55) 0%, rgba(255,212,38,0.20) 40%, transparent 80%)',
           filter: 'blur(12px)',
           pointerEvents: 'none',
         }}
@@ -359,9 +359,9 @@ function OfferHabitatAccents() {
         })}
 
         {/* ── Quelques griffures de marker jaune au-dessus de l'ouverture (peinture) ── */}
-        <line x1="92" y1="142" x2="118" y2="138" stroke="#fbbf24" strokeWidth="1.2" opacity="0.6" strokeLinecap="round" />
-        <line x1="125" y1="141" x2="155" y2="137" stroke="#fbbf24" strokeWidth="1.4" opacity="0.7" strokeLinecap="round" />
-        <line x1="160" y1="139" x2="188" y2="142" stroke="#fbbf24" strokeWidth="1.2" opacity="0.6" strokeLinecap="round" />
+        <line x1="92" y1="142" x2="118" y2="138" stroke="#ffd426" strokeWidth="1.2" opacity="0.6" strokeLinecap="round" />
+        <line x1="125" y1="141" x2="155" y2="137" stroke="#ffd426" strokeWidth="1.4" opacity="0.7" strokeLinecap="round" />
+        <line x1="160" y1="139" x2="188" y2="142" stroke="#ffd426" strokeWidth="1.2" opacity="0.6" strokeLinecap="round" />
       </svg>
 
 
@@ -373,8 +373,8 @@ function OfferHabitatAccents() {
       >
         {/* Vase */}
         <path d="M30 38 L60 38 Q60 50 64 60 Q66 70 62 80 L28 80 Q24 70 26 60 Q30 50 30 38 Z"
-          stroke="#0ea5e9" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
-        <line x1="30" y1="38" x2="60" y2="38" stroke="#0ea5e9" strokeWidth="1.2" />
+          stroke="#5a5fe0" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
+        <line x1="30" y1="38" x2="60" y2="38" stroke="#5a5fe0" strokeWidth="1.2" />
         {/* Branches eucalyptus */}
         <path d="M45 38 Q45 22 52 12" stroke="#65a30d" strokeWidth="1.1" fill="none" strokeLinecap="round" />
         <path d="M45 38 Q42 26 34 16" stroke="#65a30d" strokeWidth="1.1" fill="none" strokeLinecap="round" />
@@ -422,8 +422,8 @@ export default function Offer() {
               fontWeight: 600,
               fontSize: '15px',
               lineHeight: '22px',
-              color: '#2355b6',
-              textShadow: '0 0 12px rgba(35,85,182,0.5), 0 0 28px rgba(35,85,182,0.25)',
+              color: '#3b3fc4',
+              textShadow: '0 0 12px rgba(59,63,196,0.5), 0 0 28px rgba(59,63,196,0.25)',
             }}
           >
             Mes offres
@@ -445,7 +445,7 @@ export default function Offer() {
               fontWeight: 400,
               fontSize: '16px',
               lineHeight: '26px',
-              color: '#3262ab',
+              color: '#3b3fc4',
               opacity: 0.75,
             }}
           >
@@ -462,10 +462,10 @@ export default function Offer() {
             <div
               className="flex h-full flex-col rounded-[2rem] p-8 md:p-10"
               style={{
-                background: 'linear-gradient(155deg, #bae6fd 0%, #e0f2fe 55%, #ffffff 100%)',
-                border: '1px solid rgba(125,211,252,0.6)',
+                background: 'linear-gradient(155deg, #cfd1ff 0%, #e9eaff 55%, #ffffff 100%)',
+                border: '1px solid rgba(99,102,241,0.6)',
                 boxShadow:
-                  'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(125,211,252,0.40), 0 24px 60px -16px rgba(125,211,252,0.25)',
+                  'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(99,102,241,0.40), 0 24px 60px -16px rgba(99,102,241,0.25)',
               }}
             >
               <div className="mb-7">
@@ -473,9 +473,9 @@ export default function Offer() {
                   className="mb-3 inline-block rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest"
                   style={{
                     fontFamily: inter.style.fontFamily,
-                    background: 'rgba(35,85,182,0.10)',
-                    color: '#2355b6',
-                    border: '1px solid rgba(35,85,182,0.18)',
+                    background: 'rgba(59,63,196,0.10)',
+                    color: '#3b3fc4',
+                    border: '1px solid rgba(59,63,196,0.18)',
                   }}
                 >
                   Essentiel
@@ -488,7 +488,7 @@ export default function Offer() {
                 </h3>
                 <p
                   className="mt-1 text-sm"
-                  style={{ fontFamily: inter.style.fontFamily, color: '#3262ab', opacity: 0.9 }}
+                  style={{ fontFamily: inter.style.fontFamily, color: '#3b3fc4', opacity: 0.9 }}
                 >
                   790 € · livraison sous 5 jours ouvrés
                 </p>
@@ -499,7 +499,7 @@ export default function Offer() {
                     fontWeight: 400,
                     fontSize: '15px',
                     lineHeight: '24px',
-                    color: '#2c58b0',
+                    color: '#3b3fc4',
                     opacity: 0.80,
                   }}
                 >
@@ -509,8 +509,8 @@ export default function Offer() {
                 </p>
               </div>
               <div className="mt-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <OfferCard icon={MagnifyingGlass} iconBg="rgba(35,85,182,0.10)" iconColor="#2355b6" title="Ce que j'analyse" items={diag.analyzed} />
-                <OfferCard icon={Package} iconBg="rgba(14,165,233,0.12)" iconColor="#0ea5e9" title="Ce que vous recevez" items={diag.received} />
+                <OfferCard icon={MagnifyingGlass} iconBg="rgba(59,63,196,0.10)" iconColor="#3b3fc4" title="Ce que j'analyse" items={diag.analyzed} />
+                <OfferCard icon={Package} iconBg="rgba(59,63,196,0.12)" iconColor="#5a5fe0" title="Ce que vous recevez" items={diag.received} />
               </div>
             </div>
           </ScrollReveal>
@@ -521,9 +521,9 @@ export default function Offer() {
               className="relative flex h-full flex-col rounded-[2rem] p-8 md:p-10"
               style={{
                 background: 'linear-gradient(155deg, #fde68a 0%, #fef3c7 55%, #ffffff 100%)',
-                border: '1px solid rgba(251,191,36,0.55)',
+                border: '1px solid rgba(255,212,38,0.55)',
                 boxShadow:
-                  'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(251,191,36,0.35), 0 24px 60px -16px rgba(251,191,36,0.20)',
+                  'inset 0 1px 0 rgba(255,255,255,0.80), 0 0 40px -4px rgba(255,212,38,0.35), 0 24px 60px -16px rgba(255,212,38,0.20)',
               }}
             >
               <div className="mb-7">
@@ -531,8 +531,8 @@ export default function Offer() {
                   className="mb-3 inline-block rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest"
                   style={{
                     fontFamily: inter.style.fontFamily,
-                    background: '#264d8c',
-                    color: '#fceb30',
+                    background: '#27279a',
+                    color: '#ffd426',
                   }}
                 >
                   3 mois minimum
@@ -581,11 +581,11 @@ export default function Offer() {
           <div className="mt-10 flex justify-center">
             <a
               href="/feuille-de-route"
-              className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-semibold transition-all duration-300 hover:bg-[#2355b6]/10"
+              className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-semibold transition-all duration-300 hover:bg-[#3b3fc4]/10"
               style={{
                 fontFamily: inter.style.fontFamily,
-                color: '#2355b6',
-                borderColor: 'rgba(35,85,182,0.35)',
+                color: '#3b3fc4',
+                borderColor: 'rgba(59,63,196,0.35)',
               }}
             >
               Voir le déroulé étape par étape

@@ -75,7 +75,7 @@ function PricingCard({
               background:
                 'linear-gradient(145deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)',
               boxShadow:
-                '0 0 0 1.5px rgba(252,235,48,0.40), inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 64px -16px rgba(252,235,48,0.18)',
+                '0 0 0 1.5px rgba(255,212,38,0.40), inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 64px -16px rgba(255,212,38,0.18)',
             }
           : {
               background: 'rgba(255,255,255,0.04)',
@@ -91,8 +91,8 @@ function PricingCard({
           isYellow
             ? {
                 fontFamily: inter.style.fontFamily,
-                background: '#fceb30',
-                color: '#264d8c',
+                background: '#ffd426',
+                color: '#27279a',
               }
             : {
                 fontFamily: inter.style.fontFamily,
@@ -118,7 +118,7 @@ function PricingCard({
           style={{ fontFamily: 'Satoshi, sans-serif', lineHeight: '1' }}
         >
           {offer.price}
-          <span style={{ color: '#fceb30' }}>&thinsp;€</span>
+          <span style={{ color: '#ffd426' }}>&thinsp;€</span>
         </span>
         {offer.priceSuffix && (
           <span
@@ -160,7 +160,7 @@ function PricingCard({
         className="mb-6 h-px w-full"
         style={{
           background: isYellow
-            ? 'rgba(252,235,48,0.15)'
+            ? 'rgba(255,212,38,0.15)'
             : 'rgba(255,255,255,0.08)',
         }}
       />
@@ -182,7 +182,7 @@ function PricingCard({
               size={16}
               weight="fill"
               className="mt-[3px] shrink-0"
-              style={{ color: isYellow ? '#fceb30' : 'rgba(255,255,255,0.30)' }}
+              style={{ color: isYellow ? '#ffd426' : 'rgba(255,255,255,0.30)' }}
             />
             {item}
           </li>
@@ -201,8 +201,8 @@ function PricingCard({
             ? {
                 fontFamily: inter.style.fontFamily,
                 fontSize: '14px',
-                background: '#fceb30',
-                color: '#264d8c',
+                background: '#ffd426',
+                color: '#27279a',
               }
             : {
                 fontFamily: inter.style.fontFamily,
@@ -234,9 +234,9 @@ export default function OffrePricing() {
               fontWeight: 600,
               fontSize: '15px',
               lineHeight: '22px',
-              color: '#fceb30',
+              color: '#ffd426',
               textShadow:
-                '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+                '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
             }}
           >
             Tarifs

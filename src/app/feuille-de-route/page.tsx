@@ -35,8 +35,8 @@ export default function FeuilleDeRoutePage() {
                   fontWeight: 600,
                   fontSize: '15px',
                   lineHeight: '22px',
-                  color: '#fceb30',
-                  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)',
+                  color: '#ffd426',
+                  textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4)',
                 }}
               >
                 Feuille de route
@@ -54,7 +54,7 @@ export default function FeuilleDeRoutePage() {
                 }}
               >
                 Ce qui se passe,<br />
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   étape par étape.
                 </span>
               </h1>
@@ -113,7 +113,7 @@ export default function FeuilleDeRoutePage() {
               </p>
               <a
                 href="/offre"
-                className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-7 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-7 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: '14px' }}
               >
                 Voir les offres

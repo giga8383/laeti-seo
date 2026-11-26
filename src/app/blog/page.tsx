@@ -79,7 +79,7 @@ const jsonLd = {
 };
 
 const categoryColors: Record<string, { bg: string; text: string }> = {
-  "Google Business Profile": { bg: "rgba(252,235,48,0.12)",  text: "#fceb30" },
+  "Google Business Profile": { bg: "rgba(255,212,38,0.12)",  text: "#ffd426" },
   "Réseaux sociaux":          { bg: "rgba(200,210,160,0.12)", text: "rgba(200,210,160,0.9)" },
   "Avis clients":             { bg: "rgba(200,210,160,0.12)", text: "rgba(200,210,160,0.9)" },
   "SEO local":                { bg: "rgba(100,180,255,0.12)", text: "rgba(140,200,255,0.9)" },
@@ -96,22 +96,69 @@ export default function BlogPage() {
         {/* -- En-tête -- */}
         <section className="relative bg-transparent" style={{ paddingTop: "120px" }}>
           <div className="mx-auto max-w-7xl px-6 pb-0 pt-12 md:pt-20">
-            <ScrollReveal>
+            {/* « BLOG » arrive en trombe, le reste apparaît dessous */}
+            <div className="blog-word-wrap">
+              <span className="blog-smoke" aria-hidden="true">
+                {[0, 1, 2, 3, 4, 5, 6].map((n) => (
+                  <i key={n} style={{ ['--n' as string]: n }} />
+                ))}
+              </span>
+              <span className="blog-gravel" aria-hidden="true">
+                {[
+                  [60, 46, 5, 0], [96, 70, 4, 1], [130, 38, 6, 2], [78, 88, 3, 3], [150, 60, 4, 4], [110, 24, 5, 5],
+                  [44, 62, 3, 6], [172, 44, 3, 7], [90, 100, 4, 8], [136, 82, 5, 9], [70, 30, 3, 10], [160, 26, 4, 11],
+                ].map(([dx, up, size, n]) => (
+                  <b key={n} style={{ ['--dx' as string]: `${dx}px`, ['--up' as string]: `${up}px`, ['--n' as string]: n, width: `${size}px`, height: `${size}px` }} />
+                ))}
+              </span>
               <p
-                className="mb-4 uppercase tracking-widest"
+                className="blog-word uppercase"
                 style={{
-                  fontFamily: inter.style.fontFamily,
-                  fontWeight: 600,
-                  fontSize: "15px",
-                  lineHeight: "22px",
-                  color: "#fceb30",
-                  textShadow: "0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)",
+                  fontFamily: "Satoshi, sans-serif",
+                  fontWeight: 900,
+                  fontSize: "clamp(48px, 8.5vw, 108px)",
+                  lineHeight: "0.9",
+                  letterSpacing: "-0.02em",
+                  color: "#ffd426",
+                  textShadow: "0 0 24px rgba(255,212,38,0.55), 0 0 70px rgba(255,212,38,0.3)",
                 }}
               >
                 Blog
               </p>
-            </ScrollReveal>
-            <ScrollReveal delay={0.07}>
+            </div>
+            <style>{`
+              .blog-word-wrap { position: relative; display: inline-block; margin-bottom: 18px; }
+              .blog-smoke { position: absolute; right: 18px; bottom: 6px; width: 0; height: 0; pointer-events: none; }
+              .blog-smoke i { position: absolute; right: 0; bottom: 0; width: 70px; height: 70px; border-radius: 50%;
+                background: radial-gradient(circle, rgba(235,236,255,0.75) 0%, rgba(190,194,255,0.35) 45%, rgba(190,194,255,0) 70%);
+                filter: blur(7px); opacity: 0; transform: translate(0,0) scale(0.3);
+                animation: blog-smoke 1.5s ease-out both; animation-delay: calc(0.45s + var(--n) * 0.07s); }
+              .blog-gravel { position: absolute; right: 30px; bottom: 10px; width: 0; height: 0; pointer-events: none; }
+              .blog-gravel b { position: absolute; left: 0; bottom: 0; border-radius: 40%; background: #d9c98a; box-shadow: 0 0 0 1px rgba(27,27,94,0.35);
+                opacity: 0; animation: blog-gravel 0.9s cubic-bezier(0.2,0.6,0.4,1) both; animation-delay: calc(0.45s + var(--n) * 0.03s); }
+              .blog-gravel b:nth-child(3n) { background: #fff3b0; }
+              .blog-gravel b:nth-child(4n) { background: #9aa0d8; }
+              @keyframes blog-gravel {
+                0%   { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+                10%  { opacity: 1; }
+                45%  { transform: translate(calc(var(--dx) * 0.55), calc(var(--up) * -1)) rotate(180deg); }
+                100% { opacity: 0; transform: translate(var(--dx), 14px) rotate(420deg); }
+              }
+              @keyframes blog-smoke {
+                0%   { opacity: 0; transform: translate(0, 0) scale(0.3); }
+                20%  { opacity: 0.9; }
+                100% { opacity: 0; transform: translate(calc(30px + var(--n) * 12px), calc(-24px - var(--n) * 10px)) scale(2.4); }
+              }
+              .blog-word { display: inline-block; transform-origin: 0 100%; animation: blog-zoom 0.9s cubic-bezier(0.16,1,0.3,1) both; }
+              @keyframes blog-zoom {
+                0%   { transform: translateX(-120vw) skewX(-24deg); opacity: 0; filter: blur(10px); }
+                55%  { opacity: 1; }
+                80%  { transform: translateX(14px) skewX(5deg); filter: blur(0); }
+                100% { transform: translateX(0) skewX(0deg); opacity: 1; filter: blur(0); }
+              }
+              @media (prefers-reduced-motion: reduce) { .blog-word { animation: none; } .blog-smoke, .blog-gravel { display: none; } }
+            `}</style>
+            <ScrollReveal delay={0.65}>
               <h1
                 className="mb-5 text-white"
                 style={{
@@ -123,12 +170,12 @@ export default function BlogPage() {
                 }}
               >
                 Conseils SEO local<br />
-                <span style={{ color: "#fceb30", textShadow: "0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)" }}>
+                <span style={{ color: "#ffd426", textShadow: "0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)" }}>
                   pour les pros de l&apos;habitat.
                 </span>
               </h1>
             </ScrollReveal>
-            <ScrollReveal delay={0.13}>
+            <ScrollReveal delay={0.9}>
               <p
                 className="max-w-[55ch] text-white/55"
                 style={{
@@ -158,7 +205,7 @@ export default function BlogPage() {
               {articles.map((article, i) => {
                 const cat = categoryColors[article.category] ?? { bg: "rgba(255,255,255,0.08)", text: "rgba(255,255,255,0.6)" };
                 return (
-                  <ScrollReveal key={article.slug} delay={i * 0.06}>
+                  <ScrollReveal key={article.slug} emerge={i} delay={((i * 5) % 7) * 0.12} className="h-full">
                     <a
                       href={`/blog/${article.slug}`}
                       className="group flex h-full flex-col rounded-[1.5rem] p-7 transition-all duration-300 hover:bg-white/[0.07] hover:border-white/[0.16]"
@@ -239,7 +286,7 @@ export default function BlogPage() {
                           {article.date}
                         </span>
                         <span
-                          className="flex items-center gap-1 text-xs font-medium text-white/40 transition-colors duration-200 group-hover:text-[#fceb30]"
+                          className="flex items-center gap-1 text-xs font-medium text-white/40 transition-colors duration-200 group-hover:text-[#ffd426]"
                           style={{ fontFamily: inter.style.fontFamily }}
                         >
                           Lire
@@ -284,7 +331,7 @@ export default function BlogPage() {
               </p>
               <a
                 href="/offre"
-                className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-7 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-7 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: "14px" }}
               >
                 Voir le diagnostic · 790 €

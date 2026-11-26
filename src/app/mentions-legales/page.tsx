@@ -16,7 +16,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
         fontFamily: 'Satoshi, sans-serif',
         fontWeight: 700,
         fontSize: '18px',
-        color: '#0f1e48',
+        color: '#1b1b5e',
         marginBottom: '12px',
       }}
     >
@@ -44,7 +44,7 @@ export default function MentionsLegales() {
 
           <h1 className="mb-3" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, lineHeight: '1.0', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
             <span style={{ display: 'block', fontSize: 'clamp(42px, 8vw, 80px)', color: '#ffffff' }}>Mentions</span>
-            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#fceb30', textShadow: '0 0 40px rgba(252,235,48,0.35)' }}>Légales</span>
+            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#ffd426', textShadow: '0 0 40px rgba(255,212,38,0.35)' }}>Légales</span>
           </h1>
           <p
             className="mb-12"
@@ -55,7 +55,7 @@ export default function MentionsLegales() {
 
           <div
             className="rounded-2xl bg-white px-8 py-10"
-            style={{ border: '1px solid rgba(50,98,171,0.10)', boxShadow: '0 4px 24px -8px rgba(15,30,72,0.08)' }}
+            style={{ border: '1px solid rgba(59,63,196,0.10)', boxShadow: '0 4px 24px -8px rgba(27,27,94,0.08)' }}
           >
 
             <Section title="1. Éditeur du site">
@@ -63,7 +63,7 @@ export default function MentionsLegales() {
                 <p><strong>Laetitia Laghezza</strong></p>
                 <p>Auto-entrepreneur, SIRET 52276783900023</p>
                 <p>Rue du Commerce, 83910 Pourrières, France</p>
-                <p>Vous pouvez contacter le responsable de l&apos;édition du site internet par mail, à l&apos;adresse <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>.</p>
+                <p>Vous pouvez contacter le responsable de l&apos;édition du site internet par mail, à l&apos;adresse <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3b3fc4' }}>laetitia@laeti-seo.fr</a>.</p>
                 <p style={{ marginTop: '8px' }}><strong>Directrice de publication :</strong> Laetitia Laghezza</p>
               </div>
             </Section>
@@ -72,7 +72,7 @@ export default function MentionsLegales() {
               <p><strong>Hébergeur :</strong> Cloudflare, Inc.</p>
               <p><strong>Adresse :</strong> 101 Townsend St, San Francisco, CA 94107, États-Unis</p>
               <p><strong>Site :</strong>{' '}
-                <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer" style={{ color: '#3262ab' }}>
+                <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer" style={{ color: '#3b3fc4' }}>
                   www.cloudflare.com
                 </a>
               </p>
@@ -90,7 +90,7 @@ export default function MentionsLegales() {
               </p>
               <p className="mt-3">
                 Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d&apos;un droit d&apos;accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez :{' '}
-                <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3262ab' }}>laetitia@laeti-seo.fr</a>.
+                <a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#3b3fc4' }}>laetitia@laeti-seo.fr</a>.
               </p>
             </Section>
 

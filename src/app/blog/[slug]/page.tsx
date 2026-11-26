@@ -75,7 +75,7 @@ function defaultJsonLd(post: BlogPost) {
 
 const categoryColors: Record<string, { bg: string; text: string }> = {
   "Réseaux sociaux":          { bg: "rgba(200,210,160,0.12)", text: "rgba(200,210,160,0.9)" },
-  "Google Business Profile":  { bg: "rgba(252,235,48,0.12)",  text: "#fceb30" },
+  "Google Business Profile":  { bg: "rgba(255,212,38,0.12)",  text: "#ffd426" },
   "SEO local":                { bg: "rgba(100,180,255,0.12)", text: "rgba(140,200,255,0.9)" },
   "Cas pratiques":            { bg: "rgba(255,180,100,0.12)", text: "rgba(255,200,130,0.9)" },
 };
@@ -153,8 +153,8 @@ export default async function BlogArticlePage({
               <div
                 className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold"
                 style={{
-                  background: "linear-gradient(135deg, #3465b8, #fceb30)",
-                  color: "#264d8c",
+                  background: "linear-gradient(135deg, #3b3fc4, #ffd426)",
+                  color: "#27279a",
                   fontFamily: "Satoshi, sans-serif",
                 }}
               >
@@ -246,7 +246,7 @@ export default async function BlogArticlePage({
               </p>
               <a
                 href="/offre"
-                className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                 style={{ fontFamily: inter.style.fontFamily, fontSize: "14px" }}
               >
                 Voir le diagnostic · 790 €

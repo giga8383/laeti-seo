@@ -24,7 +24,7 @@ export default function About() {
                 className="absolute pointer-events-none"
                 style={{
                   inset: '-50px',
-                  background: 'radial-gradient(ellipse at 55% 45%, rgba(100,160,190,0.22) 0%, rgba(35,85,182,0.12) 45%, transparent 72%)',
+                  background: 'radial-gradient(ellipse at 55% 45%, rgba(100,160,190,0.22) 0%, rgba(59,63,196,0.12) 45%, transparent 72%)',
                   zIndex: 0,
                   filter: 'blur(22px)',
                 }}
@@ -38,7 +38,7 @@ export default function About() {
                   right: '-16px',
                   width: '180px',
                   height: '180px',
-                  background: 'radial-gradient(circle, rgba(252,235,48,0.32) 0%, transparent 70%)',
+                  background: 'radial-gradient(circle, rgba(255,212,38,0.32) 0%, transparent 70%)',
                   zIndex: 0,
                   filter: 'blur(16px)',
                 }}
@@ -50,9 +50,9 @@ export default function About() {
                 style={{
                   inset: '0',
                   transform: 'translate(10px, 10px)',
-                  border: '1.5px solid rgba(252,235,48,0.55)',
+                  border: '1.5px solid rgba(255,212,38,0.55)',
                   borderRadius: '2.8rem',
-                  boxShadow: '0 0 20px 3px rgba(252,235,48,0.20)',
+                  boxShadow: '0 0 20px 3px rgba(255,212,38,0.20)',
                   zIndex: 0,
                 }}
               />
@@ -64,23 +64,22 @@ export default function About() {
                   aspectRatio: '3/4',
                   zIndex: 1,
                   boxShadow:
-                    '0 0 0 1.5px rgba(100,160,190,0.25), 0 24px 64px -12px rgba(38,77,140,0.28), 0 0 48px -4px rgba(100,160,190,0.20)',
+                    '0 0 0 1.5px rgba(100,160,190,0.25), 0 24px 64px -12px rgba(39,39,154,0.28), 0 0 48px -4px rgba(100,160,190,0.20)',
                 }}
               >
                 <Image
-                  src="/laeti-3.webp"
+                  src="/laeti-3-indigo.webp"
                   alt="Laeti, consultante SEO local pour les professionnels de l'habitat"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 420px"
                   priority
-                  style={{ filter: 'saturate(1.25) hue-rotate(18deg)' }}
                 />
                 {/* Overlay couleur site — mix-blend-mode soft-light */}
                 <div
                   className="absolute inset-0 pointer-events-none"
                   style={{
-                    background: 'rgba(35,85,182,0.22)',
+                    background: 'rgba(59,63,196,0.22)',
                     mixBlendMode: 'soft-light',
                   }}
                 />
@@ -88,7 +87,7 @@ export default function About() {
                 <div
                   className="absolute inset-0 pointer-events-none"
                   style={{
-                    background: 'linear-gradient(to top, rgba(35,85,182,0.30) 0%, transparent 50%)',
+                    background: 'linear-gradient(to top, rgba(59,63,196,0.30) 0%, transparent 50%)',
                   }}
                 />
                 {/* Inner glow bord */}
@@ -106,16 +105,16 @@ export default function About() {
                 style={{
                   zIndex: 3,
                   background: 'rgba(255,255,255,0.95)',
-                  border: '1px solid rgba(38,77,140,0.12)',
+                  border: '1px solid rgba(39,39,154,0.12)',
                   backdropFilter: 'blur(12px)',
                   boxShadow:
-                    '0 8px 24px -4px rgba(38,77,140,0.14), inset 0 1px 0 rgba(255,255,255,0.9)',
+                    '0 8px 24px -4px rgba(39,39,154,0.14), inset 0 1px 0 rgba(255,255,255,0.9)',
                 }}
               >
                 <div className="flex items-center gap-2">
                   <span
                     className="flex h-2 w-2 rounded-full"
-                    style={{ background: '#fceb30' }}
+                    style={{ background: '#ffd426' }}
                   />
                   <p
                     style={{
@@ -123,7 +122,7 @@ export default function About() {
                       fontWeight: 600,
                       fontSize: '13px',
                       lineHeight: '18px',
-                      color: '#264d8c',
+                      color: '#27279a',
                     }}
                   >
                     Consultante SEO local
@@ -137,9 +136,9 @@ export default function About() {
                 style={{
                   width: '12px',
                   height: '12px',
-                  background: '#fceb30',
+                  background: '#ffd426',
                   zIndex: 3,
-                  boxShadow: '0 0 12px 3px rgba(252,235,48,0.45)',
+                  boxShadow: '0 0 12px 3px rgba(255,212,38,0.45)',
                 }}
               />
 
@@ -157,9 +156,9 @@ export default function About() {
                   fontWeight: 700,
                   fontSize: '22px',
                   lineHeight: '28px',
-                  color: '#2355b6',
+                  color: '#3b3fc4',
                   textTransform: 'uppercase',
-                  textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
+                  textShadow: '0 0 12px rgba(59,63,196,0.6), 0 0 28px rgba(59,63,196,0.35), 0 0 56px rgba(59,63,196,0.15)',
                 }}
               >
                 Votre interlocutrice
@@ -173,7 +172,7 @@ export default function About() {
                   fontWeight: 700,
                   fontSize: '42px',
                   lineHeight: '1.1',
-                  color: '#264d8c',
+                  color: '#27279a',
                 }}
               >
                 Qui je suis
@@ -188,14 +187,14 @@ export default function About() {
                   fontWeight: 400,
                   fontSize: '16px',
                   lineHeight: '26px',
-                  color: 'rgba(38,77,140,0.72)',
+                  color: 'rgba(39,39,154,0.72)',
                   maxWidth: '56ch',
                 }}
               >
                 Je m&apos;appelle Laetitia Laghezza. Je suis consultante SEO local indépendante, installée en Provence-Alpes-Côte d&apos;Azur, entre{' '}
-                <Link href="/consultant-seo-aix-en-provence" className="font-semibold text-[#2355b6] underline underline-offset-4">Aix-en-Provence</Link>,{' '}
-                <Link href="/consultant-seo-marseille" className="font-semibold text-[#2355b6] underline underline-offset-4">Marseille</Link> et{' '}
-                <Link href="/consultant-seo-toulon" className="font-semibold text-[#2355b6] underline underline-offset-4">Toulon</Link>. J&apos;interviens aussi partout en France, à distance, avec la même méthode.
+                <Link href="/consultant-seo-aix-en-provence" className="font-semibold text-[#3b3fc4] underline underline-offset-4">Aix-en-Provence</Link>,{' '}
+                <Link href="/consultant-seo-marseille" className="font-semibold text-[#3b3fc4] underline underline-offset-4">Marseille</Link> et{' '}
+                <Link href="/consultant-seo-toulon" className="font-semibold text-[#3b3fc4] underline underline-offset-4">Toulon</Link>. J&apos;interviens aussi partout en France, à distance, avec la même méthode.
               </p>
             </ScrollReveal>
 
@@ -207,7 +206,7 @@ export default function About() {
                   fontWeight: 400,
                   fontSize: '16px',
                   lineHeight: '26px',
-                  color: 'rgba(38,77,140,0.72)',
+                  color: 'rgba(39,39,154,0.72)',
                   maxWidth: '56ch',
                 }}
               >
@@ -223,7 +222,7 @@ export default function About() {
                   fontWeight: 400,
                   fontSize: '16px',
                   lineHeight: '26px',
-                  color: 'rgba(38,77,140,0.72)',
+                  color: 'rgba(39,39,154,0.72)',
                   maxWidth: '56ch',
                 }}
               >
@@ -239,7 +238,7 @@ export default function About() {
                   fontWeight: 400,
                   fontSize: '16px',
                   lineHeight: '26px',
-                  color: 'rgba(38,77,140,0.72)',
+                  color: 'rgba(39,39,154,0.72)',
                   maxWidth: '56ch',
                 }}
               >
@@ -251,7 +250,7 @@ export default function About() {
             <ScrollReveal delay={0.32}>
               <div
                 className="mt-2 flex flex-wrap gap-x-12 gap-y-6 border-t pt-8"
-                style={{ borderColor: 'rgba(38,77,140,0.10)' }}
+                style={{ borderColor: 'rgba(39,39,154,0.10)' }}
               >
                 {stats.map((s, i) => (
                   <div key={i}>
@@ -261,7 +260,7 @@ export default function About() {
                         fontWeight: 700,
                         fontSize: '34px',
                         lineHeight: '1',
-                        color: '#264d8c',
+                        color: '#27279a',
                       }}
                     >
                       {s.value}
@@ -272,12 +271,12 @@ export default function About() {
                         fontWeight: 400,
                         fontSize: '12px',
                         lineHeight: '18px',
-                        color: 'rgba(38,77,140,0.50)',
+                        color: 'rgba(39,39,154,0.50)',
                         marginTop: '5px',
                       }}
                     >
                       {s.label}
-                      <span style={{ color: '#264d8c', fontWeight: 700 }}>{s.highlight}</span>
+                      <span style={{ color: '#27279a', fontWeight: 700 }}>{s.highlight}</span>
                     </p>
                   </div>
                 ))}

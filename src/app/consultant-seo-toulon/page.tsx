@@ -335,8 +335,8 @@ export default function ConsultantSEOToulonPage() {
                   fontFamily: inter.style.fontFamily,
                   fontWeight: 600,
                   fontSize: '13px',
-                  color: '#fceb30',
-                  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4)',
+                  color: '#ffd426',
+                  textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4)',
                 }}
               >
                 <MapPin size={14} weight="bold" />
@@ -355,7 +355,7 @@ export default function ConsultantSEOToulonPage() {
                 }}
               >
                 Consultante SEO<br />
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   dans le Var
                 </span>
               </h1>
@@ -376,7 +376,7 @@ export default function ConsultantSEOToulonPage() {
               <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href="#offres"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-6 py-3.5 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-6 py-3.5 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Voir le diagnostic · 790 €
@@ -406,7 +406,7 @@ export default function ConsultantSEOToulonPage() {
                   { value: '46%', label: 'des recherches Google sont locales' },
                 ].map((s, i) => (
                   <div key={i}>
-                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '34px', lineHeight: '1', color: '#fceb30' }}>
+                    <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '34px', lineHeight: '1', color: '#ffd426' }}>
                       {s.value}
                     </p>
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '12px', color: 'rgba(255,255,255,0.45)', marginTop: '5px' }}>
@@ -434,7 +434,7 @@ export default function ConsultantSEOToulonPage() {
               <ScrollReveal>
                 <p
                   className="mb-4 uppercase tracking-widest"
-                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
                 >
                   Le marché varois
                 </p>
@@ -469,12 +469,12 @@ export default function ConsultantSEOToulonPage() {
                     fontSize: '20px',
                     lineHeight: '1.35',
                     color: 'rgba(255,255,255,0.90)',
-                    borderLeft: '2px solid rgba(252,235,48,0.55)',
+                    borderLeft: '2px solid rgba(255,212,38,0.55)',
                     paddingLeft: '16px',
                     marginTop: '4px',
                   }}>
                     Pas nécessairement meilleur.<br />
-                    <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 40px rgba(252,235,48,0.25)' }}>
+                    <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 40px rgba(255,212,38,0.25)' }}>
                       Juste mieux visible.
                     </span>
                   </p>
@@ -504,8 +504,8 @@ export default function ConsultantSEOToulonPage() {
                       { t: 'Vos coordonnées', d: 'Une seule incohérence entre votre fiche, Pages Jaunes et votre site suffit à affaiblir votre positionnement.' },
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.15)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: '24px' }}>
                           <strong className="text-white/90">{item.t}</strong> : {item.d}
@@ -515,7 +515,7 @@ export default function ConsultantSEOToulonPage() {
                   </ul>
                   <div
                     className="mt-8 rounded-xl p-4"
-                    style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                    style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
                   >
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: '22px' }}>
                       Le SEO local dans le Var est encore moins saturé qu&apos;à Marseille ou Nice.
@@ -542,7 +542,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Mon périmètre d&apos;intervention
               </p>
@@ -564,12 +564,12 @@ export default function ConsultantSEOToulonPage() {
               <div className="flex flex-wrap gap-3">
                 {zones.map((zone, i) => {
                   const sharedStyle: React.CSSProperties = {
-                    background: i === 0 ? 'rgba(252,235,48,0.12)' : zone.href ? 'rgba(252,235,48,0.07)' : 'rgba(255,255,255,0.05)',
-                    border: i === 0 ? '1px solid rgba(252,235,48,0.30)' : zone.href ? '1px solid rgba(252,235,48,0.25)' : '1px solid rgba(255,255,255,0.09)',
+                    background: i === 0 ? 'rgba(255,212,38,0.12)' : zone.href ? 'rgba(255,212,38,0.07)' : 'rgba(255,255,255,0.05)',
+                    border: i === 0 ? '1px solid rgba(255,212,38,0.30)' : zone.href ? '1px solid rgba(255,212,38,0.25)' : '1px solid rgba(255,255,255,0.09)',
                     fontFamily: inter.style.fontFamily,
                     fontSize: '13px',
                     fontWeight: i === 0 || zone.href ? 600 : 400,
-                    color: i === 0 ? '#fceb30' : zone.href ? 'rgba(252,235,48,0.75)' : 'rgba(255,255,255,0.55)',
+                    color: i === 0 ? '#ffd426' : zone.href ? 'rgba(255,212,38,0.75)' : 'rgba(255,255,255,0.55)',
                     textDecoration: 'none',
                     transition: zone.href ? 'background 0.2s, color 0.2s' : undefined,
                   };
@@ -608,7 +608,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Le diagnostic SEO local
               </p>
@@ -664,7 +664,7 @@ export default function ConsultantSEOToulonPage() {
                       boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)',
                     }}
                   >
-                    <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
+                    <div className="mb-4 h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
                     <h3
                       className="mb-3 text-white"
                       style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '17px', lineHeight: '1.3' }}
@@ -706,22 +706,22 @@ export default function ConsultantSEOToulonPage() {
                 <div
                   className="h-full rounded-[2rem] p-10"
                   style={{
-                    background: 'linear-gradient(145deg, #2a57b8 0%, #3262ab 55%, #1d3f8f 100%)',
-                    boxShadow: '0 30px 60px -15px rgba(50,98,171,0.45)',
+                    background: 'linear-gradient(145deg, #3b3fc4 0%, #27279a 55%, #1b1b5e 100%)',
+                    boxShadow: '0 30px 60px -15px rgba(59,63,196,0.45)',
                   }}
                 >
-                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#fceb30' }} />
+                  <div className="mb-6 h-[3px] w-10 rounded-full" style={{ background: '#ffd426' }} />
                   <h3
                     className="mb-7"
                     style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#ffffff' }}
                   >
-                    Pour <span style={{ color: '#fceb30' }}>vous</span>
+                    Pour <span style={{ color: '#ffd426' }}>vous</span>
                   </h3>
                   <ul className="space-y-5">
                     {forYou.map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.20)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.20)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px', color: 'rgba(255,255,255,0.85)' }}>
                           {item}
@@ -775,7 +775,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Tarifs
               </p>
@@ -803,7 +803,7 @@ export default function ConsultantSEOToulonPage() {
                       offer.yellow
                         ? {
                             background: 'linear-gradient(145deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)',
-                            boxShadow: '0 0 0 1.5px rgba(252,235,48,0.40), inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 64px -16px rgba(252,235,48,0.18)',
+                            boxShadow: '0 0 0 1.5px rgba(255,212,38,0.40), inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 64px -16px rgba(255,212,38,0.18)',
                           }
                         : {
                             background: 'rgba(255,255,255,0.04)',
@@ -816,7 +816,7 @@ export default function ConsultantSEOToulonPage() {
                       className="mb-5 inline-block w-fit rounded-full px-4 py-1 text-xs font-bold uppercase tracking-widest"
                       style={
                         offer.yellow
-                          ? { fontFamily: inter.style.fontFamily, background: '#fceb30', color: '#264d8c' }
+                          ? { fontFamily: inter.style.fontFamily, background: '#ffd426', color: '#27279a' }
                           : { fontFamily: inter.style.fontFamily, background: 'rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.50)', border: '1px solid rgba(255,255,255,0.12)' }
                       }
                     >
@@ -828,7 +828,7 @@ export default function ConsultantSEOToulonPage() {
                     </h3>
                     <div className="mb-1 flex items-end gap-2">
                       <span className="text-5xl font-bold text-white" style={{ fontFamily: 'Satoshi, sans-serif', lineHeight: '1' }}>
-                        {offer.price}<span style={{ color: '#fceb30' }}>&thinsp;€</span>
+                        {offer.price}<span style={{ color: '#ffd426' }}>&thinsp;€</span>
                       </span>
                       {offer.priceSuffix && (
                         <span className="mb-1 text-sm text-white/40" style={{ fontFamily: inter.style.fontFamily }}>
@@ -850,7 +850,7 @@ export default function ConsultantSEOToulonPage() {
                       {offer.pitch}
                     </p>
 
-                    <div className="mb-6 h-px w-full" style={{ background: offer.yellow ? 'rgba(252,235,48,0.15)' : 'rgba(255,255,255,0.08)' }} />
+                    <div className="mb-6 h-px w-full" style={{ background: offer.yellow ? 'rgba(255,212,38,0.15)' : 'rgba(255,255,255,0.08)' }} />
 
                     <ul className="mb-8 flex-1 space-y-3">
                       {offer.items.map((item, i) => (
@@ -859,7 +859,7 @@ export default function ConsultantSEOToulonPage() {
                           className="flex items-start gap-3"
                           style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', lineHeight: '22px', color: 'rgba(255,255,255,0.65)' }}
                         >
-                          <CheckCircle size={16} weight="fill" className="mt-[3px] shrink-0" style={{ color: offer.yellow ? '#fceb30' : 'rgba(255,255,255,0.30)' }} />
+                          <CheckCircle size={16} weight="fill" className="mt-[3px] shrink-0" style={{ color: offer.yellow ? '#ffd426' : 'rgba(255,255,255,0.30)' }} />
                           {item}
                         </li>
                       ))}
@@ -873,7 +873,7 @@ export default function ConsultantSEOToulonPage() {
                       className="mt-auto flex w-full items-center justify-center gap-2 rounded-full py-3.5 font-bold transition-all duration-300 active:scale-[0.98]"
                       style={
                         offer.yellow
-                          ? { fontFamily: inter.style.fontFamily, fontSize: '14px', background: '#fceb30', color: '#264d8c' }
+                          ? { fontFamily: inter.style.fontFamily, fontSize: '14px', background: '#ffd426', color: '#27279a' }
                           : { fontFamily: inter.style.fontFamily, fontSize: '14px', background: 'rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.80)', border: '1px solid rgba(255,255,255,0.15)' }
                       }
                       strength={0.25}
@@ -911,7 +911,7 @@ export default function ConsultantSEOToulonPage() {
               <ScrollReveal>
                 <p
                   className="mb-4 uppercase tracking-widest"
-                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                  style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
                 >
                   Nouveau levier · 2025-2026
                 </p>
@@ -968,8 +968,8 @@ export default function ConsultantSEOToulonPage() {
                       'Un acheteur utilise Perplexity pour comparer des cuisinistes à Hyères → l\'outil agrège des avis, des sites, des mentions presse locale.',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(252,235,48,0.15)' }}>
-                          <Check size={11} weight="bold" color="#fceb30" />
+                        <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full" style={{ background: 'rgba(255,212,38,0.15)' }}>
+                          <Check size={11} weight="bold" color="#ffd426" />
                         </span>
                         <span style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: '24px' }}>
                           {item}
@@ -979,7 +979,7 @@ export default function ConsultantSEOToulonPage() {
                   </ul>
                   <div
                     className="rounded-xl p-4"
-                    style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                    style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
                   >
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: '22px' }}>
                       <strong className="text-white/90">Ce qui compte pour les IA</strong>, c&apos;est la
@@ -1010,7 +1010,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Résultats &amp; témoignages
               </p>
@@ -1033,7 +1033,7 @@ export default function ConsultantSEOToulonPage() {
                       boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.06)',
                     }}
                   >
-                    <Quotes size={26} weight="fill" color="rgba(252,235,48,0.5)" className="mb-4" />
+                    <Quotes size={26} weight="fill" color="rgba(255,212,38,0.5)" className="mb-4" />
                     <blockquote
                       className="flex-1 text-white/70"
                       style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '25px' }}
@@ -1042,7 +1042,7 @@ export default function ConsultantSEOToulonPage() {
                     </blockquote>
                     <div className="mt-6 flex gap-0.5">
                       {Array.from({ length: 5 }).map((_, s) => (
-                        <Star key={s} size={14} weight="fill" color="#fceb30" />
+                        <Star key={s} size={14} weight="fill" color="#ffd426" />
                       ))}
                     </div>
                     <figcaption className="mt-3">
@@ -1073,7 +1073,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Le déroulé
               </p>
@@ -1104,7 +1104,7 @@ export default function ConsultantSEOToulonPage() {
                   >
                     <p
                       className="mb-5 font-mono font-bold"
-                      style={{ fontSize: '13px', color: 'rgba(252,235,48,0.5)', letterSpacing: '0.08em' }}
+                      style={{ fontSize: '13px', color: 'rgba(255,212,38,0.5)', letterSpacing: '0.08em' }}
                     >
                       {step.num}
                     </p>
@@ -1150,7 +1150,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Questions fréquentes
               </p>
@@ -1232,7 +1232,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Sources utiles
               </p>
@@ -1259,8 +1259,8 @@ export default function ConsultantSEOToulonPage() {
                     }}
                   >
                     <div className="mb-4 flex items-center justify-between">
-                      <span className="h-[2px] w-8 rounded-full" style={{ background: '#fceb30' }} />
-                      <ArrowSquareOut size={18} weight="bold" color="rgba(255,255,255,0.35)" className="transition-colors group-hover:text-[#fceb30]" />
+                      <span className="h-[2px] w-8 rounded-full" style={{ background: '#ffd426' }} />
+                      <ArrowSquareOut size={18} weight="bold" color="rgba(255,255,255,0.35)" className="transition-colors group-hover:text-[#ffd426]" />
                     </div>
                     <h3 className="mb-3 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', lineHeight: '1.3' }}>
                       {s.title}
@@ -1288,7 +1288,7 @@ export default function ConsultantSEOToulonPage() {
             <ScrollReveal>
               <p
                 className="mb-4 uppercase tracking-widest"
-                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#fceb30', textShadow: '0 0 12px rgba(252,235,48,0.6)' }}
+                style={{ fontFamily: inter.style.fontFamily, fontWeight: 600, fontSize: '13px', color: '#ffd426', textShadow: '0 0 12px rgba(255,212,38,0.6)' }}
               >
                 Prochaine étape
               </p>
@@ -1297,7 +1297,7 @@ export default function ConsultantSEOToulonPage() {
                 style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: '1.1' }}
               >
                 Dans le Var, la fenêtre est encore ouverte.{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   Profitez-en avant vos concurrents.
                 </span>
               </h2>
@@ -1322,7 +1322,7 @@ export default function ConsultantSEOToulonPage() {
                   href="https://calendly.com/laetitia_laghezza_seo_local/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#fceb30] px-8 py-4 font-bold text-[#264d8c] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#ffd426] px-8 py-4 font-bold text-[#1b1b5e] transition-all duration-300 hover:brightness-105 active:scale-[0.98]"
                   style={{ fontFamily: inter.style.fontFamily, fontSize: '15px' }}
                 >
                   Faire le point sur ma visibilité · 790 €

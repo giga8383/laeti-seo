@@ -50,9 +50,9 @@ function FaqItem({
         className="rounded-2xl border transition-colors duration-200"
         style={{
           border: isOpen
-            ? '1px solid rgba(252,235,48,0.20)'
+            ? '1px solid rgba(255,212,38,0.20)'
             : '1px solid rgba(255,255,255,0.08)',
-          background: isOpen ? 'rgba(252,235,48,0.04)' : 'rgba(255,255,255,0.03)',
+          background: isOpen ? 'rgba(255,212,38,0.04)' : 'rgba(255,255,255,0.03)',
         }}
       >
         <button
@@ -73,8 +73,8 @@ function FaqItem({
           <span
             className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all duration-200"
             style={{
-              background: isOpen ? '#fceb30' : 'rgba(255,255,255,0.08)',
-              color: isOpen ? '#264d8c' : 'rgba(255,255,255,0.50)',
+              background: isOpen ? '#ffd426' : 'rgba(255,255,255,0.08)',
+              color: isOpen ? '#27279a' : 'rgba(255,255,255,0.50)',
             }}
           >
             {isOpen ? <Minus size={13} weight="bold" /> : <Plus size={13} weight="bold" />}
@@ -126,9 +126,9 @@ export default function OffreFAQ() {
               fontWeight: 700,
               fontSize: '22px',
               lineHeight: '28px',
-              color: 'rgb(252, 235, 48)',
+              color: 'rgb(255, 212, 38)',
               textTransform: 'uppercase',
-              textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+              textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
             }}
           >
             Questions fréquentes

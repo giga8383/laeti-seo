@@ -143,18 +143,18 @@ function DiagStep({
           <div
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full"
             style={{
-              border: '1px solid rgba(252,235,48,0.35)',
-              background: 'rgba(252,235,48,0.10)',
+              border: '1px solid rgba(255,212,38,0.35)',
+              background: 'rgba(255,212,38,0.10)',
             }}
           >
-            <span className="font-mono text-xs font-bold" style={{ color: '#fceb30', fontFamily: 'monospace' }}>
+            <span className="font-mono text-xs font-bold" style={{ color: '#ffd426', fontFamily: 'monospace' }}>
               {step.number}
             </span>
           </div>
           {!isLast && (
             <div
               className="mt-2 w-px flex-1 min-h-[2rem]"
-              style={{ background: 'linear-gradient(to bottom, rgba(252,235,48,0.20), transparent)' }}
+              style={{ background: 'linear-gradient(to bottom, rgba(255,212,38,0.20), transparent)' }}
             />
           )}
         </div>
@@ -306,7 +306,7 @@ export default function Process() {
                   <li key={i} className="flex items-start gap-3">
                     <span
                       className="mt-[6px] h-1.5 w-1.5 shrink-0 rounded-full"
-                      style={{ background: '#fceb30', opacity: 0.7 }}
+                      style={{ background: '#ffd426', opacity: 0.7 }}
                     />
                     <span
                       className="text-sm text-white/60"
@@ -319,7 +319,7 @@ export default function Process() {
               </ul>
               <div
                 className="mt-8 rounded-xl p-4"
-                style={{ background: 'rgba(252,235,48,0.06)', border: '1px solid rgba(252,235,48,0.15)' }}
+                style={{ background: 'rgba(255,212,38,0.06)', border: '1px solid rgba(255,212,38,0.15)' }}
               >
                 <p
                   className="text-xs text-white/45"
@@ -341,7 +341,7 @@ export default function Process() {
         <ScrollReveal>
           <div className="mb-4 flex items-center gap-3">
             <span
-              className="inline-block rounded-full bg-[#fceb30] px-4 py-1 text-xs font-semibold uppercase tracking-widest text-[#264d8c]"
+              className="inline-block rounded-full bg-[#ffd426] px-4 py-1 text-xs font-semibold uppercase tracking-widest text-[#1b1b5e]"
               style={{ fontFamily: inter.style.fontFamily }}
             >
               3 mois minimum

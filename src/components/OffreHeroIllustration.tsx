@@ -32,8 +32,8 @@ export default function OffreHeroIllustration() {
         <path d="M320 0 Q335 140 310 280 Q295 360 330 420" stroke="rgba(255,255,255,0.05)" strokeWidth="5" fill="none" strokeLinecap="round" />
 
         {/* Zone de chaleur / halo */}
-        <circle cx="240" cy="210" r="100" fill="rgba(252,235,48,0.04)" />
-        <circle cx="240" cy="210" r="60" fill="rgba(252,235,48,0.06)" />
+        <circle cx="240" cy="210" r="100" fill="rgba(255,212,38,0.04)" />
+        <circle cx="240" cy="210" r="60" fill="rgba(255,212,38,0.06)" />
       </svg>
 
       {/* ── Carte principale : fiche Google Business ── */}
@@ -56,13 +56,13 @@ export default function OffreHeroIllustration() {
           {/* Photo miniature */}
           <div style={{
             width: '44px', height: '44px', borderRadius: '10px', flexShrink: 0,
-            background: 'linear-gradient(135deg, rgba(252,235,48,0.25), rgba(252,235,48,0.08))',
-            border: '1px solid rgba(252,235,48,0.20)',
+            background: 'linear-gradient(135deg, rgba(255,212,38,0.25), rgba(255,212,38,0.08))',
+            border: '1px solid rgba(255,212,38,0.20)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#fceb30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M9 22V12h6v10" stroke="#fceb30" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#ffd426" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M9 22V12h6v10" stroke="#ffd426" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
           <div className="flex-1 min-w-0">
@@ -77,7 +77,7 @@ export default function OffreHeroIllustration() {
         <div className="flex items-center gap-2 mb-3">
           <div className="flex gap-0.5">
             {[1,2,3,4,5].map(i => (
-              <svg key={i} width="12" height="12" viewBox="0 0 12 12" fill={i <= 4 ? '#fceb30' : 'rgba(255,255,255,0.2)'}>
+              <svg key={i} width="12" height="12" viewBox="0 0 12 12" fill={i <= 4 ? '#ffd426' : 'rgba(255,255,255,0.2)'}>
                 <path d="M6 1l1.35 2.73L10.5 4.2l-2.25 2.19.53 3.1L6 8l-2.78 1.5.53-3.1L1.5 4.2l3.15-.47L6 1z"/>
               </svg>
             ))}
@@ -85,8 +85,8 @@ export default function OffreHeroIllustration() {
           <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.55)', fontFamily: 'Inter, sans-serif' }}>4.8 · 47 avis</span>
           <span style={{
             marginLeft: 'auto', fontSize: '10px', fontWeight: 600,
-            color: '#fceb30', background: 'rgba(252,235,48,0.12)',
-            border: '1px solid rgba(252,235,48,0.25)',
+            color: '#ffd426', background: 'rgba(255,212,38,0.12)',
+            border: '1px solid rgba(255,212,38,0.25)',
             padding: '2px 8px', borderRadius: '999px', fontFamily: 'Inter, sans-serif',
           }}>Ouvert</span>
         </div>
@@ -94,7 +94,7 @@ export default function OffreHeroIllustration() {
         {/* Ligne position */}
         <div className="flex items-center gap-2 mb-3">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="rgba(252,235,48,0.6)"/>
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="rgba(255,212,38,0.6)"/>
           </svg>
           <div style={{ height: '8px', width: '160px', borderRadius: '4px', background: 'rgba(255,255,255,0.18)' }} />
         </div>
@@ -106,13 +106,13 @@ export default function OffreHeroIllustration() {
         <div className="flex items-center gap-2">
           <div style={{
             display: 'flex', alignItems: 'center', gap: '5px',
-            background: 'rgba(252,235,48,0.12)', border: '1px solid rgba(252,235,48,0.22)',
+            background: 'rgba(255,212,38,0.12)', border: '1px solid rgba(255,212,38,0.22)',
             borderRadius: '8px', padding: '5px 10px',
           }}>
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="#fceb30">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="#ffd426">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
             </svg>
-            <span style={{ fontSize: '10px', fontWeight: 700, color: '#fceb30', fontFamily: 'Inter, sans-serif' }}>#1 sur Google Maps</span>
+            <span style={{ fontSize: '10px', fontWeight: 700, color: '#ffd426', fontFamily: 'Inter, sans-serif' }}>#1 sur Google Maps</span>
           </div>
           <div style={{
             display: 'flex', alignItems: 'center', gap: '5px',
@@ -130,13 +130,13 @@ export default function OffreHeroIllustration() {
           <div style={{
             width: '36px', height: '36px', borderRadius: '50% 50% 50% 0',
             transform: 'rotate(-45deg)',
-            background: '#fceb30',
-            boxShadow: '0 0 0 4px rgba(252,235,48,0.25), 0 0 20px rgba(252,235,48,0.4)',
+            background: '#ffd426',
+            boxShadow: '0 0 0 4px rgba(255,212,38,0.25), 0 0 20px rgba(255,212,38,0.4)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            <div style={{ transform: 'rotate(45deg)', width: '10px', height: '10px', borderRadius: '50%', background: '#264d8c' }} />
+            <div style={{ transform: 'rotate(45deg)', width: '10px', height: '10px', borderRadius: '50%', background: '#27279a' }} />
           </div>
-          <div style={{ width: '2px', height: '12px', background: 'rgba(252,235,48,0.4)', marginTop: '2px' }} />
+          <div style={{ width: '2px', height: '12px', background: 'rgba(255,212,38,0.4)', marginTop: '2px' }} />
         </div>
       </div>
 
@@ -181,17 +181,17 @@ export default function OffreHeroIllustration() {
         style={{
           bottom: '24px', right: '16px',
           borderRadius: '12px',
-          background: 'rgba(252,235,48,0.08)',
-          border: '1px solid rgba(252,235,48,0.22)',
+          background: 'rgba(255,212,38,0.08)',
+          border: '1px solid rgba(255,212,38,0.22)',
           backdropFilter: 'blur(10px)',
           padding: '10px 14px',
           width: '140px',
-          boxShadow: '0 8px 24px -6px rgba(252,235,48,0.15)',
+          boxShadow: '0 8px 24px -6px rgba(255,212,38,0.15)',
         }}
       >
-        <p style={{ fontSize: '9px', color: 'rgba(252,235,48,0.6)', fontFamily: 'Inter, sans-serif', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Après sprint</p>
+        <p style={{ fontSize: '9px', color: 'rgba(255,212,38,0.6)', fontFamily: 'Inter, sans-serif', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Après sprint</p>
         <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-          <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#fceb30' }} />
+          <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#ffd426' }} />
           <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.80)', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>Position #1</span>
         </div>
       </div>

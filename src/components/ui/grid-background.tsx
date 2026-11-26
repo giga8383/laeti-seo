@@ -7,8 +7,8 @@ export function GridBackground() {
     <div
       className="fixed inset-0 pointer-events-none -z-10"
       style={{
-        /* Base bleu chaud — légèrement teinté ambre vers le bas */
-        background: "radial-gradient(ellipse at 38% 30%, #3465b8 0%, #1e3570 55%, #141f4a 100%)",
+        /* Base bleu indigo — tendance, touche de violet */
+        background: "radial-gradient(ellipse at 38% 30%, #3b3fc4 0%, #27279a 42%, #1b1b5e 100%)",
       }}
     >
       {/* Grille fine — trame de base */}
@@ -43,7 +43,7 @@ export function GridBackground() {
           left: '-10%',
           width: '65%',
           height: '65%',
-          background: 'radial-gradient(ellipse at center, rgba(210,135,45,0.22) 0%, rgba(180,100,30,0.10) 40%, transparent 72%)',
+          background: 'radial-gradient(ellipse at center, rgba(139,92,246,0.30) 0%, rgba(99,102,241,0.12) 40%, transparent 72%)',
           pointerEvents: 'none',
         }}
       />
@@ -56,7 +56,7 @@ export function GridBackground() {
           right: '-5%',
           width: '50%',
           height: '50%',
-          background: 'radial-gradient(ellipse at center, rgba(195,125,40,0.14) 0%, rgba(160,90,25,0.06) 45%, transparent 70%)',
+          background: 'radial-gradient(ellipse at center, rgba(59,63,196,0.20) 0%, rgba(56,140,248,0.08) 45%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />
@@ -65,7 +65,7 @@ export function GridBackground() {
       <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(160deg, transparent 40%, rgba(170,95,30,0.08) 100%)',
+          background: 'linear-gradient(160deg, transparent 40%, rgba(124,58,237,0.10) 100%)',
           pointerEvents: 'none',
         }}
       />

@@ -30,19 +30,19 @@ export default function SprintSection() {
                 fontWeight: 700,
                 fontSize: '22px',
                 lineHeight: '28px',
-                color: '#2355b6',
-                textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
+                color: '#3b3fc4',
+                textShadow: '0 0 12px rgba(59,63,196,0.6), 0 0 28px rgba(59,63,196,0.35), 0 0 56px rgba(59,63,196,0.15)',
               }}
             >
               L&apos;accompagnement
             </p>
             <h2
-              className="text-[#264d8c]"
+              className="text-[#27279a]"
               style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' }}
             >
               Le Sprint local à 500 €/mois, 3 mois minimum
             </h2>
-            <p className="mt-5 text-[#264d8c]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
+            <p className="mt-5 text-[#27279a]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
               Pour appliquer le plan d&apos;action et tenir la cadence. Trois mois, parce qu&apos;en dessous, on ne peut rien observer de sérieux.
             </p>
           </div>
@@ -50,12 +50,12 @@ export default function SprintSection() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {months.map((m, i) => (
-            <ScrollReveal key={m.title} delay={0.05 + i * 0.08} className="h-full">
-              <div className="h-full rounded-[1.75rem] border border-[#264d8c]/10 bg-white p-8">
-                <h3 className="mb-3 text-[#264d8c]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '21px', lineHeight: '1.25' }}>
+            <ScrollReveal key={m.title} delay={0.1 + i * 0.45} flip className="h-full">
+              <div className="h-full rounded-[1.75rem] border border-[#27279a]/10 bg-white p-8">
+                <h3 className="mb-3 text-[#27279a]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '21px', lineHeight: '1.25' }}>
                   {m.title}
                 </h3>
-                <p className="text-[#264d8c]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
+                <p className="text-[#27279a]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
                   {m.text}
                 </p>
               </div>
@@ -64,8 +64,8 @@ export default function SprintSection() {
         </div>
 
         <ScrollReveal delay={0.2}>
-          <div className="mt-6 rounded-[1.75rem] border border-[#264d8c]/10 bg-white p-8">
-            <p className="text-[#264d8c]" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
+          <div className="mt-6 rounded-[1.75rem] border border-[#27279a]/10 bg-white p-8">
+            <p className="text-[#27279a]" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
               <strong>Chaque mois, sans exception,</strong> vous avez un point de 30 minutes, un compte rendu écrit avec ce qui a été fait et ce qui est prévu, et le relevé des indicateurs. Vous savez ce que vous payez.
             </p>
           </div>
@@ -73,15 +73,15 @@ export default function SprintSection() {
 
         <ScrollReveal delay={0.25}>
           <div className="mt-8 flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-            <p className="max-w-[60ch] text-[#264d8c]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px' }}>
-              <strong className="text-[#264d8c]">Conditions.</strong> 500 € par mois, engagement de 3 mois minimum, sans reconduction forcée au-delà. Le périmètre est fixé par écrit au démarrage, après le diagnostic.
+            <p className="max-w-[60ch] text-[#27279a]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '15px', lineHeight: '24px' }}>
+              <strong className="text-[#27279a]">Conditions.</strong> 500 € par mois, engagement de 3 mois minimum, sans reconduction forcée au-delà. Le périmètre est fixé par écrit au démarrage, après le diagnostic.
             </p>
             <MagneticButton
               as="a"
               href="https://calendly.com/laetitia_laghezza_seo_local/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 rounded-full bg-[#264d8c] px-8 py-4 text-white transition-[filter] duration-300 hover:brightness-110 active:scale-[0.98]"
+              className="shrink-0 rounded-full bg-[#27279a] px-8 py-4 text-white transition-[filter] duration-300 hover:brightness-110 active:scale-[0.98]"
               style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '24px' }}
               strength={0.3}
             >

@@ -30,7 +30,7 @@ const h2Style = {
   fontFamily: 'Satoshi, sans-serif',
   fontWeight: 700,
   fontSize: '17px',
-  color: '#0f1e48',
+  color: '#1b1b5e',
   marginBottom: '12px',
   scrollMarginTop: '100px',
 };
@@ -52,7 +52,7 @@ export default function CGV() {
           {/* En-tête */}
           <h1 className="mb-3" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 900, lineHeight: '1.0', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
             <span style={{ display: 'block', fontSize: 'clamp(42px, 8vw, 80px)', color: '#ffffff' }}>Conditions</span>
-            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#fceb30', textShadow: '0 0 40px rgba(252,235,48,0.35)' }}>Générales de Vente</span>
+            <span style={{ display: 'block', fontSize: 'clamp(36px, 7vw, 68px)', color: '#ffd426', textShadow: '0 0 40px rgba(255,212,38,0.35)' }}>Générales de Vente</span>
           </h1>
           <p className="mb-3" style={{ fontFamily: inter.style.fontFamily, fontSize: '14px', color: 'rgba(255,255,255,0.40)' }}>
             Dernière mise à jour : juin 2026
@@ -61,18 +61,18 @@ export default function CGV() {
             <p><span style={{ color: 'rgba(255,255,255,0.40)' }}>Prestataire</span> <strong style={{ color: 'rgba(255,255,255,0.85)' }}>Laetitia Laghezza</strong></p>
             <p>Auto-entrepreneur, SIRET 52276783900023</p>
             <p>Rue du Commerce, 83910 Pourrières</p>
-            <p><a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#fceb30', textDecoration: 'none' }}>laetitia@laeti-seo.fr</a></p>
+            <p><a href="mailto:laetitia@laeti-seo.fr" style={{ color: '#ffd426', textDecoration: 'none' }}>laetitia@laeti-seo.fr</a></p>
           </div>
 
           {/* Table des matières */}
           <nav
             className="rounded-2xl mb-10 px-7 py-6"
-            style={{ background: '#eef2ff', border: '1px solid rgba(50,98,171,0.15)' }}
+            style={{ background: '#eef2ff', border: '1px solid rgba(59,63,196,0.15)' }}
             aria-label="Table des matières"
           >
             <p
               className="mb-4 uppercase tracking-widest"
-              style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '11px', color: '#3262ab' }}
+              style={{ fontFamily: inter.style.fontFamily, fontWeight: 700, fontSize: '11px', color: '#3b3fc4' }}
             >
               Table des matières
             </p>
@@ -84,7 +84,7 @@ export default function CGV() {
                     style={{
                       fontFamily: inter.style.fontFamily,
                       fontSize: '14px',
-                      color: '#3262ab',
+                      color: '#3b3fc4',
                       textDecoration: 'none',
                     }}
                     className="hover:underline"
@@ -99,7 +99,7 @@ export default function CGV() {
           {/* Contenu */}
           <div
             className="rounded-2xl bg-white px-8 py-10 space-y-10"
-            style={{ border: '1px solid rgba(50,98,171,0.10)', boxShadow: '0 4px 24px -8px rgba(15,30,72,0.08)' }}
+            style={{ border: '1px solid rgba(59,63,196,0.10)', boxShadow: '0 4px 24px -8px rgba(27,27,94,0.08)' }}
           >
 
             <section id="art1">
@@ -131,8 +131,8 @@ export default function CGV() {
               <div style={bodyStyle}>
                 <p className="mb-4">Le Prestataire propose deux types de prestations :</p>
                 <div className="space-y-3">
-                  <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(50,98,171,0.12)' }}>
-                    <strong style={{ color: '#0f1e48' }}>Diagnostic visibilité locale · 790 €</strong>
+                  <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(59,63,196,0.12)' }}>
+                    <strong style={{ color: '#1b1b5e' }}>Diagnostic visibilité locale · 790 €</strong>
                     <p className="mt-1" style={{ fontSize: '14px' }}>
                       Prestation ponctuelle. Analyse complète de la présence Google locale (fiche Google Business
                       Profile, avis clients, site web, positionnement face aux concurrents locaux). Livraison
@@ -140,8 +140,8 @@ export default function CGV() {
                       Appel de restitution de 45 minutes inclus.
                     </p>
                   </div>
-                  <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(50,98,171,0.12)' }}>
-                    <strong style={{ color: '#0f1e48' }}>Sprint local 3 mois · 1 500 € (500 €/mois)</strong>
+                  <div className="rounded-xl px-5 py-4" style={{ background: '#f0f4ff', border: '1px solid rgba(59,63,196,0.12)' }}>
+                    <strong style={{ color: '#1b1b5e' }}>Sprint local 3 mois · 1 500 € (500 €/mois)</strong>
                     <p className="mt-1" style={{ fontSize: '14px' }}>
                       Prestation d&apos;accompagnement sur une durée déterminée de trois (3) mois. Inclut le
                       diagnostic visibilité, l&apos;optimisation de la fiche Google Business Profile, une stratégie
@@ -211,11 +211,11 @@ export default function CGV() {
               <div style={bodyStyle}>
                 <p><strong>Moyen de paiement :</strong> virement bancaire uniquement. Les coordonnées bancaires sont communiquées lors de la confirmation de commande.</p>
                 <div className="mt-4 space-y-3">
-                  <div className="rounded-xl px-5 py-4" style={{ background: '#f8f9fc', border: '1px solid rgba(50,98,171,0.10)' }}>
+                  <div className="rounded-xl px-5 py-4" style={{ background: '#f8f9fc', border: '1px solid rgba(59,63,196,0.10)' }}>
                     <strong>Diagnostic visibilité locale :</strong> paiement intégral de 790 € à la commande.
                     La prestation démarre après réception du virement.
                   </div>
-                  <div className="rounded-xl px-5 py-4" style={{ background: '#f8f9fc', border: '1px solid rgba(50,98,171,0.10)' }}>
+                  <div className="rounded-xl px-5 py-4" style={{ background: '#f8f9fc', border: '1px solid rgba(59,63,196,0.10)' }}>
                     <strong>Sprint local 3 mois :</strong> paiement en 3 mensualités égales de 500 €.
                     La première mensualité est due à la commande, les deux suivantes à 30 et 60 jours calendaires.
                   </div>

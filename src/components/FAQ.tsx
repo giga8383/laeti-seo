@@ -18,7 +18,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         aria-expanded={open}
       >
         <span className="text-white/85" style={{ fontFamily: 'Inter, "Inter Fallback"', fontStyle: 'normal', fontWeight: 400, fontSize: '16px', lineHeight: '26px' }}>{q}</span>
-        <span className="mt-0.5 shrink-0 text-[#fceb30]">
+        <span className="mt-0.5 shrink-0 text-[#ffd426]">
           {open ? <Minus size={18} weight="bold" /> : <Plus size={18} weight="bold" />}
         </span>
       </button>
@@ -53,7 +53,7 @@ export default function FAQ({
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-[2fr_3fr]">
           <ScrollReveal>
-            <p className="mb-3" style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: 'rgb(252, 235, 48)', textTransform: 'uppercase', textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)' }}>
+            <p className="mb-3" style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: 'rgb(255, 212, 38)', textTransform: 'uppercase', textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)' }}>
               {label}
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">

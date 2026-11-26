@@ -93,9 +93,9 @@ function NavItem({ label, href, soon }: { label: string; href: string; soon?: bo
             fontFamily: inter.style.fontFamily,
             fontSize: '10px',
             fontWeight: 600,
-            color: 'rgba(252,235,48,0.55)',
-            background: 'rgba(252,235,48,0.08)',
-            border: '1px solid rgba(252,235,48,0.18)',
+            color: 'rgba(255,212,38,0.55)',
+            background: 'rgba(255,212,38,0.08)',
+            border: '1px solid rgba(255,212,38,0.18)',
             borderRadius: '4px',
             padding: '1px 5px',
             lineHeight: '16px',
@@ -129,7 +129,7 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
           fontWeight: soon ? 400 : 500,
           fontSize: '14px',
           lineHeight: '22px',
-          color: soon ? 'rgba(252,235,48,0.30)' : 'rgba(252,235,48,0.80)',
+          color: soon ? 'rgba(255,212,38,0.30)' : 'rgba(255,212,38,0.80)',
           textDecoration: 'none',
           display: 'flex',
           alignItems: 'center',
@@ -137,8 +137,8 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
           cursor: soon ? 'default' : 'pointer',
           transition: 'color 0.2s',
         }}
-        onMouseEnter={e => { if (!soon) e.currentTarget.style.color = '#fceb30'; }}
-        onMouseLeave={e => { if (!soon) e.currentTarget.style.color = soon ? 'rgba(252,235,48,0.30)' : 'rgba(252,235,48,0.80)'; }}
+        onMouseEnter={e => { if (!soon) e.currentTarget.style.color = '#ffd426'; }}
+        onMouseLeave={e => { if (!soon) e.currentTarget.style.color = soon ? 'rgba(255,212,38,0.30)' : 'rgba(255,212,38,0.80)'; }}
       >
         {label}
         {soon && (
@@ -146,9 +146,9 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
             fontFamily: inter.style.fontFamily,
             fontSize: '10px',
             fontWeight: 600,
-            color: 'rgba(252,235,48,0.40)',
-            background: 'rgba(252,235,48,0.06)',
-            border: '1px solid rgba(252,235,48,0.12)',
+            color: 'rgba(255,212,38,0.40)',
+            background: 'rgba(255,212,38,0.06)',
+            border: '1px solid rgba(255,212,38,0.12)',
             borderRadius: '4px',
             padding: '1px 5px',
             lineHeight: '16px',
@@ -177,7 +177,7 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
             margin: '-5px 0 -5px -6px',
             padding: 0,
             cursor: 'pointer',
-            color: 'rgba(252,235,48,0.80)',
+            color: 'rgba(255,212,38,0.80)',
             fontSize: '14px',
             lineHeight: 1,
             transform: open ? 'rotate(180deg)' : 'none',
@@ -223,7 +223,7 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
                   fontFamily: inter.style.fontFamily,
                   fontSize: '14px',
                   lineHeight: '22px',
-                  color: '#264d8c',
+                  color: '#27279a',
                   textDecoration: 'none',
                 }}
                 onMouseEnter={e => { e.currentTarget.style.background = '#f2f5fb'; }}
@@ -244,12 +244,42 @@ function SeoItem({ label, href, soon, children }: SeoLink) {
 export default function Footer() {
   return (
     <footer style={{
-      background: 'linear-gradient(165deg, #0c1a40 0%, #112258 55%, #0f1e48 100%)',
+      position: 'relative',
+      background: 'linear-gradient(165deg, #23237f 0%, #1b1b5e 55%, #14144a 100%)',
       borderTop: '1px solid rgba(255,255,255,0.07)',
     }}>
 
+      {/* -- Halos lumineux : 100 % CSS, derrière le contenu -- */}
+      <div className="footer-halos" aria-hidden="true">
+        <span className="fh fh-line" />
+        <span className="fh fh-a" />
+        <span className="fh fh-b" />
+        <span className="fh fh-c" />
+      </div>
+      <style>{`
+        .footer-halos { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+        .footer-halos .fh { position: absolute; display: block; border-radius: 50%; will-change: transform, opacity; }
+        .fh-line { top: 0; left: 8%; right: 8%; height: 1px; border-radius: 0;
+                   background: linear-gradient(90deg, transparent, rgba(255,212,38,0.85), transparent);
+                   box-shadow: 0 0 22px 3px rgba(255,212,38,0.45); animation: fh-pulse 5s ease-in-out infinite; }
+        .fh-a { top: -35%; right: -6%; width: 520px; height: 520px;
+                background: radial-gradient(circle, rgba(255,212,38,0.30), rgba(255,212,38,0) 68%);
+                filter: blur(30px); animation: fh-drift-a 12s ease-in-out infinite; }
+        .fh-b { bottom: -45%; left: -8%; width: 600px; height: 600px;
+                background: radial-gradient(circle, rgba(99,102,241,0.55), rgba(99,102,241,0) 68%);
+                filter: blur(40px); animation: fh-drift-b 16s ease-in-out infinite; }
+        .fh-c { top: 20%; left: 42%; width: 360px; height: 360px;
+                background: radial-gradient(circle, rgba(138,142,255,0.28), rgba(138,142,255,0) 68%);
+                filter: blur(34px); animation: fh-drift-a 20s ease-in-out -6s infinite reverse; }
+        .footer-body { position: relative; z-index: 1; }
+        @keyframes fh-pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+        @keyframes fh-drift-a { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(-50px,40px,0) scale(1.12); } }
+        @keyframes fh-drift-b { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(60px,-30px,0) scale(1.1); } }
+        @media (prefers-reduced-motion: reduce) { .footer-halos .fh { animation: none !important; } }
+      `}</style>
+
       {/* -- Corps du footer -- */}
-      <div className="mx-auto max-w-7xl px-6 py-16">
+      <div className="footer-body mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-[1.8fr_1fr_1.4fr_1fr]  lg:gap-16">
 
           {/* Col 1 - Marque */}
@@ -263,12 +293,12 @@ export default function Footer() {
                   <span style={{
                     position: 'absolute', top: '-0.22em', left: '55%',
                     width: '0.28em', height: '0.28em', borderRadius: '50%',
-                    background: '#fceb30', display: 'block',
-                    boxShadow: '0 0 7px 2px rgba(252,235,48,0.55)',
+                    background: '#ffd426', display: 'block',
+                    boxShadow: '0 0 7px 2px rgba(255,212,38,0.55)',
                   }} />
                 </span>
               </span>
-              <span style={{ color: '#fceb30', textTransform: 'uppercase', letterSpacing: '0.02em' }}>SEO</span>
+              <span style={{ color: '#ffd426', textTransform: 'uppercase', letterSpacing: '0.02em' }}>SEO</span>
             </div>
 
             <p style={{
@@ -299,7 +329,7 @@ export default function Footer() {
                 <a href="mailto:laetitia@laeti-seo.fr" style={{
                   fontFamily: inter.style.fontFamily,
                   fontSize: '13px',
-                  color: 'rgba(252,235,48,0.65)',
+                  color: 'rgba(255,212,38,0.65)',
                   textDecoration: 'none',
                 }}>
                   laetitia@laeti-seo.fr
@@ -312,7 +342,7 @@ export default function Footer() {
                 <a href="tel:+33626950750" style={{
                   fontFamily: inter.style.fontFamily,
                   fontSize: '13px',
-                  color: 'rgba(252,235,48,0.65)',
+                  color: 'rgba(255,212,38,0.65)',
                   textDecoration: 'none',
                 }}>
                   06 26 95 07 50
@@ -380,7 +410,7 @@ export default function Footer() {
       </div>
 
       {/* -- Bande légale basse -- */}
-      <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}>
+      <div className="footer-body" style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}>
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
 
           <p style={{

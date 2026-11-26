@@ -88,7 +88,7 @@ export default function Home() {
         <Testimonials showReviewTip />
         <FAQ label="FAQ" heading="Questions fréquentes" />
         <FinalCTA
-          heading={<>On regarde où vous en êtes&nbsp;?</>}
+          heading={<span className="glow">On regarde où vous en êtes&nbsp;?</span>}
           body={
             <p
               className="mx-auto mt-6 max-w-[56ch] text-base leading-relaxed text-white/65"

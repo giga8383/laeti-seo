@@ -19,15 +19,21 @@
 }
 
 @theme {
-  --color-brand-blue: #3262ab;
-  --color-brand-dark: #264d8c;
-  --color-brand-yellow: #fceb30;
+  --color-brand-blue: #3b3fc4;
+  --color-brand-dark: #27279a;
+  --color-brand-yellow: #ffd426;
   --font-sans: var(--font-outfit);
   --font-satoshi: 'Satoshi', sans-serif;
 }
 
 :root {
   scroll-behavior: smooth;
+}
+
+/* Les animations d'apparition (rotation, glissement) ne doivent jamais créer de défilement horizontal. */
+html,
+body {
+  overflow-x: clip;
 }
 
 body {
@@ -37,8 +43,52 @@ body {
 }
 
 ::selection {
-  background: #fceb30;
-  color: #3262ab;
+  background: #ffd426;
+  color: #1b1b5e;
+}
+
+/* ── Textes jaunes lumineux : ils s'éclairent au survol, comme « Consultant SEO local » ──
+   Cible tous les textes dont le style en ligne contient un halo jaune (255,212,38),
+   que le navigateur écrive la valeur avec ou sans espaces. !important est nécessaire
+   car le halo de repos est posé directement dans l'attribut style. */
+[style*="text-shadow"][style*="212,38"],
+[style*="text-shadow"][style*="212, 38"] {
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+[style*="text-shadow"][style*="212,38"]:hover,
+[style*="text-shadow"][style*="212, 38"]:hover {
+  color: #ffe27a !important;
+  text-shadow:
+    0 0 14px rgba(255, 212, 38, 0.95),
+    0 0 38px rgba(255, 212, 38, 0.7),
+    0 0 90px rgba(255, 212, 38, 0.45) !important;
+}
+
+/* Libellés bleus lumineux (sur fond clair) : le halo bleu se renforce au survol */
+[style*="text-shadow"][style*="59,63,196"],
+[style*="text-shadow"][style*="59,63,196"] {
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+[style*="text-shadow"][style*="59,63,196"]:hover,
+[style*="text-shadow"][style*="59,63,196"]:hover {
+  color: #8a8eff !important;
+  text-shadow:
+    0 0 14px rgba(138,142,255, 0.9),
+    0 0 36px rgba(138,142,255, 0.6),
+    0 0 80px rgba(138,142,255, 0.35) !important;
+}
+
+/* Classe .glow : à poser sur n'importe quel mot ou titre pour qu'il s'éclaire au survol.
+   Ne fixe pas la couleur de repos (le texte garde sa couleur d'origine). */
+.glow {
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+.glow:hover {
+  color: #ffe27a !important;
+  text-shadow:
+    0 0 14px rgba(255, 212, 38, 0.95),
+    0 0 38px rgba(255, 212, 38, 0.7),
+    0 0 90px rgba(255, 212, 38, 0.45) !important;
 }
 
 /* ── Typographie article de blog ── */
@@ -100,15 +150,15 @@ body {
 }
 
 .article-body a {
-  color: #fceb30;
+  color: #ffd426;
   text-decoration: underline;
-  text-decoration-color: rgba(252, 235, 48, 0.4);
+  text-decoration-color: rgba(255,212,38, 0.4);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s;
 }
 
 .article-body a:hover {
-  text-decoration-color: #fceb30;
+  text-decoration-color: #ffd426;
 }
 
 .article-body hr {

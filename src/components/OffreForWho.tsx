@@ -55,13 +55,13 @@ function Card({
       <div
         className="flex gap-4 rounded-2xl p-5"
         style={{
-          background: isYes ? 'rgba(252,235,48,0.05)' : 'rgba(255,255,255,0.03)',
-          border: `1px solid ${isYes ? 'rgba(252,235,48,0.15)' : 'rgba(255,255,255,0.08)'}`,
+          background: isYes ? 'rgba(255,212,38,0.05)' : 'rgba(255,255,255,0.03)',
+          border: `1px solid ${isYes ? 'rgba(255,212,38,0.15)' : 'rgba(255,255,255,0.08)'}`,
         }}
       >
         <span className="mt-0.5 shrink-0">
           {isYes ? (
-            <CheckCircle size={20} weight="fill" style={{ color: '#fceb30' }} />
+            <CheckCircle size={20} weight="fill" style={{ color: '#ffd426' }} />
           ) : (
             <XCircle size={20} weight="fill" style={{ color: 'rgba(255,255,255,0.25)' }} />
           )}
@@ -99,9 +99,9 @@ export default function OffreForWho() {
               fontWeight: 600,
               fontSize: '15px',
               lineHeight: '22px',
-              color: '#fceb30',
+              color: '#ffd426',
               textShadow:
-                '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+                '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
             }}
           >
             Pour qui&nbsp;?
@@ -138,22 +138,22 @@ export default function OffreForWho() {
               <div className="mb-5 flex items-center gap-3">
                 <span
                   className="h-px flex-1"
-                  style={{ background: 'rgba(252,235,48,0.25)' }}
+                  style={{ background: 'rgba(255,212,38,0.25)' }}
                 />
                 <span
                   className="rounded-full px-4 py-1 text-xs font-bold uppercase tracking-widest"
                   style={{
                     fontFamily: inter.style.fontFamily,
-                    background: 'rgba(252,235,48,0.12)',
-                    color: '#fceb30',
-                    border: '1px solid rgba(252,235,48,0.25)',
+                    background: 'rgba(255,212,38,0.12)',
+                    color: '#ffd426',
+                    border: '1px solid rgba(255,212,38,0.25)',
                   }}
                 >
                   C&apos;est pour vous
                 </span>
                 <span
                   className="h-px flex-1"
-                  style={{ background: 'rgba(252,235,48,0.25)' }}
+                  style={{ background: 'rgba(255,212,38,0.25)' }}
                 />
               </div>
             </ScrollReveal>

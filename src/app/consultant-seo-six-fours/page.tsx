@@ -190,29 +190,29 @@ const yellowLabel = {
   fontSize: '22px',
   lineHeight: '28px',
   textTransform: 'uppercase',
-  color: '#fceb30',
-  textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)',
+  color: '#ffd426',
+  textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)',
 } as const;
 
 const blueLabel = {
   ...yellowLabel,
-  color: '#2355b6',
-  textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
+  color: '#3b3fc4',
+  textShadow: '0 0 12px rgba(59,63,196,0.6), 0 0 28px rgba(59,63,196,0.35), 0 0 56px rgba(59,63,196,0.15)',
 } as const;
 
 const h2 = { fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' } as const;
 const h3 = { fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '22px', lineHeight: '1.25' } as const;
 const body = { fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' } as const;
 
-const link = 'underline underline-offset-4 text-[#fceb30] hover:brightness-110';
-const linkBlue = 'font-semibold text-[#2355b6] underline underline-offset-4';
+const link = 'underline underline-offset-4 text-[#ffd426] hover:brightness-110';
+const linkBlue = 'font-semibold text-[#3b3fc4] underline underline-offset-4';
 
 const B = ({ children }: { children: ReactNode }) => <strong className="text-white">{children}</strong>;
 
 function Card({ n, title, children, delay = 0 }: { n: number; title: string; children: ReactNode; delay?: number }) {
   return (
     <ScrollReveal as="li" delay={delay} className="h-full rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.10)]">
-        <p className="mb-3 text-[#fceb30]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
+        <p className="mb-3 text-[#ffd426]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
           0{n}
         </p>
         <h3 className="mb-3 text-white" style={h3}>{title}</h3>
@@ -253,7 +253,7 @@ export default function ConsultantSeoSixFoursPage() {
                 }}
               >
                 Consultant SEO{' '}
-                <span style={{ color: '#fceb30', textShadow: '0 0 18px rgba(252,235,48,0.55), 0 0 48px rgba(252,235,48,0.25)' }}>
+                <span style={{ color: '#ffd426', textShadow: '0 0 18px rgba(255,212,38,0.55), 0 0 48px rgba(255,212,38,0.25)' }}>
                   à Six-Fours-les-Plages
                 </span>
               </h1>
@@ -285,8 +285,8 @@ export default function ConsultantSeoSixFoursPage() {
                   href={CALENDLY}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full bg-[#fceb30] px-7 py-3.5 text-[#264d8c] active:scale-[0.98]"
-                  style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '24px', boxShadow: '0 0 20px -4px rgba(252,235,48,0.5), 0 0 48px -8px rgba(252,235,48,0.25)' }}
+                  className="rounded-full bg-[#ffd426] px-7 py-3.5 text-[#1b1b5e] active:scale-[0.98]"
+                  style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '24px', boxShadow: '0 0 20px -4px rgba(255,212,38,0.5), 0 0 48px -8px rgba(255,212,38,0.25)' }}
                   strength={0.3}
                 >
                   Faire le point sur ma visibilité
@@ -314,9 +314,9 @@ export default function ConsultantSeoSixFoursPage() {
             </ScrollReveal>
             <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {enBref.map(([k, v], i) => (
-                <ScrollReveal key={k} delay={0.05 + i * 0.06} as="li" className="flex items-start gap-4 rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] px-6 py-5">
-                    <span className="mt-0.5 font-bold text-[#2355b6]" aria-hidden="true">✓</span>
-                    <span className="text-[#264d8c]" style={{ ...body, fontSize: '17px' }}>
+                <ScrollReveal key={k} delay={0.05 + i * 0.06} as="li" className="flex items-start gap-4 rounded-[1.25rem] border border-[#27279a]/10 bg-[#f2f5fb] px-6 py-5">
+                    <span className="mt-0.5 font-bold text-[#3b3fc4]" aria-hidden="true">✓</span>
+                    <span className="text-[#27279a]" style={{ ...body, fontSize: '17px' }}>
                       <strong>{k}</strong> : {v}
                     </span>
                 </ScrollReveal>
@@ -408,10 +408,10 @@ export default function ConsultantSeoSixFoursPage() {
           <div className="mx-auto max-w-7xl px-6 py-24 md:py-28">
             <ScrollReveal>
               <p className="mb-4" style={blueLabel}>Les causes</p>
-              <h2 className="mb-4 max-w-[24ch] text-[#264d8c]" style={h2}>
+              <h2 className="mb-4 max-w-[24ch] text-[#27279a]" style={h2}>
                 Pourquoi les pros de l&apos;habitat n&apos;apparaissent pas
               </h2>
-              <p className="mb-10 text-[#264d8c]/75" style={{ ...body, fontSize: '17px' }}>
+              <p className="mb-10 text-[#27279a]/75" style={{ ...body, fontSize: '17px' }}>
                 Vous vous reconnaissez ? Six causes. Elles se cumulent presque toujours.
               </p>
             </ScrollReveal>
@@ -470,17 +470,17 @@ export default function ConsultantSeoSixFoursPage() {
                   </>,
                 ],
               ].map(([title, text], i) => (
-                <ScrollReveal key={title as string} delay={0.05 + (i % 2) * 0.06} as="li" className="h-full h-full rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] p-7">
-                    <p className="mb-2 text-[#2355b6]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
+                <ScrollReveal key={title as string} delay={0.05 + (i % 2) * 0.06} as="li" className="h-full h-full rounded-[1.25rem] border border-[#27279a]/10 bg-[#f2f5fb] p-7">
+                    <p className="mb-2 text-[#3b3fc4]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.06em' }}>
                       0{i + 1}
                     </p>
-                    <h3 className="mb-3 text-[#264d8c]" style={h3}>{title as string}</h3>
-                    <p className="text-[#264d8c]/75" style={body}>{text as ReactNode}</p>
+                    <h3 className="mb-3 text-[#27279a]" style={h3}>{title as string}</h3>
+                    <p className="text-[#27279a]/75" style={body}>{text as ReactNode}</p>
                 </ScrollReveal>
               ))}
             </ol>
             <ScrollReveal delay={0.1}>
-              <p className="mt-10 max-w-[68ch] text-[#264d8c]/80" style={{ ...body, fontSize: '17px' }}>
+              <p className="mt-10 max-w-[68ch] text-[#27279a]/80" style={{ ...body, fontSize: '17px' }}>
                 Résultat : vous existez. Vous n&apos;êtes pas trouvé. C&apos;est exactement la différence entre une fiche qui existe et
                 une fiche qui convertit.
               </p>
@@ -539,10 +539,10 @@ export default function ConsultantSeoSixFoursPage() {
           <div className="mx-auto max-w-4xl px-6 py-24 md:py-28">
             <ScrollReveal>
               <p className="mb-4" style={blueLabel}>L&apos;offre</p>
-              <h2 className="mb-4 max-w-[24ch] text-[#264d8c]" style={h2}>
+              <h2 className="mb-4 max-w-[24ch] text-[#27279a]" style={h2}>
                 L&apos;offre, avec les prix affichés
               </h2>
-              <p className="mb-10 text-[#264d8c]/75" style={{ ...body, fontSize: '17px' }}>
+              <p className="mb-10 text-[#27279a]/75" style={{ ...body, fontSize: '17px' }}>
                 Deux formats. Des prix publics, pas de devis mystère.
               </p>
             </ScrollReveal>
@@ -561,14 +561,14 @@ export default function ConsultantSeoSixFoursPage() {
                   "Personne ne peut la garantir. Google l'écrit noir sur blanc : il n'existe aucun moyen de payer ou de demander un meilleur classement local. Ce que je garantis : un travail daté, des livrables concrets, des chiffres que vous pouvez vérifier vous-même dans votre Search Console.",
                 ],
               ].map(([title, text], i) => (
-                <ScrollReveal key={title} delay={0.05 + i * 0.06} as="li" className="rounded-[1.25rem] border border-[#264d8c]/10 bg-[#f2f5fb] p-7">
-                    <h3 className="mb-3 text-[#264d8c]" style={h3}>{i + 1}. {title}</h3>
-                    <p className="text-[#264d8c]/75" style={body}>{text}</p>
+                <ScrollReveal key={title} delay={0.05 + i * 0.06} as="li" className="rounded-[1.25rem] border border-[#27279a]/10 bg-[#f2f5fb] p-7">
+                    <h3 className="mb-3 text-[#27279a]" style={h3}>{i + 1}. {title}</h3>
+                    <p className="text-[#27279a]/75" style={body}>{text}</p>
                 </ScrollReveal>
               ))}
             </ol>
             <ScrollReveal delay={0.1}>
-              <p className="mt-8 text-[#264d8c]/80" style={{ ...body, fontSize: '17px' }}>
+              <p className="mt-8 text-[#27279a]/80" style={{ ...body, fontSize: '17px' }}>
                 Le détail des deux formules est sur la <Link href="/offre" className={linkBlue}>page offre</Link>. Vous pouvez juger
                 le travail avant de payer : le diagnostic se lit, se conteste, s&apos;archive.
               </p>
@@ -628,7 +628,7 @@ export default function ConsultantSeoSixFoursPage() {
               </p>
               <p>
                 Si le diagnostic vous intéresse, il est là : 790 €, cinq jours ouvrés, plan d&apos;action priorisé.{' '}
-                <Link href="/offre" className="underline underline-offset-4 text-[#fceb30]">Voir l&apos;offre</Link>.
+                <Link href="/offre" className="underline underline-offset-4 text-[#ffd426]">Voir l&apos;offre</Link>.
               </p>
             </div>
           }

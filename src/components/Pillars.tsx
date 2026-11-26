@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
 import { inter } from '@/lib/fonts';
 
-const linkClass = 'font-semibold text-[#2355b6] underline underline-offset-4';
+const linkClass = 'font-semibold text-[#3b3fc4] underline underline-offset-4';
 
 const pillars: { title: string; text: ReactNode }[] = [
   {
@@ -43,19 +43,19 @@ export default function Pillars() {
                 fontWeight: 700,
                 fontSize: '22px',
                 lineHeight: '28px',
-                color: '#2355b6',
-                textShadow: '0 0 12px rgba(35,85,182,0.6), 0 0 28px rgba(35,85,182,0.35), 0 0 56px rgba(35,85,182,0.15)',
+                color: '#3b3fc4',
+                textShadow: '0 0 12px rgba(59,63,196,0.6), 0 0 28px rgba(59,63,196,0.35), 0 0 56px rgba(59,63,196,0.15)',
               }}
             >
               Ce que je fais
             </p>
             <h2
-              className="text-[#264d8c]"
+              className="text-[#27279a]"
               style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: 'clamp(30px, 4vw, 44px)', lineHeight: '1.1' }}
             >
               Ce que je fais concrètement
             </h2>
-            <p className="mt-5 text-[#264d8c]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
+            <p className="mt-5 text-[#27279a]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
               Trois piliers. Pas de recette magique, pas de « stratégie de contenu » floue. Des actions que vous pouvez vérifier une par une.
             </p>
           </div>
@@ -63,19 +63,19 @@ export default function Pillars() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {pillars.map((p, i) => (
-            <ScrollReveal key={p.title} delay={0.05 + i * 0.08} className="h-full">
-              <div className="flex h-full flex-col rounded-[1.75rem] border border-[#264d8c]/10 bg-[#f2f5fb] p-8">
+            <ScrollReveal key={p.title} delay={0.1 + i * 0.45} flip className="h-full">
+              <div className="flex h-full flex-col rounded-[1.75rem] border border-[#27279a]/10 bg-[#f2f5fb] p-8">
                 <span
-                  className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#fceb30] text-[#264d8c]"
+                  className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#ffd426] text-[#1b1b5e]"
                   style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px' }}
                   aria-hidden="true"
                 >
                   {i + 1}
                 </span>
-                <h3 className="mb-3 text-[#264d8c]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '22px', lineHeight: '1.25' }}>
+                <h3 className="mb-3 text-[#27279a]" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '22px', lineHeight: '1.25' }}>
                   {p.title}
                 </h3>
-                <p className="text-[#264d8c]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
+                <p className="text-[#27279a]/70" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
                   {p.text}
                 </p>
               </div>
@@ -86,11 +86,11 @@ export default function Pillars() {
         {/* Encart de preuve */}
         <ScrollReveal delay={0.2}>
           <div
-            className="mt-8 rounded-[1.75rem] bg-[#264d8c] p-8 md:p-10"
-            style={{ boxShadow: '0 0 0 1.5px rgba(252,235,48,0.45), 0 24px 60px -20px rgba(38,77,140,0.35)' }}
+            className="mt-8 rounded-[1.75rem] p-8 md:p-10"
+            style={{ background: "linear-gradient(145deg, #3b3fc4 0%, #27279a 55%, #1b1b5e 100%)", boxShadow: "0 0 0 1.5px rgba(255,212,38,0.45), 0 24px 60px -20px rgba(27,27,94,0.45)" }}
           >
             <p className="mb-3 text-white" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '24px', lineHeight: '1.25' }}>
-              Ce que je fais sur mon site, <span className="text-[#fceb30]">je le fais chez vous.</span>
+              Ce que je fais sur mon site, <span className="glow text-[#ffd426]">je le fais chez vous.</span>
             </p>
             <p className="max-w-[70ch] text-white/75" style={{ fontFamily: inter.style.fontFamily, fontSize: '16px', lineHeight: '26px' }}>
               Ce site est mon propre terrain d&apos;application, avec la structure des pages, le balisage, le contenu local, la vitesse et les données structurées. Ouvrez le code source, inspectez les pages. Tout ce que je vous recommande, je l&apos;applique ici d&apos;abord. Vous pouvez juger le travail avant de payer.

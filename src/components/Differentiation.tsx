@@ -15,7 +15,7 @@ export default function Differentiation() {
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-[1fr_2fr]">
           <ScrollReveal>
-            <p style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: 'rgb(252, 235, 48)', textTransform: 'uppercase', textShadow: '0 0 12px rgba(252,235,48,0.7), 0 0 28px rgba(252,235,48,0.4), 0 0 56px rgba(252,235,48,0.2)' }}>
+            <p style={{ fontFamily: 'Satoshi, "Satoshi Fallback", "League Spartan", "League Spartan Fallback", ui-sans-serif, system-ui, -apple-system, sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '22px', lineHeight: '28px', color: 'rgb(255, 212, 38)', textTransform: 'uppercase', textShadow: '0 0 12px rgba(255,212,38,0.7), 0 0 28px rgba(255,212,38,0.4), 0 0 56px rgba(255,212,38,0.2)' }}>
               L&apos;approche
             </p>
           </ScrollReveal>
@@ -50,7 +50,7 @@ export default function Differentiation() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>
-              <div className="border-l-2 border-[#fceb30]/50 pl-6">
+              <div className="border-l-2 border-[#ffd426]/50 pl-6">
                 <p className="mb-4 text-sm text-white/55">
                   Ce que je regarde concrètement
                 </p>
