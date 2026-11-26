@@ -19,7 +19,7 @@ function Halos() {
                 filter: blur(36px); animation: hh-float-b 18s ease-in-out infinite; }
         @keyframes hh-float-a { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(-30px,40px,0); } }
         @keyframes hh-float-b { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(50px,-30px,0); } }
-        @media (prefers-reduced-motion: reduce) { .hero-halos .hh { animation: none !important; } }
+        @media (prefers-reduced-motion: reduce), (max-width: 1023px) { .hero-halos .hh { animation: none !important; filter: none; } }
       `}</style>
     </div>
   );
@@ -55,14 +55,14 @@ function HeroBand() {
       </div>
       <style>{`
         .hero-band { overflow: hidden; border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14);
-                     background: rgba(14,14,64,0.35); backdrop-filter: blur(8px);
+                     background: rgba(14,14,64,0.78);
                      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
                      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
         .hero-band-track { display: flex; width: max-content; animation: hero-band-move 70s linear infinite; }
         .hero-band-list { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; }
         .hero-band-list li { display: flex; align-items: center; gap: 40px; padding: 18px 0 18px 40px;
                              font-family: Inter, "Inter Fallback", sans-serif; font-weight: 500; text-transform: uppercase;
-                             font-size: 12px; letter-spacing: 0.28em; color: rgba(255,255,255,0.72); white-space: nowrap; }
+                             font-size: 12px; letter-spacing: 0.28em; color: rgba(255,255,255,0.9); white-space: nowrap; }
         .hero-band-list i { display: block; width: 6px; height: 6px; background: #ffd426; transform: rotate(45deg); }
         @keyframes hero-band-move { to { transform: translateX(-50%); } }
         @media (prefers-reduced-motion: reduce) { .hero-band-track { animation: none; } }
@@ -94,8 +94,6 @@ export default function Hero() {
   return (
     <section className="relative bg-transparent overflow-hidden">
       <Halos />
-      {/* Mobile / tablette : la pièce reste en fond discret derrière le texte */}
-      <HeroRoom className="absolute -right-[10%] top-[8%] w-[92%] opacity-[0.22] sm:w-[70%] lg:hidden" />
       <div className="relative mx-auto grid min-h-[calc(100dvh-72px)] max-w-7xl grid-cols-1 content-start items-center gap-12 px-6 pt-28 pb-10 md:content-center md:pt-36 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
         <HeroContent />
 

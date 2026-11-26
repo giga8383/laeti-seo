@@ -275,7 +275,7 @@ export default function Footer() {
         @keyframes fh-pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
         @keyframes fh-drift-a { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(-50px,40px,0) scale(1.12); } }
         @keyframes fh-drift-b { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(60px,-30px,0) scale(1.1); } }
-        @media (prefers-reduced-motion: reduce) { .footer-halos .fh { animation: none !important; } }
+        @media (prefers-reduced-motion: reduce), (max-width: 1023px) { .footer-halos .fh { animation: none !important; } .footer-halos .fh-c { display: none; } .footer-halos .fh-a, .footer-halos .fh-b { filter: none; } }
       `}</style>
 
       {/* -- Corps du footer -- */}
