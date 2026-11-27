@@ -113,8 +113,8 @@ const jsonLd = {
       mainEntity: { '@id': PERSON_ID },
       breadcrumb: { '@id': `${URL}#breadcrumb` },
       hasPart: { '@id': `${URL}#faq` },
-      datePublished: '2026-10-27',
-      dateModified: '2026-10-27',
+      datePublished: '2026-10-27T08:00:00+01:00',
+      dateModified: '2026-10-27T08:00:00+01:00',
     },
     {
       '@type': 'Person',

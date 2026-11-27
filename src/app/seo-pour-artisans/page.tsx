@@ -70,8 +70,8 @@ const jsonLd = {
         sameAs: 'https://www.linkedin.com/in/laetitia-laghezza-seo-local/',
       },
       publisher: { '@id': 'https://laeti-seo.fr/#business' },
-      datePublished: '2026-06-05',
-      dateModified: '2026-06-05',
+      datePublished: '2026-06-05T08:00:00+02:00',
+      dateModified: '2026-06-05T08:00:00+02:00',
       inLanguage: 'fr-FR',
     },
     {
