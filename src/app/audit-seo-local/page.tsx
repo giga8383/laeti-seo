@@ -893,19 +893,19 @@ export default function AuditSEOLocalPage() {
                   className="mb-8 text-white/80"
                   style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500, fontSize: 'clamp(18px, 2.5vw, 24px)', lineHeight: '1.5' }}
                 >
-                  &quot;Merci à Laetitia qui a su optimiser notre fiche Google et améliorer notre visibilité, elle a été de bon conseil, très pro !!&quot;
+                  &quot;Je ne savais pas trop quoi faire pour être plus visible sur Google, alors j’ai contacté Laetitia. On a pris le temps d’échanger sur mon activité et sur ce que je voulais développer. J’ai pu poser mes questions facilement et ses explications m’ont aidé à mieux comprendre ce qu’il fallait améliorer sur ma fiche Google et mon site. Une collaboration agréable, avec des conseils que je peux vraiment appliquer. Merci à Laetitia pour son écoute et son aide !&quot;
                 </blockquote>
                 <div className="flex items-center justify-between gap-4 flex-wrap">
                   <figcaption>
                     <p style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 700, fontSize: '16px', color: '#ffffff' }}>
-                      Pôle Assainissement
+                      Roland Nguyen
                     </p>
                     <p style={{ fontFamily: inter.style.fontFamily, fontSize: '13px', color: 'rgba(255,255,255,0.45)', marginTop: '2px' }}>
-                      Professionnel de l&apos;assainissement · Visité en juin 2025
+                      Client accompagné sur sa fiche Google et son site
                     </p>
                   </figcaption>
                   <a
-                    href="https://share.google/8p7kzzPxMvjpsUmLL"
+                    href="https://share.google/X8yIUSwEfhZAhSRGx"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{

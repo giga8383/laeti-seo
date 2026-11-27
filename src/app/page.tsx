@@ -85,7 +85,7 @@ export default function Home() {
         <SprintSection />
         <Method />
         <About />
-        <Testimonials showReviewTip />
+        <Testimonials showReviewTip replacePoleAssainissement />
         <FAQ label="FAQ" heading="Questions fréquentes" />
         <FinalCTA
           heading={<span className="glow">On regarde où vous en êtes&nbsp;?</span>}

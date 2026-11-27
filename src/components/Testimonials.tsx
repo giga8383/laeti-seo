@@ -4,7 +4,7 @@ import { inter } from '@/lib/fonts';
 
 const GOOGLE_REVIEWS_URL = 'https://share.google/X8yIUSwEfhZAhSRGx';
 
-const reviews = [
+const allReviews = [
   {
     quote: "Si vous êtes perdus comme moi avec votre fiche Google Business ou dans le SEO local, vous êtes au bon endroit. Je recommande fortement, hausse de mon activité significative, je n'y croyais plus. Merci Laetitia.",
     name: 'Mathieu Hintzy',
@@ -22,7 +22,22 @@ const reviews = [
   },
 ];
 
-export default function Testimonials({ showReviewTip = false }: { showReviewTip?: boolean }) {
+const rolandReview = {
+  quote: "Je ne savais pas trop quoi faire pour être plus visible sur Google, alors j’ai contacté Laetitia. On a pris le temps d’échanger sur mon activité et sur ce que je voulais développer. J’ai pu poser mes questions facilement et ses explications m’ont aidé à mieux comprendre ce qu’il fallait améliorer sur ma fiche Google et mon site. Une collaboration agréable, avec des conseils que je peux vraiment appliquer. Merci à Laetitia pour son écoute et son aide !",
+  name: 'Roland Nguyen',
+  initials: 'RN',
+};
+
+export default function Testimonials({
+  showReviewTip = false,
+  replacePoleAssainissement = false,
+}: {
+  showReviewTip?: boolean;
+  replacePoleAssainissement?: boolean;
+}) {
+  const reviews = replacePoleAssainissement
+    ? allReviews.map((r) => (r.name === 'Pôle Assainissement' ? rolandReview : r))
+    : allReviews;
   return (
     <section className="relative bg-transparent">
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-24">

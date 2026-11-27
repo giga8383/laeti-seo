@@ -468,7 +468,7 @@ export default function ConsultanteSeoFreelancePage() {
         <FAQ items={faqs} label="Questions fréquentes" heading="Travailler avec une consultante freelance" />
 
         {/* ── Avis (3 avis Google, non reformulés) ── */}
-        <Testimonials />
+        <Testimonials replacePoleAssainissement />
 
         <FinalCTA
           heading={<>Parlons de votre visibilité.</>}

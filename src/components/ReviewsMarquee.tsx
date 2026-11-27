@@ -21,6 +21,12 @@ type Review = {
 
 const reviews: Review[] = [
   {
+    name: 'Roland Nguyen',
+    avatarColor: '#2e7d32',
+    source: 'google',
+    text: "Je ne savais pas trop quoi faire pour être plus visible sur Google, alors j’ai contacté Laetitia. On a pris le temps d’échanger sur mon activité et sur ce que je voulais développer. J’ai pu poser mes questions facilement et ses explications m’ont aidé à mieux comprendre ce qu’il fallait améliorer sur ma fiche Google et mon site. Une collaboration agréable, avec des conseils que je peux vraiment appliquer. Merci à Laetitia pour son écoute et son aide !",
+  },
+  {
     name: 'mathieu hintzy',
     avatarColor: '#7e57c2',
     source: 'google',
@@ -45,7 +51,7 @@ const reviews: Review[] = [
     text: "Un grand merci à Laetitia pour ses conseils, c'est une très bonne personne et en plus de ça très professionnel, merci beaucoup pour ces avis très précieux. À très bientôt.",
   },
   {
-    name: 'mamie gisou',
+    name: 'Client Google',
     avatarColor: '#e53935',
     source: 'google',
     text: "J'ai fait appel à Laetitia, coach SEO, pour améliorer la visibilité de mon site et avoir quelques conseils stratégiques, tout en respectant l'anonymat de mon activité. Laetitia est très professionnelle, à l'écoute et surtout très pédagogue. Elle prend le temps d'expliquer, propose des actions claires et efficaces, et on se sent vraiment accompagnée à chaque étape. Grâce à son travail, ma présence sur Google s'est nettement améliorée. Je recommande Laetitia sans hésiter à toute personne souhaitant développer son activité et sa visibilité locale avec une approche humaine et sérieuse.",
